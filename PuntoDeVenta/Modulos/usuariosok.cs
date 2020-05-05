@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.IO;
+
 namespace PuntoDeVenta
 {
     public partial class usuariosok : Form
@@ -24,32 +26,32 @@ namespace PuntoDeVenta
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            if (txtnombre.Text !="")
+            if (txtnombre.Text != "")
             {
                 try
                 {
-                SqlConnection con = new SqlConnection() ;
-                con.ConnectionString = CONEXION.CONEXIONMAESTRA.CONEXION;
-                con.Open();
-                SqlCommand cmd = new SqlCommand();
-                cmd = new SqlCommand("insertar_usuario", con);
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@nombres", txtnombre.Text);
-                cmd.Parameters.AddWithValue("@Login", txtlogin .Text);
-                cmd.Parameters.AddWithValue("@Password", txtPassword .Text);
-                
-                cmd.Parameters.AddWithValue("@Correo", txtcorreo .Text);
-                cmd.Parameters.AddWithValue("@Rol", txtrol .Text);
-                System.IO.MemoryStream ms = new System.IO.MemoryStream();
-                ICONO.Image.Save(ms, ICONO.Image.RawFormat);
+                    SqlConnection con = new SqlConnection();
+                    con.ConnectionString = CONEXION.CONEXIONMAESTRA.CONEXION;
+                    con.Open();
+                    SqlCommand cmd = new SqlCommand();
+                    cmd = new SqlCommand("insertar_usuario", con);
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("@nombres", txtnombre.Text);
+                    cmd.Parameters.AddWithValue("@Login", txtlogin.Text);
+                    cmd.Parameters.AddWithValue("@Password", txtPassword.Text);
+
+                    cmd.Parameters.AddWithValue("@Correo", txtcorreo.Text);
+                    cmd.Parameters.AddWithValue("@Rol", txtrol.Text);
+                    System.IO.MemoryStream ms = new System.IO.MemoryStream();
+                    ICONO.Image.Save(ms, ICONO.Image.RawFormat);
 
 
-                cmd.Parameters.AddWithValue("@Icono", ms.GetBuffer ());
-                cmd.Parameters.AddWithValue("@Nombre_de_icono", lblnumeroIcono .Text);
-                cmd.ExecuteNonQuery();
-                con.Close();
-                mostrar();
-                panel4.Visible = false;
+                    cmd.Parameters.AddWithValue("@Icono", ms.GetBuffer());
+                    cmd.Parameters.AddWithValue("@Nombre_de_icono", lblnumeroIcono.Text);
+                    cmd.ExecuteNonQuery();
+                    con.Close();
+                    mostrar();
+                    panel4.Visible = false;
                 }
                 catch (Exception ex)
                 {
@@ -58,22 +60,22 @@ namespace PuntoDeVenta
                 }
 
             }
-           
+
         }
         private void mostrar()
         {
             try
             {
-DataTable dt = new DataTable();
-            SqlDataAdapter da;
-            SqlConnection con = new SqlConnection();
-            con.ConnectionString = CONEXION.CONEXIONMAESTRA.CONEXION;
-            con.Open();
-         
-            da = new SqlDataAdapter("mostrar_usuario", con);
-            da.Fill(dt);
-            datalistado.DataSource = dt;
-            con.Close();
+                DataTable dt = new DataTable();
+                SqlDataAdapter da;
+                SqlConnection con = new SqlConnection();
+                con.ConnectionString = CONEXION.CONEXIONMAESTRA.CONEXION;
+                con.Open();
+
+                da = new SqlDataAdapter("mostrar_usuario", con);
+                da.Fill(dt);
+                datalistado.DataSource = dt;
+                con.Close();
 
                 datalistado.Columns[1].Visible = false;
                 datalistado.Columns[5].Visible = false;
@@ -87,7 +89,7 @@ DataTable dt = new DataTable();
                 MessageBox.Show(ex.Message);
 
             }
-            
+
 
         }
 
@@ -103,8 +105,6 @@ DataTable dt = new DataTable();
         private void LblAnuncioIcono_Click(object sender, EventArgs e)
         {
             panelICONO.Visible = true;
-
-
 
         }
 
@@ -173,11 +173,97 @@ DataTable dt = new DataTable();
         {
             panel4.Visible = false;
             panelICONO.Visible = false;
+            mostrar();
         }
 
         private void PictureBox2_Click(object sender, EventArgs e)
         {
             panel4.Visible = true;
+            LblAnuncioIcono.Visible = true;
+
+            //Campos vacios
+            txtnombre.Text = "";
+            txtlogin.Text = "";
+            txtPassword.Text = "";
+            txtrol.Text = "";
+            txtcorreo.Text = "";
+            btnGuardar.Visible = true;
+            btnGuardarCambios.Visible = false;
+        }
+
+        private void datalistado_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void datalistado_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            lblUsuario.Text = datalistado.SelectedCells[1].Value.ToString();
+            txtnombre.Text = datalistado.SelectedCells[2].Value.ToString();
+            txtlogin.Text = datalistado.SelectedCells[3].Value.ToString();
+            txtPassword.Text = datalistado.SelectedCells[4].Value.ToString();
+
+            ICONO.BackgroundImage = null;
+            byte[] b = (Byte[])datalistado.SelectedCells[5].Value;
+            MemoryStream ms = new MemoryStream(b);
+            ICONO.Image = Image.FromStream(ms);
+
+            LblAnuncioIcono.Visible = false;
+            lblnumeroIcono.Text = datalistado.SelectedCells[6].Value.ToString();
+            txtcorreo.Text = datalistado.SelectedCells[7].Value.ToString();
+            txtrol.Text = datalistado.SelectedCells[8].Value.ToString();
+            panel4.Visible = true;
+            btnGuardar.Visible = false;
+            btnGuardarCambios.Visible = true;
+        }
+
+        private void ICONO_Click(object sender, EventArgs e)
+        {
+            panelICONO.Visible = true;
+        }
+
+        private void btnVolver_Click(object sender, EventArgs e)
+        {
+            panel4.Visible = false;
+        }
+
+        private void btnGuardarCambios_Click(object sender, EventArgs e)
+        {
+
+            if (txtnombre.Text != "")
+            {
+                try
+                {
+                    SqlConnection con = new SqlConnection();
+                    con.ConnectionString = CONEXION.CONEXIONMAESTRA.CONEXION;
+                    con.Open();
+                    SqlCommand cmd = new SqlCommand();
+                    cmd = new SqlCommand("editar_usuario", con);
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("@idUsuario", lblUsuario.Text);
+                    cmd.Parameters.AddWithValue("@nombres", txtnombre.Text);
+                    cmd.Parameters.AddWithValue("@Login", txtlogin.Text);
+                    cmd.Parameters.AddWithValue("@Password", txtPassword.Text);
+
+                    cmd.Parameters.AddWithValue("@Correo", txtcorreo.Text);
+                    cmd.Parameters.AddWithValue("@Rol", txtrol.Text);
+                    System.IO.MemoryStream ms = new System.IO.MemoryStream();
+                    ICONO.Image.Save(ms, ICONO.Image.RawFormat);
+
+
+                    cmd.Parameters.AddWithValue("@Icono", ms.GetBuffer());
+                    cmd.Parameters.AddWithValue("@Nombre_de_icono", lblnumeroIcono.Text);
+                    cmd.ExecuteNonQuery();
+                    con.Close();
+                    mostrar();
+                    panel4.Visible = false;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+
+                }
+            }
         }
     }
 }
