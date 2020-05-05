@@ -80,6 +80,8 @@
             this.Label6 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.btnOlvideClave = new System.Windows.Forms.Button();
+            this.lblResultadoContrasena = new System.Windows.Forms.Label();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -565,7 +567,7 @@
             this.datalistado.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Eli});
             this.datalistado.EnableHeadersVisualStyles = false;
-            this.datalistado.Location = new System.Drawing.Point(35, 17);
+            this.datalistado.Location = new System.Drawing.Point(3, 13);
             this.datalistado.Name = "datalistado";
             this.datalistado.ReadOnly = true;
             this.datalistado.RowHeadersVisible = false;
@@ -590,9 +592,9 @@
             this.panel5.Controls.Add(this.datalistado);
             this.panel5.Controls.Add(this.txtLogin);
             this.panel5.Controls.Add(this.txtImagen);
-            this.panel5.Location = new System.Drawing.Point(189, 12);
+            this.panel5.Location = new System.Drawing.Point(12, 165);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(16, 14);
+            this.panel5.Size = new System.Drawing.Size(136, 92);
             this.panel5.TabIndex = 616;
             // 
             // PictureBox2
@@ -609,6 +611,7 @@
             // 
             // PanelRestaurarCuenta
             // 
+            this.PanelRestaurarCuenta.Controls.Add(this.richTextBox1);
             this.PanelRestaurarCuenta.Controls.Add(this.txtcorreo);
             this.PanelRestaurarCuenta.Controls.Add(this.Panel7);
             this.PanelRestaurarCuenta.Controls.Add(this.Button4);
@@ -620,7 +623,7 @@
             this.PanelRestaurarCuenta.Controls.Add(this.pictureBox3);
             this.PanelRestaurarCuenta.Location = new System.Drawing.Point(229, 28);
             this.PanelRestaurarCuenta.Name = "PanelRestaurarCuenta";
-            this.PanelRestaurarCuenta.Size = new System.Drawing.Size(589, 408);
+            this.PanelRestaurarCuenta.Size = new System.Drawing.Size(619, 478);
             this.PanelRestaurarCuenta.TabIndex = 621;
             this.PanelRestaurarCuenta.Visible = false;
             // 
@@ -639,9 +642,9 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(167, 223);
+            this.pictureBox3.Location = new System.Drawing.Point(507, 21);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(433, 680);
+            this.pictureBox3.Size = new System.Drawing.Size(62, 71);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 619;
             this.pictureBox3.TabStop = false;
@@ -651,9 +654,9 @@
             // 
             this.Panel7.Controls.Add(this.txtpassenvi);
             this.Panel7.Controls.Add(this.lblEstado_de_envio);
-            this.Panel7.Location = new System.Drawing.Point(12, 151);
+            this.Panel7.Location = new System.Drawing.Point(12, 78);
             this.Panel7.Name = "Panel7";
-            this.Panel7.Size = new System.Drawing.Size(138, 78);
+            this.Panel7.Size = new System.Drawing.Size(19, 20);
             this.Panel7.TabIndex = 615;
             // 
             // txtpassenvi
@@ -728,7 +731,7 @@
             this.label4.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label4.Location = new System.Drawing.Point(0, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(589, 37);
+            this.label4.Size = new System.Drawing.Size(619, 37);
             this.label4.TabIndex = 602;
             this.label4.Text = "Restaurar Contraseña";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -782,12 +785,32 @@
             this.btnOlvideClave.UseVisualStyleBackColor = false;
             this.btnOlvideClave.Click += new System.EventHandler(this.btnOlvideClave_Click);
             // 
+            // lblResultadoContrasena
+            // 
+            this.lblResultadoContrasena.AutoSize = true;
+            this.lblResultadoContrasena.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lblResultadoContrasena.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblResultadoContrasena.Location = new System.Drawing.Point(19, 265);
+            this.lblResultadoContrasena.Name = "lblResultadoContrasena";
+            this.lblResultadoContrasena.Size = new System.Drawing.Size(35, 13);
+            this.lblResultadoContrasena.TabIndex = 622;
+            this.lblResultadoContrasena.Text = "label7";
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(156, 222);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(317, 225);
+            this.richTextBox1.TabIndex = 620;
+            this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
+            // 
             // LOGIN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.ClientSize = new System.Drawing.Size(1189, 694);
+            this.Controls.Add(this.lblResultadoContrasena);
             this.Controls.Add(this.PictureBox2);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.PanelRestaurarCuenta);
@@ -820,6 +843,7 @@
             this.Panel7.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -876,5 +900,7 @@
         internal System.Windows.Forms.Label Label6;
         internal System.Windows.Forms.PictureBox pictureBox3;
         internal System.Windows.Forms.PictureBox PictureBox2;
+        private System.Windows.Forms.Label lblResultadoContrasena;
+        private System.Windows.Forms.RichTextBox richTextBox1;
     }
 }

@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.IO;
+using System.Net.Mail;
+using System.Net;
 
 namespace PuntoDeVenta.Modulos
 {
@@ -196,21 +198,16 @@ namespace PuntoDeVenta.Modulos
 
         private void mostrar_usuarios_por_correo()
         {
-
             try
             {
-                DataTable dt = new DataTable();
-                SqlDataAdapter da;
                 SqlConnection con = new SqlConnection();
                 con.ConnectionString = CONEXION.CONEXIONMAESTRA.CONEXION;
-                con.Open();
+                SqlCommand da = new SqlCommand("buscar_USUARIO_por_correo", con);
+                da.CommandType = CommandType.StoredProcedure;
+                da.Parameters.AddWithValue("@correo", txtcorreo.Text);
 
-                da = new SqlDataAdapter("validar_usuario", con);
-                da.SelectCommand.CommandType = CommandType.StoredProcedure;
-                da.SelectCommand.Parameters.AddWithValue("@password", txtpaswword.Text);
-                da.SelectCommand.Parameters.AddWithValue("@login", txtLogin.Text);
-                da.Fill(dt);
-                datalistado.DataSource = dt;
+                con.Open();
+                lblResultadoContrasena.Text = Convert.ToString(da.ExecuteScalar());
                 con.Close();
 
             }
@@ -220,9 +217,45 @@ namespace PuntoDeVenta.Modulos
 
             }
         }
+        internal void enviarCorreo(string emisor, string password, string mensaje, string asunto, string destinatario, string ruta)
+        {
+            try
+            {
+                MailMessage correos = new MailMessage();
+                SmtpClient envios = new SmtpClient();
+                correos.To.Clear();
+                correos.Body = "";
+                correos.Subject = "";
+                correos.Body = mensaje;
+                correos.Subject = asunto;
+                correos.IsBodyHtml = true;
+                correos.To.Add((destinatario));
+                correos.From = new MailAddress(emisor);
+                envios.Credentials = new NetworkCredential(emisor, password);
+
+                envios.Host = "smtp.gmail.com";
+                envios.Port = 587;
+                envios.EnableSsl = true;
+
+                envios.Send(correos);
+                lblEstado_de_envio.Text = "ENVIADO";
+                MessageBox.Show("Contraseña Enviada, revisa tu correo electrónico", "Restauración de contraseña", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                PanelRestaurarCuenta.Visible = false;
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("ERROR, revisa tu correo electronico", "Restauración de contraseña", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                lblEstado_de_envio.Text = "Correo no registrado";
+            }
+
+        }
+
         private void Button3_Click(object sender, EventArgs e)
         {
-
+            mostrar_usuarios_por_correo();
+            richTextBox1.Text = richTextBox1.Text.Replace("@pass", lblResultadoContrasena.Text);
+            enviarCorreo("pedrocode29@gmail.com", "Juandejesus29", richTextBox1.Text, "Solicitud de Contraseña", txtcorreo.Text, "");
         }
     }
 }
