@@ -63,24 +63,24 @@
   <ItemGroup>
     <Compile Include="CONEXION\CONEXIONMAESTRA.cs" />
     <Compile Include="CONEXION\Tamaño_automatico_de_datatables.cs" />
-    <Compile Include="Modulos\LOGIN.cs">
+    <Compile Include="Modulos\LOGIN\LOGIN.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Modulos\LOGIN.Designer.cs">
+    <Compile Include="Modulos\LOGIN\LOGIN.Designer.cs">
       <DependentUpon>LOGIN.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modulos\usuariosok.cs">
+    <Compile Include="Modulos\USUARIOS_Y_PERMISOS\usuariosok.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Modulos\usuariosok.designer.cs">
+    <Compile Include="Modulos\USUARIOS_Y_PERMISOS\usuariosok.designer.cs">
       <DependentUpon>usuariosok.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Modulos\LOGIN.resx">
+    <EmbeddedResource Include="Modulos\LOGIN\LOGIN.resx">
       <DependentUpon>LOGIN.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Modulos\usuariosok.resx">
+    <EmbeddedResource Include="Modulos\USUARIOS_Y_PERMISOS\usuariosok.resx">
       <DependentUpon>usuariosok.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
