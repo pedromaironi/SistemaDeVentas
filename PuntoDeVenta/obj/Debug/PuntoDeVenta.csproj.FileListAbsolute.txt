@@ -10,3 +10,4 @@ C:\Users\pedro\source\repos\PuntoDeVenta\PuntoDeVenta\bin\Debug\PuntoDeVenta.exe
 C:\Users\pedro\source\repos\PuntoDeVenta\PuntoDeVenta\bin\Debug\PuntoDeVenta.pdb
 C:\Users\pedro\source\repos\PuntoDeVenta\PuntoDeVenta\obj\Debug\PuntoDeVenta.exe
 C:\Users\pedro\source\repos\PuntoDeVenta\PuntoDeVenta\obj\Debug\PuntoDeVenta.pdb
+C:\Users\pedro\source\repos\PuntoDeVenta\PuntoDeVenta\obj\Debug\PuntoDeVenta.Modulos.LOGIN.resources

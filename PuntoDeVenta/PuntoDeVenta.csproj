@@ -63,6 +63,12 @@
   <ItemGroup>
     <Compile Include="CONEXION\CONEXIONMAESTRA.cs" />
     <Compile Include="CONEXION\Tamaño_automatico_de_datatables.cs" />
+    <Compile Include="Modulos\LOGIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\LOGIN.Designer.cs">
+      <DependentUpon>LOGIN.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modulos\usuariosok.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +77,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Modulos\LOGIN.resx">
+      <DependentUpon>LOGIN.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Modulos\usuariosok.resx">
       <DependentUpon>usuariosok.cs</DependentUpon>
     </EmbeddedResource>
