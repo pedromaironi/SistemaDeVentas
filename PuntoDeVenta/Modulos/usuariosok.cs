@@ -253,6 +253,8 @@ namespace PuntoDeVenta
 
                     cmd.Parameters.AddWithValue("@Icono", ms.GetBuffer());
                     cmd.Parameters.AddWithValue("@Nombre_de_icono", lblnumeroIcono.Text);
+                    cmd.Parameters.AddWithValue("@ESTADO", "ACTIVO");
+
                     cmd.ExecuteNonQuery();
                     con.Close();
                     mostrar();
