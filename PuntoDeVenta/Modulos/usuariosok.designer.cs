@@ -54,9 +54,9 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.lblUsuario = new System.Windows.Forms.Label();
             this.lblnumeroIcono = new System.Windows.Forms.Label();
             this.LblAnuncioIcono = new System.Windows.Forms.Label();
-            this.ICONO = new System.Windows.Forms.PictureBox();
             this.btnVolver = new System.Windows.Forms.Button();
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.btnGuardar = new System.Windows.Forms.ToolStripMenuItem();
@@ -75,7 +75,7 @@
             this.Label4 = new System.Windows.Forms.Label();
             this.Label6 = new System.Windows.Forms.Label();
             this.Label8 = new System.Windows.Forms.Label();
-            this.lblUsuario = new System.Windows.Forms.Label();
+            this.ICONO = new System.Windows.Forms.PictureBox();
             this.dlg = new System.Windows.Forms.OpenFileDialog();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -97,8 +97,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ICONO)).BeginInit();
             this.menuStrip2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ICONO)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -200,13 +200,21 @@
             this.datalistado.AllowUserToAddRows = false;
             this.datalistado.AllowUserToResizeRows = false;
             this.datalistado.BackgroundColor = System.Drawing.Color.White;
+            this.datalistado.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.datalistado.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.datalistado.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.datalistado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.datalistado.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Eli});
             this.datalistado.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.datalistado.EnableHeadersVisualStyles = false;
             this.datalistado.Location = new System.Drawing.Point(0, 94);
             this.datalistado.Name = "datalistado";
             this.datalistado.RowHeadersVisible = false;
+            this.datalistado.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.datalistado.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.datalistado.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.datalistado.RowTemplate.Height = 30;
             this.datalistado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.datalistado.Size = new System.Drawing.Size(647, 597);
             this.datalistado.TabIndex = 3;
@@ -398,6 +406,15 @@
             this.panel5.Size = new System.Drawing.Size(649, 280);
             this.panel5.TabIndex = 605;
             // 
+            // lblUsuario
+            // 
+            this.lblUsuario.AutoSize = true;
+            this.lblUsuario.Location = new System.Drawing.Point(434, 43);
+            this.lblUsuario.Name = "lblUsuario";
+            this.lblUsuario.Size = new System.Drawing.Size(51, 20);
+            this.lblUsuario.TabIndex = 613;
+            this.lblUsuario.Text = "label2";
+            // 
             // lblnumeroIcono
             // 
             this.lblnumeroIcono.AutoSize = true;
@@ -420,16 +437,6 @@
             this.LblAnuncioIcono.Text = "Elige un Icono";
             this.LblAnuncioIcono.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.LblAnuncioIcono.Click += new System.EventHandler(this.LblAnuncioIcono_Click);
-            // 
-            // ICONO
-            // 
-            this.ICONO.Location = new System.Drawing.Point(491, 29);
-            this.ICONO.Name = "ICONO";
-            this.ICONO.Size = new System.Drawing.Size(159, 144);
-            this.ICONO.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ICONO.TabIndex = 611;
-            this.ICONO.TabStop = false;
-            this.ICONO.Click += new System.EventHandler(this.ICONO_Click);
             // 
             // btnVolver
             // 
@@ -610,18 +617,19 @@
             this.Label8.TabIndex = 600;
             this.Label8.Text = "Nombres y Apellidos:";
             // 
-            // lblUsuario
+            // ICONO
             // 
-            this.lblUsuario.AutoSize = true;
-            this.lblUsuario.Location = new System.Drawing.Point(434, 43);
-            this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(51, 20);
-            this.lblUsuario.TabIndex = 613;
-            this.lblUsuario.Text = "label2";
+            this.ICONO.Location = new System.Drawing.Point(491, 29);
+            this.ICONO.Name = "ICONO";
+            this.ICONO.Size = new System.Drawing.Size(159, 144);
+            this.ICONO.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ICONO.TabIndex = 611;
+            this.ICONO.TabStop = false;
+            this.ICONO.Click += new System.EventHandler(this.ICONO_Click);
             // 
             // dlg
             // 
-            this.dlg.FileName = "openFileDialog1";
+            this.dlg.FileName = "ELIGE UNA IMAGEN";
             // 
             // usuariosok
             // 
@@ -663,9 +671,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ICONO)).EndInit();
             this.menuStrip2.ResumeLayout(false);
             this.menuStrip2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ICONO)).EndInit();
             this.ResumeLayout(false);
 
         }

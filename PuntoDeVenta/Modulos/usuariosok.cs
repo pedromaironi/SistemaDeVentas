@@ -156,7 +156,7 @@ namespace PuntoDeVenta
 
             }
 
-
+            CONEXION.Tamaño_automatico_de_datatables.Multilinea(ref datalistado);
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
