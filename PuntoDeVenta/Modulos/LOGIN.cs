@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace PuntoDeVenta.Modulos
 {
@@ -15,6 +16,11 @@ namespace PuntoDeVenta.Modulos
         public LOGIN()
         {
             InitializeComponent();
+        }
+
+        private void LOGIN_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
