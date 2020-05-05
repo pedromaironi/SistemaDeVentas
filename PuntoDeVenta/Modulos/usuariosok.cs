@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.IO;
+using System.Text.RegularExpressions;
 
 namespace PuntoDeVenta
 {
@@ -24,8 +25,23 @@ namespace PuntoDeVenta
 
         }
 
+        public bool validar_Mail(string sMail)
+        {
+
+            return Regex.IsMatch(sMail, @"[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?");
+                }
+
         private void btnGuardar_Click(object sender, EventArgs e)
         {
+            if (validar_Mail(txtcorreo.Text) == false)
+            {
+                MessageBox.Show("Dirección de correo electronico no valida, el correo deberia tener el formato: example@dominio.com" + " favor volver a introducir su correo electronico", "Validación de correo electronico", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtcorreo.Focus();
+                txtcorreo.SelectAll();
+            }
+            else
+            {
+
             if (txtnombre.Text != "")
             {
                 try
@@ -48,6 +64,7 @@ namespace PuntoDeVenta
 
                     cmd.Parameters.AddWithValue("@Icono", ms.GetBuffer());
                     cmd.Parameters.AddWithValue("@Nombre_de_icono", lblnumeroIcono.Text);
+                    cmd.Parameters.AddWithValue("@ESTADO", "ACTIVO");
                     cmd.ExecuteNonQuery();
                     con.Close();
                     mostrar();
@@ -59,6 +76,7 @@ namespace PuntoDeVenta
 
                 }
 
+            }
             }
 
         }
@@ -264,6 +282,60 @@ namespace PuntoDeVenta
                 {
                     MessageBox.Show(ex.Message);
 
+                }
+            }
+        }
+
+        private void datalistado_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            // e variable del dataGridView
+            if (e.ColumnIndex == this.datalistado.Columns["ELI"].Index)
+            {
+                DialogResult result;
+                result = MessageBox.Show("¿Realmente desea eliminar este usuario?", "Eliminando Registros",MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+                if (result == DialogResult.OK)
+                {
+                    SqlCommand cmd;
+                    try
+                    {
+                        foreach (DataGridViewRow row in datalistado.SelectedRows)
+                        {
+                            int onekey = Convert.ToInt32(row.Cells["idUsuario"].Value);
+                            string usuario = Convert.ToString(row.Cells["Login"].Value);
+
+                            try
+                            {
+                                try
+                                {
+                                    SqlConnection con = new SqlConnection();
+                                    con.ConnectionString = CONEXION.CONEXIONMAESTRA.CONEXION;
+                                    con.Open();
+                                    cmd = new SqlCommand("eliminar_usuario", con);
+                                    cmd.CommandType = CommandType.StoredProcedure;
+
+                                    cmd.Parameters.AddWithValue("@idUsuario", onekey);
+                                    cmd.Parameters.AddWithValue("@login", usuario);
+                                    cmd.ExecuteNonQuery();
+                                    cmd.ExecuteNonQuery();
+                                    con.Close();
+
+                                }
+                                catch (Exception err)
+                                {
+                                    MessageBox.Show(err.Message);
+                                }
+                            }
+                            catch (Exception err)
+                            {
+                                MessageBox.Show(err.Message);
+                            }
+                        }
+                        mostrar();
+                    }
+                    catch (Exception err)
+                    {
+                        MessageBox.Show(err.Message);
+                    }
                 }
             }
         }
