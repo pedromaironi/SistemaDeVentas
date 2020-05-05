@@ -286,6 +286,7 @@ namespace PuntoDeVenta
 
         private void ICONO_Click(object sender, EventArgs e)
         {
+            Cargar_estado_iconos();
             panelICONO.Visible = true;
         }
 
@@ -299,39 +300,47 @@ namespace PuntoDeVenta
 
             if (txtnombre.Text != "")
             {
-                try
+                if (txtrol.Text !="")
                 {
-                    SqlConnection con = new SqlConnection();
-                    con.ConnectionString = CONEXION.CONEXIONMAESTRA.CONEXION;
-                    con.Open();
-                    SqlCommand cmd = new SqlCommand();
-                    cmd = new SqlCommand("editar_usuario", con);
-                    cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("@idUsuario", lblUsuario.Text);
-                    cmd.Parameters.AddWithValue("@nombres", txtnombre.Text);
-                    cmd.Parameters.AddWithValue("@Login", txtlogin.Text);
-                    cmd.Parameters.AddWithValue("@Password", txtPassword.Text);
+                    if(LblAnuncioIcono.Visible == false)
+                    {
+                        try
+                        {
+                            SqlConnection con = new SqlConnection();
+                            con.ConnectionString = CONEXION.CONEXIONMAESTRA.CONEXION;
+                            con.Open();
+                            SqlCommand cmd = new SqlCommand();
+                            cmd = new SqlCommand("editar_usuario", con);
+                            cmd.CommandType = CommandType.StoredProcedure;
+                            cmd.Parameters.AddWithValue("@idUsuario", lblUsuario.Text);
+                            cmd.Parameters.AddWithValue("@nombres", txtnombre.Text);
+                            cmd.Parameters.AddWithValue("@Login", txtlogin.Text);
+                            cmd.Parameters.AddWithValue("@Password", txtPassword.Text);
 
-                    cmd.Parameters.AddWithValue("@Correo", txtcorreo.Text);
-                    cmd.Parameters.AddWithValue("@Rol", txtrol.Text);
-                    System.IO.MemoryStream ms = new System.IO.MemoryStream();
-                    ICONO.Image.Save(ms, ICONO.Image.RawFormat);
+                            cmd.Parameters.AddWithValue("@Correo", txtcorreo.Text);
+                            cmd.Parameters.AddWithValue("@Rol", txtrol.Text);
+                            System.IO.MemoryStream ms = new System.IO.MemoryStream();
+                            ICONO.Image.Save(ms, ICONO.Image.RawFormat);
 
 
-                    cmd.Parameters.AddWithValue("@Icono", ms.GetBuffer());
-                    cmd.Parameters.AddWithValue("@Nombre_de_icono", lblnumeroIcono.Text);
-                    cmd.Parameters.AddWithValue("@ESTADO", "ACTIVO");
+                            cmd.Parameters.AddWithValue("@Icono", ms.GetBuffer());
+                            cmd.Parameters.AddWithValue("@Nombre_de_icono", lblnumeroIcono.Text);
 
-                    cmd.ExecuteNonQuery();
-                    con.Close();
-                    mostrar();
-                    panel4.Visible = false;
+                            cmd.ExecuteNonQuery();
+                            con.Close();
+                            mostrar();
+                            panel4.Visible = false;
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show(ex.Message);
+
+                        }
+                    }
                 }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-
-                }
+            }else
+            {
+                MessageBox.Show("CAMPOS VACIOS, FAVOR RELLENAR LOS CAMPOS CORRECTAMENTE" , "Validación de usuarios", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -462,6 +471,11 @@ namespace PuntoDeVenta
         private void txtPassword_KeyPress(object sender, KeyPressEventArgs e)
         {
             validarNumeros(txtBuscar, e);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
     
