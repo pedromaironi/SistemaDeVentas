@@ -63,6 +63,12 @@
   <ItemGroup>
     <Compile Include="CONEXION\CONEXIONMAESTRA.cs" />
     <Compile Include="CONEXION\Tamaño_automatico_de_datatables.cs" />
+    <Compile Include="Modulos\CAJA\Apertura_de_caja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\CAJA\Apertura_de_caja.Designer.cs">
+      <DependentUpon>Apertura_de_caja.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modulos\LOGIN\LOGIN.cs">
       <SubType>Form</SubType>
     </Compile>
