@@ -25,17 +25,65 @@ namespace PuntoDeVenta
 
         }
 
+        // Validacion para que un usuario no seleccione un icono ya en uso
+        private void Cargar_estado_iconos()
+        {
+            try
+            {
+                foreach (DataGridViewRow row in datalistado.SelectedRows)
+                {
+                    string Icono = Convert.ToString(row.Cells["Nombre_de_Icono"].Value);
+
+                    if (Icono == "1")
+                    {
+                        pictureBox3.Visible = false;
+                    }
+                    else if (Icono == "2")
+                    {
+                        pictureBox4.Visible = false;
+                    }
+                    else if (Icono == "3")
+                    {
+                        pictureBox5.Visible = false;
+                    }
+                    else if (Icono == "4")
+                    {
+                        pictureBox6.Visible = false;
+                    }
+                    else if (Icono == "5")
+                    {
+                        pictureBox7.Visible = false;
+                    }
+                    else if (Icono == "6")
+                    {
+                        pictureBox8.Visible = false;
+                    }
+                    else if (Icono == "7")
+                    {
+                        pictureBox9.Visible = false;
+                    }
+                    else if (Icono == "8")
+                    {
+                        pictureBox10.Visible = false;
+                    }
+                }
+            }
+            catch(Exception err)
+            {
+                MessageBox.Show(err.Message);
+            }
+        }
+
         public bool validar_Mail(string sMail)
         {
-
             return Regex.IsMatch(sMail, @"[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?");
-                }
+        }
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             if (validar_Mail(txtcorreo.Text) == false)
             {
-                MessageBox.Show("Dirección de correo electronico no valida, el correo deberia tener el formato: example@dominio.com" + " favor volver a introducir su correo electronico", "Validación de correo electronico", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Dirección de correo electronico no válida, el correo deberia tener el formato: example@dominio.com" + " favor volver a introducir su correo electronico.", "Validación de correo electronico", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtcorreo.Focus();
                 txtcorreo.SelectAll();
             }
@@ -122,6 +170,7 @@ namespace PuntoDeVenta
 
         private void LblAnuncioIcono_Click(object sender, EventArgs e)
         {
+            Cargar_estado_iconos();
             panelICONO.Visible = true;
 
         }
@@ -338,6 +387,24 @@ namespace PuntoDeVenta
                     }
                 }
             }
+        }
+
+        private void pictureBox11_Click(object sender, EventArgs e)
+        {
+            dlg.InitialDirectory = "";
+            dlg.Filter = "Imagenes|*.jpg;*.png";
+            dlg.FilterIndex = 2;
+            dlg.Title = "Cargador de Imagenes PEDRO DEVELOPER";
+            if (dlg.ShowDialog() == DialogResult.OK)
+            {
+                ICONO.BackgroundImage = null;
+                ICONO.Image = new Bitmap(dlg.FileName);
+                ICONO.SizeMode = PictureBoxSizeMode.Zoom;
+                lblnumeroIcono.Text = Path.GetFileName(dlg.FileName);
+                LblAnuncioIcono.Visible = false;
+                panelICONO.Visible = false;
+            }
+
         }
     }
 }

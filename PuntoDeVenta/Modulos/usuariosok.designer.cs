@@ -76,6 +76,7 @@
             this.Label6 = new System.Windows.Forms.Label();
             this.Label8 = new System.Windows.Forms.Label();
             this.lblUsuario = new System.Windows.Forms.Label();
+            this.dlg = new System.Windows.Forms.OpenFileDialog();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -237,9 +238,9 @@
             this.panelICONO.Controls.Add(this.pictureBox11);
             this.panelICONO.Controls.Add(this.flowLayoutPanel2);
             this.panelICONO.Controls.Add(this.flowLayoutPanel1);
-            this.panelICONO.Location = new System.Drawing.Point(132, 352);
+            this.panelICONO.Location = new System.Drawing.Point(28, 81);
             this.panelICONO.Name = "panelICONO";
-            this.panelICONO.Size = new System.Drawing.Size(576, 347);
+            this.panelICONO.Size = new System.Drawing.Size(576, 376);
             this.panelICONO.TabIndex = 606;
             this.panelICONO.Visible = false;
             // 
@@ -253,6 +254,7 @@
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox11.TabIndex = 1;
             this.pictureBox11.TabStop = false;
+            this.pictureBox11.Click += new System.EventHandler(this.pictureBox11_Click);
             // 
             // flowLayoutPanel2
             // 
@@ -617,6 +619,10 @@
             this.lblUsuario.TabIndex = 613;
             this.lblUsuario.Text = "label2";
             // 
+            // dlg
+            // 
+            this.dlg.FileName = "openFileDialog1";
+            // 
             // usuariosok
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -713,6 +719,7 @@
         private System.Windows.Forms.Label lblnumeroIcono;
         private System.Windows.Forms.DataGridViewImageColumn Eli;
         private System.Windows.Forms.Label lblUsuario;
+        private System.Windows.Forms.OpenFileDialog dlg;
     }
 }
 
