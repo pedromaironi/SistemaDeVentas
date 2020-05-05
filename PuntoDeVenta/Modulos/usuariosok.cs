@@ -442,5 +442,28 @@ namespace PuntoDeVenta
         {
             buscar_usuario();
         }
+        //Metodo para saber si escribes char o int
+        public void validarNumeros(System.Windows.Forms.TextBox CajaTexto, System.Windows.Forms.KeyPressEventArgs e)
+        {
+            if (Char.IsDigit(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else if (char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+            else
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtPassword_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            validarNumeros(txtBuscar, e);
+        }
     }
+    
+    
 }

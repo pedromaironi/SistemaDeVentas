@@ -247,7 +247,7 @@
             this.panelICONO.Controls.Add(this.pictureBox11);
             this.panelICONO.Controls.Add(this.flowLayoutPanel2);
             this.panelICONO.Controls.Add(this.flowLayoutPanel1);
-            this.panelICONO.Location = new System.Drawing.Point(28, 81);
+            this.panelICONO.Location = new System.Drawing.Point(58, 235);
             this.panelICONO.Name = "panelICONO";
             this.panelICONO.Size = new System.Drawing.Size(576, 376);
             this.panelICONO.TabIndex = 606;
@@ -539,9 +539,11 @@
             // 
             this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPassword.Location = new System.Drawing.Point(189, 91);
+            this.txtPassword.MaxLength = 6;
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(237, 19);
             this.txtPassword.TabIndex = 605;
+            this.txtPassword.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPassword_KeyPress);
             // 
             // txtlogin
             // 
@@ -599,8 +601,8 @@
             this.Label6.AutoSize = true;
             this.Label6.BackColor = System.Drawing.Color.White;
             this.Label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label6.ForeColor = System.Drawing.Color.DimGray;
-            this.Label6.Location = new System.Drawing.Point(41, 124);
+            this.Label6.ForeColor = System.Drawing.Color.Black;
+            this.Label6.Location = new System.Drawing.Point(27, 124);
             this.Label6.Name = "Label6";
             this.Label6.Size = new System.Drawing.Size(161, 20);
             this.Label6.TabIndex = 604;
