@@ -406,5 +406,41 @@ namespace PuntoDeVenta
             }
 
         }
+        private void buscar_usuario()
+        {
+            try
+            {
+                DataTable dt = new DataTable();
+                SqlDataAdapter da;
+                SqlConnection con = new SqlConnection();
+                con.ConnectionString = CONEXION.CONEXIONMAESTRA.CONEXION;
+                con.Open();
+
+                da = new SqlDataAdapter("buscar_usuario", con);
+                da.SelectCommand.CommandType = CommandType.StoredProcedure;
+                da.SelectCommand.Parameters.AddWithValue("@letra", txtBuscar.Text);
+                da.Fill(dt);
+                datalistado.DataSource = dt;
+                con.Close();
+
+                datalistado.Columns[1].Visible = false;
+                datalistado.Columns[5].Visible = false;
+                datalistado.Columns[6].Visible = false;
+                datalistado.Columns[7].Visible = false;
+                datalistado.Columns[8].Visible = false;
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+
+            }
+
+            CONEXION.Tamaño_automatico_de_datatables.Multilinea(ref datalistado);
+        }
+        private void txtBuscar_TextChanged(object sender, EventArgs e)
+        {
+            buscar_usuario();
+        }
     }
 }
