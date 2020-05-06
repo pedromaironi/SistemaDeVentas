@@ -5,3 +5,5 @@ create procedure validar_usuario
 as
 select * from USUARIO2
 where Password = @password and Login = @login and Estado = 'ACTIVO'
+
+SELECT * FROM USUARIO2

@@ -11,6 +11,7 @@ using System.Data.SqlClient;
 using System.IO;
 using System.Net.Mail;
 using System.Net;
+using System.Management;
 
 namespace PuntoDeVenta.Modulos
 {
@@ -257,5 +258,14 @@ namespace PuntoDeVenta.Modulos
             richTextBox1.Text = richTextBox1.Text.Replace("@pass", lblResultadoContrasena.Text);
             enviarCorreo("pedrocode29@gmail.com", "Juandejesus29", richTextBox1.Text, "Solicitud de Contraseña", txtcorreo.Text, "");
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            timer1.Stop();
+        }
     }
 }
+
+Commitear 
+    Timer
+    referencias
