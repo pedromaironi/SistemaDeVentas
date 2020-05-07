@@ -102,7 +102,7 @@ namespace PuntoDeVenta.Modulos
         {
             DIBUJARUsuarios();
             panel2.Visible = false;
-
+            timer1.Start();
         }
 
         private void btn_insertar_Click(object sender, EventArgs e)
@@ -251,7 +251,32 @@ namespace PuntoDeVenta.Modulos
             }
 
         }
+        /*private void MOSTRAR_CAJA_POR_SERIAL()
+        {
+            try
+            {
+                DataTable dt = new DataTable();
+                SqlDataAdapter da;
+                SqlConnection con = new SqlConnection();
+                con.ConnectionString = CONEXION.CONEXIONMAESTRA.CONEXION;
+                con.Open();
 
+                da = new SqlDataAdapter("mostrar_cajas_por_Serial_de_DiscoDuro", con);
+                da.SelectCommand.CommandType = CommandType.StoredProcedure;
+                da.SelectCommand.Parameters.AddWithValue("@Serial", lblSerialPc.Text);
+                da.Fill(dt);
+                datalistado_caja.DataSource = dt;
+                con.Close();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+
+            }
+
+
+        }*/
         private void Button3_Click(object sender, EventArgs e)
         {
             mostrar_usuarios_por_correo();
@@ -261,11 +286,121 @@ namespace PuntoDeVenta.Modulos
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+        }
+        private void MOSTRAR_CAJA_POR_SERIAL()
+        {
+            try
+            {
+                DataTable dt = new DataTable();
+                SqlDataAdapter da;
+                SqlConnection con = new SqlConnection();
+                con.ConnectionString = CONEXION.CONEXIONMAESTRA.CONEXION;
+                con.Open();
+
+                da = new SqlDataAdapter("mostrar_cajas_por_Serial_de_Disoduro", con);
+                da.SelectCommand.CommandType = CommandType.StoredProcedure;
+                da.SelectCommand.Parameters.AddWithValue("@Serial", lblSerialPc.Text);
+                da.Fill(dt);
+                datalistado_caja.DataSource = dt;
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+
+            }
+
+
+        }
+
+        private void timer1_Tick_1(object sender, EventArgs e)
+        {
             timer1.Stop();
+            try
+            {
+
+                ManagementObjectSearcher MOS = new ManagementObjectSearcher("Select * From Win32_BaseBoard");
+                foreach (ManagementObject getserial in MOS.Get())
+                {
+                    lblSerialPc.Text = getserial.Properties["SerialNumber"].Value.ToString();
+
+                    MOSTRAR_CAJA_POR_SERIAL();
+                    try
+                    {
+                        txtidcaja.Text = datalistado_caja.SelectedCells[1].Value.ToString();
+                        lblcaja.Text = datalistado_caja.SelectedCells[2].Value.ToString();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btn0_Click(object sender, EventArgs e)
+        {
+            txtpaswword.Text = txtpaswword.Text + "0";
+        }
+        private void btn1_Click(object sender, EventArgs e)
+        {
+            txtpaswword.Text = txtpaswword.Text + "1";
+        }
+
+        private void btn2_Click(object sender, EventArgs e)
+        {
+            txtpaswword.Text = txtpaswword.Text + "2";
+        }
+
+        private void btn3_Click(object sender, EventArgs e)
+        {
+            txtpaswword.Text = txtpaswword.Text + "3";
+        }
+
+        private void btn4_Click(object sender, EventArgs e)
+        {
+            txtpaswword.Text = txtpaswword.Text + "4";
+        }
+
+        private void btn5_Click(object sender, EventArgs e)
+        {
+            txtpaswword.Text = txtpaswword.Text + "5";
+        }
+
+        private void btn6_Click(object sender, EventArgs e)
+        {
+            txtpaswword.Text = txtpaswword.Text + "6";
+        }
+
+        private void btn7_Click(object sender, EventArgs e)
+        {
+            txtpaswword.Text = txtpaswword.Text + "7";
+        }
+
+        private void btn8_Click(object sender, EventArgs e)
+        {
+            txtpaswword.Text = txtpaswword.Text + "8";
+        }
+
+        private void btn9_Click(object sender, EventArgs e)
+        {
+            txtpaswword.Text = txtpaswword.Text + "9";
+        }
+
+        private void btnborrartodo_Click(object sender, EventArgs e)
+        {
+            txtpaswword.Clear();
+
+        }
+        public static string Mid(string param, int startIndex, int length)
+        {
+            string result = param.Substring(startIndex, length);
+            return result;
         }
     }
 }
 
-Commitear 
-    Timer
-    referencias

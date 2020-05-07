@@ -36,7 +36,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.btnOlvideClave = new System.Windows.Forms.Button();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.PanelRestaurarCuenta = new System.Windows.Forms.Panel();
             this.txtcorreo = new System.Windows.Forms.ComboBox();
             this.Panel7 = new System.Windows.Forms.Panel();
@@ -49,6 +48,7 @@
             this.Label5 = new System.Windows.Forms.Label();
             this.Label6 = new System.Windows.Forms.Label();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.txtLogin = new System.Windows.Forms.Label();
             this.txtImagen = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -80,9 +80,13 @@
             this.datalistado = new System.Windows.Forms.DataGridView();
             this.Eli = new System.Windows.Forms.DataGridViewImageColumn();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.PictureBox2 = new System.Windows.Forms.PictureBox();
             this.lblResultadoContrasena = new System.Windows.Forms.Label();
+            this.lblSerialPc = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.datalistado_caja = new System.Windows.Forms.DataGridView();
+            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.txtidcaja = new System.Windows.Forms.Label();
+            this.lblcaja = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -95,7 +99,7 @@
             this.flowLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.datalistado)).BeginInit();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.datalistado_caja)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -128,7 +132,7 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(0, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(929, 100);
+            this.label3.Size = new System.Drawing.Size(742, 100);
             this.label3.TabIndex = 3;
             this.label3.Text = "¿Quién está iniciando sesión?";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -141,7 +145,7 @@
             this.panel1.Controls.Add(this.flowLayoutPanel1);
             this.panel1.Location = new System.Drawing.Point(189, 65);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(929, 577);
+            this.panel1.Size = new System.Drawing.Size(742, 577);
             this.panel1.TabIndex = 4;
             // 
             // panel6
@@ -150,7 +154,7 @@
             this.panel6.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel6.Location = new System.Drawing.Point(0, 480);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(929, 97);
+            this.panel6.Size = new System.Drawing.Size(742, 97);
             this.panel6.TabIndex = 622;
             // 
             // btnOlvideClave
@@ -168,13 +172,6 @@
             this.btnOlvideClave.Text = "OLVIDE MI CONTRASEÑA";
             this.btnOlvideClave.UseVisualStyleBackColor = false;
             this.btnOlvideClave.Click += new System.EventHandler(this.btnOlvideClave_Click);
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 100);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(929, 477);
-            this.flowLayoutPanel1.TabIndex = 4;
             // 
             // PanelRestaurarCuenta
             // 
@@ -321,6 +318,13 @@
             this.richTextBox1.Size = new System.Drawing.Size(47, 26);
             this.richTextBox1.TabIndex = 620;
             this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 103);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(742, 474);
+            this.flowLayoutPanel1.TabIndex = 4;
             // 
             // txtLogin
             // 
@@ -522,6 +526,7 @@
             this.btn0.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btn0.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn0.UseVisualStyleBackColor = false;
+            this.btn0.Click += new System.EventHandler(this.btn0_Click);
             // 
             // btnborrarderecha
             // 
@@ -552,6 +557,7 @@
             this.btnborrartodo.TabIndex = 615;
             this.btnborrartodo.Text = "Borrar";
             this.btnborrartodo.UseVisualStyleBackColor = false;
+            this.btnborrartodo.Click += new System.EventHandler(this.btnborrartodo_Click);
             // 
             // flowLayoutPanel2
             // 
@@ -585,6 +591,7 @@
             this.btn3.TabIndex = 42;
             this.btn3.Text = "3";
             this.btn3.UseVisualStyleBackColor = false;
+            this.btn3.Click += new System.EventHandler(this.btn3_Click);
             // 
             // btn2
             // 
@@ -601,6 +608,7 @@
             this.btn2.TabIndex = 41;
             this.btn2.Text = "2";
             this.btn2.UseVisualStyleBackColor = false;
+            this.btn2.Click += new System.EventHandler(this.btn2_Click);
             // 
             // btn1
             // 
@@ -617,6 +625,7 @@
             this.btn1.TabIndex = 40;
             this.btn1.Text = "1";
             this.btn1.UseVisualStyleBackColor = false;
+            this.btn1.Click += new System.EventHandler(this.btn1_Click);
             // 
             // btn6
             // 
@@ -633,6 +642,7 @@
             this.btn6.TabIndex = 37;
             this.btn6.Text = "6";
             this.btn6.UseVisualStyleBackColor = false;
+            this.btn6.Click += new System.EventHandler(this.btn6_Click);
             // 
             // btn5
             // 
@@ -649,6 +659,7 @@
             this.btn5.TabIndex = 36;
             this.btn5.Text = "5";
             this.btn5.UseVisualStyleBackColor = false;
+            this.btn5.Click += new System.EventHandler(this.btn5_Click);
             // 
             // btn4
             // 
@@ -665,6 +676,7 @@
             this.btn4.TabIndex = 35;
             this.btn4.Text = "4";
             this.btn4.UseVisualStyleBackColor = false;
+            this.btn4.Click += new System.EventHandler(this.btn4_Click);
             // 
             // btn9
             // 
@@ -681,6 +693,7 @@
             this.btn9.TabIndex = 32;
             this.btn9.Text = "9";
             this.btn9.UseVisualStyleBackColor = false;
+            this.btn9.Click += new System.EventHandler(this.btn9_Click);
             // 
             // btn8
             // 
@@ -697,6 +710,7 @@
             this.btn8.TabIndex = 31;
             this.btn8.Text = "8";
             this.btn8.UseVisualStyleBackColor = false;
+            this.btn8.Click += new System.EventHandler(this.btn8_Click);
             // 
             // btn7
             // 
@@ -713,6 +727,7 @@
             this.btn7.TabIndex = 30;
             this.btn7.Text = "7";
             this.btn7.UseVisualStyleBackColor = false;
+            this.btn7.Click += new System.EventHandler(this.btn7_Click);
             // 
             // label2
             // 
@@ -761,40 +776,95 @@
             // 
             // panel5
             // 
+            this.panel5.Controls.Add(this.lblResultadoContrasena);
+            this.panel5.Controls.Add(this.lblcaja);
+            this.panel5.Controls.Add(this.datalistado_caja);
+            this.panel5.Controls.Add(this.txtidcaja);
             this.panel5.Controls.Add(this.datalistado);
+            this.panel5.Controls.Add(this.lblSerialPc);
             this.panel5.Controls.Add(this.txtLogin);
             this.panel5.Controls.Add(this.txtImagen);
-            this.panel5.Location = new System.Drawing.Point(198, 28);
+            this.panel5.Location = new System.Drawing.Point(189, 12);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(12, 10);
+            this.panel5.Size = new System.Drawing.Size(10, 10);
             this.panel5.TabIndex = 616;
-            // 
-            // PictureBox2
-            // 
-            this.PictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
-            this.PictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox2.Image")));
-            this.PictureBox2.Location = new System.Drawing.Point(17, 555);
-            this.PictureBox2.Name = "PictureBox2";
-            this.PictureBox2.Size = new System.Drawing.Size(41, 43);
-            this.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PictureBox2.TabIndex = 620;
-            this.PictureBox2.TabStop = false;
-            this.PictureBox2.Visible = false;
             // 
             // lblResultadoContrasena
             // 
             this.lblResultadoContrasena.AutoSize = true;
             this.lblResultadoContrasena.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblResultadoContrasena.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblResultadoContrasena.Location = new System.Drawing.Point(228, 25);
+            this.lblResultadoContrasena.Location = new System.Drawing.Point(49, 0);
             this.lblResultadoContrasena.Name = "lblResultadoContrasena";
             this.lblResultadoContrasena.Size = new System.Drawing.Size(35, 13);
             this.lblResultadoContrasena.TabIndex = 622;
             this.lblResultadoContrasena.Text = "label7";
             // 
+            // lblSerialPc
+            // 
+            this.lblSerialPc.AutoSize = true;
+            this.lblSerialPc.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblSerialPc.Location = new System.Drawing.Point(82, -3);
+            this.lblSerialPc.Name = "lblSerialPc";
+            this.lblSerialPc.Size = new System.Drawing.Size(56, 13);
+            this.lblSerialPc.TabIndex = 623;
+            this.lblSerialPc.Text = "lblSerialPc";
+            // 
             // timer1
             // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick_1);
+            // 
+            // datalistado_caja
+            // 
+            this.datalistado_caja.AllowUserToAddRows = false;
+            this.datalistado_caja.AllowUserToResizeRows = false;
+            this.datalistado_caja.BackgroundColor = System.Drawing.Color.White;
+            this.datalistado_caja.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.datalistado_caja.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.datalistado_caja.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.datalistado_caja.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.datalistado_caja.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewImageColumn1});
+            this.datalistado_caja.EnableHeadersVisualStyles = false;
+            this.datalistado_caja.Location = new System.Drawing.Point(33, 13);
+            this.datalistado_caja.Name = "datalistado_caja";
+            this.datalistado_caja.ReadOnly = true;
+            this.datalistado_caja.RowHeadersVisible = false;
+            this.datalistado_caja.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.datalistado_caja.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.datalistado_caja.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.datalistado_caja.RowTemplate.Height = 30;
+            this.datalistado_caja.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.datalistado_caja.Size = new System.Drawing.Size(338, 68);
+            this.datalistado_caja.TabIndex = 616;
+            // 
+            // dataGridViewImageColumn1
+            // 
+            this.dataGridViewImageColumn1.HeaderText = "";
+            this.dataGridViewImageColumn1.Image = ((System.Drawing.Image)(resources.GetObject("dataGridViewImageColumn1.Image")));
+            this.dataGridViewImageColumn1.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
+            this.dataGridViewImageColumn1.ReadOnly = true;
+            // 
+            // txtidcaja
+            // 
+            this.txtidcaja.AutoSize = true;
+            this.txtidcaja.ForeColor = System.Drawing.SystemColors.Control;
+            this.txtidcaja.Location = new System.Drawing.Point(82, 38);
+            this.txtidcaja.Name = "txtidcaja";
+            this.txtidcaja.Size = new System.Drawing.Size(43, 13);
+            this.txtidcaja.TabIndex = 624;
+            this.txtidcaja.Text = "IDcAJA";
+            // 
+            // lblcaja
+            // 
+            this.lblcaja.AutoSize = true;
+            this.lblcaja.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblcaja.Location = new System.Drawing.Point(77, 77);
+            this.lblcaja.Name = "lblcaja";
+            this.lblcaja.Size = new System.Drawing.Size(43, 13);
+            this.lblcaja.TabIndex = 625;
+            this.lblcaja.Text = "IDcAJA";
             // 
             // LOGIN
             // 
@@ -802,8 +872,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.ClientSize = new System.Drawing.Size(1176, 694);
-            this.Controls.Add(this.lblResultadoContrasena);
-            this.Controls.Add(this.PictureBox2);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
@@ -812,7 +880,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "LOGIN";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Sistema by PedroDeveloper";
+            this.Text = "SISTEMA VENTAS BY PEDRO DEV";
             this.Load += new System.EventHandler(this.LOGIN_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
@@ -831,9 +899,9 @@
             this.flowLayoutPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.datalistado)).EndInit();
             this.panel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox2)).EndInit();
+            this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.datalistado_caja)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -888,9 +956,13 @@
         internal System.Windows.Forms.Label label4;
         internal System.Windows.Forms.Label Label5;
         internal System.Windows.Forms.Label Label6;
-        internal System.Windows.Forms.PictureBox PictureBox2;
         private System.Windows.Forms.Label lblResultadoContrasena;
         private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.Label lblSerialPc;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.DataGridView datalistado_caja;
+        private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
+        private System.Windows.Forms.Label txtidcaja;
+        private System.Windows.Forms.Label lblcaja;
     }
 }
