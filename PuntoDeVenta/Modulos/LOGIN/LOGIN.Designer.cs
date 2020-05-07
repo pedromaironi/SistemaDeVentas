@@ -81,12 +81,12 @@
             this.Eli = new System.Windows.Forms.DataGridViewImageColumn();
             this.panel5 = new System.Windows.Forms.Panel();
             this.lblResultadoContrasena = new System.Windows.Forms.Label();
-            this.lblSerialPc = new System.Windows.Forms.Label();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.lblcaja = new System.Windows.Forms.Label();
             this.datalistado_caja = new System.Windows.Forms.DataGridView();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.txtidcaja = new System.Windows.Forms.Label();
-            this.lblcaja = new System.Windows.Forms.Label();
+            this.lblSerialPc = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -141,7 +141,6 @@
             // 
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.panel6);
-            this.panel1.Controls.Add(this.PanelRestaurarCuenta);
             this.panel1.Controls.Add(this.flowLayoutPanel1);
             this.panel1.Location = new System.Drawing.Point(189, 65);
             this.panel1.Name = "panel1";
@@ -184,7 +183,7 @@
             this.PanelRestaurarCuenta.Controls.Add(this.Label5);
             this.PanelRestaurarCuenta.Controls.Add(this.Label6);
             this.PanelRestaurarCuenta.Controls.Add(this.richTextBox1);
-            this.PanelRestaurarCuenta.Location = new System.Drawing.Point(155, 155);
+            this.PanelRestaurarCuenta.Location = new System.Drawing.Point(157, 180);
             this.PanelRestaurarCuenta.Name = "PanelRestaurarCuenta";
             this.PanelRestaurarCuenta.Size = new System.Drawing.Size(614, 319);
             this.PanelRestaurarCuenta.TabIndex = 621;
@@ -363,7 +362,7 @@
             this.panel2.Controls.Add(this.btnborrartodo);
             this.panel2.Controls.Add(this.flowLayoutPanel2);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(813, 53);
+            this.panel2.Location = new System.Drawing.Point(389, 50);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(404, 670);
             this.panel2.TabIndex = 614;
@@ -474,6 +473,7 @@
             this.tver.Name = "tver";
             this.tver.Size = new System.Drawing.Size(28, 24);
             this.tver.ToolTipText = "Ver contraseña";
+            this.tver.Click += new System.EventHandler(this.tver_Click);
             // 
             // tocultar
             // 
@@ -487,6 +487,7 @@
             this.tocultar.Size = new System.Drawing.Size(28, 24);
             this.tocultar.ToolTipText = "Ocultar contraseña";
             this.tocultar.Visible = false;
+            this.tocultar.Click += new System.EventHandler(this.tocultar_Click);
             // 
             // Panel4
             // 
@@ -542,6 +543,7 @@
             this.btnborrarderecha.TabIndex = 616;
             this.btnborrarderecha.Text = "<--";
             this.btnborrarderecha.UseVisualStyleBackColor = false;
+            this.btnborrarderecha.Click += new System.EventHandler(this.btnborrarderecha_Click);
             // 
             // btnborrartodo
             // 
@@ -800,19 +802,15 @@
             this.lblResultadoContrasena.TabIndex = 622;
             this.lblResultadoContrasena.Text = "label7";
             // 
-            // lblSerialPc
+            // lblcaja
             // 
-            this.lblSerialPc.AutoSize = true;
-            this.lblSerialPc.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblSerialPc.Location = new System.Drawing.Point(82, -3);
-            this.lblSerialPc.Name = "lblSerialPc";
-            this.lblSerialPc.Size = new System.Drawing.Size(56, 13);
-            this.lblSerialPc.TabIndex = 623;
-            this.lblSerialPc.Text = "lblSerialPc";
-            // 
-            // timer1
-            // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick_1);
+            this.lblcaja.AutoSize = true;
+            this.lblcaja.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblcaja.Location = new System.Drawing.Point(77, 77);
+            this.lblcaja.Name = "lblcaja";
+            this.lblcaja.Size = new System.Drawing.Size(43, 13);
+            this.lblcaja.TabIndex = 625;
+            this.lblcaja.Text = "IDcAJA";
             // 
             // datalistado_caja
             // 
@@ -856,15 +854,19 @@
             this.txtidcaja.TabIndex = 624;
             this.txtidcaja.Text = "IDcAJA";
             // 
-            // lblcaja
+            // lblSerialPc
             // 
-            this.lblcaja.AutoSize = true;
-            this.lblcaja.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblcaja.Location = new System.Drawing.Point(77, 77);
-            this.lblcaja.Name = "lblcaja";
-            this.lblcaja.Size = new System.Drawing.Size(43, 13);
-            this.lblcaja.TabIndex = 625;
-            this.lblcaja.Text = "IDcAJA";
+            this.lblSerialPc.AutoSize = true;
+            this.lblSerialPc.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblSerialPc.Location = new System.Drawing.Point(82, -3);
+            this.lblSerialPc.Name = "lblSerialPc";
+            this.lblSerialPc.Size = new System.Drawing.Size(56, 13);
+            this.lblSerialPc.TabIndex = 623;
+            this.lblSerialPc.Text = "lblSerialPc";
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick_1);
             // 
             // LOGIN
             // 
@@ -872,11 +874,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.ClientSize = new System.Drawing.Size(1176, 694);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.PanelRestaurarCuenta);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.panel2);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "LOGIN";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

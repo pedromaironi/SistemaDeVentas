@@ -107,7 +107,8 @@ namespace PuntoDeVenta.Modulos
 
         private void btn_insertar_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("Favor introducir la contraseña correctamente", "Contraseña incorrecta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            txtpaswword.Clear();
         }
 
         private void txtpaswword_TextChanged(object sender, EventArgs e)
@@ -400,6 +401,37 @@ namespace PuntoDeVenta.Modulos
         {
             string result = param.Substring(startIndex, length);
             return result;
+        }
+
+        private void btnborrarderecha_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int largo;
+                if (txtpaswword.Text != "")
+                {
+                    largo = txtpaswword.Text.Length;
+                    txtpaswword.Text = Mid(txtpaswword.Text, 1, largo - 1);
+                }
+            }
+            catch
+            {
+
+            }
+        }
+
+        private void tver_Click(object sender, EventArgs e)
+        {
+            txtpaswword.PasswordChar = '\0';
+            tocultar.Visible = true;
+            tver.Visible = false;
+        }
+
+        private void tocultar_Click(object sender, EventArgs e)
+        {
+            txtpaswword.PasswordChar = '*';
+            tocultar.Visible = false;
+            tver.Visible = true;
         }
     }
 }
