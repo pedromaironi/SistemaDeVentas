@@ -25,6 +25,7 @@ namespace PuntoDeVenta.Modulos
 
         int contador;
         int contadorCajas;
+        int contadorMovimientoCajas;
         public void DIBUJARUsuarios()
         {
             SqlConnection con = new SqlConnection();
@@ -202,8 +203,102 @@ namespace PuntoDeVenta.Modulos
                     lblAperturaCierreCaja.Text = "Nuevo*****";
                     timer2.Start();
                 }
+                else
+                {
+                    if (lblRol.Text != "Solo Ventas (no esta autorizado para manejar dinero)")
+                    {
+                        MOSTRAR_MOVIMIENTOS_DE_CAJA_POR_SERIAL_y_usuario();
+                        contar_MOSTRAR_MOVIMIENTOS_DE_CAJA_POR_SERIAL_y_usuario();
+                        try
+                        {
+                            lblusuario_queinicioCaja.Text = datalistado_detalle_cierre_de_caja.SelectedCells[1].Value.ToString();
+                            lblnombredeCajero.Text = datalistado_detalle_cierre_de_caja.SelectedCells[2].Value.ToString();
+                        }
+                        catch
+                        {
+
+                        }
+                        if (contadorMovimientoCajas == 0)
+                        {
+
+                            if (lblusuario_queinicioCaja.Text != "admin" & txtLogin.Text == "admin")
+                            {
+                                MessageBox.Show("Continuaras turno de *" + lblnombredeCajero.Text + " Todos los Registros seran con ese Usuario", "Caja Iniciada", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                lblpermisodeCaja.Text = "correcto";
+                            }
+                            if (lblusuario_queinicioCaja.Text == "admin" & txtLogin.Text == "admin")
+                            {
+
+                                lblpermisodeCaja.Text = "correcto";
+                            }
+
+                            else if (lblusuario_queinicioCaja.Text != txtLogin.Text)
+                            {
+                                MessageBox.Show("Para poder continuar con el Turno de *" + lblnombredeCajero.Text + "* ,Inicia sesion con el Usuario " + lblusuario_queinicioCaja.Text + " -ó-el Usuario *admin*", "Caja Iniciada", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                lblpermisodeCaja.Text = "vacio";
+
+                            }
+                            else if (lblusuario_queinicioCaja.Text == txtLogin.Text)
+                            {
+                                lblpermisodeCaja.Text = "correcto";
+                            }
+                        }
+                        else
+                        {
+                            lblpermisodeCaja.Text = "correcto";
+                        }
+
+                        if (lblpermisodeCaja.Text == "correcto")
+                        {
+                            lblAperturaCierreCaja.Text = "Aperturado";
+                            timer2.Start();
+
+                        }
+
+                    }
+                    else
+                    {
+                        timer2.Start();
+                    }
+                }
             }
         }
+        private void MOSTRAR_MOVIMIENTOS_DE_CAJA_POR_SERIAL_y_usuario()
+        {
+            try
+            {
+                DataTable dt = new DataTable();
+                SqlDataAdapter da;
+                SqlConnection con = new SqlConnection();
+                con.ConnectionString = CONEXION.CONEXIONMAESTRA.CONEXION;
+                con.Open();
+
+                da = new SqlDataAdapter("MOSTRAR_MOVIMIENTOS_DE_CAJA_POR_SERIAL_y_usuario", con);
+                da.SelectCommand.CommandType = CommandType.StoredProcedure;
+                da.SelectCommand.Parameters.AddWithValue("@serial", lblSerialPc.Text);
+                da.SelectCommand.Parameters.AddWithValue("@idusuario", IDUSUARIO.Text);
+                da.Fill(dt);
+                datalistado_movimientos_validar.DataSource = dt;
+                con.Close();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+
+            }
+
+
+        }
+        private void contar_MOSTRAR_MOVIMIENTOS_DE_CAJA_POR_SERIAL_y_usuario()
+        {
+            int x;
+
+            x = datalistado_movimientos_validar.Rows.Count;
+            contadorMovimientoCajas = (x);
+
+        }
+
         private void MOSTRAR_PERMISOS()
         {
             SqlConnection con = new SqlConnection();
