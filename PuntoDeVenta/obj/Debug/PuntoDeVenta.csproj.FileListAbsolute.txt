@@ -13,4 +13,4 @@ C:\Users\pedro\source\repos\PuntoDeVenta\PuntoDeVenta\obj\Debug\PuntoDeVenta.pdb
 C:\Users\pedro\source\repos\PuntoDeVenta\PuntoDeVenta\obj\Debug\PuntoDeVenta.Modulos.LOGIN.resources
 C:\Users\pedro\source\repos\PuntoDeVenta\PuntoDeVenta\obj\Debug\PuntoDeVenta.Modulos.CAJA.Apertura_de_caja.resources
 C:\Users\pedro\source\repos\PuntoDeVenta\PuntoDeVenta\obj\Debug\PuntoDeVenta.Modulos.CAJA.Cierre_de_caja.resources
-C:\Users\pedro\source\repos\PuntoDeVenta\PuntoDeVenta\obj\Debug\PuntoDeVenta.Modulos.VENTAS_MENU_PRINCIPAL.resources
+C:\Users\pedro\source\repos\PuntoDeVenta\PuntoDeVenta\obj\Debug\PuntoDeVenta.Modulos.VENTAS_MENU_PRINCIPAL.MENUPRINCIPAL_VENTAS.resources

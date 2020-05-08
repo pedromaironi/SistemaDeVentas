@@ -36,6 +36,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.btnOlvideClave = new System.Windows.Forms.Button();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.PanelRestaurarCuenta = new System.Windows.Forms.Panel();
             this.txtcorreo = new System.Windows.Forms.ComboBox();
             this.Panel7 = new System.Windows.Forms.Panel();
@@ -48,7 +49,6 @@
             this.Label5 = new System.Windows.Forms.Label();
             this.Label6 = new System.Windows.Forms.Label();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.txtLogin = new System.Windows.Forms.Label();
             this.txtImagen = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -87,6 +87,18 @@
             this.txtidcaja = new System.Windows.Forms.Label();
             this.lblSerialPc = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.datalistado_detalle_cierre_de_caja = new System.Windows.Forms.DataGridView();
+            this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.lblRol = new System.Windows.Forms.Label();
+            this.lblpermisodeCaja = new System.Windows.Forms.Label();
+            this.lblnombredeCajero = new System.Windows.Forms.Label();
+            this.lblusuario_queinicioCaja = new System.Windows.Forms.Label();
+            this.IDUSUARIO = new System.Windows.Forms.Label();
+            this.txtnombre = new System.Windows.Forms.Label();
+            this.lblAperturaCierreCaja = new System.Windows.Forms.Label();
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.PictureBox2 = new System.Windows.Forms.PictureBox();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -100,6 +112,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.datalistado)).BeginInit();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.datalistado_caja)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.datalistado_detalle_cierre_de_caja)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -171,6 +185,13 @@
             this.btnOlvideClave.Text = "OLVIDE MI CONTRASEÑA";
             this.btnOlvideClave.UseVisualStyleBackColor = false;
             this.btnOlvideClave.Click += new System.EventHandler(this.btnOlvideClave_Click);
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 103);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(742, 474);
+            this.flowLayoutPanel1.TabIndex = 4;
             // 
             // PanelRestaurarCuenta
             // 
@@ -318,13 +339,6 @@
             this.richTextBox1.TabIndex = 620;
             this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
             // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 103);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(742, 474);
-            this.flowLayoutPanel1.TabIndex = 4;
-            // 
             // txtLogin
             // 
             this.txtLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -381,6 +395,7 @@
             this.Button7.TabIndex = 622;
             this.Button7.Text = "Cambiar de Usuario";
             this.Button7.UseVisualStyleBackColor = false;
+            this.Button7.Click += new System.EventHandler(this.Button7_Click);
             // 
             // Button2
             // 
@@ -396,6 +411,7 @@
             this.Button2.TabIndex = 623;
             this.Button2.Text = "¿Olvidaste tu contraseña?";
             this.Button2.UseVisualStyleBackColor = false;
+            this.Button2.Click += new System.EventHandler(this.Button2_Click);
             // 
             // PictureBox4
             // 
@@ -788,7 +804,7 @@
             this.panel5.Controls.Add(this.txtImagen);
             this.panel5.Location = new System.Drawing.Point(189, 12);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(10, 10);
+            this.panel5.Size = new System.Drawing.Size(30, 50);
             this.panel5.TabIndex = 616;
             // 
             // lblResultadoContrasena
@@ -868,12 +884,154 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick_1);
             // 
+            // datalistado_detalle_cierre_de_caja
+            // 
+            this.datalistado_detalle_cierre_de_caja.AllowUserToAddRows = false;
+            this.datalistado_detalle_cierre_de_caja.AllowUserToResizeRows = false;
+            this.datalistado_detalle_cierre_de_caja.BackgroundColor = System.Drawing.Color.White;
+            this.datalistado_detalle_cierre_de_caja.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.datalistado_detalle_cierre_de_caja.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.datalistado_detalle_cierre_de_caja.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.datalistado_detalle_cierre_de_caja.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.datalistado_detalle_cierre_de_caja.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewImageColumn2});
+            this.datalistado_detalle_cierre_de_caja.EnableHeadersVisualStyles = false;
+            this.datalistado_detalle_cierre_de_caja.Location = new System.Drawing.Point(241, 25);
+            this.datalistado_detalle_cierre_de_caja.Name = "datalistado_detalle_cierre_de_caja";
+            this.datalistado_detalle_cierre_de_caja.ReadOnly = true;
+            this.datalistado_detalle_cierre_de_caja.RowHeadersVisible = false;
+            this.datalistado_detalle_cierre_de_caja.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.datalistado_detalle_cierre_de_caja.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.datalistado_detalle_cierre_de_caja.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.datalistado_detalle_cierre_de_caja.RowTemplate.Height = 30;
+            this.datalistado_detalle_cierre_de_caja.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.datalistado_detalle_cierre_de_caja.Size = new System.Drawing.Size(94, 57);
+            this.datalistado_detalle_cierre_de_caja.TabIndex = 622;
+            // 
+            // dataGridViewImageColumn2
+            // 
+            this.dataGridViewImageColumn2.HeaderText = "";
+            this.dataGridViewImageColumn2.Image = ((System.Drawing.Image)(resources.GetObject("dataGridViewImageColumn2.Image")));
+            this.dataGridViewImageColumn2.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
+            this.dataGridViewImageColumn2.ReadOnly = true;
+            // 
+            // lblRol
+            // 
+            this.lblRol.AutoSize = true;
+            this.lblRol.BackColor = System.Drawing.Color.White;
+            this.lblRol.Location = new System.Drawing.Point(23, 194);
+            this.lblRol.Name = "lblRol";
+            this.lblRol.Size = new System.Drawing.Size(33, 13);
+            this.lblRol.TabIndex = 623;
+            this.lblRol.Text = "lblRol";
+            // 
+            // lblpermisodeCaja
+            // 
+            this.lblpermisodeCaja.AutoSize = true;
+            this.lblpermisodeCaja.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblpermisodeCaja.ForeColor = System.Drawing.Color.White;
+            this.lblpermisodeCaja.Location = new System.Drawing.Point(21, 459);
+            this.lblpermisodeCaja.Name = "lblpermisodeCaja";
+            this.lblpermisodeCaja.Size = new System.Drawing.Size(117, 26);
+            this.lblpermisodeCaja.TabIndex = 624;
+            this.lblpermisodeCaja.Text = "PedroDev";
+            // 
+            // lblnombredeCajero
+            // 
+            this.lblnombredeCajero.AutoSize = true;
+            this.lblnombredeCajero.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblnombredeCajero.ForeColor = System.Drawing.Color.White;
+            this.lblnombredeCajero.Location = new System.Drawing.Point(21, 415);
+            this.lblnombredeCajero.Name = "lblnombredeCajero";
+            this.lblnombredeCajero.Size = new System.Drawing.Size(117, 26);
+            this.lblnombredeCajero.TabIndex = 625;
+            this.lblnombredeCajero.Text = "PedroDev";
+            // 
+            // lblusuario_queinicioCaja
+            // 
+            this.lblusuario_queinicioCaja.AutoSize = true;
+            this.lblusuario_queinicioCaja.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblusuario_queinicioCaja.ForeColor = System.Drawing.Color.White;
+            this.lblusuario_queinicioCaja.Location = new System.Drawing.Point(21, 374);
+            this.lblusuario_queinicioCaja.Name = "lblusuario_queinicioCaja";
+            this.lblusuario_queinicioCaja.Size = new System.Drawing.Size(117, 26);
+            this.lblusuario_queinicioCaja.TabIndex = 626;
+            this.lblusuario_queinicioCaja.Text = "PedroDev";
+            // 
+            // IDUSUARIO
+            // 
+            this.IDUSUARIO.AutoSize = true;
+            this.IDUSUARIO.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IDUSUARIO.ForeColor = System.Drawing.Color.White;
+            this.IDUSUARIO.Location = new System.Drawing.Point(21, 313);
+            this.IDUSUARIO.Name = "IDUSUARIO";
+            this.IDUSUARIO.Size = new System.Drawing.Size(117, 26);
+            this.IDUSUARIO.TabIndex = 627;
+            this.IDUSUARIO.Text = "PedroDev";
+            // 
+            // txtnombre
+            // 
+            this.txtnombre.AutoSize = true;
+            this.txtnombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtnombre.ForeColor = System.Drawing.Color.White;
+            this.txtnombre.Location = new System.Drawing.Point(21, 276);
+            this.txtnombre.Name = "txtnombre";
+            this.txtnombre.Size = new System.Drawing.Size(117, 26);
+            this.txtnombre.TabIndex = 628;
+            this.txtnombre.Text = "PedroDev";
+            // 
+            // lblAperturaCierreCaja
+            // 
+            this.lblAperturaCierreCaja.AutoSize = true;
+            this.lblAperturaCierreCaja.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAperturaCierreCaja.ForeColor = System.Drawing.Color.White;
+            this.lblAperturaCierreCaja.Location = new System.Drawing.Point(21, 234);
+            this.lblAperturaCierreCaja.Name = "lblAperturaCierreCaja";
+            this.lblAperturaCierreCaja.Size = new System.Drawing.Size(117, 26);
+            this.lblAperturaCierreCaja.TabIndex = 629;
+            this.lblAperturaCierreCaja.Text = "PedroDev";
+            // 
+            // timer2
+            // 
+            this.timer2.Interval = 200;
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
+            // PictureBox2
+            // 
+            this.PictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
+            this.PictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox2.Image")));
+            this.PictureBox2.Location = new System.Drawing.Point(760, 44);
+            this.PictureBox2.Name = "PictureBox2";
+            this.PictureBox2.Size = new System.Drawing.Size(433, 680);
+            this.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PictureBox2.TabIndex = 630;
+            this.PictureBox2.TabStop = false;
+            this.PictureBox2.Visible = false;
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.Location = new System.Drawing.Point(728, 15);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(254, 23);
+            this.progressBar1.TabIndex = 630;
+            // 
             // LOGIN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.ClientSize = new System.Drawing.Size(1176, 694);
+            this.Controls.Add(this.PictureBox2);
+            this.Controls.Add(this.progressBar1);
+            this.Controls.Add(this.lblpermisodeCaja);
+            this.Controls.Add(this.lblnombredeCajero);
+            this.Controls.Add(this.lblusuario_queinicioCaja);
+            this.Controls.Add(this.IDUSUARIO);
+            this.Controls.Add(this.txtnombre);
+            this.Controls.Add(this.lblAperturaCierreCaja);
+            this.Controls.Add(this.lblRol);
+            this.Controls.Add(this.datalistado_detalle_cierre_de_caja);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.PanelRestaurarCuenta);
             this.Controls.Add(this.panel5);
@@ -904,7 +1062,10 @@
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.datalistado_caja)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.datalistado_detalle_cierre_de_caja)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox2)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -967,5 +1128,17 @@
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
         private System.Windows.Forms.Label txtidcaja;
         private System.Windows.Forms.Label lblcaja;
+        private System.Windows.Forms.DataGridView datalistado_detalle_cierre_de_caja;
+        private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn2;
+        private System.Windows.Forms.Label lblRol;
+        internal System.Windows.Forms.Label lblpermisodeCaja;
+        internal System.Windows.Forms.Label lblnombredeCajero;
+        internal System.Windows.Forms.Label lblusuario_queinicioCaja;
+        internal System.Windows.Forms.Label IDUSUARIO;
+        internal System.Windows.Forms.Label txtnombre;
+        internal System.Windows.Forms.Label lblAperturaCierreCaja;
+        private System.Windows.Forms.Timer timer2;
+        internal System.Windows.Forms.PictureBox PictureBox2;
+        private System.Windows.Forms.ProgressBar progressBar1;
     }
 }

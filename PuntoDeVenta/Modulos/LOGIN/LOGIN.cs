@@ -24,6 +24,7 @@ namespace PuntoDeVenta.Modulos
         }
 
         int contador;
+        int contadorCajas;
         public void DIBUJARUsuarios()
         {
             SqlConnection con = new SqlConnection();
@@ -88,6 +89,7 @@ namespace PuntoDeVenta.Modulos
             txtLogin.Text = ((Label)sender).Text;
             panel2.Visible = true;
             panel1.Visible = false;
+            MOSTRAR_PERMISOS();
 
         }
         private void mieventoimagen(System.Object sender, EventArgs e)
@@ -95,7 +97,7 @@ namespace PuntoDeVenta.Modulos
             txtLogin.Text = ((PictureBox)sender).Tag.ToString();
             panel2.Visible = true;
             panel1.Visible = false;
-
+            MOSTRAR_PERMISOS();
         }
 
         private void LOGIN_Load(object sender, EventArgs e)
@@ -107,10 +109,71 @@ namespace PuntoDeVenta.Modulos
 
         private void btn_insertar_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Favor introducir la contraseña correctamente", "Contraseña incorrecta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            MessageBox.Show("Usuario o contraseña incorrectos", "Iniciar sesión", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             txtpaswword.Clear();
         }
 
+        private void ListarAperturaDeDetalleDeCierresDeCaja()
+        {
+            try
+            {
+                DataTable dt = new DataTable();
+                SqlDataAdapter da;
+                SqlConnection con = new SqlConnection();
+                con.ConnectionString = CONEXION.CONEXIONMAESTRA.CONEXION;
+                con.Open();
+
+                da = new SqlDataAdapter("MOSTRAR_MOVIMIENTOS_DE_CAJA_POR_SERIAL", con);
+                da.SelectCommand.CommandType = CommandType.StoredProcedure;
+                da.SelectCommand.Parameters.AddWithValue("@Serial", lblSerialPc.Text);
+                da.Fill(dt);
+                datalistado_detalle_cierre_de_caja.DataSource = dt;
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+
+            }
+
+
+        }
+
+        private void aperturar_detalle_cierre_caja()
+        {
+            try
+            {
+
+
+                SqlConnection con = new SqlConnection();
+                con.ConnectionString = CONEXION.CONEXIONMAESTRA.CONEXION;
+                con.Open();
+                SqlCommand cmd = new SqlCommand();
+                cmd = new SqlCommand("insertar_DETALLE_cierre_de_caja", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@fechaini", DateTime.Today);
+                cmd.Parameters.AddWithValue("@fechafin", DateTime.Today);
+                cmd.Parameters.AddWithValue("@fechacierre", DateTime.Today);
+                cmd.Parameters.AddWithValue("@ingresos", "0.00");
+                cmd.Parameters.AddWithValue("@egresos", "0.00");
+                cmd.Parameters.AddWithValue("@saldo", "0.00");
+                cmd.Parameters.AddWithValue("@idusuario", IDUSUARIO.Text);
+                cmd.Parameters.AddWithValue("@totalcaluclado", "0.00");
+                cmd.Parameters.AddWithValue("@totalreal", "0.00");
+
+                cmd.Parameters.AddWithValue("@estado", "CAJA APERTURADA");
+                cmd.Parameters.AddWithValue("@diferencia", "0.00");
+                cmd.Parameters.AddWithValue("@id_caja", txtidcaja.Text);
+
+                cmd.ExecuteNonQuery();
+                con.Close();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
         private void txtpaswword_TextChanged(object sender, EventArgs e)
         {
             iniciarSesion();
@@ -120,13 +183,56 @@ namespace PuntoDeVenta.Modulos
         {
             cargarusuarios();
             contar();
+
+            try
+            {
+                IDUSUARIO.Text = datalistado.SelectedCells[1].Value.ToString();
+                txtnombre.Text = datalistado.SelectedCells[2].Value.ToString();
+            }
+            catch
+            {
+            }
             if (contador > 0)
             {
-                CAJA.Apertura_de_caja formulario_apertura_de_caja = new CAJA.Apertura_de_caja();
-
-                this.Hide();
-                formulario_apertura_de_caja.ShowDialog();
+                ListarAperturaDeDetalleDeCierresDeCaja();
+                contarAperturaDeDetalleCierresDeCaja();
+                if (contadorCajas == 0 & lblRol.Text != "Solo Ventas (no esta autorizado para manejar dinero)")
+                {
+                    aperturar_detalle_cierre_caja();
+                    lblAperturaCierreCaja.Text = "Nuevo*****";
+                    timer2.Start();
+                }
             }
+        }
+        private void MOSTRAR_PERMISOS()
+        {
+            SqlConnection con = new SqlConnection();
+            con.ConnectionString = CONEXION.CONEXIONMAESTRA.CONEXION;
+
+            SqlCommand com = new SqlCommand("mostrar_permisos_por_usuario_ROL_UNICO", con);
+            com.CommandType = CommandType.StoredProcedure;
+            com.Parameters.AddWithValue("@LOGIN", txtLogin.Text);
+            string importe;
+
+            try
+            {
+                con.Open();
+                importe = Convert.ToString(com.ExecuteScalar());
+                con.Close();
+                lblRol.Text = importe;
+
+            }
+            catch (Exception ex)
+            {
+            }
+
+        }
+
+        private void contarAperturaDeDetalleCierresDeCaja()
+        {
+            int x;
+            x = datalistado_detalle_cierre_de_caja.Rows.Count;
+            contadorCajas = (x);
 
         }
 
@@ -252,32 +358,7 @@ namespace PuntoDeVenta.Modulos
             }
 
         }
-        /*private void MOSTRAR_CAJA_POR_SERIAL()
-        {
-            try
-            {
-                DataTable dt = new DataTable();
-                SqlDataAdapter da;
-                SqlConnection con = new SqlConnection();
-                con.ConnectionString = CONEXION.CONEXIONMAESTRA.CONEXION;
-                con.Open();
-
-                da = new SqlDataAdapter("mostrar_cajas_por_Serial_de_DiscoDuro", con);
-                da.SelectCommand.CommandType = CommandType.StoredProcedure;
-                da.SelectCommand.Parameters.AddWithValue("@Serial", lblSerialPc.Text);
-                da.Fill(dt);
-                datalistado_caja.DataSource = dt;
-                con.Close();
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-
-            }
-
-
-        }*/
+        
         private void Button3_Click(object sender, EventArgs e)
         {
             mostrar_usuarios_por_correo();
@@ -432,6 +513,51 @@ namespace PuntoDeVenta.Modulos
             txtpaswword.PasswordChar = '*';
             tocultar.Visible = false;
             tver.Visible = true;
+        }
+
+        private void Button7_Click(object sender, EventArgs e)
+        {
+            panel2.Visible = false;
+            panel1.Visible = true;
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            panel2.Visible = false;
+            panel1.Visible = true;
+            PanelRestaurarCuenta.Visible = true;
+            MostrarCorreos();
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            if (progressBar1.Value < 100)
+            {
+                BackColor = Color.FromArgb(20, 20, 20);
+                progressBar1.Value = progressBar1.Value + 10;
+                PictureBox2.Visible = true;
+
+            }
+            else
+            {
+                progressBar1.Value = 0;
+                timer2.Stop();
+                if (lblAperturaCierreCaja.Text == "Nuevo*****" & lblRol.Text != "Solo Ventas (no esta autorizado para manejar dinero)")
+                {
+                    this.Hide();
+                    CAJA.Apertura_de_caja frm = new CAJA.Apertura_de_caja();
+                    frm.ShowDialog();
+                    this.Hide();
+                }
+                else
+                {
+                    this.Hide();
+                    VENTAS_MENU_PRINCIPAL.MENUPRINCIPAL_VENTAS frm = new VENTAS_MENU_PRINCIPAL.MENUPRINCIPAL_VENTAS();
+                    frm.ShowDialog();
+                    this.Hide();
+                }
+
+            }
         }
     }
 }

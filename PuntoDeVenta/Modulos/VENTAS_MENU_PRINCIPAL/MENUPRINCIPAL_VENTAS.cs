@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PuntoDeVenta.Modulos
+namespace PuntoDeVenta.Modulos.VENTAS_MENU_PRINCIPAL
 {
-    public partial class VENTAS_MENU_PRINCIPAL : Form
+    public partial class MENUPRINCIPAL_VENTAS : Form
     {
-        public VENTAS_MENU_PRINCIPAL()
+        public MENUPRINCIPAL_VENTAS()
         {
             InitializeComponent();
         }

@@ -41,6 +41,7 @@
             this.datalistado = new System.Windows.Forms.DataGridView();
             this.Eli = new System.Windows.Forms.DataGridViewImageColumn();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.panelICONO = new System.Windows.Forms.Panel();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
@@ -53,7 +54,7 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel10 = new System.Windows.Forms.Panel();
             this.lblUsuario = new System.Windows.Forms.Label();
             this.lblnumeroIcono = new System.Windows.Forms.Label();
             this.LblAnuncioIcono = new System.Windows.Forms.Label();
@@ -77,7 +78,6 @@
             this.Label8 = new System.Windows.Forms.Label();
             this.ICONO = new System.Windows.Forms.PictureBox();
             this.dlg = new System.Windows.Forms.OpenFileDialog();
-            this.panel10 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -85,6 +85,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.datalistado)).BeginInit();
             this.panel4.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.panelICONO.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.flowLayoutPanel2.SuspendLayout();
@@ -97,10 +98,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            this.panel5.SuspendLayout();
+            this.panel10.SuspendLayout();
             this.menuStrip2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ICONO)).BeginInit();
-            this.panel10.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -234,6 +234,7 @@
             this.Eli.Image = ((System.Drawing.Image)(resources.GetObject("Eli.Image")));
             this.Eli.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
             this.Eli.Name = "Eli";
+            this.Eli.ReadOnly = true;
             // 
             // panel4
             // 
@@ -245,6 +246,36 @@
             this.panel4.Size = new System.Drawing.Size(759, 597);
             this.panel4.TabIndex = 4;
             // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.White;
+            this.panel5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel5.BackgroundImage")));
+            this.panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel5.Controls.Add(this.panelICONO);
+            this.panel5.Controls.Add(this.panel10);
+            this.panel5.Controls.Add(this.LblAnuncioIcono);
+            this.panel5.Controls.Add(this.btnVolver);
+            this.panel5.Controls.Add(this.menuStrip2);
+            this.panel5.Controls.Add(this.txtrol);
+            this.panel5.Controls.Add(this.panel9);
+            this.panel5.Controls.Add(this.panel8);
+            this.panel5.Controls.Add(this.panel7);
+            this.panel5.Controls.Add(this.panel6);
+            this.panel5.Controls.Add(this.txtcorreo);
+            this.panel5.Controls.Add(this.txtPassword);
+            this.panel5.Controls.Add(this.txtlogin);
+            this.panel5.Controls.Add(this.txtnombre);
+            this.panel5.Controls.Add(this.Label5);
+            this.panel5.Controls.Add(this.Label9);
+            this.panel5.Controls.Add(this.Label4);
+            this.panel5.Controls.Add(this.Label6);
+            this.panel5.Controls.Add(this.Label8);
+            this.panel5.Controls.Add(this.ICONO);
+            this.panel5.Location = new System.Drawing.Point(0, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(762, 594);
+            this.panel5.TabIndex = 605;
+            // 
             // panelICONO
             // 
             this.panelICONO.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -252,7 +283,6 @@
             this.panelICONO.Controls.Add(this.flowLayoutPanel2);
             this.panelICONO.Controls.Add(this.flowLayoutPanel1);
             this.panelICONO.Cursor = System.Windows.Forms.Cursors.Default;
-            this.panelICONO.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelICONO.Location = new System.Drawing.Point(0, 0);
             this.panelICONO.Name = "panelICONO";
             this.panelICONO.Size = new System.Drawing.Size(762, 594);
@@ -391,35 +421,14 @@
             this.pictureBox6.TabStop = false;
             this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
-            // panel5
+            // panel10
             // 
-            this.panel5.BackColor = System.Drawing.Color.White;
-            this.panel5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel5.BackgroundImage")));
-            this.panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel5.Controls.Add(this.panelICONO);
-            this.panel5.Controls.Add(this.panel10);
-            this.panel5.Controls.Add(this.LblAnuncioIcono);
-            this.panel5.Controls.Add(this.btnVolver);
-            this.panel5.Controls.Add(this.menuStrip2);
-            this.panel5.Controls.Add(this.txtrol);
-            this.panel5.Controls.Add(this.panel9);
-            this.panel5.Controls.Add(this.panel8);
-            this.panel5.Controls.Add(this.panel7);
-            this.panel5.Controls.Add(this.panel6);
-            this.panel5.Controls.Add(this.txtcorreo);
-            this.panel5.Controls.Add(this.txtPassword);
-            this.panel5.Controls.Add(this.txtlogin);
-            this.panel5.Controls.Add(this.txtnombre);
-            this.panel5.Controls.Add(this.Label5);
-            this.panel5.Controls.Add(this.Label9);
-            this.panel5.Controls.Add(this.Label4);
-            this.panel5.Controls.Add(this.Label6);
-            this.panel5.Controls.Add(this.Label8);
-            this.panel5.Controls.Add(this.ICONO);
-            this.panel5.Location = new System.Drawing.Point(0, 0);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(762, 594);
-            this.panel5.TabIndex = 605;
+            this.panel10.Controls.Add(this.lblUsuario);
+            this.panel10.Controls.Add(this.lblnumeroIcono);
+            this.panel10.Location = new System.Drawing.Point(40, 183);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(12, 12);
+            this.panel10.TabIndex = 5;
             // 
             // lblUsuario
             // 
@@ -648,15 +657,6 @@
             // 
             this.dlg.FileName = "ELIGE UNA IMAGEN";
             // 
-            // panel10
-            // 
-            this.panel10.Controls.Add(this.lblUsuario);
-            this.panel10.Controls.Add(this.lblnumeroIcono);
-            this.panel10.Location = new System.Drawing.Point(40, 183);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(12, 12);
-            this.panel10.TabIndex = 5;
-            // 
             // usuariosok
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -683,6 +683,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.datalistado)).EndInit();
             this.panel4.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
             this.panelICONO.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.flowLayoutPanel2.ResumeLayout(false);
@@ -695,13 +697,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
+            this.panel10.ResumeLayout(false);
+            this.panel10.PerformLayout();
             this.menuStrip2.ResumeLayout(false);
             this.menuStrip2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ICONO)).EndInit();
-            this.panel10.ResumeLayout(false);
-            this.panel10.PerformLayout();
             this.ResumeLayout(false);
 
         }
