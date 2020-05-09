@@ -65,6 +65,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CONEXION\CONEXIONMAESTRA.cs" />
+    <Compile Include="CONEXION\Desencryptacion.cs" />
+    <Compile Include="CONEXION\Encryptacion.cs" />
+    <Compile Include="CONEXION\Numero_separadores.cs" />
     <Compile Include="CONEXION\Tamaño_automatico_de_datatables.cs" />
     <Compile Include="Modulos\CAJA\Apertura_de_caja.cs">
       <SubType>Form</SubType>
@@ -83,6 +86,12 @@
     </Compile>
     <Compile Include="Modulos\LOGIN\LOGIN.Designer.cs">
       <DependentUpon>LOGIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\PANEL_DE_ADMINISTRACION_DEL_SOFTWARE\CONEXION_MANUAL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\PANEL_DE_ADMINISTRACION_DEL_SOFTWARE\CONEXION_MANUAL.Designer.cs">
+      <DependentUpon>CONEXION_MANUAL.cs</DependentUpon>
     </Compile>
     <Compile Include="Modulos\USUARIOS_Y_PERMISOS\usuariosok.cs">
       <SubType>Form</SubType>
@@ -106,6 +115,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Modulos\LOGIN\LOGIN.resx">
       <DependentUpon>LOGIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\PANEL_DE_ADMINISTRACION_DEL_SOFTWARE\CONEXION_MANUAL.resx">
+      <DependentUpon>CONEXION_MANUAL.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modulos\USUARIOS_Y_PERMISOS\usuariosok.resx">
       <DependentUpon>usuariosok.cs</DependentUpon>
@@ -148,5 +160,6 @@
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

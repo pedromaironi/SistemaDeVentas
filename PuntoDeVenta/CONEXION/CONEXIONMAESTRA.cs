@@ -8,7 +8,7 @@ namespace PuntoDeVenta.CONEXION
 {
     class CONEXIONMAESTRA
     {
-        public static string CONEXION = @"Data source = PETER\SQLEXPRESS; Initial Catalog=BASESISTEMA;integrated security=True";
+        public static string CONEXION = Convert.ToString(Desencryptacion.checkServer());
     }
 
 }
