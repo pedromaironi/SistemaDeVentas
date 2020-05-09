@@ -15,3 +15,4 @@ C:\Users\pedro\source\repos\PuntoDeVenta\PuntoDeVenta\obj\Debug\PuntoDeVenta.Mod
 C:\Users\pedro\source\repos\PuntoDeVenta\PuntoDeVenta\obj\Debug\PuntoDeVenta.Modulos.CAJA.Cierre_de_caja.resources
 C:\Users\pedro\source\repos\PuntoDeVenta\PuntoDeVenta\obj\Debug\PuntoDeVenta.Modulos.VENTAS_MENU_PRINCIPAL.MENUPRINCIPAL_VENTAS.resources
 C:\Users\pedro\source\repos\PuntoDeVenta\PuntoDeVenta\obj\Debug\PuntoDeVenta.Modulos.PANEL_DE_ADMINISTRACION_DEL_SOFTWARE.CONEXION_MANUAL.resources
+C:\Users\pedro\source\repos\PuntoDeVenta\PuntoDeVenta\obj\Debug\PuntoDeVenta.Modulos.PRODUCTOS.PRODUCTOSOK.resources

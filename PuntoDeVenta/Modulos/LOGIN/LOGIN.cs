@@ -26,6 +26,8 @@ namespace PuntoDeVenta.Modulos
         int contador;
         int contadorCajas;
         int contadorMovimientoCajas;
+        public static String idusuariovariable;
+        public static String idcajavariable;
         public void DIBUJARUsuarios()
         {
             SqlConnection con = new SqlConnection();
@@ -189,6 +191,7 @@ namespace PuntoDeVenta.Modulos
             {
                 IDUSUARIO.Text = datalistado.SelectedCells[1].Value.ToString();
                 txtnombre.Text = datalistado.SelectedCells[2].Value.ToString();
+                idusuariovariable = IDUSUARIO.Text;
             }
             catch
             {
@@ -506,6 +509,7 @@ namespace PuntoDeVenta.Modulos
                     {
                         txtidcaja.Text = datalistado_caja.SelectedCells[1].Value.ToString();
                         lblcaja.Text = datalistado_caja.SelectedCells[2].Value.ToString();
+                        idcajavariable = txtidcaja.Text;
                     }
                     catch (Exception ex)
                     {

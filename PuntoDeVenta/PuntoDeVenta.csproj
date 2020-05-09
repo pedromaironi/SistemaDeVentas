@@ -93,6 +93,12 @@
     <Compile Include="Modulos\PANEL_DE_ADMINISTRACION_DEL_SOFTWARE\CONEXION_MANUAL.Designer.cs">
       <DependentUpon>CONEXION_MANUAL.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modulos\PRODUCTOS\PRODUCTOSOK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\PRODUCTOS\PRODUCTOSOK.Designer.cs">
+      <DependentUpon>PRODUCTOSOK.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modulos\USUARIOS_Y_PERMISOS\usuariosok.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,6 +124,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Modulos\PANEL_DE_ADMINISTRACION_DEL_SOFTWARE\CONEXION_MANUAL.resx">
       <DependentUpon>CONEXION_MANUAL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\PRODUCTOS\PRODUCTOSOK.resx">
+      <DependentUpon>PRODUCTOSOK.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modulos\USUARIOS_Y_PERMISOS\usuariosok.resx">
       <DependentUpon>usuariosok.cs</DependentUpon>
