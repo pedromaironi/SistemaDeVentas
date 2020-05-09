@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MENUPRINCIPAL_VENTAS));
             this.btnTerminarTurno = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -53,6 +54,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1084, 582);
             this.Controls.Add(this.btnTerminarTurno);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MENUPRINCIPAL_VENTAS";
             this.Text = "MENUPRINCIPAL_VENTAS";
             this.ResumeLayout(false);
