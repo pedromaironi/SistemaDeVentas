@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(INVENTARIO_MENU));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.Panel1 = new System.Windows.Forms.Panel();
             this.Panelv = new System.Windows.Forms.Panel();
@@ -53,24 +53,20 @@
             this.TOTROSPAGOS = new System.Windows.Forms.ToolStripMenuItem();
             this.TVencimientos = new System.Windows.Forms.ToolStripMenuItem();
             this.panelMOVIMIENTOS = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.DatalistadoMovimientos = new System.Windows.Forms.DataGridView();
+            this.dataGridViewImageColumn4 = new System.Windows.Forms.DataGridViewImageColumn();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.menuStrip4 = new System.Windows.Forms.MenuStrip();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.datalistadoMovimientosACUMULADO_PRODUCTOS = new System.Windows.Forms.DataGridView();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.menuStrip4 = new System.Windows.Forms.MenuStrip();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.label3 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.DATALISTADO_PRODUCTOS_Movimientos = new System.Windows.Forms.DataGridView();
-            this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.DatalistadoMovimientos = new System.Windows.Forms.DataGridView();
-            this.dataGridViewImageColumn4 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.panel14 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel15 = new System.Windows.Forms.Panel();
             this.txtIdusuario = new System.Windows.Forms.ComboBox();
-            this.MenuStrip2 = new System.Windows.Forms.MenuStrip();
-            this.ToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.MenuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.ToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.MenuStrip10 = new System.Windows.Forms.MenuStrip();
             this.ToolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
@@ -82,10 +78,64 @@
             this.txtTipoMovi = new System.Windows.Forms.ComboBox();
             this.txtfechaM = new System.Windows.Forms.DateTimePicker();
             this.Label4 = new System.Windows.Forms.Label();
+            this.MenuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.ToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuStrip6 = new System.Windows.Forms.MenuStrip();
             this.ToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
             this.txtbuscarMovimiento = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.MenuStrip2 = new System.Windows.Forms.MenuStrip();
+            this.ToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.DATALISTADO_PRODUCTOS_Movimientos = new System.Windows.Forms.DataGridView();
+            this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.PaneliNVENTARIObajo = new System.Windows.Forms.Panel();
+            this.datalistadoInventarioBAJO = new System.Windows.Forms.DataGridView();
+            this.dataGridViewImageColumn3 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.menuStrip5 = new System.Windows.Forms.MenuStrip();
+            this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
+            this.Label6 = new System.Windows.Forms.Label();
+            this.panelREPORTEInventario = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.datalistadoInventariosReport = new System.Windows.Forms.DataGridView();
+            this.dataGridViewImageColumn5 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.menuStrip8 = new System.Windows.Forms.MenuStrip();
+            this.toolStripMenuItem8 = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip7 = new System.Windows.Forms.MenuStrip();
+            this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.menuStrip9 = new System.Windows.Forms.MenuStrip();
+            this.toolStripMenuItem9 = new System.Windows.Forms.ToolStripMenuItem();
+            this.txtbuscar_inventarios = new System.Windows.Forms.TextBox();
+            this.lblcostoInventario = new System.Windows.Forms.Label();
+            this.lblcantidaddeProductosEnInventario = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.panel16 = new System.Windows.Forms.Panel();
+            this.menuStrip12 = new System.Windows.Forms.MenuStrip();
+            this.toolStripMenuItem11 = new System.Windows.Forms.ToolStripMenuItem();
+            this.txtbuscarKardex_movimientos = new System.Windows.Forms.TextBox();
+            this.DATALISTADO_PRODUCTOS_Kardex = new System.Windows.Forms.DataGridView();
+            this.DataGridViewCheckBoxColumn4 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.PanelKardex = new System.Windows.Forms.Panel();
+            this.panelVencimiento = new System.Windows.Forms.Panel();
+            this.datalistadoVencimientos = new System.Windows.Forms.DataGridView();
+            this.dataGridViewImageColumn6 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.panel17 = new System.Windows.Forms.Panel();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.CheckProductosVencidos = new System.Windows.Forms.RadioButton();
+            this.CheckPorVencer30enDias = new System.Windows.Forms.RadioButton();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.menuStrip14 = new System.Windows.Forms.MenuStrip();
+            this.toolStripMenuItem13 = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip16 = new System.Windows.Forms.MenuStrip();
+            this.toolStripMenuItem14 = new System.Windows.Forms.ToolStripMenuItem();
+            this.txtBuscarVencimientos = new System.Windows.Forms.TextBox();
+            this.panel18 = new System.Windows.Forms.Panel();
+            this.menuStrip17 = new System.Windows.Forms.MenuStrip();
+            this.toolStripMenuItem15 = new System.Windows.Forms.ToolStripMenuItem();
             this.Panel1.SuspendLayout();
             this.Panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox3)).BeginInit();
@@ -95,20 +145,44 @@
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox2)).BeginInit();
             this.MenuStrip3.SuspendLayout();
             this.panelMOVIMIENTOS.SuspendLayout();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DatalistadoMovimientos)).BeginInit();
             this.panel5.SuspendLayout();
+            this.menuStrip4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.datalistadoMovimientosACUMULADO_PRODUCTOS)).BeginInit();
             this.panel7.SuspendLayout();
-            this.menuStrip4.SuspendLayout();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DATALISTADO_PRODUCTOS_Movimientos)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DatalistadoMovimientos)).BeginInit();
+            this.panel14.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.MenuStrip2.SuspendLayout();
-            this.MenuStrip1.SuspendLayout();
+            this.panel15.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.MenuStrip10.SuspendLayout();
             this.MenuStrip15.SuspendLayout();
+            this.MenuStrip1.SuspendLayout();
             this.MenuStrip6.SuspendLayout();
+            this.MenuStrip2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DATALISTADO_PRODUCTOS_Movimientos)).BeginInit();
+            this.PaneliNVENTARIObajo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.datalistadoInventarioBAJO)).BeginInit();
+            this.panel10.SuspendLayout();
+            this.menuStrip5.SuspendLayout();
+            this.panelREPORTEInventario.SuspendLayout();
+            this.panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.datalistadoInventariosReport)).BeginInit();
+            this.panel11.SuspendLayout();
+            this.menuStrip8.SuspendLayout();
+            this.menuStrip7.SuspendLayout();
+            this.menuStrip9.SuspendLayout();
+            this.panel13.SuspendLayout();
+            this.menuStrip12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DATALISTADO_PRODUCTOS_Kardex)).BeginInit();
+            this.PanelKardex.SuspendLayout();
+            this.panelVencimiento.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.datalistadoVencimientos)).BeginInit();
+            this.panel17.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.menuStrip14.SuspendLayout();
+            this.menuStrip16.SuspendLayout();
+            this.menuStrip17.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -135,7 +209,7 @@
             // 
             // Panelv
             // 
-            this.Panelv.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Panelv.BackColor = System.Drawing.Color.Black;
             resources.ApplyResources(this.Panelv, "Panelv");
             this.Panelv.Name = "Panelv";
             // 
@@ -171,7 +245,7 @@
             // 
             // PanelR
             // 
-            this.PanelR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(166)))), ((int)(((byte)(63)))));
+            this.PanelR.BackColor = System.Drawing.Color.Black;
             resources.ApplyResources(this.PanelR, "PanelR");
             this.PanelR.Name = "PanelR";
             // 
@@ -207,19 +281,19 @@
             // 
             // PanelI
             // 
-            this.PanelI.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(204)))), ((int)(((byte)(1)))));
+            this.PanelI.BackColor = System.Drawing.Color.Black;
             resources.ApplyResources(this.PanelI, "PanelI");
             this.PanelI.Name = "PanelI";
             // 
             // PanelM
             // 
-            this.PanelM.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(115)))), ((int)(((byte)(232)))));
+            this.PanelM.BackColor = System.Drawing.Color.Black;
             resources.ApplyResources(this.PanelM, "PanelM");
             this.PanelM.Name = "PanelM";
             // 
             // PanelK
             // 
-            this.PanelK.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(63)))), ((int)(((byte)(67)))));
+            this.PanelK.BackColor = System.Drawing.Color.Black;
             resources.ApplyResources(this.PanelK, "PanelK");
             this.PanelK.Name = "PanelK";
             // 
@@ -244,6 +318,7 @@
             this.TKardex.BackColor = System.Drawing.Color.White;
             this.TKardex.ForeColor = System.Drawing.Color.Black;
             this.TKardex.Name = "TKardex";
+            this.TKardex.Click += new System.EventHandler(this.TKardex_Click);
             // 
             // TMOVIMIENTOS
             // 
@@ -251,6 +326,7 @@
             resources.ApplyResources(this.TMOVIMIENTOS, "TMOVIMIENTOS");
             this.TMOVIMIENTOS.ForeColor = System.Drawing.Color.Black;
             this.TMOVIMIENTOS.Name = "TMOVIMIENTOS";
+            this.TMOVIMIENTOS.Click += new System.EventHandler(this.TMOVIMIENTOS_Click);
             // 
             // TNOTAS
             // 
@@ -274,143 +350,22 @@
             resources.ApplyResources(this.TVencimientos, "TVencimientos");
             this.TVencimientos.ForeColor = System.Drawing.Color.Black;
             this.TVencimientos.Name = "TVencimientos";
+            this.TVencimientos.Click += new System.EventHandler(this.TVencimientos_Click);
             // 
             // panelMOVIMIENTOS
             // 
             this.panelMOVIMIENTOS.BackColor = System.Drawing.Color.White;
-            this.panelMOVIMIENTOS.Controls.Add(this.panel5);
             this.panelMOVIMIENTOS.Controls.Add(this.panel3);
-            this.panelMOVIMIENTOS.Controls.Add(this.panel2);
             resources.ApplyResources(this.panelMOVIMIENTOS, "panelMOVIMIENTOS");
             this.panelMOVIMIENTOS.Name = "panelMOVIMIENTOS";
             // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(63)))), ((int)(((byte)(67)))));
-            this.panel5.Controls.Add(this.datalistadoMovimientosACUMULADO_PRODUCTOS);
-            this.panel5.Controls.Add(this.panel7);
-            resources.ApplyResources(this.panel5, "panel5");
-            this.panel5.Name = "panel5";
-            // 
-            // datalistadoMovimientosACUMULADO_PRODUCTOS
-            // 
-            this.datalistadoMovimientosACUMULADO_PRODUCTOS.AllowUserToAddRows = false;
-            this.datalistadoMovimientosACUMULADO_PRODUCTOS.AllowUserToResizeRows = false;
-            this.datalistadoMovimientosACUMULADO_PRODUCTOS.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(63)))), ((int)(((byte)(67)))));
-            this.datalistadoMovimientosACUMULADO_PRODUCTOS.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.datalistadoMovimientosACUMULADO_PRODUCTOS.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.datalistadoMovimientosACUMULADO_PRODUCTOS.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.datalistadoMovimientosACUMULADO_PRODUCTOS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.datalistadoMovimientosACUMULADO_PRODUCTOS.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewImageColumn1});
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(63)))), ((int)(((byte)(67)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.datalistadoMovimientosACUMULADO_PRODUCTOS.DefaultCellStyle = dataGridViewCellStyle9;
-            resources.ApplyResources(this.datalistadoMovimientosACUMULADO_PRODUCTOS, "datalistadoMovimientosACUMULADO_PRODUCTOS");
-            this.datalistadoMovimientosACUMULADO_PRODUCTOS.EnableHeadersVisualStyles = false;
-            this.datalistadoMovimientosACUMULADO_PRODUCTOS.Name = "datalistadoMovimientosACUMULADO_PRODUCTOS";
-            this.datalistadoMovimientosACUMULADO_PRODUCTOS.ReadOnly = true;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(63)))), ((int)(((byte)(67)))));
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.datalistadoMovimientosACUMULADO_PRODUCTOS.RowHeadersDefaultCellStyle = dataGridViewCellStyle10;
-            this.datalistadoMovimientosACUMULADO_PRODUCTOS.RowHeadersVisible = false;
-            this.datalistadoMovimientosACUMULADO_PRODUCTOS.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(63)))), ((int)(((byte)(67)))));
-            this.datalistadoMovimientosACUMULADO_PRODUCTOS.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.datalistadoMovimientosACUMULADO_PRODUCTOS.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.White;
-            this.datalistadoMovimientosACUMULADO_PRODUCTOS.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            this.datalistadoMovimientosACUMULADO_PRODUCTOS.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.White;
-            this.datalistadoMovimientosACUMULADO_PRODUCTOS.RowTemplate.Height = 30;
-            this.datalistadoMovimientosACUMULADO_PRODUCTOS.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            // 
-            // dataGridViewImageColumn1
-            // 
-            resources.ApplyResources(this.dataGridViewImageColumn1, "dataGridViewImageColumn1");
-            this.dataGridViewImageColumn1.Image = ((System.Drawing.Image)(resources.GetObject("dataGridViewImageColumn1.Image")));
-            this.dataGridViewImageColumn1.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
-            this.dataGridViewImageColumn1.ReadOnly = true;
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(63)))), ((int)(((byte)(67)))));
-            this.panel7.Controls.Add(this.menuStrip4);
-            this.panel7.Controls.Add(this.label3);
-            resources.ApplyResources(this.panel7, "panel7");
-            this.panel7.Name = "panel7";
-            // 
-            // menuStrip4
-            // 
-            resources.ApplyResources(this.menuStrip4, "menuStrip4");
-            this.menuStrip4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(63)))), ((int)(((byte)(67)))));
-            this.menuStrip4.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem1});
-            this.menuStrip4.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
-            this.menuStrip4.Name = "menuStrip4";
-            this.menuStrip4.ShowItemToolTips = true;
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.toolStripMenuItem1, "toolStripMenuItem1");
-            this.toolStripMenuItem1.ForeColor = System.Drawing.Color.White;
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            // 
-            // label3
-            // 
-            resources.ApplyResources(this.label3, "label3");
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Name = "label3";
-            // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.DATALISTADO_PRODUCTOS_Movimientos);
             this.panel3.Controls.Add(this.DatalistadoMovimientos);
+            this.panel3.Controls.Add(this.panel5);
+            this.panel3.Controls.Add(this.panel14);
             resources.ApplyResources(this.panel3, "panel3");
             this.panel3.Name = "panel3";
-            // 
-            // DATALISTADO_PRODUCTOS_Movimientos
-            // 
-            this.DATALISTADO_PRODUCTOS_Movimientos.AllowUserToAddRows = false;
-            this.DATALISTADO_PRODUCTOS_Movimientos.AllowUserToDeleteRows = false;
-            this.DATALISTADO_PRODUCTOS_Movimientos.AllowUserToResizeRows = false;
-            this.DATALISTADO_PRODUCTOS_Movimientos.BackgroundColor = System.Drawing.Color.White;
-            this.DATALISTADO_PRODUCTOS_Movimientos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.DATALISTADO_PRODUCTOS_Movimientos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.DATALISTADO_PRODUCTOS_Movimientos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DATALISTADO_PRODUCTOS_Movimientos.ColumnHeadersVisible = false;
-            this.DATALISTADO_PRODUCTOS_Movimientos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewImageColumn2});
-            this.DATALISTADO_PRODUCTOS_Movimientos.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.DATALISTADO_PRODUCTOS_Movimientos.EnableHeadersVisualStyles = false;
-            resources.ApplyResources(this.DATALISTADO_PRODUCTOS_Movimientos, "DATALISTADO_PRODUCTOS_Movimientos");
-            this.DATALISTADO_PRODUCTOS_Movimientos.MultiSelect = false;
-            this.DATALISTADO_PRODUCTOS_Movimientos.Name = "DATALISTADO_PRODUCTOS_Movimientos";
-            this.DATALISTADO_PRODUCTOS_Movimientos.ReadOnly = true;
-            this.DATALISTADO_PRODUCTOS_Movimientos.RowHeadersVisible = false;
-            this.DATALISTADO_PRODUCTOS_Movimientos.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.WhiteSmoke;
-            this.DATALISTADO_PRODUCTOS_Movimientos.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
-            this.DATALISTADO_PRODUCTOS_Movimientos.RowTemplate.Height = 40;
-            this.DATALISTADO_PRODUCTOS_Movimientos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DATALISTADO_PRODUCTOS_Movimientos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DATALISTADO_PRODUCTOS_Movimientos_CellClick);
-            // 
-            // dataGridViewImageColumn2
-            // 
-            this.dataGridViewImageColumn2.DataPropertyName = "Marcar";
-            resources.ApplyResources(this.dataGridViewImageColumn2, "dataGridViewImageColumn2");
-            this.dataGridViewImageColumn2.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
-            this.dataGridViewImageColumn2.ReadOnly = true;
-            this.dataGridViewImageColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             // 
             // DatalistadoMovimientos
             // 
@@ -444,17 +399,117 @@
             this.dataGridViewImageColumn4.Name = "dataGridViewImageColumn4";
             this.dataGridViewImageColumn4.ReadOnly = true;
             // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(63)))), ((int)(((byte)(67)))));
+            this.panel5.Controls.Add(this.menuStrip4);
+            this.panel5.Controls.Add(this.datalistadoMovimientosACUMULADO_PRODUCTOS);
+            this.panel5.Controls.Add(this.panel7);
+            resources.ApplyResources(this.panel5, "panel5");
+            this.panel5.Name = "panel5";
+            // 
+            // menuStrip4
+            // 
+            resources.ApplyResources(this.menuStrip4, "menuStrip4");
+            this.menuStrip4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(63)))), ((int)(((byte)(67)))));
+            this.menuStrip4.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem1});
+            this.menuStrip4.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
+            this.menuStrip4.Name = "menuStrip4";
+            this.menuStrip4.ShowItemToolTips = true;
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.toolStripMenuItem1, "toolStripMenuItem1");
+            this.toolStripMenuItem1.ForeColor = System.Drawing.Color.White;
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            // 
+            // datalistadoMovimientosACUMULADO_PRODUCTOS
+            // 
+            this.datalistadoMovimientosACUMULADO_PRODUCTOS.AllowUserToAddRows = false;
+            this.datalistadoMovimientosACUMULADO_PRODUCTOS.AllowUserToResizeRows = false;
+            this.datalistadoMovimientosACUMULADO_PRODUCTOS.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(63)))), ((int)(((byte)(67)))));
+            this.datalistadoMovimientosACUMULADO_PRODUCTOS.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.datalistadoMovimientosACUMULADO_PRODUCTOS.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.datalistadoMovimientosACUMULADO_PRODUCTOS.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.datalistadoMovimientosACUMULADO_PRODUCTOS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.datalistadoMovimientosACUMULADO_PRODUCTOS.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewImageColumn1});
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(63)))), ((int)(((byte)(67)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.datalistadoMovimientosACUMULADO_PRODUCTOS.DefaultCellStyle = dataGridViewCellStyle1;
+            resources.ApplyResources(this.datalistadoMovimientosACUMULADO_PRODUCTOS, "datalistadoMovimientosACUMULADO_PRODUCTOS");
+            this.datalistadoMovimientosACUMULADO_PRODUCTOS.EnableHeadersVisualStyles = false;
+            this.datalistadoMovimientosACUMULADO_PRODUCTOS.Name = "datalistadoMovimientosACUMULADO_PRODUCTOS";
+            this.datalistadoMovimientosACUMULADO_PRODUCTOS.ReadOnly = true;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(63)))), ((int)(((byte)(67)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.datalistadoMovimientosACUMULADO_PRODUCTOS.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.datalistadoMovimientosACUMULADO_PRODUCTOS.RowHeadersVisible = false;
+            this.datalistadoMovimientosACUMULADO_PRODUCTOS.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(63)))), ((int)(((byte)(67)))));
+            this.datalistadoMovimientosACUMULADO_PRODUCTOS.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.datalistadoMovimientosACUMULADO_PRODUCTOS.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.White;
+            this.datalistadoMovimientosACUMULADO_PRODUCTOS.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            this.datalistadoMovimientosACUMULADO_PRODUCTOS.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.datalistadoMovimientosACUMULADO_PRODUCTOS.RowTemplate.Height = 30;
+            this.datalistadoMovimientosACUMULADO_PRODUCTOS.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            // 
+            // dataGridViewImageColumn1
+            // 
+            resources.ApplyResources(this.dataGridViewImageColumn1, "dataGridViewImageColumn1");
+            this.dataGridViewImageColumn1.Image = ((System.Drawing.Image)(resources.GetObject("dataGridViewImageColumn1.Image")));
+            this.dataGridViewImageColumn1.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
+            this.dataGridViewImageColumn1.ReadOnly = true;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(63)))), ((int)(((byte)(67)))));
+            this.panel7.Controls.Add(this.label3);
+            resources.ApplyResources(this.panel7, "panel7");
+            this.panel7.Name = "panel7";
+            // 
+            // label3
+            // 
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Name = "label3";
+            // 
+            // panel14
+            // 
+            this.panel14.Controls.Add(this.panel2);
+            resources.ApplyResources(this.panel14, "panel14");
+            this.panel14.Name = "panel14";
+            // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.panel15);
             this.panel2.Controls.Add(this.groupBox1);
-            this.panel2.Controls.Add(this.txtIdusuario);
             this.panel2.Controls.Add(this.MenuStrip1);
             this.panel2.Controls.Add(this.MenuStrip6);
             this.panel2.Controls.Add(this.txtbuscarMovimiento);
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.MenuStrip2);
+            this.panel2.Controls.Add(this.DATALISTADO_PRODUCTOS_Movimientos);
             resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Name = "panel2";
+            // 
+            // panel15
+            // 
+            this.panel15.Controls.Add(this.txtIdusuario);
+            resources.ApplyResources(this.panel15, "panel15");
+            this.panel15.Name = "panel15";
             // 
             // txtIdusuario
             // 
@@ -462,40 +517,6 @@
             resources.ApplyResources(this.txtIdusuario, "txtIdusuario");
             this.txtIdusuario.Name = "txtIdusuario";
             this.txtIdusuario.SelectedIndexChanged += new System.EventHandler(this.txtIdusuario_SelectedIndexChanged);
-            // 
-            // MenuStrip2
-            // 
-            resources.ApplyResources(this.MenuStrip2, "MenuStrip2");
-            this.MenuStrip2.BackColor = System.Drawing.Color.White;
-            this.MenuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ToolStripMenuItem3});
-            this.MenuStrip2.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
-            this.MenuStrip2.Name = "MenuStrip2";
-            this.MenuStrip2.ShowItemToolTips = true;
-            // 
-            // ToolStripMenuItem3
-            // 
-            this.ToolStripMenuItem3.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.ToolStripMenuItem3, "ToolStripMenuItem3");
-            this.ToolStripMenuItem3.ForeColor = System.Drawing.Color.Black;
-            this.ToolStripMenuItem3.Name = "ToolStripMenuItem3";
-            // 
-            // MenuStrip1
-            // 
-            resources.ApplyResources(this.MenuStrip1, "MenuStrip1");
-            this.MenuStrip1.BackColor = System.Drawing.Color.White;
-            this.MenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ToolStripMenuItem2});
-            this.MenuStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
-            this.MenuStrip1.Name = "MenuStrip1";
-            this.MenuStrip1.ShowItemToolTips = true;
-            // 
-            // ToolStripMenuItem2
-            // 
-            this.ToolStripMenuItem2.BackColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.ToolStripMenuItem2, "ToolStripMenuItem2");
-            this.ToolStripMenuItem2.ForeColor = System.Drawing.Color.Black;
-            this.ToolStripMenuItem2.Name = "ToolStripMenuItem2";
             // 
             // groupBox1
             // 
@@ -587,6 +608,23 @@
             resources.ApplyResources(this.Label4, "Label4");
             this.Label4.Name = "Label4";
             // 
+            // MenuStrip1
+            // 
+            resources.ApplyResources(this.MenuStrip1, "MenuStrip1");
+            this.MenuStrip1.BackColor = System.Drawing.Color.White;
+            this.MenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ToolStripMenuItem2});
+            this.MenuStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
+            this.MenuStrip1.Name = "MenuStrip1";
+            this.MenuStrip1.ShowItemToolTips = true;
+            // 
+            // ToolStripMenuItem2
+            // 
+            this.ToolStripMenuItem2.BackColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.ToolStripMenuItem2, "ToolStripMenuItem2");
+            this.ToolStripMenuItem2.ForeColor = System.Drawing.Color.Black;
+            this.ToolStripMenuItem2.Name = "ToolStripMenuItem2";
+            // 
             // MenuStrip6
             // 
             resources.ApplyResources(this.MenuStrip6, "MenuStrip6");
@@ -611,6 +649,7 @@
             this.txtbuscarMovimiento.BorderStyle = System.Windows.Forms.BorderStyle.None;
             resources.ApplyResources(this.txtbuscarMovimiento, "txtbuscarMovimiento");
             this.txtbuscarMovimiento.Name = "txtbuscarMovimiento";
+            this.txtbuscarMovimiento.Click += new System.EventHandler(this.txtbuscarMovimiento_Click);
             this.txtbuscarMovimiento.TextChanged += new System.EventHandler(this.txtbuscarMovimiento_TextChanged);
             // 
             // panel4
@@ -619,11 +658,517 @@
             resources.ApplyResources(this.panel4, "panel4");
             this.panel4.Name = "panel4";
             // 
+            // MenuStrip2
+            // 
+            resources.ApplyResources(this.MenuStrip2, "MenuStrip2");
+            this.MenuStrip2.BackColor = System.Drawing.Color.White;
+            this.MenuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ToolStripMenuItem3});
+            this.MenuStrip2.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
+            this.MenuStrip2.Name = "MenuStrip2";
+            this.MenuStrip2.ShowItemToolTips = true;
+            // 
+            // ToolStripMenuItem3
+            // 
+            this.ToolStripMenuItem3.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.ToolStripMenuItem3, "ToolStripMenuItem3");
+            this.ToolStripMenuItem3.ForeColor = System.Drawing.Color.Black;
+            this.ToolStripMenuItem3.Name = "ToolStripMenuItem3";
+            // 
+            // DATALISTADO_PRODUCTOS_Movimientos
+            // 
+            this.DATALISTADO_PRODUCTOS_Movimientos.AllowUserToAddRows = false;
+            this.DATALISTADO_PRODUCTOS_Movimientos.AllowUserToDeleteRows = false;
+            this.DATALISTADO_PRODUCTOS_Movimientos.AllowUserToResizeRows = false;
+            this.DATALISTADO_PRODUCTOS_Movimientos.BackgroundColor = System.Drawing.Color.White;
+            this.DATALISTADO_PRODUCTOS_Movimientos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.DATALISTADO_PRODUCTOS_Movimientos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.DATALISTADO_PRODUCTOS_Movimientos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DATALISTADO_PRODUCTOS_Movimientos.ColumnHeadersVisible = false;
+            this.DATALISTADO_PRODUCTOS_Movimientos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewImageColumn2});
+            this.DATALISTADO_PRODUCTOS_Movimientos.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.DATALISTADO_PRODUCTOS_Movimientos.EnableHeadersVisualStyles = false;
+            resources.ApplyResources(this.DATALISTADO_PRODUCTOS_Movimientos, "DATALISTADO_PRODUCTOS_Movimientos");
+            this.DATALISTADO_PRODUCTOS_Movimientos.MultiSelect = false;
+            this.DATALISTADO_PRODUCTOS_Movimientos.Name = "DATALISTADO_PRODUCTOS_Movimientos";
+            this.DATALISTADO_PRODUCTOS_Movimientos.ReadOnly = true;
+            this.DATALISTADO_PRODUCTOS_Movimientos.RowHeadersVisible = false;
+            this.DATALISTADO_PRODUCTOS_Movimientos.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.WhiteSmoke;
+            this.DATALISTADO_PRODUCTOS_Movimientos.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.DATALISTADO_PRODUCTOS_Movimientos.RowTemplate.Height = 40;
+            this.DATALISTADO_PRODUCTOS_Movimientos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DATALISTADO_PRODUCTOS_Movimientos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DATALISTADO_PRODUCTOS_Movimientos_CellClick);
+            // 
+            // dataGridViewImageColumn2
+            // 
+            this.dataGridViewImageColumn2.DataPropertyName = "Marcar";
+            resources.ApplyResources(this.dataGridViewImageColumn2, "dataGridViewImageColumn2");
+            this.dataGridViewImageColumn2.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
+            this.dataGridViewImageColumn2.ReadOnly = true;
+            this.dataGridViewImageColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
+            // PaneliNVENTARIObajo
+            // 
+            this.PaneliNVENTARIObajo.BackColor = System.Drawing.Color.White;
+            this.PaneliNVENTARIObajo.Controls.Add(this.datalistadoInventarioBAJO);
+            this.PaneliNVENTARIObajo.Controls.Add(this.panel10);
+            resources.ApplyResources(this.PaneliNVENTARIObajo, "PaneliNVENTARIObajo");
+            this.PaneliNVENTARIObajo.Name = "PaneliNVENTARIObajo";
+            // 
+            // datalistadoInventarioBAJO
+            // 
+            this.datalistadoInventarioBAJO.AllowUserToAddRows = false;
+            this.datalistadoInventarioBAJO.AllowUserToResizeRows = false;
+            this.datalistadoInventarioBAJO.BackgroundColor = System.Drawing.Color.White;
+            this.datalistadoInventarioBAJO.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.datalistadoInventarioBAJO.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.datalistadoInventarioBAJO.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.datalistadoInventarioBAJO.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.datalistadoInventarioBAJO.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewImageColumn3});
+            resources.ApplyResources(this.datalistadoInventarioBAJO, "datalistadoInventarioBAJO");
+            this.datalistadoInventarioBAJO.EnableHeadersVisualStyles = false;
+            this.datalistadoInventarioBAJO.Name = "datalistadoInventarioBAJO";
+            this.datalistadoInventarioBAJO.ReadOnly = true;
+            this.datalistadoInventarioBAJO.RowHeadersVisible = false;
+            this.datalistadoInventarioBAJO.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.datalistadoInventarioBAJO.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.datalistadoInventarioBAJO.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.datalistadoInventarioBAJO.RowTemplate.Height = 30;
+            this.datalistadoInventarioBAJO.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            // 
+            // dataGridViewImageColumn3
+            // 
+            resources.ApplyResources(this.dataGridViewImageColumn3, "dataGridViewImageColumn3");
+            this.dataGridViewImageColumn3.Image = ((System.Drawing.Image)(resources.GetObject("dataGridViewImageColumn3.Image")));
+            this.dataGridViewImageColumn3.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.dataGridViewImageColumn3.Name = "dataGridViewImageColumn3";
+            this.dataGridViewImageColumn3.ReadOnly = true;
+            // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.White;
+            this.panel10.Controls.Add(this.menuStrip5);
+            this.panel10.Controls.Add(this.Label6);
+            resources.ApplyResources(this.panel10, "panel10");
+            this.panel10.Name = "panel10";
+            // 
+            // menuStrip5
+            // 
+            resources.ApplyResources(this.menuStrip5, "menuStrip5");
+            this.menuStrip5.BackColor = System.Drawing.Color.White;
+            this.menuStrip5.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem5});
+            this.menuStrip5.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
+            this.menuStrip5.Name = "menuStrip5";
+            this.menuStrip5.ShowItemToolTips = true;
+            // 
+            // toolStripMenuItem5
+            // 
+            this.toolStripMenuItem5.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.toolStripMenuItem5, "toolStripMenuItem5");
+            this.toolStripMenuItem5.ForeColor = System.Drawing.Color.Black;
+            this.toolStripMenuItem5.Name = "toolStripMenuItem5";
+            // 
+            // Label6
+            // 
+            resources.ApplyResources(this.Label6, "Label6");
+            this.Label6.Name = "Label6";
+            // 
+            // panelREPORTEInventario
+            // 
+            this.panelREPORTEInventario.Controls.Add(this.panel8);
+            resources.ApplyResources(this.panelREPORTEInventario, "panelREPORTEInventario");
+            this.panelREPORTEInventario.Name = "panelREPORTEInventario";
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel8.Controls.Add(this.datalistadoInventariosReport);
+            this.panel8.Controls.Add(this.panel11);
+            resources.ApplyResources(this.panel8, "panel8");
+            this.panel8.Name = "panel8";
+            // 
+            // datalistadoInventariosReport
+            // 
+            this.datalistadoInventariosReport.AllowUserToAddRows = false;
+            this.datalistadoInventariosReport.AllowUserToResizeRows = false;
+            this.datalistadoInventariosReport.BackgroundColor = System.Drawing.Color.White;
+            this.datalistadoInventariosReport.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.datalistadoInventariosReport.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.datalistadoInventariosReport.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.datalistadoInventariosReport.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.datalistadoInventariosReport.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewImageColumn5});
+            resources.ApplyResources(this.datalistadoInventariosReport, "datalistadoInventariosReport");
+            this.datalistadoInventariosReport.EnableHeadersVisualStyles = false;
+            this.datalistadoInventariosReport.Name = "datalistadoInventariosReport";
+            this.datalistadoInventariosReport.ReadOnly = true;
+            this.datalistadoInventariosReport.RowHeadersVisible = false;
+            this.datalistadoInventariosReport.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.White;
+            this.datalistadoInventariosReport.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.datalistadoInventariosReport.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.SystemColors.HotTrack;
+            this.datalistadoInventariosReport.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.datalistadoInventariosReport.RowTemplate.Height = 30;
+            this.datalistadoInventariosReport.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            // 
+            // dataGridViewImageColumn5
+            // 
+            resources.ApplyResources(this.dataGridViewImageColumn5, "dataGridViewImageColumn5");
+            this.dataGridViewImageColumn5.Image = ((System.Drawing.Image)(resources.GetObject("dataGridViewImageColumn5.Image")));
+            this.dataGridViewImageColumn5.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.dataGridViewImageColumn5.Name = "dataGridViewImageColumn5";
+            this.dataGridViewImageColumn5.ReadOnly = true;
+            // 
+            // panel11
+            // 
+            this.panel11.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel11.Controls.Add(this.menuStrip8);
+            this.panel11.Controls.Add(this.menuStrip7);
+            this.panel11.Controls.Add(this.panel12);
+            this.panel11.Controls.Add(this.menuStrip9);
+            this.panel11.Controls.Add(this.txtbuscar_inventarios);
+            this.panel11.Controls.Add(this.lblcostoInventario);
+            this.panel11.Controls.Add(this.lblcantidaddeProductosEnInventario);
+            this.panel11.Controls.Add(this.label7);
+            this.panel11.Controls.Add(this.label9);
+            resources.ApplyResources(this.panel11, "panel11");
+            this.panel11.Name = "panel11";
+            // 
+            // menuStrip8
+            // 
+            resources.ApplyResources(this.menuStrip8, "menuStrip8");
+            this.menuStrip8.BackColor = System.Drawing.Color.Transparent;
+            this.menuStrip8.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem8});
+            this.menuStrip8.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
+            this.menuStrip8.Name = "menuStrip8";
+            this.menuStrip8.ShowItemToolTips = true;
+            // 
+            // toolStripMenuItem8
+            // 
+            this.toolStripMenuItem8.BackColor = System.Drawing.SystemColors.HotTrack;
+            resources.ApplyResources(this.toolStripMenuItem8, "toolStripMenuItem8");
+            this.toolStripMenuItem8.ForeColor = System.Drawing.Color.White;
+            this.toolStripMenuItem8.Name = "toolStripMenuItem8";
+            this.toolStripMenuItem8.Click += new System.EventHandler(this.toolStripMenuItem8_Click);
+            // 
+            // menuStrip7
+            // 
+            resources.ApplyResources(this.menuStrip7, "menuStrip7");
+            this.menuStrip7.BackColor = System.Drawing.Color.Transparent;
+            this.menuStrip7.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem6});
+            this.menuStrip7.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
+            this.menuStrip7.Name = "menuStrip7";
+            this.menuStrip7.ShowItemToolTips = true;
+            this.menuStrip7.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip7_ItemClicked);
+            // 
+            // toolStripMenuItem6
+            // 
+            this.toolStripMenuItem6.BackColor = System.Drawing.SystemColors.HotTrack;
+            resources.ApplyResources(this.toolStripMenuItem6, "toolStripMenuItem6");
+            this.toolStripMenuItem6.ForeColor = System.Drawing.Color.White;
+            this.toolStripMenuItem6.Name = "toolStripMenuItem6";
+            this.toolStripMenuItem6.Click += new System.EventHandler(this.toolStripMenuItem6_Click);
+            // 
+            // panel12
+            // 
+            this.panel12.BackColor = System.Drawing.Color.White;
+            this.panel12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(166)))), ((int)(((byte)(63)))));
+            resources.ApplyResources(this.panel12, "panel12");
+            this.panel12.Name = "panel12";
+            // 
+            // menuStrip9
+            // 
+            resources.ApplyResources(this.menuStrip9, "menuStrip9");
+            this.menuStrip9.BackColor = System.Drawing.Color.Transparent;
+            this.menuStrip9.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem9});
+            this.menuStrip9.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
+            this.menuStrip9.Name = "menuStrip9";
+            this.menuStrip9.ShowItemToolTips = true;
+            // 
+            // toolStripMenuItem9
+            // 
+            this.toolStripMenuItem9.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.toolStripMenuItem9, "toolStripMenuItem9");
+            this.toolStripMenuItem9.ForeColor = System.Drawing.Color.Black;
+            this.toolStripMenuItem9.Name = "toolStripMenuItem9";
+            // 
+            // txtbuscar_inventarios
+            // 
+            this.txtbuscar_inventarios.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtbuscar_inventarios.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            resources.ApplyResources(this.txtbuscar_inventarios, "txtbuscar_inventarios");
+            this.txtbuscar_inventarios.ForeColor = System.Drawing.Color.Black;
+            this.txtbuscar_inventarios.Name = "txtbuscar_inventarios";
+            this.txtbuscar_inventarios.TextChanged += new System.EventHandler(this.txtbuscar_inventarios_TextChanged);
+            // 
+            // lblcostoInventario
+            // 
+            resources.ApplyResources(this.lblcostoInventario, "lblcostoInventario");
+            this.lblcostoInventario.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.lblcostoInventario.Name = "lblcostoInventario";
+            // 
+            // lblcantidaddeProductosEnInventario
+            // 
+            resources.ApplyResources(this.lblcantidaddeProductosEnInventario, "lblcantidaddeProductosEnInventario");
+            this.lblcantidaddeProductosEnInventario.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.lblcantidaddeProductosEnInventario.Name = "lblcantidaddeProductosEnInventario";
+            // 
+            // label7
+            // 
+            resources.ApplyResources(this.label7, "label7");
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Name = "label7";
+            // 
+            // label9
+            // 
+            resources.ApplyResources(this.label9, "label9");
+            this.label9.ForeColor = System.Drawing.Color.Black;
+            this.label9.Name = "label9";
+            // 
+            // panel13
+            // 
+            this.panel13.BackColor = System.Drawing.Color.White;
+            this.panel13.Controls.Add(this.panel16);
+            this.panel13.Controls.Add(this.menuStrip12);
+            this.panel13.Controls.Add(this.txtbuscarKardex_movimientos);
+            resources.ApplyResources(this.panel13, "panel13");
+            this.panel13.Name = "panel13";
+            // 
+            // panel16
+            // 
+            this.panel16.BackColor = System.Drawing.Color.Gainsboro;
+            resources.ApplyResources(this.panel16, "panel16");
+            this.panel16.Name = "panel16";
+            // 
+            // menuStrip12
+            // 
+            resources.ApplyResources(this.menuStrip12, "menuStrip12");
+            this.menuStrip12.BackColor = System.Drawing.Color.White;
+            this.menuStrip12.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem11});
+            this.menuStrip12.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
+            this.menuStrip12.Name = "menuStrip12";
+            this.menuStrip12.ShowItemToolTips = true;
+            // 
+            // toolStripMenuItem11
+            // 
+            this.toolStripMenuItem11.BackColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.toolStripMenuItem11, "toolStripMenuItem11");
+            this.toolStripMenuItem11.ForeColor = System.Drawing.Color.Black;
+            this.toolStripMenuItem11.Name = "toolStripMenuItem11";
+            // 
+            // txtbuscarKardex_movimientos
+            // 
+            this.txtbuscarKardex_movimientos.BackColor = System.Drawing.Color.White;
+            this.txtbuscarKardex_movimientos.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            resources.ApplyResources(this.txtbuscarKardex_movimientos, "txtbuscarKardex_movimientos");
+            this.txtbuscarKardex_movimientos.Name = "txtbuscarKardex_movimientos";
+            this.txtbuscarKardex_movimientos.TextChanged += new System.EventHandler(this.txtbuscarKardex_movimientos_TextChanged);
+            // 
+            // DATALISTADO_PRODUCTOS_Kardex
+            // 
+            this.DATALISTADO_PRODUCTOS_Kardex.AllowUserToAddRows = false;
+            this.DATALISTADO_PRODUCTOS_Kardex.AllowUserToDeleteRows = false;
+            this.DATALISTADO_PRODUCTOS_Kardex.AllowUserToResizeRows = false;
+            this.DATALISTADO_PRODUCTOS_Kardex.BackgroundColor = System.Drawing.Color.White;
+            this.DATALISTADO_PRODUCTOS_Kardex.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DATALISTADO_PRODUCTOS_Kardex.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.DATALISTADO_PRODUCTOS_Kardex.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.DATALISTADO_PRODUCTOS_Kardex.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DATALISTADO_PRODUCTOS_Kardex.ColumnHeadersVisible = false;
+            this.DATALISTADO_PRODUCTOS_Kardex.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.DataGridViewCheckBoxColumn4});
+            this.DATALISTADO_PRODUCTOS_Kardex.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.DATALISTADO_PRODUCTOS_Kardex.EnableHeadersVisualStyles = false;
+            resources.ApplyResources(this.DATALISTADO_PRODUCTOS_Kardex, "DATALISTADO_PRODUCTOS_Kardex");
+            this.DATALISTADO_PRODUCTOS_Kardex.MultiSelect = false;
+            this.DATALISTADO_PRODUCTOS_Kardex.Name = "DATALISTADO_PRODUCTOS_Kardex";
+            this.DATALISTADO_PRODUCTOS_Kardex.ReadOnly = true;
+            this.DATALISTADO_PRODUCTOS_Kardex.RowHeadersVisible = false;
+            this.DATALISTADO_PRODUCTOS_Kardex.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.WhiteSmoke;
+            this.DATALISTADO_PRODUCTOS_Kardex.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.DATALISTADO_PRODUCTOS_Kardex.RowTemplate.Height = 40;
+            this.DATALISTADO_PRODUCTOS_Kardex.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            // 
+            // DataGridViewCheckBoxColumn4
+            // 
+            this.DataGridViewCheckBoxColumn4.DataPropertyName = "Marcar";
+            resources.ApplyResources(this.DataGridViewCheckBoxColumn4, "DataGridViewCheckBoxColumn4");
+            this.DataGridViewCheckBoxColumn4.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.DataGridViewCheckBoxColumn4.Name = "DataGridViewCheckBoxColumn4";
+            this.DataGridViewCheckBoxColumn4.ReadOnly = true;
+            this.DataGridViewCheckBoxColumn4.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
+            // PanelKardex
+            // 
+            this.PanelKardex.BackColor = System.Drawing.Color.White;
+            this.PanelKardex.Controls.Add(this.DATALISTADO_PRODUCTOS_Kardex);
+            this.PanelKardex.Controls.Add(this.panel13);
+            resources.ApplyResources(this.PanelKardex, "PanelKardex");
+            this.PanelKardex.Name = "PanelKardex";
+            // 
+            // panelVencimiento
+            // 
+            this.panelVencimiento.Controls.Add(this.datalistadoVencimientos);
+            this.panelVencimiento.Controls.Add(this.panel17);
+            resources.ApplyResources(this.panelVencimiento, "panelVencimiento");
+            this.panelVencimiento.Name = "panelVencimiento";
+            // 
+            // datalistadoVencimientos
+            // 
+            this.datalistadoVencimientos.AllowUserToAddRows = false;
+            this.datalistadoVencimientos.AllowUserToResizeRows = false;
+            this.datalistadoVencimientos.BackgroundColor = System.Drawing.Color.White;
+            this.datalistadoVencimientos.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.datalistadoVencimientos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.datalistadoVencimientos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.datalistadoVencimientos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.datalistadoVencimientos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewImageColumn6});
+            resources.ApplyResources(this.datalistadoVencimientos, "datalistadoVencimientos");
+            this.datalistadoVencimientos.EnableHeadersVisualStyles = false;
+            this.datalistadoVencimientos.Name = "datalistadoVencimientos";
+            this.datalistadoVencimientos.ReadOnly = true;
+            this.datalistadoVencimientos.RowHeadersVisible = false;
+            this.datalistadoVencimientos.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.datalistadoVencimientos.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.datalistadoVencimientos.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.datalistadoVencimientos.RowTemplate.Height = 30;
+            this.datalistadoVencimientos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            // 
+            // dataGridViewImageColumn6
+            // 
+            resources.ApplyResources(this.dataGridViewImageColumn6, "dataGridViewImageColumn6");
+            this.dataGridViewImageColumn6.Image = ((System.Drawing.Image)(resources.GetObject("dataGridViewImageColumn6.Image")));
+            this.dataGridViewImageColumn6.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.dataGridViewImageColumn6.Name = "dataGridViewImageColumn6";
+            this.dataGridViewImageColumn6.ReadOnly = true;
+            // 
+            // panel17
+            // 
+            this.panel17.BackColor = System.Drawing.Color.White;
+            this.panel17.Controls.Add(this.groupBox2);
+            this.panel17.Controls.Add(this.comboBox3);
+            this.panel17.Controls.Add(this.menuStrip14);
+            this.panel17.Controls.Add(this.menuStrip16);
+            this.panel17.Controls.Add(this.txtBuscarVencimientos);
+            this.panel17.Controls.Add(this.panel18);
+            this.panel17.Controls.Add(this.menuStrip17);
+            resources.ApplyResources(this.panel17, "panel17");
+            this.panel17.Name = "panel17";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.BackColor = System.Drawing.Color.White;
+            this.groupBox2.Controls.Add(this.CheckProductosVencidos);
+            this.groupBox2.Controls.Add(this.CheckPorVencer30enDias);
+            resources.ApplyResources(this.groupBox2, "groupBox2");
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.TabStop = false;
+            // 
+            // CheckProductosVencidos
+            // 
+            resources.ApplyResources(this.CheckProductosVencidos, "CheckProductosVencidos");
+            this.CheckProductosVencidos.Name = "CheckProductosVencidos";
+            this.CheckProductosVencidos.TabStop = true;
+            this.CheckProductosVencidos.UseVisualStyleBackColor = true;
+            this.CheckProductosVencidos.CheckedChanged += new System.EventHandler(this.CheckProductosVencidos_CheckedChanged);
+            // 
+            // CheckPorVencer30enDias
+            // 
+            resources.ApplyResources(this.CheckPorVencer30enDias, "CheckPorVencer30enDias");
+            this.CheckPorVencer30enDias.Name = "CheckPorVencer30enDias";
+            this.CheckPorVencer30enDias.TabStop = true;
+            this.CheckPorVencer30enDias.UseVisualStyleBackColor = true;
+            this.CheckPorVencer30enDias.CheckedChanged += new System.EventHandler(this.CheckPorVencer30enDias_CheckedChanged);
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.FormattingEnabled = true;
+            resources.ApplyResources(this.comboBox3, "comboBox3");
+            this.comboBox3.Name = "comboBox3";
+            // 
+            // menuStrip14
+            // 
+            resources.ApplyResources(this.menuStrip14, "menuStrip14");
+            this.menuStrip14.BackColor = System.Drawing.Color.White;
+            this.menuStrip14.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem13});
+            this.menuStrip14.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
+            this.menuStrip14.Name = "menuStrip14";
+            this.menuStrip14.ShowItemToolTips = true;
+            // 
+            // toolStripMenuItem13
+            // 
+            this.toolStripMenuItem13.BackColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.toolStripMenuItem13, "toolStripMenuItem13");
+            this.toolStripMenuItem13.ForeColor = System.Drawing.Color.Black;
+            this.toolStripMenuItem13.Name = "toolStripMenuItem13";
+            // 
+            // menuStrip16
+            // 
+            resources.ApplyResources(this.menuStrip16, "menuStrip16");
+            this.menuStrip16.BackColor = System.Drawing.Color.White;
+            this.menuStrip16.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem14});
+            this.menuStrip16.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
+            this.menuStrip16.Name = "menuStrip16";
+            this.menuStrip16.ShowItemToolTips = true;
+            // 
+            // toolStripMenuItem14
+            // 
+            this.toolStripMenuItem14.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.toolStripMenuItem14, "toolStripMenuItem14");
+            this.toolStripMenuItem14.ForeColor = System.Drawing.Color.Black;
+            this.toolStripMenuItem14.Name = "toolStripMenuItem14";
+            // 
+            // txtBuscarVencimientos
+            // 
+            this.txtBuscarVencimientos.BackColor = System.Drawing.Color.White;
+            this.txtBuscarVencimientos.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            resources.ApplyResources(this.txtBuscarVencimientos, "txtBuscarVencimientos");
+            this.txtBuscarVencimientos.Name = "txtBuscarVencimientos";
+            this.txtBuscarVencimientos.Click += new System.EventHandler(this.txtBuscarVencimientos_Click);
+            this.txtBuscarVencimientos.TextChanged += new System.EventHandler(this.txtBuscarVencimientos_TextChanged);
+            // 
+            // panel18
+            // 
+            this.panel18.BackColor = System.Drawing.Color.Gainsboro;
+            resources.ApplyResources(this.panel18, "panel18");
+            this.panel18.Name = "panel18";
+            // 
+            // menuStrip17
+            // 
+            resources.ApplyResources(this.menuStrip17, "menuStrip17");
+            this.menuStrip17.BackColor = System.Drawing.Color.White;
+            this.menuStrip17.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem15});
+            this.menuStrip17.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
+            this.menuStrip17.Name = "menuStrip17";
+            this.menuStrip17.ShowItemToolTips = true;
+            // 
+            // toolStripMenuItem15
+            // 
+            this.toolStripMenuItem15.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.toolStripMenuItem15, "toolStripMenuItem15");
+            this.toolStripMenuItem15.ForeColor = System.Drawing.Color.Black;
+            this.toolStripMenuItem15.Name = "toolStripMenuItem15";
+            // 
             // INVENTARIO_MENU
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.PanelKardex);
             this.Controls.Add(this.panelMOVIMIENTOS);
+            this.Controls.Add(this.panelVencimiento);
+            this.Controls.Add(this.PaneliNVENTARIObajo);
+            this.Controls.Add(this.panelREPORTEInventario);
             this.Controls.Add(this.Panel1);
             this.Controls.Add(this.label1);
             this.Name = "INVENTARIO_MENU";
@@ -639,28 +1184,65 @@
             this.MenuStrip3.ResumeLayout(false);
             this.MenuStrip3.PerformLayout();
             this.panelMOVIMIENTOS.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.DatalistadoMovimientos)).EndInit();
             this.panel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.datalistadoMovimientosACUMULADO_PRODUCTOS)).EndInit();
-            this.panel7.ResumeLayout(false);
             this.menuStrip4.ResumeLayout(false);
             this.menuStrip4.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.DATALISTADO_PRODUCTOS_Movimientos)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DatalistadoMovimientos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.datalistadoMovimientosACUMULADO_PRODUCTOS)).EndInit();
+            this.panel7.ResumeLayout(false);
+            this.panel14.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.MenuStrip2.ResumeLayout(false);
-            this.MenuStrip2.PerformLayout();
-            this.MenuStrip1.ResumeLayout(false);
-            this.MenuStrip1.PerformLayout();
+            this.panel15.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.MenuStrip10.ResumeLayout(false);
             this.MenuStrip10.PerformLayout();
             this.MenuStrip15.ResumeLayout(false);
             this.MenuStrip15.PerformLayout();
+            this.MenuStrip1.ResumeLayout(false);
+            this.MenuStrip1.PerformLayout();
             this.MenuStrip6.ResumeLayout(false);
             this.MenuStrip6.PerformLayout();
+            this.MenuStrip2.ResumeLayout(false);
+            this.MenuStrip2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DATALISTADO_PRODUCTOS_Movimientos)).EndInit();
+            this.PaneliNVENTARIObajo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.datalistadoInventarioBAJO)).EndInit();
+            this.panel10.ResumeLayout(false);
+            this.panel10.PerformLayout();
+            this.menuStrip5.ResumeLayout(false);
+            this.menuStrip5.PerformLayout();
+            this.panelREPORTEInventario.ResumeLayout(false);
+            this.panel8.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.datalistadoInventariosReport)).EndInit();
+            this.panel11.ResumeLayout(false);
+            this.panel11.PerformLayout();
+            this.menuStrip8.ResumeLayout(false);
+            this.menuStrip8.PerformLayout();
+            this.menuStrip7.ResumeLayout(false);
+            this.menuStrip7.PerformLayout();
+            this.menuStrip9.ResumeLayout(false);
+            this.menuStrip9.PerformLayout();
+            this.panel13.ResumeLayout(false);
+            this.panel13.PerformLayout();
+            this.menuStrip12.ResumeLayout(false);
+            this.menuStrip12.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DATALISTADO_PRODUCTOS_Kardex)).EndInit();
+            this.PanelKardex.ResumeLayout(false);
+            this.panelVencimiento.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.datalistadoVencimientos)).EndInit();
+            this.panel17.ResumeLayout(false);
+            this.panel17.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.menuStrip14.ResumeLayout(false);
+            this.menuStrip14.PerformLayout();
+            this.menuStrip16.ResumeLayout(false);
+            this.menuStrip16.PerformLayout();
+            this.menuStrip17.ResumeLayout(false);
+            this.menuStrip17.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -722,5 +1304,55 @@
         internal System.Windows.Forms.DataGridView DATALISTADO_PRODUCTOS_Movimientos;
         internal System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn2;
         private System.Windows.Forms.ComboBox txtIdusuario;
+        private System.Windows.Forms.Panel PaneliNVENTARIObajo;
+        private System.Windows.Forms.Panel panel10;
+        internal System.Windows.Forms.MenuStrip menuStrip5;
+        internal System.Windows.Forms.ToolStripMenuItem toolStripMenuItem5;
+        internal System.Windows.Forms.Label Label6;
+        private System.Windows.Forms.DataGridView datalistadoInventarioBAJO;
+        private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn3;
+        private System.Windows.Forms.Panel panelREPORTEInventario;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.DataGridView datalistadoInventariosReport;
+        private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn5;
+        private System.Windows.Forms.Panel panel11;
+        internal System.Windows.Forms.MenuStrip menuStrip8;
+        internal System.Windows.Forms.ToolStripMenuItem toolStripMenuItem8;
+        internal System.Windows.Forms.MenuStrip menuStrip7;
+        internal System.Windows.Forms.ToolStripMenuItem toolStripMenuItem6;
+        internal System.Windows.Forms.Panel panel12;
+        internal System.Windows.Forms.MenuStrip menuStrip9;
+        internal System.Windows.Forms.ToolStripMenuItem toolStripMenuItem9;
+        internal System.Windows.Forms.TextBox txtbuscar_inventarios;
+        internal System.Windows.Forms.Label lblcostoInventario;
+        internal System.Windows.Forms.Label lblcantidaddeProductosEnInventario;
+        internal System.Windows.Forms.Label label7;
+        internal System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Panel panel13;
+        internal System.Windows.Forms.Panel panel16;
+        internal System.Windows.Forms.MenuStrip menuStrip12;
+        internal System.Windows.Forms.ToolStripMenuItem toolStripMenuItem11;
+        internal System.Windows.Forms.TextBox txtbuscarKardex_movimientos;
+        internal System.Windows.Forms.DataGridView DATALISTADO_PRODUCTOS_Kardex;
+        internal System.Windows.Forms.DataGridViewImageColumn DataGridViewCheckBoxColumn4;
+        private System.Windows.Forms.Panel PanelKardex;
+        private System.Windows.Forms.Panel panel14;
+        private System.Windows.Forms.Panel panelVencimiento;
+        private System.Windows.Forms.DataGridView datalistadoVencimientos;
+        private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn6;
+        private System.Windows.Forms.Panel panel17;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.RadioButton CheckProductosVencidos;
+        private System.Windows.Forms.RadioButton CheckPorVencer30enDias;
+        private System.Windows.Forms.ComboBox comboBox3;
+        internal System.Windows.Forms.MenuStrip menuStrip14;
+        internal System.Windows.Forms.ToolStripMenuItem toolStripMenuItem13;
+        internal System.Windows.Forms.MenuStrip menuStrip16;
+        internal System.Windows.Forms.ToolStripMenuItem toolStripMenuItem14;
+        internal System.Windows.Forms.TextBox txtBuscarVencimientos;
+        internal System.Windows.Forms.Panel panel18;
+        internal System.Windows.Forms.MenuStrip menuStrip17;
+        internal System.Windows.Forms.ToolStripMenuItem toolStripMenuItem15;
+        private System.Windows.Forms.Panel panel15;
     }
 }

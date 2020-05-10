@@ -102,7 +102,7 @@ namespace PuntoDeVenta.Modulos.INVENTARIO_KARDEX
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("El producto:"+txtbuscarMovimiento.Text+" no existe","Inventario | Kardex", MessageBoxButtons.OK,MessageBoxIcon.Information);
             }
 
         }
@@ -207,8 +207,25 @@ namespace PuntoDeVenta.Modulos.INVENTARIO_KARDEX
 
         private void INVENTARIO_MENU_Load(object sender, EventArgs e)
         {
-            buscar_usuario();
-            panel5.Visible = false;
+            panelMOVIMIENTOS.Dock = DockStyle.None;
+            panelREPORTEInventario.Dock = DockStyle.None;
+            PaneliNVENTARIObajo.Dock = DockStyle.None;
+            panelMOVIMIENTOS.Visible = false;
+            panelREPORTEInventario.Visible = false;
+            PaneliNVENTARIObajo.Visible = false;
+            PanelKardex.Visible = true;
+            PanelKardex.Dock = DockStyle.Fill;
+            Panelv.Visible = false;
+            panelVencimiento.Visible = false;
+            panelVencimiento.Dock = DockStyle.None;
+
+            PanelK.Visible = true;
+            PanelI.Visible = false;
+            PanelM.Visible = false;
+            PanelR.Visible = false;
+            Panelv.Visible = false;
+
+            txtbuscarKardex_movimientos.Text = "Buscar producto";
         }
         private void buscar_usuario()
         {
@@ -300,11 +317,12 @@ namespace PuntoDeVenta.Modulos.INVENTARIO_KARDEX
         {
             panel5.Visible = false;
             groupBox1.Visible = false;
-            buscar_MOVIMIENTOS_DE_KARDEX();
             txtTipoMovi.Text = "-Todos-";
             txtbuscarMovimiento.Text = "Buscar producto";
             MenuStrip2.Visible = true;
             MenuStrip6.Visible = true;
+            //buscar_MOVIMIENTOS_DE_KARDEX();
+            
         }
 
         private void txtIdusuario_SelectedIndexChanged(object sender, EventArgs e)
@@ -314,16 +332,50 @@ namespace PuntoDeVenta.Modulos.INVENTARIO_KARDEX
 
         private void TNOTAS_Click(object sender, EventArgs e)
         {
-            //MOSTRAR_Inventarios_bajo_minimo();
+            panelMOVIMIENTOS.Dock = DockStyle.None;
+            panelREPORTEInventario.Dock = DockStyle.None;
+
+            panelMOVIMIENTOS.Visible = false;
+            panelREPORTEInventario.Visible = false;
+            PaneliNVENTARIObajo.Visible = true;
+            PaneliNVENTARIObajo.Dock = DockStyle.Fill;
+            PanelKardex.Visible = false;
+            PanelKardex.Dock = DockStyle.None;
+            PanelK.Visible = false;
+            PanelI.Visible = true;
+            PanelM.Visible = false;
+            PanelR.Visible = false;
+            Panelv.Visible = false;
+            panelVencimiento.Visible = false;
+            panelVencimiento.Dock = DockStyle.None;
+            Panelv.Visible = false;
+            MOSTRAR_Inventarios_bajo_minimo();
 
         }
 
         private void TOTROSPAGOS_Click(object sender, EventArgs e)
         {
-            //sumar_costo_de_inventario_CONTAR_PRODUCTOS();
+            PanelR.Visible = true;
+            PanelK.Visible = false;
+            PanelI.Visible = false;
+            PanelM.Visible = false;
+            Panelv.Visible = false;
+            panelMOVIMIENTOS.Visible = false;
+            panelREPORTEInventario.Visible = true;
+            PaneliNVENTARIObajo.Visible = false;
+            panelMOVIMIENTOS.Dock = DockStyle.None;
+            panelREPORTEInventario.Dock = DockStyle.Fill;
+            PaneliNVENTARIObajo.Dock = DockStyle.None;
+            PanelKardex.Visible = false;
+            PanelKardex.Dock = DockStyle.None;
+            panelVencimiento.Visible = false;
+            panelVencimiento.Dock = DockStyle.None;
+            Panelv.Visible = false;
+            mostrar_inventarios_todos();
+            sumar_costo_de_inventario_CONTAR_PRODUCTOS();
 
         }
-        /*internal void sumar_costo_de_inventario_CONTAR_PRODUCTOS()
+        internal void sumar_costo_de_inventario_CONTAR_PRODUCTOS()
         {
 
 
@@ -385,6 +437,348 @@ namespace PuntoDeVenta.Modulos.INVENTARIO_KARDEX
                 lblcantidaddeProductosEnInventario.Text = "0";
             }
 
-        }*/
+        }
+        private void MOSTRAR_Inventarios_bajo_minimo()
+        {
+            try
+            {
+                DataTable dt = new DataTable();
+                SqlDataAdapter da;
+                SqlConnection con = new SqlConnection();
+                con.ConnectionString = CONEXION.CONEXIONMAESTRA.CONEXION;
+                con.Open();
+
+                da = new SqlDataAdapter("MOSTRAR_Inventarios_bajo_minimo", con);
+
+                da.Fill(dt);
+                datalistadoInventarioBAJO.DataSource = dt;
+                con.Close();
+
+
+                datalistadoInventarioBAJO.Columns[0].Visible = false;
+                datalistadoInventarioBAJO.Columns[4].Visible = false;
+                datalistadoInventarioBAJO.Columns[7].Visible = false;
+                datalistadoInventarioBAJO.Columns[8].Visible = false;
+                datalistadoInventarioBAJO.Columns[9].Visible = false;
+
+
+                CONEXION.Tamaño_automatico_de_datatables.Multilinea(ref datalistadoInventarioBAJO);
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        private void txtbuscarKardex_movimientos_TextChanged(object sender, EventArgs e)
+        {
+            if (txtbuscarKardex_movimientos.Text == "Buscar producto" | txtbuscarKardex_movimientos.Text == "")
+            {
+                DATALISTADO_PRODUCTOS_Kardex.Visible = false;
+            }
+            else
+            {
+                buscar_productos_kardex();
+            }
+        }
+
+        private void buscar_productos_kardex()
+        {
+            try
+            {
+                DataTable dt = new DataTable();
+                SqlDataAdapter da;
+                SqlConnection con = new SqlConnection();
+                con.ConnectionString = CONEXION.CONEXIONMAESTRA.CONEXION;
+                con.Open();
+
+                da = new SqlDataAdapter("BUSCAR_PRODUCTOS_KARDEX", con);
+                da.SelectCommand.CommandType = CommandType.StoredProcedure;
+                da.SelectCommand.Parameters.AddWithValue("@letrab", txtbuscarKardex_movimientos.Text);
+                da.Fill(dt);
+                DATALISTADO_PRODUCTOS_Kardex.DataSource = dt;
+                con.Close();
+
+
+                DATALISTADO_PRODUCTOS_Kardex.Columns[1].Visible = false;
+                DATALISTADO_PRODUCTOS_Kardex.Columns[3].Visible = false;
+                DATALISTADO_PRODUCTOS_Kardex.Columns[4].Visible = false;
+                DATALISTADO_PRODUCTOS_Kardex.Columns[5].Visible = false;
+                DATALISTADO_PRODUCTOS_Kardex.Columns[6].Visible = false;
+                DATALISTADO_PRODUCTOS_Kardex.Columns[7].Visible = false;
+                DATALISTADO_PRODUCTOS_Kardex.Columns[8].Visible = false;
+                DATALISTADO_PRODUCTOS_Kardex.Columns[9].Visible = false;
+                DATALISTADO_PRODUCTOS_Kardex.Columns[10].Visible = false;
+                DATALISTADO_PRODUCTOS_Kardex.Columns[11].Visible = false;
+                DATALISTADO_PRODUCTOS_Kardex.Columns[12].Visible = false;
+                DATALISTADO_PRODUCTOS_Kardex.Columns[13].Visible = false;
+                DATALISTADO_PRODUCTOS_Kardex.Columns[14].Visible = false;
+                DATALISTADO_PRODUCTOS_Kardex.Columns[15].Visible = false;
+                DATALISTADO_PRODUCTOS_Kardex.Columns[16].Visible = false;
+                DATALISTADO_PRODUCTOS_Kardex.Visible = true;
+                CONEXION.Tamaño_automatico_de_datatables.Multilinea(ref DATALISTADO_PRODUCTOS_Kardex);
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void mostrar_inventarios_todos()
+        {
+            try
+            {
+                DataTable dt = new DataTable();
+                SqlDataAdapter da;
+                SqlConnection con = new SqlConnection();
+                con.ConnectionString = CONEXION.CONEXIONMAESTRA.CONEXION;
+                con.Open();
+
+                da = new SqlDataAdapter("mostrar_inventarios_todos", con);
+                da.SelectCommand.CommandType = CommandType.StoredProcedure;
+                da.SelectCommand.Parameters.AddWithValue("@letra", txtbuscar_inventarios.Text);
+
+                da.Fill(dt);
+                datalistadoInventariosReport.DataSource = dt;
+                con.Close();
+
+
+                datalistadoInventariosReport.Columns[0].Visible = false;
+                datalistadoInventariosReport.Columns[9].Visible = false;
+                datalistadoInventariosReport.Columns[10].Visible = false;
+
+                CONEXION.Tamaño_automatico_de_datatables.Multilinea(ref datalistadoInventariosReport);
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void txtbuscar_inventarios_TextChanged(object sender, EventArgs e)
+        {
+            if (txtbuscar_inventarios.Text != "Buscar...")
+            {
+                mostrar_inventarios_todos();
+            }
+        }
+        public static string Tipo_de_movimiento;
+        public static DateTime fecha;
+        public static int id_usuario;
+
+        private void toolStripMenuItem6_Click(object sender, EventArgs e)
+        {
+            txtbuscar_inventarios.Clear();
+            mostrar_inventarios_todos();
+        }
+        
+        private void toolStripMenuItem8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void menuStrip7_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void txtBuscarVencimientos_TextChanged(object sender, EventArgs e)
+        {
+            if (txtBuscarVencimientos.Text != "Buscar producto/Codigo")
+            {
+                buscar_productos_vencidos();
+                CheckPorVencer30enDias.Checked = false;
+                CheckProductosVencidos.Checked = false;
+
+            }
+        }
+
+        private void buscar_productos_vencidos()
+        {
+            try
+            {
+                DataTable dt = new DataTable();
+                SqlDataAdapter da;
+                SqlConnection con = new SqlConnection();
+                con.ConnectionString = CONEXION.CONEXIONMAESTRA.CONEXION;
+                con.Open();
+
+                da = new SqlDataAdapter("buscar_productos_vencidos", con);
+                da.SelectCommand.CommandType = CommandType.StoredProcedure;
+                da.SelectCommand.Parameters.AddWithValue("@letra", txtBuscarVencimientos.Text);
+
+                da.Fill(dt);
+                datalistadoVencimientos.DataSource = dt;
+                con.Close();
+
+
+                datalistadoVencimientos.Columns[0].Visible = false;
+                datalistadoVencimientos.Columns[1].Visible = false;
+                datalistadoVencimientos.Columns[6].Visible = false;
+                datalistadoVencimientos.Columns[7].Visible = false;
+                CONEXION.Tamaño_automatico_de_datatables.Multilinea(ref datalistadoVencimientos);
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void txtBuscarVencimientos_Click(object sender, EventArgs e)
+        {
+            txtBuscarVencimientos.SelectAll();
+        }
+
+        private void CheckPorVencer30enDias_CheckedChanged(object sender, EventArgs e)
+        {
+            txtBuscarVencimientos.Text = "Buscar producto/Codigo";
+            mostrar_productos_vencidos_en_menos_de_30_dias();
+        }
+
+        private void mostrar_productos_vencidos_en_menos_de_30_dias()
+        {
+            try
+            {
+                DataTable dt = new DataTable();
+                SqlDataAdapter da;
+                SqlConnection con = new SqlConnection();
+                con.ConnectionString = CONEXION.CONEXIONMAESTRA.CONEXION;
+                con.Open();
+
+                da = new SqlDataAdapter("mostrar_productos_vencidos_en_menos_de_30_dias", con);
+
+
+                da.Fill(dt);
+                datalistadoVencimientos.DataSource = dt;
+                con.Close();
+
+
+                datalistadoVencimientos.Columns[0].Visible = false;
+                datalistadoVencimientos.Columns[1].Visible = false;
+
+                CONEXION.Tamaño_automatico_de_datatables.Multilinea(ref datalistadoVencimientos);
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void txtbuscarMovimiento_Click(object sender, EventArgs e)
+        {
+            txtbuscarMovimiento.SelectAll();
+        }
+
+        private void CheckProductosVencidos_CheckedChanged(object sender, EventArgs e)
+        {
+            txtBuscarVencimientos.Text = "Buscar producto/Codigo";
+            mostrar_productos_vencidos();
+        }
+        private void mostrar_productos_vencidos()
+        {
+            try
+            {
+                DataTable dt = new DataTable();
+                SqlDataAdapter da;
+                SqlConnection con = new SqlConnection();
+                con.ConnectionString = CONEXION.CONEXIONMAESTRA.CONEXION;
+                con.Open();
+
+                da = new SqlDataAdapter("mostrar_productos_vencidos", con);
+
+
+                da.Fill(dt);
+                datalistadoVencimientos.DataSource = dt;
+                con.Close();
+
+
+                datalistadoVencimientos.Columns[0].Visible = false;
+                datalistadoVencimientos.Columns[1].Visible = false;
+
+                CONEXION.Tamaño_automatico_de_datatables.Multilinea(ref datalistadoVencimientos);
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void TKardex_Click(object sender, EventArgs e)
+        {
+            PanelR.Visible = false;
+            PanelK.Visible = true;
+            PanelI.Visible = false;
+            PanelM.Visible = false;
+            Panelv.Visible = false;
+
+            panelMOVIMIENTOS.Dock = DockStyle.None;
+            panelREPORTEInventario.Dock = DockStyle.None;
+            PaneliNVENTARIObajo.Dock = DockStyle.None;
+            panelMOVIMIENTOS.Visible = false;
+            panelREPORTEInventario.Visible = false;
+            PaneliNVENTARIObajo.Visible = false;
+            PanelKardex.Visible = true;
+            PanelKardex.Dock = DockStyle.Fill;
+            panelVencimiento.Visible = false;
+            panelVencimiento.Dock = DockStyle.None;
+            Panelv.Visible = false;
+            txtbuscarKardex_movimientos.Text = "Buscar producto";
+        }
+
+        private void TMOVIMIENTOS_Click(object sender, EventArgs e)
+        {
+            //panel7.Visible = false;
+            PanelR.Visible = false;
+            PanelK.Visible = false;
+            PanelI.Visible = false;
+            PanelM.Visible = true;
+            Panelv.Visible = false;
+            panelMOVIMIENTOS.Visible = true;
+            panelREPORTEInventario.Visible = false;
+
+            panelMOVIMIENTOS.Dock = DockStyle.Fill;
+            panelREPORTEInventario.Dock = DockStyle.None;
+            PaneliNVENTARIObajo.Dock = DockStyle.None;
+            PaneliNVENTARIObajo.Visible = false;
+            PanelKardex.Visible = false;
+            PanelKardex.Dock = DockStyle.None;
+            panelVencimiento.Visible = false;
+            panelVencimiento.Dock = DockStyle.None;
+            Panelv.Visible = false;
+            buscar_productos_movimientos();
+            buscar_usuario();
+            Buscar_id_USUARIOS();
+            txtbuscarMovimiento.Text = "Buscar producto";
+            MenuStrip2.Visible = true;
+            MenuStrip6.Visible = true;
+        }
+
+        private void TVencimientos_Click(object sender, EventArgs e)
+        {
+            PanelR.Visible = false;
+            PanelK.Visible = false;
+            PanelI.Visible = false;
+            PanelM.Visible = false;
+            Panelv.Visible = true;
+            panelMOVIMIENTOS.Visible = false;
+            panelREPORTEInventario.Visible = false;
+            PaneliNVENTARIObajo.Visible = false;
+            panelMOVIMIENTOS.Dock = DockStyle.None;
+            panelREPORTEInventario.Dock = DockStyle.None;
+            PaneliNVENTARIObajo.Dock = DockStyle.None;
+            PanelKardex.Visible = false;
+            PanelKardex.Dock = DockStyle.None;
+            panelVencimiento.Visible = true;
+            panelVencimiento.Dock = DockStyle.Fill;
+            Panelv.Visible = true;
+            txtBuscarVencimientos.Text = "Buscar producto/Codigo";
+        }
     }
 }

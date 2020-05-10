@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="_UpgradeWizard_Files\UpgradeWizardLog.xslt"?>
+<log>
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Users\pedro\source\repos\PuntoDeVenta\PuntoDeVenta\PuntoDeVenta.csproj" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Users\pedro\source\repos\PuntoDeVenta\PuntoDeVenta\App.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\Users\pedro\source\repos\PuntoDeVenta\PuntoDeVenta\App.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\Users\pedro\source\repos\PuntoDeVenta\PuntoDeVenta\App.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\Users\pedro\source\repos\PuntoDeVenta\PuntoDeVenta\App.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\Users\pedro\source\repos\PuntoDeVenta\PuntoDeVenta\App.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\Users\pedro\source\repos\PuntoDeVenta\PuntoDeVenta\App.config" />
+  <event action="Analyze" type="Success" name="App.config" path="C:\Users\pedro\source\repos\PuntoDeVenta\PuntoDeVenta\App.config" />
+  <event action="Analyze" type="Success" name="Apertura_de_caja.resx" path="C:\Users\pedro\source\repos\PuntoDeVenta\PuntoDeVenta\Modulos\CAJA\Apertura_de_caja.resx" />
+  <event action="Analyze" type="Success" name="Cierre_de_caja.resx" path="C:\Users\pedro\source\repos\PuntoDeVenta\PuntoDeVenta\Modulos\CAJA\Cierre_de_caja.resx" />
+  <event action="Analyze" type="Success" name="INVENTARIO_MENU.resx" path="C:\Users\pedro\source\repos\PuntoDeVenta\PuntoDeVenta\Modulos\INVENTARIO_KARDEX\INVENTARIO_MENU.resx" />
+  <event action="Analyze" type="Success" name="LOGIN.resx" path="C:\Users\pedro\source\repos\PuntoDeVenta\PuntoDeVenta\Modulos\LOGIN\LOGIN.resx" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Users\pedro\source\repos\PuntoDeVenta\PuntoDeVenta\Modulos\LOGIN\OlvidasteTuClave.html" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Users\pedro\source\repos\PuntoDeVenta\PuntoDeVenta\Modulos\LOGIN\OlvidasteTuClave.html" />
+  <event action="Analyze" type="Success" name="OlvidasteTuClave.html" path="C:\Users\pedro\source\repos\PuntoDeVenta\PuntoDeVenta\Modulos\LOGIN\OlvidasteTuClave.html" />
+  <event action="Analyze" type="Success" name="CONEXION_MANUAL.resx" path="C:\Users\pedro\source\repos\PuntoDeVenta\PuntoDeVenta\Modulos\PANEL_DE_ADMINISTRACION_DEL_SOFTWARE\CONEXION_MANUAL.resx" />
+  <event action="Analyze" type="Success" name="PRODUCTOSOK.resx" path="C:\Users\pedro\source\repos\PuntoDeVenta\PuntoDeVenta\Modulos\PRODUCTOS\PRODUCTOSOK.resx" />
+  <event action="Analyze" type="Success" name="usuariosok.resx" path="C:\Users\pedro\source\repos\PuntoDeVenta\PuntoDeVenta\Modulos\USUARIOS_Y_PERMISOS\usuariosok.resx" />
+  <event action="Analyze" type="Success" name="MENUPRINCIPAL_VENTAS.resx" path="C:\Users\pedro\source\repos\PuntoDeVenta\PuntoDeVenta\Modulos\VENTAS_MENU_PRINCIPAL\MENUPRINCIPAL_VENTAS.resx" />
+  <event action="Analyze" type="Success" name="Resources.resx" path="C:\Users\pedro\source\repos\PuntoDeVenta\PuntoDeVenta\Properties\Resources.resx" />
+  <event action="Analyze" type="Success" name="PuntoDeVenta" path="C:\Users\pedro\source\repos\PuntoDeVenta\PuntoDeVenta\PuntoDeVenta.csproj" />
+  <event action="Analyze" type="Success" name="PuntoDeVenta" path="C:\Users\pedro\source\repos\PuntoDeVenta\PuntoDeVenta.sln" />
+</log>
