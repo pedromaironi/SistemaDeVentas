@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(INVENTARIO_MENU));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.Panel1 = new System.Windows.Forms.Panel();
             this.Panelv = new System.Windows.Forms.Panel();
@@ -50,19 +52,40 @@
             this.TNOTAS = new System.Windows.Forms.ToolStripMenuItem();
             this.TOTROSPAGOS = new System.Windows.Forms.ToolStripMenuItem();
             this.TVencimientos = new System.Windows.Forms.ToolStripMenuItem();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.menuStrip8 = new System.Windows.Forms.MenuStrip();
-            this.toolStripMenuItem8 = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip7 = new System.Windows.Forms.MenuStrip();
-            this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.MenuStrip5 = new System.Windows.Forms.MenuStrip();
-            this.ToolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
-            this.txtbuscar_inventarios = new System.Windows.Forms.TextBox();
-            this.lblcostoInventario = new System.Windows.Forms.Label();
-            this.lblcantidaddeProductosEnInventario = new System.Windows.Forms.Label();
+            this.panelMOVIMIENTOS = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.datalistadoMovimientosACUMULADO_PRODUCTOS = new System.Windows.Forms.DataGridView();
+            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.menuStrip4 = new System.Windows.Forms.MenuStrip();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.DATALISTADO_PRODUCTOS_Movimientos = new System.Windows.Forms.DataGridView();
+            this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.DatalistadoMovimientos = new System.Windows.Forms.DataGridView();
+            this.dataGridViewImageColumn4 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.txtIdusuario = new System.Windows.Forms.ComboBox();
+            this.MenuStrip2 = new System.Windows.Forms.MenuStrip();
+            this.ToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.ToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.MenuStrip10 = new System.Windows.Forms.MenuStrip();
+            this.ToolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuStrip15 = new System.Windows.Forms.MenuStrip();
+            this.tver = new System.Windows.Forms.ToolStripMenuItem();
+            this.Label8 = new System.Windows.Forms.Label();
+            this.Label5 = new System.Windows.Forms.Label();
+            this.txtUSUARIOS = new System.Windows.Forms.ComboBox();
+            this.txtTipoMovi = new System.Windows.Forms.ComboBox();
+            this.txtfechaM = new System.Windows.Forms.DateTimePicker();
+            this.Label4 = new System.Windows.Forms.Label();
+            this.MenuStrip6 = new System.Windows.Forms.MenuStrip();
+            this.ToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.txtbuscarMovimiento = new System.Windows.Forms.TextBox();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.Panel1.SuspendLayout();
             this.Panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox3)).BeginInit();
@@ -71,25 +94,30 @@
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox2)).BeginInit();
             this.MenuStrip3.SuspendLayout();
-            this.panel11.SuspendLayout();
-            this.menuStrip8.SuspendLayout();
-            this.menuStrip7.SuspendLayout();
-            this.MenuStrip5.SuspendLayout();
+            this.panelMOVIMIENTOS.SuspendLayout();
+            this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.datalistadoMovimientosACUMULADO_PRODUCTOS)).BeginInit();
+            this.panel7.SuspendLayout();
+            this.menuStrip4.SuspendLayout();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DATALISTADO_PRODUCTOS_Movimientos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DatalistadoMovimientos)).BeginInit();
+            this.panel2.SuspendLayout();
+            this.MenuStrip2.SuspendLayout();
+            this.MenuStrip1.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.MenuStrip10.SuspendLayout();
+            this.MenuStrip15.SuspendLayout();
+            this.MenuStrip6.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(63)))), ((int)(((byte)(67)))));
-            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
+            resources.ApplyResources(this.label1, "label1");
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1156, 96);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Inventarios";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Panel1
             // 
@@ -102,150 +130,103 @@
             this.Panel1.Controls.Add(this.PanelM);
             this.Panel1.Controls.Add(this.PanelK);
             this.Panel1.Controls.Add(this.MenuStrip3);
-            this.Panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Panel1.Location = new System.Drawing.Point(0, 215);
+            resources.ApplyResources(this.Panel1, "Panel1");
             this.Panel1.Name = "Panel1";
-            this.Panel1.Size = new System.Drawing.Size(1156, 59);
-            this.Panel1.TabIndex = 601;
             // 
             // Panelv
             // 
             this.Panelv.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.Panelv.Location = new System.Drawing.Point(595, 54);
+            resources.ApplyResources(this.Panelv, "Panelv");
             this.Panelv.Name = "Panelv";
-            this.Panelv.Size = new System.Drawing.Size(238, 4);
-            this.Panelv.TabIndex = 579;
             // 
             // Panel9
             // 
             this.Panel9.Controls.Add(this.Label19);
             this.Panel9.Controls.Add(this.PictureBox3);
             this.Panel9.Controls.Add(this.PictureBox1);
-            this.Panel9.Dock = System.Windows.Forms.DockStyle.Right;
-            this.Panel9.Location = new System.Drawing.Point(845, 0);
+            resources.ApplyResources(this.Panel9, "Panel9");
             this.Panel9.Name = "Panel9";
-            this.Panel9.Size = new System.Drawing.Size(151, 59);
-            this.Panel9.TabIndex = 605;
             // 
             // Label19
             // 
             this.Label19.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            resources.ApplyResources(this.Label19, "Label19");
             this.Label19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.Label19.Location = new System.Drawing.Point(20, 20);
             this.Label19.Name = "Label19";
-            this.Label19.Size = new System.Drawing.Size(75, 23);
-            this.Label19.TabIndex = 597;
-            this.Label19.Text = "Entrada";
             // 
             // PictureBox3
             // 
             this.PictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.PictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox3.Image")));
-            this.PictureBox3.Location = new System.Drawing.Point(92, 20);
+            resources.ApplyResources(this.PictureBox3, "PictureBox3");
             this.PictureBox3.Name = "PictureBox3";
-            this.PictureBox3.Size = new System.Drawing.Size(27, 23);
-            this.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PictureBox3.TabIndex = 601;
             this.PictureBox3.TabStop = false;
             // 
             // PictureBox1
             // 
             this.PictureBox1.BackColor = System.Drawing.Color.White;
             this.PictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox1.Image")));
-            this.PictureBox1.Location = new System.Drawing.Point(5, 4);
+            resources.ApplyResources(this.PictureBox1, "PictureBox1");
             this.PictureBox1.Name = "PictureBox1";
-            this.PictureBox1.Size = new System.Drawing.Size(142, 58);
-            this.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PictureBox1.TabIndex = 596;
             this.PictureBox1.TabStop = false;
             // 
             // PanelR
             // 
             this.PanelR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(166)))), ((int)(((byte)(63)))));
-            this.PanelR.Location = new System.Drawing.Point(409, 54);
+            resources.ApplyResources(this.PanelR, "PanelR");
             this.PanelR.Name = "PanelR";
-            this.PanelR.Size = new System.Drawing.Size(172, 10);
-            this.PanelR.TabIndex = 578;
             // 
             // Panel6
             // 
             this.Panel6.Controls.Add(this.PictureBox4);
             this.Panel6.Controls.Add(this.label2);
             this.Panel6.Controls.Add(this.PictureBox2);
-            this.Panel6.Dock = System.Windows.Forms.DockStyle.Right;
-            this.Panel6.Location = new System.Drawing.Point(996, 0);
+            resources.ApplyResources(this.Panel6, "Panel6");
             this.Panel6.Name = "Panel6";
-            this.Panel6.Size = new System.Drawing.Size(160, 59);
-            this.Panel6.TabIndex = 604;
             // 
             // PictureBox4
             // 
             this.PictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.PictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox4.Image")));
-            this.PictureBox4.Location = new System.Drawing.Point(93, 20);
+            resources.ApplyResources(this.PictureBox4, "PictureBox4");
             this.PictureBox4.Name = "PictureBox4";
-            this.PictureBox4.Size = new System.Drawing.Size(27, 23);
-            this.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PictureBox4.TabIndex = 601;
             this.PictureBox4.TabStop = false;
             // 
             // label2
             // 
             this.label2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            resources.ApplyResources(this.label2, "label2");
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label2.Location = new System.Drawing.Point(26, 20);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(77, 23);
-            this.label2.TabIndex = 597;
-            this.label2.Text = "Salida";
             // 
             // PictureBox2
             // 
             this.PictureBox2.BackColor = System.Drawing.Color.White;
             this.PictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.PictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox2.Image")));
-            this.PictureBox2.Location = new System.Drawing.Point(4, 4);
+            resources.ApplyResources(this.PictureBox2, "PictureBox2");
             this.PictureBox2.Name = "PictureBox2";
-            this.PictureBox2.Size = new System.Drawing.Size(152, 58);
-            this.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PictureBox2.TabIndex = 596;
             this.PictureBox2.TabStop = false;
             // 
             // PanelI
             // 
             this.PanelI.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(204)))), ((int)(((byte)(1)))));
-            this.PanelI.Location = new System.Drawing.Point(240, 54);
+            resources.ApplyResources(this.PanelI, "PanelI");
             this.PanelI.Name = "PanelI";
-            this.PanelI.Size = new System.Drawing.Size(158, 4);
-            this.PanelI.TabIndex = 577;
-            this.PanelI.Visible = false;
             // 
             // PanelM
             // 
             this.PanelM.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(115)))), ((int)(((byte)(232)))));
-            this.PanelM.Location = new System.Drawing.Point(100, 54);
+            resources.ApplyResources(this.PanelM, "PanelM");
             this.PanelM.Name = "PanelM";
-            this.PanelM.Size = new System.Drawing.Size(139, 4);
-            this.PanelM.TabIndex = 577;
-            this.PanelM.Visible = false;
             // 
             // PanelK
             // 
             this.PanelK.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(63)))), ((int)(((byte)(67)))));
-            this.PanelK.Location = new System.Drawing.Point(0, 54);
+            resources.ApplyResources(this.PanelK, "PanelK");
             this.PanelK.Name = "PanelK";
-            this.PanelK.Size = new System.Drawing.Size(100, 4);
-            this.PanelK.TabIndex = 577;
-            this.PanelK.Visible = false;
             // 
             // MenuStrip3
             // 
-            this.MenuStrip3.AutoSize = false;
+            resources.ApplyResources(this.MenuStrip3, "MenuStrip3");
             this.MenuStrip3.BackColor = System.Drawing.Color.Transparent;
-            this.MenuStrip3.Dock = System.Windows.Forms.DockStyle.None;
             this.MenuStrip3.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.TKardex,
             this.TMOVIMIENTOS,
@@ -253,240 +234,401 @@
             this.TOTROSPAGOS,
             this.TVencimientos});
             this.MenuStrip3.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
-            this.MenuStrip3.Location = new System.Drawing.Point(0, 0);
             this.MenuStrip3.Name = "MenuStrip3";
             this.MenuStrip3.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
             this.MenuStrip3.ShowItemToolTips = true;
-            this.MenuStrip3.Size = new System.Drawing.Size(881, 58);
-            this.MenuStrip3.TabIndex = 562;
-            this.MenuStrip3.Text = "MenuStrip7";
             // 
             // TKardex
             // 
-            this.TKardex.AutoSize = false;
+            resources.ApplyResources(this.TKardex, "TKardex");
             this.TKardex.BackColor = System.Drawing.Color.White;
-            this.TKardex.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.TKardex.ForeColor = System.Drawing.Color.Black;
-            this.TKardex.Image = ((System.Drawing.Image)(resources.GetObject("TKardex.Image")));
             this.TKardex.Name = "TKardex";
-            this.TKardex.Size = new System.Drawing.Size(94, 54);
-            this.TKardex.Text = "Kardex";
-            this.TKardex.ToolTipText = "Kardex";
             // 
             // TMOVIMIENTOS
             // 
             this.TMOVIMIENTOS.BackColor = System.Drawing.Color.White;
-            this.TMOVIMIENTOS.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            resources.ApplyResources(this.TMOVIMIENTOS, "TMOVIMIENTOS");
             this.TMOVIMIENTOS.ForeColor = System.Drawing.Color.Black;
-            this.TMOVIMIENTOS.Image = ((System.Drawing.Image)(resources.GetObject("TMOVIMIENTOS.Image")));
             this.TMOVIMIENTOS.Name = "TMOVIMIENTOS";
-            this.TMOVIMIENTOS.Size = new System.Drawing.Size(139, 54);
-            this.TMOVIMIENTOS.Text = "Movimientos";
-            this.TMOVIMIENTOS.ToolTipText = "Movimientos";
             // 
             // TNOTAS
             // 
-            this.TNOTAS.AutoSize = false;
+            resources.ApplyResources(this.TNOTAS, "TNOTAS");
             this.TNOTAS.BackColor = System.Drawing.Color.White;
-            this.TNOTAS.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.TNOTAS.ForeColor = System.Drawing.Color.Black;
-            this.TNOTAS.Image = ((System.Drawing.Image)(resources.GetObject("TNOTAS.Image")));
             this.TNOTAS.Name = "TNOTAS";
-            this.TNOTAS.Size = new System.Drawing.Size(169, 54);
-            this.TNOTAS.Text = "Inventarios Bajos";
-            this.TNOTAS.ToolTipText = "Inventarios Bajos";
+            this.TNOTAS.Click += new System.EventHandler(this.TNOTAS_Click);
             // 
             // TOTROSPAGOS
             // 
             this.TOTROSPAGOS.BackColor = System.Drawing.Color.White;
-            this.TOTROSPAGOS.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            resources.ApplyResources(this.TOTROSPAGOS, "TOTROSPAGOS");
             this.TOTROSPAGOS.ForeColor = System.Drawing.Color.Black;
-            this.TOTROSPAGOS.Image = ((System.Drawing.Image)(resources.GetObject("TOTROSPAGOS.Image")));
             this.TOTROSPAGOS.Name = "TOTROSPAGOS";
-            this.TOTROSPAGOS.Size = new System.Drawing.Size(188, 54);
-            this.TOTROSPAGOS.Text = "Reporte Inventarios";
-            this.TOTROSPAGOS.ToolTipText = "Reporte Inventarios";
+            this.TOTROSPAGOS.Click += new System.EventHandler(this.TOTROSPAGOS_Click);
             // 
             // TVencimientos
             // 
             this.TVencimientos.BackColor = System.Drawing.Color.White;
-            this.TVencimientos.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            resources.ApplyResources(this.TVencimientos, "TVencimientos");
             this.TVencimientos.ForeColor = System.Drawing.Color.Black;
             this.TVencimientos.Name = "TVencimientos";
-            this.TVencimientos.Size = new System.Drawing.Size(230, 54);
-            this.TVencimientos.Text = "Vencimientos de Productos";
-            this.TVencimientos.ToolTipText = "Vencimientos de Productos";
             // 
-            // panel11
+            // panelMOVIMIENTOS
             // 
-            this.panel11.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel11.Controls.Add(this.menuStrip8);
-            this.panel11.Controls.Add(this.menuStrip7);
-            this.panel11.Controls.Add(this.panel12);
-            this.panel11.Controls.Add(this.MenuStrip5);
-            this.panel11.Controls.Add(this.txtbuscar_inventarios);
-            this.panel11.Controls.Add(this.lblcostoInventario);
-            this.panel11.Controls.Add(this.lblcantidaddeProductosEnInventario);
-            this.panel11.Controls.Add(this.label3);
-            this.panel11.Controls.Add(this.label4);
-            this.panel11.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel11.Location = new System.Drawing.Point(0, 96);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(1156, 119);
-            this.panel11.TabIndex = 600;
+            this.panelMOVIMIENTOS.BackColor = System.Drawing.Color.White;
+            this.panelMOVIMIENTOS.Controls.Add(this.panel5);
+            this.panelMOVIMIENTOS.Controls.Add(this.panel3);
+            this.panelMOVIMIENTOS.Controls.Add(this.panel2);
+            resources.ApplyResources(this.panelMOVIMIENTOS, "panelMOVIMIENTOS");
+            this.panelMOVIMIENTOS.Name = "panelMOVIMIENTOS";
             // 
-            // menuStrip8
+            // panel5
             // 
-            this.menuStrip8.AutoSize = false;
-            this.menuStrip8.BackColor = System.Drawing.Color.Transparent;
-            this.menuStrip8.Dock = System.Windows.Forms.DockStyle.None;
-            this.menuStrip8.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem8});
-            this.menuStrip8.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
-            this.menuStrip8.Location = new System.Drawing.Point(618, 77);
-            this.menuStrip8.Name = "menuStrip8";
-            this.menuStrip8.ShowItemToolTips = true;
-            this.menuStrip8.Size = new System.Drawing.Size(107, 32);
-            this.menuStrip8.TabIndex = 611;
-            this.menuStrip8.Text = "menuStrip7";
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(63)))), ((int)(((byte)(67)))));
+            this.panel5.Controls.Add(this.datalistadoMovimientosACUMULADO_PRODUCTOS);
+            this.panel5.Controls.Add(this.panel7);
+            resources.ApplyResources(this.panel5, "panel5");
+            this.panel5.Name = "panel5";
             // 
-            // toolStripMenuItem8
+            // datalistadoMovimientosACUMULADO_PRODUCTOS
             // 
-            this.toolStripMenuItem8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(166)))), ((int)(((byte)(63)))));
-            this.toolStripMenuItem8.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.toolStripMenuItem8.ForeColor = System.Drawing.Color.White;
-            this.toolStripMenuItem8.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem8.Image")));
-            this.toolStripMenuItem8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.toolStripMenuItem8.Name = "toolStripMenuItem8";
-            this.toolStripMenuItem8.Size = new System.Drawing.Size(96, 28);
-            this.toolStripMenuItem8.Text = "Imprimir";
+            this.datalistadoMovimientosACUMULADO_PRODUCTOS.AllowUserToAddRows = false;
+            this.datalistadoMovimientosACUMULADO_PRODUCTOS.AllowUserToResizeRows = false;
+            this.datalistadoMovimientosACUMULADO_PRODUCTOS.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(63)))), ((int)(((byte)(67)))));
+            this.datalistadoMovimientosACUMULADO_PRODUCTOS.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.datalistadoMovimientosACUMULADO_PRODUCTOS.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.datalistadoMovimientosACUMULADO_PRODUCTOS.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.datalistadoMovimientosACUMULADO_PRODUCTOS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.datalistadoMovimientosACUMULADO_PRODUCTOS.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewImageColumn1});
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(63)))), ((int)(((byte)(67)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.datalistadoMovimientosACUMULADO_PRODUCTOS.DefaultCellStyle = dataGridViewCellStyle9;
+            resources.ApplyResources(this.datalistadoMovimientosACUMULADO_PRODUCTOS, "datalistadoMovimientosACUMULADO_PRODUCTOS");
+            this.datalistadoMovimientosACUMULADO_PRODUCTOS.EnableHeadersVisualStyles = false;
+            this.datalistadoMovimientosACUMULADO_PRODUCTOS.Name = "datalistadoMovimientosACUMULADO_PRODUCTOS";
+            this.datalistadoMovimientosACUMULADO_PRODUCTOS.ReadOnly = true;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(63)))), ((int)(((byte)(67)))));
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.datalistadoMovimientosACUMULADO_PRODUCTOS.RowHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            this.datalistadoMovimientosACUMULADO_PRODUCTOS.RowHeadersVisible = false;
+            this.datalistadoMovimientosACUMULADO_PRODUCTOS.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(63)))), ((int)(((byte)(67)))));
+            this.datalistadoMovimientosACUMULADO_PRODUCTOS.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.datalistadoMovimientosACUMULADO_PRODUCTOS.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.White;
+            this.datalistadoMovimientosACUMULADO_PRODUCTOS.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            this.datalistadoMovimientosACUMULADO_PRODUCTOS.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.datalistadoMovimientosACUMULADO_PRODUCTOS.RowTemplate.Height = 30;
+            this.datalistadoMovimientosACUMULADO_PRODUCTOS.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             // 
-            // menuStrip7
+            // dataGridViewImageColumn1
             // 
-            this.menuStrip7.AutoSize = false;
-            this.menuStrip7.BackColor = System.Drawing.Color.Transparent;
-            this.menuStrip7.Dock = System.Windows.Forms.DockStyle.None;
-            this.menuStrip7.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem5});
-            this.menuStrip7.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
-            this.menuStrip7.Location = new System.Drawing.Point(465, 77);
-            this.menuStrip7.Name = "menuStrip7";
-            this.menuStrip7.ShowItemToolTips = true;
-            this.menuStrip7.Size = new System.Drawing.Size(153, 32);
-            this.menuStrip7.TabIndex = 611;
-            this.menuStrip7.Text = "menuStrip7";
+            resources.ApplyResources(this.dataGridViewImageColumn1, "dataGridViewImageColumn1");
+            this.dataGridViewImageColumn1.Image = ((System.Drawing.Image)(resources.GetObject("dataGridViewImageColumn1.Image")));
+            this.dataGridViewImageColumn1.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
+            this.dataGridViewImageColumn1.ReadOnly = true;
             // 
-            // toolStripMenuItem5
+            // panel7
             // 
-            this.toolStripMenuItem5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(166)))), ((int)(((byte)(63)))));
-            this.toolStripMenuItem5.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.toolStripMenuItem5.ForeColor = System.Drawing.Color.White;
-            this.toolStripMenuItem5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.toolStripMenuItem5.Name = "toolStripMenuItem5";
-            this.toolStripMenuItem5.Size = new System.Drawing.Size(117, 28);
-            this.toolStripMenuItem5.Text = "Mostrar TODO";
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(63)))), ((int)(((byte)(67)))));
+            this.panel7.Controls.Add(this.menuStrip4);
+            this.panel7.Controls.Add(this.label3);
+            resources.ApplyResources(this.panel7, "panel7");
+            this.panel7.Name = "panel7";
             // 
-            // panel12
+            // menuStrip4
             // 
-            this.panel12.BackColor = System.Drawing.Color.White;
-            this.panel12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(166)))), ((int)(((byte)(63)))));
-            this.panel12.Location = new System.Drawing.Point(14, 105);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(388, 2);
-            this.panel12.TabIndex = 604;
+            resources.ApplyResources(this.menuStrip4, "menuStrip4");
+            this.menuStrip4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(63)))), ((int)(((byte)(67)))));
+            this.menuStrip4.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem1});
+            this.menuStrip4.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
+            this.menuStrip4.Name = "menuStrip4";
+            this.menuStrip4.ShowItemToolTips = true;
             // 
-            // MenuStrip5
+            // toolStripMenuItem1
             // 
-            this.MenuStrip5.AutoSize = false;
-            this.MenuStrip5.BackColor = System.Drawing.Color.Transparent;
-            this.MenuStrip5.Dock = System.Windows.Forms.DockStyle.None;
-            this.MenuStrip5.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ToolStripMenuItem6});
-            this.MenuStrip5.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
-            this.MenuStrip5.Location = new System.Drawing.Point(403, 77);
-            this.MenuStrip5.Name = "MenuStrip5";
-            this.MenuStrip5.ShowItemToolTips = true;
-            this.MenuStrip5.Size = new System.Drawing.Size(38, 31);
-            this.MenuStrip5.TabIndex = 602;
-            this.MenuStrip5.Text = "MenuStrip7";
-            // 
-            // ToolStripMenuItem6
-            // 
-            this.ToolStripMenuItem6.BackColor = System.Drawing.Color.Transparent;
-            this.ToolStripMenuItem6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.ToolStripMenuItem6.ForeColor = System.Drawing.Color.Black;
-            this.ToolStripMenuItem6.Image = ((System.Drawing.Image)(resources.GetObject("ToolStripMenuItem6.Image")));
-            this.ToolStripMenuItem6.Name = "ToolStripMenuItem6";
-            this.ToolStripMenuItem6.Size = new System.Drawing.Size(28, 27);
-            this.ToolStripMenuItem6.ToolTipText = "Quitar logo";
-            // 
-            // txtbuscar_inventarios
-            // 
-            this.txtbuscar_inventarios.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtbuscar_inventarios.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtbuscar_inventarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtbuscar_inventarios.ForeColor = System.Drawing.Color.Black;
-            this.txtbuscar_inventarios.Location = new System.Drawing.Point(14, 83);
-            this.txtbuscar_inventarios.Name = "txtbuscar_inventarios";
-            this.txtbuscar_inventarios.Size = new System.Drawing.Size(386, 19);
-            this.txtbuscar_inventarios.TabIndex = 603;
-            this.txtbuscar_inventarios.Text = "Buscar...";
-            // 
-            // lblcostoInventario
-            // 
-            this.lblcostoInventario.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
-            this.lblcostoInventario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(166)))), ((int)(((byte)(63)))));
-            this.lblcostoInventario.Location = new System.Drawing.Point(540, 35);
-            this.lblcostoInventario.Name = "lblcostoInventario";
-            this.lblcostoInventario.Size = new System.Drawing.Size(341, 24);
-            this.lblcostoInventario.TabIndex = 600;
-            this.lblcostoInventario.Text = "S/.45";
-            this.lblcostoInventario.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblcantidaddeProductosEnInventario
-            // 
-            this.lblcantidaddeProductosEnInventario.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
-            this.lblcantidaddeProductosEnInventario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(166)))), ((int)(((byte)(63)))));
-            this.lblcantidaddeProductosEnInventario.Location = new System.Drawing.Point(12, 35);
-            this.lblcantidaddeProductosEnInventario.Name = "lblcantidaddeProductosEnInventario";
-            this.lblcantidaddeProductosEnInventario.Size = new System.Drawing.Size(327, 24);
-            this.lblcantidaddeProductosEnInventario.TabIndex = 599;
-            this.lblcantidaddeProductosEnInventario.Text = "S/.45";
-            this.lblcantidaddeProductosEnInventario.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolStripMenuItem1.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.toolStripMenuItem1, "toolStripMenuItem1");
+            this.toolStripMenuItem1.ForeColor = System.Drawing.Color.White;
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             // 
             // label3
             // 
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(557, 12);
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(324, 17);
-            this.label3.TabIndex = 598;
-            this.label3.Text = "Costo del Inventario";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label4
+            // panel3
             // 
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(13, 12);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(330, 23);
-            this.label4.TabIndex = 597;
-            this.label4.Text = "Cantidad de Productos en Inventario";
+            this.panel3.Controls.Add(this.DATALISTADO_PRODUCTOS_Movimientos);
+            this.panel3.Controls.Add(this.DatalistadoMovimientos);
+            resources.ApplyResources(this.panel3, "panel3");
+            this.panel3.Name = "panel3";
+            // 
+            // DATALISTADO_PRODUCTOS_Movimientos
+            // 
+            this.DATALISTADO_PRODUCTOS_Movimientos.AllowUserToAddRows = false;
+            this.DATALISTADO_PRODUCTOS_Movimientos.AllowUserToDeleteRows = false;
+            this.DATALISTADO_PRODUCTOS_Movimientos.AllowUserToResizeRows = false;
+            this.DATALISTADO_PRODUCTOS_Movimientos.BackgroundColor = System.Drawing.Color.White;
+            this.DATALISTADO_PRODUCTOS_Movimientos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.DATALISTADO_PRODUCTOS_Movimientos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.DATALISTADO_PRODUCTOS_Movimientos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DATALISTADO_PRODUCTOS_Movimientos.ColumnHeadersVisible = false;
+            this.DATALISTADO_PRODUCTOS_Movimientos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewImageColumn2});
+            this.DATALISTADO_PRODUCTOS_Movimientos.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.DATALISTADO_PRODUCTOS_Movimientos.EnableHeadersVisualStyles = false;
+            resources.ApplyResources(this.DATALISTADO_PRODUCTOS_Movimientos, "DATALISTADO_PRODUCTOS_Movimientos");
+            this.DATALISTADO_PRODUCTOS_Movimientos.MultiSelect = false;
+            this.DATALISTADO_PRODUCTOS_Movimientos.Name = "DATALISTADO_PRODUCTOS_Movimientos";
+            this.DATALISTADO_PRODUCTOS_Movimientos.ReadOnly = true;
+            this.DATALISTADO_PRODUCTOS_Movimientos.RowHeadersVisible = false;
+            this.DATALISTADO_PRODUCTOS_Movimientos.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.WhiteSmoke;
+            this.DATALISTADO_PRODUCTOS_Movimientos.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.DATALISTADO_PRODUCTOS_Movimientos.RowTemplate.Height = 40;
+            this.DATALISTADO_PRODUCTOS_Movimientos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DATALISTADO_PRODUCTOS_Movimientos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DATALISTADO_PRODUCTOS_Movimientos_CellClick);
+            // 
+            // dataGridViewImageColumn2
+            // 
+            this.dataGridViewImageColumn2.DataPropertyName = "Marcar";
+            resources.ApplyResources(this.dataGridViewImageColumn2, "dataGridViewImageColumn2");
+            this.dataGridViewImageColumn2.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
+            this.dataGridViewImageColumn2.ReadOnly = true;
+            this.dataGridViewImageColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
+            // DatalistadoMovimientos
+            // 
+            this.DatalistadoMovimientos.AllowUserToAddRows = false;
+            this.DatalistadoMovimientos.AllowUserToResizeRows = false;
+            this.DatalistadoMovimientos.BackgroundColor = System.Drawing.Color.White;
+            this.DatalistadoMovimientos.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DatalistadoMovimientos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.DatalistadoMovimientos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.DatalistadoMovimientos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DatalistadoMovimientos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewImageColumn4});
+            resources.ApplyResources(this.DatalistadoMovimientos, "DatalistadoMovimientos");
+            this.DatalistadoMovimientos.EnableHeadersVisualStyles = false;
+            this.DatalistadoMovimientos.Name = "DatalistadoMovimientos";
+            this.DatalistadoMovimientos.ReadOnly = true;
+            this.DatalistadoMovimientos.RowHeadersVisible = false;
+            this.DatalistadoMovimientos.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.White;
+            this.DatalistadoMovimientos.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DatalistadoMovimientos.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black;
+            this.DatalistadoMovimientos.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.SystemColors.Control;
+            this.DatalistadoMovimientos.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.DatalistadoMovimientos.RowTemplate.Height = 30;
+            this.DatalistadoMovimientos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            // 
+            // dataGridViewImageColumn4
+            // 
+            resources.ApplyResources(this.dataGridViewImageColumn4, "dataGridViewImageColumn4");
+            this.dataGridViewImageColumn4.Image = ((System.Drawing.Image)(resources.GetObject("dataGridViewImageColumn4.Image")));
+            this.dataGridViewImageColumn4.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.dataGridViewImageColumn4.Name = "dataGridViewImageColumn4";
+            this.dataGridViewImageColumn4.ReadOnly = true;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.groupBox1);
+            this.panel2.Controls.Add(this.txtIdusuario);
+            this.panel2.Controls.Add(this.MenuStrip1);
+            this.panel2.Controls.Add(this.MenuStrip6);
+            this.panel2.Controls.Add(this.txtbuscarMovimiento);
+            this.panel2.Controls.Add(this.panel4);
+            this.panel2.Controls.Add(this.MenuStrip2);
+            resources.ApplyResources(this.panel2, "panel2");
+            this.panel2.Name = "panel2";
+            // 
+            // txtIdusuario
+            // 
+            this.txtIdusuario.FormattingEnabled = true;
+            resources.ApplyResources(this.txtIdusuario, "txtIdusuario");
+            this.txtIdusuario.Name = "txtIdusuario";
+            this.txtIdusuario.SelectedIndexChanged += new System.EventHandler(this.txtIdusuario_SelectedIndexChanged);
+            // 
+            // MenuStrip2
+            // 
+            resources.ApplyResources(this.MenuStrip2, "MenuStrip2");
+            this.MenuStrip2.BackColor = System.Drawing.Color.White;
+            this.MenuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ToolStripMenuItem3});
+            this.MenuStrip2.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
+            this.MenuStrip2.Name = "MenuStrip2";
+            this.MenuStrip2.ShowItemToolTips = true;
+            // 
+            // ToolStripMenuItem3
+            // 
+            this.ToolStripMenuItem3.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.ToolStripMenuItem3, "ToolStripMenuItem3");
+            this.ToolStripMenuItem3.ForeColor = System.Drawing.Color.Black;
+            this.ToolStripMenuItem3.Name = "ToolStripMenuItem3";
+            // 
+            // MenuStrip1
+            // 
+            resources.ApplyResources(this.MenuStrip1, "MenuStrip1");
+            this.MenuStrip1.BackColor = System.Drawing.Color.White;
+            this.MenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ToolStripMenuItem2});
+            this.MenuStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
+            this.MenuStrip1.Name = "MenuStrip1";
+            this.MenuStrip1.ShowItemToolTips = true;
+            // 
+            // ToolStripMenuItem2
+            // 
+            this.ToolStripMenuItem2.BackColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.ToolStripMenuItem2, "ToolStripMenuItem2");
+            this.ToolStripMenuItem2.ForeColor = System.Drawing.Color.Black;
+            this.ToolStripMenuItem2.Name = "ToolStripMenuItem2";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.Color.White;
+            this.groupBox1.Controls.Add(this.MenuStrip10);
+            this.groupBox1.Controls.Add(this.MenuStrip15);
+            this.groupBox1.Controls.Add(this.Label8);
+            this.groupBox1.Controls.Add(this.Label5);
+            this.groupBox1.Controls.Add(this.txtUSUARIOS);
+            this.groupBox1.Controls.Add(this.txtTipoMovi);
+            this.groupBox1.Controls.Add(this.txtfechaM);
+            this.groupBox1.Controls.Add(this.Label4);
+            resources.ApplyResources(this.groupBox1, "groupBox1");
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.TabStop = false;
+            // 
+            // MenuStrip10
+            // 
+            resources.ApplyResources(this.MenuStrip10, "MenuStrip10");
+            this.MenuStrip10.BackColor = System.Drawing.Color.White;
+            this.MenuStrip10.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ToolStripMenuItem7});
+            this.MenuStrip10.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
+            this.MenuStrip10.Name = "MenuStrip10";
+            this.MenuStrip10.ShowItemToolTips = true;
+            // 
+            // ToolStripMenuItem7
+            // 
+            this.ToolStripMenuItem7.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.ToolStripMenuItem7, "ToolStripMenuItem7");
+            this.ToolStripMenuItem7.ForeColor = System.Drawing.Color.Black;
+            this.ToolStripMenuItem7.Name = "ToolStripMenuItem7";
+            // 
+            // MenuStrip15
+            // 
+            resources.ApplyResources(this.MenuStrip15, "MenuStrip15");
+            this.MenuStrip15.BackColor = System.Drawing.Color.White;
+            this.MenuStrip15.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tver});
+            this.MenuStrip15.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
+            this.MenuStrip15.Name = "MenuStrip15";
+            this.MenuStrip15.ShowItemToolTips = true;
+            // 
+            // tver
+            // 
+            this.tver.BackColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.tver, "tver");
+            this.tver.ForeColor = System.Drawing.Color.Black;
+            this.tver.Name = "tver";
+            this.tver.Click += new System.EventHandler(this.tver_Click);
+            // 
+            // Label8
+            // 
+            resources.ApplyResources(this.Label8, "Label8");
+            this.Label8.Name = "Label8";
+            // 
+            // Label5
+            // 
+            resources.ApplyResources(this.Label5, "Label5");
+            this.Label5.Name = "Label5";
+            // 
+            // txtUSUARIOS
+            // 
+            this.txtUSUARIOS.FormattingEnabled = true;
+            resources.ApplyResources(this.txtUSUARIOS, "txtUSUARIOS");
+            this.txtUSUARIOS.Name = "txtUSUARIOS";
+            this.txtUSUARIOS.SelectedIndexChanged += new System.EventHandler(this.txtUSUARIOS_SelectedIndexChanged);
+            // 
+            // txtTipoMovi
+            // 
+            this.txtTipoMovi.FormattingEnabled = true;
+            this.txtTipoMovi.Items.AddRange(new object[] {
+            resources.GetString("txtTipoMovi.Items"),
+            resources.GetString("txtTipoMovi.Items1"),
+            resources.GetString("txtTipoMovi.Items2")});
+            resources.ApplyResources(this.txtTipoMovi, "txtTipoMovi");
+            this.txtTipoMovi.Name = "txtTipoMovi";
+            this.txtTipoMovi.SelectedIndexChanged += new System.EventHandler(this.txtTipoMovi_SelectedIndexChanged);
+            // 
+            // txtfechaM
+            // 
+            resources.ApplyResources(this.txtfechaM, "txtfechaM");
+            this.txtfechaM.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.txtfechaM.Name = "txtfechaM";
+            this.txtfechaM.ValueChanged += new System.EventHandler(this.txtfechaM_ValueChanged);
+            // 
+            // Label4
+            // 
+            resources.ApplyResources(this.Label4, "Label4");
+            this.Label4.Name = "Label4";
+            // 
+            // MenuStrip6
+            // 
+            resources.ApplyResources(this.MenuStrip6, "MenuStrip6");
+            this.MenuStrip6.BackColor = System.Drawing.Color.White;
+            this.MenuStrip6.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ToolStripMenuItem4});
+            this.MenuStrip6.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
+            this.MenuStrip6.Name = "MenuStrip6";
+            this.MenuStrip6.ShowItemToolTips = true;
+            // 
+            // ToolStripMenuItem4
+            // 
+            this.ToolStripMenuItem4.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.ToolStripMenuItem4, "ToolStripMenuItem4");
+            this.ToolStripMenuItem4.ForeColor = System.Drawing.Color.Black;
+            this.ToolStripMenuItem4.Name = "ToolStripMenuItem4";
+            this.ToolStripMenuItem4.Click += new System.EventHandler(this.ToolStripMenuItem4_Click);
+            // 
+            // txtbuscarMovimiento
+            // 
+            this.txtbuscarMovimiento.BackColor = System.Drawing.Color.White;
+            this.txtbuscarMovimiento.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            resources.ApplyResources(this.txtbuscarMovimiento, "txtbuscarMovimiento");
+            this.txtbuscarMovimiento.Name = "txtbuscarMovimiento";
+            this.txtbuscarMovimiento.TextChanged += new System.EventHandler(this.txtbuscarMovimiento_TextChanged);
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Gainsboro;
+            resources.ApplyResources(this.panel4, "panel4");
+            this.panel4.Name = "panel4";
             // 
             // INVENTARIO_MENU
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1156, 775);
+            this.Controls.Add(this.panelMOVIMIENTOS);
             this.Controls.Add(this.Panel1);
-            this.Controls.Add(this.panel11);
             this.Controls.Add(this.label1);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "INVENTARIO_MENU";
-            this.Text = "Inventario | Sistema";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.INVENTARIO_MENU_Load);
             this.Panel1.ResumeLayout(false);
             this.Panel9.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox3)).EndInit();
@@ -496,14 +638,29 @@
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox2)).EndInit();
             this.MenuStrip3.ResumeLayout(false);
             this.MenuStrip3.PerformLayout();
-            this.panel11.ResumeLayout(false);
-            this.panel11.PerformLayout();
-            this.menuStrip8.ResumeLayout(false);
-            this.menuStrip8.PerformLayout();
-            this.menuStrip7.ResumeLayout(false);
-            this.menuStrip7.PerformLayout();
-            this.MenuStrip5.ResumeLayout(false);
-            this.MenuStrip5.PerformLayout();
+            this.panelMOVIMIENTOS.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.datalistadoMovimientosACUMULADO_PRODUCTOS)).EndInit();
+            this.panel7.ResumeLayout(false);
+            this.menuStrip4.ResumeLayout(false);
+            this.menuStrip4.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.DATALISTADO_PRODUCTOS_Movimientos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DatalistadoMovimientos)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.MenuStrip2.ResumeLayout(false);
+            this.MenuStrip2.PerformLayout();
+            this.MenuStrip1.ResumeLayout(false);
+            this.MenuStrip1.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.MenuStrip10.ResumeLayout(false);
+            this.MenuStrip10.PerformLayout();
+            this.MenuStrip15.ResumeLayout(false);
+            this.MenuStrip15.PerformLayout();
+            this.MenuStrip6.ResumeLayout(false);
+            this.MenuStrip6.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -531,18 +688,39 @@
         internal System.Windows.Forms.ToolStripMenuItem TNOTAS;
         internal System.Windows.Forms.ToolStripMenuItem TOTROSPAGOS;
         internal System.Windows.Forms.ToolStripMenuItem TVencimientos;
-        private System.Windows.Forms.Panel panel11;
-        internal System.Windows.Forms.MenuStrip menuStrip8;
-        internal System.Windows.Forms.ToolStripMenuItem toolStripMenuItem8;
-        internal System.Windows.Forms.MenuStrip menuStrip7;
-        internal System.Windows.Forms.ToolStripMenuItem toolStripMenuItem5;
-        internal System.Windows.Forms.Panel panel12;
-        internal System.Windows.Forms.MenuStrip MenuStrip5;
-        internal System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem6;
-        internal System.Windows.Forms.TextBox txtbuscar_inventarios;
-        internal System.Windows.Forms.Label lblcostoInventario;
-        internal System.Windows.Forms.Label lblcantidaddeProductosEnInventario;
-        internal System.Windows.Forms.Label label3;
-        internal System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Panel panelMOVIMIENTOS;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel2;
+        internal System.Windows.Forms.MenuStrip MenuStrip2;
+        internal System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem3;
+        internal System.Windows.Forms.MenuStrip MenuStrip1;
+        internal System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem2;
+        internal System.Windows.Forms.MenuStrip MenuStrip10;
+        internal System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem7;
+        internal System.Windows.Forms.MenuStrip MenuStrip15;
+        internal System.Windows.Forms.ToolStripMenuItem tver;
+        internal System.Windows.Forms.Label Label8;
+        internal System.Windows.Forms.Label Label5;
+        internal System.Windows.Forms.ComboBox txtUSUARIOS;
+        internal System.Windows.Forms.ComboBox txtTipoMovi;
+        internal System.Windows.Forms.DateTimePicker txtfechaM;
+        internal System.Windows.Forms.Label Label4;
+        internal System.Windows.Forms.MenuStrip MenuStrip6;
+        internal System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem4;
+        internal System.Windows.Forms.TextBox txtbuscarMovimiento;
+        internal System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.DataGridView datalistadoMovimientosACUMULADO_PRODUCTOS;
+        private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
+        private System.Windows.Forms.Panel panel7;
+        internal System.Windows.Forms.MenuStrip menuStrip4;
+        internal System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.DataGridView DatalistadoMovimientos;
+        private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn4;
+        internal System.Windows.Forms.DataGridView DATALISTADO_PRODUCTOS_Movimientos;
+        internal System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn2;
+        private System.Windows.Forms.ComboBox txtIdusuario;
     }
 }
