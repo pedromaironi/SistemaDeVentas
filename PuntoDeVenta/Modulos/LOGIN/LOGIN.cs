@@ -51,7 +51,7 @@ namespace PuntoDeVenta.Modulos
                 b.Size = new System.Drawing.Size(175,25);
                 b.Font = new System.Drawing.Font("Microsoft Sans Serif", 13);
                 b.FlatStyle = FlatStyle.Flat;
-                b.BackColor = Color.FromArgb(28, 54, 67);
+                b.BackColor = Color.FromArgb(20,20,20);
                 b.ForeColor = Color.White;
                 b.Dock = DockStyle.Bottom;
                 b.TextAlign = ContentAlignment.MiddleCenter;
@@ -61,8 +61,8 @@ namespace PuntoDeVenta.Modulos
 
                 p1.Size = new System.Drawing.Size(155, 167);
                 p1.BorderStyle = BorderStyle.None;
-                p1.BackColor = Color.FromArgb(28, 54, 67);
-
+                //p1.BackColor = Color.FromArgb(28, 54, 67);
+                p1.BackColor = Color.FromArgb(20,20,20);
                 I1.Size = new System.Drawing.Size(175, 132);
                 I1.Dock = DockStyle.Top;
                 I1.BackgroundImage = null;
@@ -108,6 +108,12 @@ namespace PuntoDeVenta.Modulos
             DIBUJARUsuarios();
             panel2.Visible = false;
             timer1.Start();
+            PictureBox2.Location = new Point((Width - PictureBox2.Width) / 2, (Height - PictureBox2.Height) / 2);
+            panel1.Location = new Point((Width - panel1.Width) / 2, (Height - panel1.Height) / 2);
+            PanelRestaurarCuenta.Location = new Point((Width - PanelRestaurarCuenta.Width) / 2, (Height - PanelRestaurarCuenta.Height) / 2);
+            panel2.Location = new Point((Width - panel2.Width) / 2, (Height - panel2.Height) / 2);
+
+
         }
 
         private void btn_insertar_Click(object sender, EventArgs e)
@@ -393,6 +399,7 @@ namespace PuntoDeVenta.Modulos
         }
         private void btnOlvideClave_Click(object sender, EventArgs e)
         {
+            panel1.Visible = false;
             PanelRestaurarCuenta.Visible = true;
             MostrarCorreos();
         }
@@ -400,6 +407,7 @@ namespace PuntoDeVenta.Modulos
         private void Button4_Click(object sender, EventArgs e)
         {
             PanelRestaurarCuenta.Visible = false;
+            panel1.Visible = true;
         }
 
         private void mostrar_usuarios_por_correo()
@@ -657,6 +665,18 @@ namespace PuntoDeVenta.Modulos
                 }
 
             }
+        }
+
+        private void btnOlvideClave_Click_1(object sender, EventArgs e)
+        {
+            panel1.Visible = false;
+            PanelRestaurarCuenta.Visible = true;
+            MostrarCorreos();
+        }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

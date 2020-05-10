@@ -74,7 +74,31 @@ namespace PuntoDeVenta.Modulos.CAJA
         }
         private void btnOmitir_Click(object sender, EventArgs e)
         {
+            try
+            {
 
+
+                SqlConnection con = new SqlConnection();
+                con.ConnectionString = CONEXION.CONEXIONMAESTRA.CONEXION;
+                con.Open();
+                SqlCommand cmd = new SqlCommand();
+                cmd = new SqlCommand("editar_dinero_caja_inicial", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@Id_caja", txtidcaja.Text);
+                cmd.Parameters.AddWithValue("@saldo", 0);
+                cmd.ExecuteNonQuery();
+                con.Close();
+
+                this.Hide();
+                VENTAS_MENU_PRINCIPAL.MENUPRINCIPAL_VENTAS frm = new VENTAS_MENU_PRINCIPAL.MENUPRINCIPAL_VENTAS();
+                frm.ShowDialog();
+                this.Hide();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)

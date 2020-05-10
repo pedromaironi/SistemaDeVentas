@@ -69,6 +69,7 @@
     <Compile Include="CONEXION\Encryptacion.cs" />
     <Compile Include="CONEXION\Numero_separadores.cs" />
     <Compile Include="CONEXION\Tamaño_automatico_de_datatables.cs" />
+    <Compile Include="CONEXION\WinAutoComplete.cs" />
     <Compile Include="Modulos\CAJA\Apertura_de_caja.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +81,12 @@
     </Compile>
     <Compile Include="Modulos\CAJA\Cierre_de_caja.Designer.cs">
       <DependentUpon>Cierre_de_caja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\INVENTARIO_KARDEX\INVENTARIO_MENU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\INVENTARIO_KARDEX\INVENTARIO_MENU.Designer.cs">
+      <DependentUpon>INVENTARIO_MENU.cs</DependentUpon>
     </Compile>
     <Compile Include="Modulos\LOGIN\LOGIN.cs">
       <SubType>Form</SubType>
@@ -118,6 +125,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Modulos\CAJA\Cierre_de_caja.resx">
       <DependentUpon>Cierre_de_caja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\INVENTARIO_KARDEX\INVENTARIO_MENU.resx">
+      <DependentUpon>INVENTARIO_MENU.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modulos\LOGIN\LOGIN.resx">
       <DependentUpon>LOGIN.cs</DependentUpon>

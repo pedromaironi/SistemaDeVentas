@@ -22,5 +22,11 @@ namespace PuntoDeVenta.Modulos.VENTAS_MENU_PRINCIPAL
             CAJA.Cierre_de_caja frm = new CAJA.Cierre_de_caja();
             frm.ShowDialog();
         }
+
+        private void ToolStripButton22_Click(object sender, EventArgs e)
+        {
+            PRODUCTOS.PRODUCTOSOK frm = new PRODUCTOS.PRODUCTOSOK();
+            frm.ShowDialog();
+        }
     }
 }
