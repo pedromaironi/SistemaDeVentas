@@ -51,6 +51,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Management" />
     <Reference Include="System.Management.Instrumentation" />
     <Reference Include="System.Xml.Linq" />
@@ -62,6 +63,8 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="Telerik.Reporting, Version=10.0.16.204, Culture=neutral, PublicKeyToken=a9d7983dfcc261be" />
+    <Reference Include="Telerik.ReportViewer.WinForms, Version=10.0.16.204, Culture=neutral, PublicKeyToken=a9d7983dfcc261be, processorArchitecture=MSIL" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CONEXION\CONEXIONMAESTRA.cs" />
@@ -106,6 +109,30 @@
     <Compile Include="Modulos\PRODUCTOS\PRODUCTOSOK.Designer.cs">
       <DependentUpon>PRODUCTOSOK.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modulos\REPORTES\REPORTES_DE_KARDEX\REPORTES_DE_INVENTARIOS_todos\FormInventariosTodos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\REPORTES\REPORTES_DE_KARDEX\REPORTES_DE_INVENTARIOS_todos\FormInventariosTodos.Designer.cs">
+      <DependentUpon>FormInventariosTodos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\REPORTES\REPORTES_DE_KARDEX\REPORTES_DE_INVENTARIOS_todos\ReportInventario_Todos.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Modulos\REPORTES\REPORTES_DE_KARDEX\REPORTES_DE_INVENTARIOS_todos\ReportInventario_Todos.Designer.cs">
+      <DependentUpon>ReportInventario_Todos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\REPORTES\REPORTES_DE_KARDEX\REPORTES_DE_INVENTARIOS_todos\ReportMovimientosBuscar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Modulos\REPORTES\REPORTES_DE_KARDEX\REPORTES_DE_INVENTARIOS_todos\ReportMovimientosBuscar.Designer.cs">
+      <DependentUpon>ReportMovimientosBuscar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\REPORTES\REPORTES_DE_KARDEX\REPORTE_DE_KARDEX_DISEÑO\ReportKardex_Movimientos_ok.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Modulos\REPORTES\REPORTES_DE_KARDEX\REPORTE_DE_KARDEX_DISEÑO\ReportKardex_Movimientos_ok.Designer.cs">
+      <DependentUpon>ReportKardex_Movimientos_ok.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modulos\USUARIOS_Y_PERMISOS\usuariosok.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,12 +165,22 @@
     <EmbeddedResource Include="Modulos\PRODUCTOS\PRODUCTOSOK.resx">
       <DependentUpon>PRODUCTOSOK.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\REPORTES\REPORTES_DE_KARDEX\REPORTES_DE_INVENTARIOS_todos\FormInventariosTodos.resx">
+      <DependentUpon>FormInventariosTodos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\REPORTES\REPORTES_DE_KARDEX\REPORTES_DE_INVENTARIOS_todos\ReportInventario_Todos.resx">
+      <DependentUpon>ReportInventario_Todos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\REPORTES\REPORTES_DE_KARDEX\REPORTES_DE_INVENTARIOS_todos\ReportMovimientosBuscar.resx">
+      <DependentUpon>ReportMovimientosBuscar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Modulos\USUARIOS_Y_PERMISOS\usuariosok.resx">
       <DependentUpon>usuariosok.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modulos\VENTAS_MENU_PRINCIPAL\MENUPRINCIPAL_VENTAS.resx">
       <DependentUpon>MENUPRINCIPAL_VENTAS.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

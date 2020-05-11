@@ -16,7 +16,7 @@ namespace PuntoDeVenta
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Modulos.INVENTARIO_KARDEX.INVENTARIO_MENU());
+            Application.Run(new Modulos.REPORTES.REPORTES_DE_KARDEX.REPORTES_DE_INVENTARIOS_todos.FormInventariosTodos());
         }
     }
 }

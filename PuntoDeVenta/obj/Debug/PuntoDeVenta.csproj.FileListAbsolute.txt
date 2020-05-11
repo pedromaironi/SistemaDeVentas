@@ -17,3 +17,13 @@ C:\Users\pedro\source\repos\PuntoDeVenta\PuntoDeVenta\obj\Debug\PuntoDeVenta.Mod
 C:\Users\pedro\source\repos\PuntoDeVenta\PuntoDeVenta\obj\Debug\PuntoDeVenta.Modulos.PANEL_DE_ADMINISTRACION_DEL_SOFTWARE.CONEXION_MANUAL.resources
 C:\Users\pedro\source\repos\PuntoDeVenta\PuntoDeVenta\obj\Debug\PuntoDeVenta.Modulos.PRODUCTOS.PRODUCTOSOK.resources
 C:\Users\pedro\source\repos\PuntoDeVenta\PuntoDeVenta\obj\Debug\PuntoDeVenta.Modulos.INVENTARIO_KARDEX.INVENTARIO_MENU.resources
+C:\Users\pedro\source\repos\PuntoDeVenta\PuntoDeVenta\bin\Debug\Telerik.Reporting.dll
+C:\Users\pedro\source\repos\PuntoDeVenta\PuntoDeVenta\bin\Debug\Telerik.Reporting.pdb
+C:\Users\pedro\source\repos\PuntoDeVenta\PuntoDeVenta\bin\Debug\Telerik.Reporting.xml
+C:\Users\pedro\source\repos\PuntoDeVenta\PuntoDeVenta\obj\Debug\PuntoDeVenta.Modulos.REPORTES.REPORTES_DE_KARDEX.REPORTES_DE_INVENTARIOS_todos.ReportInventario_Todos.resources
+C:\Users\pedro\source\repos\PuntoDeVenta\PuntoDeVenta\obj\Debug\PuntoDeVenta.Modulos.REPORTES.REPORTES_DE_KARDEX.REPORTES_DE_INVENTARIOS_todos.ReportMovimientosBuscar.resources
+C:\Users\pedro\source\repos\PuntoDeVenta\PuntoDeVenta\obj\Debug\PuntoDeVenta.exe.licenses
+C:\Users\pedro\source\repos\PuntoDeVenta\PuntoDeVenta\bin\Debug\Telerik.ReportViewer.WinForms.dll
+C:\Users\pedro\source\repos\PuntoDeVenta\PuntoDeVenta\bin\Debug\Telerik.ReportViewer.WinForms.pdb
+C:\Users\pedro\source\repos\PuntoDeVenta\PuntoDeVenta\bin\Debug\Telerik.ReportViewer.WinForms.xml
+C:\Users\pedro\source\repos\PuntoDeVenta\PuntoDeVenta\obj\Debug\PuntoDeVenta.Modulos.REPORTES.REPORTES_DE_KARDEX.REPORTES_DE_INVENTARIOS_todos.FormInventariosTodos.resources

@@ -780,5 +780,45 @@ namespace PuntoDeVenta.Modulos.INVENTARIO_KARDEX
             Panelv.Visible = true;
             txtBuscarVencimientos.Text = "Buscar producto/Codigo";
         }
+
+        private void DATALISTADO_PRODUCTOS_Kardex_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txtbuscarKardex_movimientos.Text = DATALISTADO_PRODUCTOS_Kardex.SelectedCells[2].Value.ToString();
+            DATALISTADO_PRODUCTOS_Kardex.Visible = false;
+            mostrar_kardex_movimientos();
+
+
+        }
+        REPORTES.REPORTES_DE_KARDEX_listo.REPORTE_DE_KARDEX_DISEÑO.ReportKARDEX_Movimientos_ok rptFREPORT2 = new REPORTES.REPORTES_DE_KARDEX_listo.Reporte_de_Kardex_diseño.ReportKARDEX_Movimientos_ok();
+        private void mostrar_kardex_movimientos()
+        {
+            try
+            {
+                DataTable dt = new DataTable();
+                SqlDataAdapter da;
+                SqlConnection con = new SqlConnection();
+                con.ConnectionString = CONEXION.CONEXIONMAESTRA.CONEXION;
+                con.Open();
+
+                da = new SqlDataAdapter("MOSTRAR_MOVIMIENTOS_DE_KARDEX", con);
+                da.SelectCommand.CommandType = CommandType.StoredProcedure;
+                da.SelectCommand.Parameters.AddWithValue("@idProducto", DATALISTADO_PRODUCTOS_Kardex.SelectedCells[1].Value.ToString());
+                da.Fill(dt);
+                con.Close();
+                rptFREPORT2 = new REPORTES.REPORTES_DE_KARDEX_listo.Reporte_de_Kardex_diseño.ReportKARDEX_Movimientos_ok();
+                rptFREPORT2.DataSource = dt;
+                rptFREPORT2.table1.DataSource = dt;
+                reportViewer1.Report = rptFREPORT2;
+                reportViewer1.RefreshReport();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+
+            }
+
+
+        }
     }
 }
