@@ -2322,38 +2322,20 @@
   <data name="TVencimientos.ToolTipText" xml:space="preserve">
     <value>Vencimientos de Productos</value>
   </data>
-  <data name="&gt;&gt;panel3.Name" xml:space="preserve">
-    <value>panel3</value>
+  <metadata name="dataGridViewImageColumn4.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="DatalistadoMovimientos.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
   </data>
-  <data name="&gt;&gt;panel3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="DatalistadoMovimientos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 92</value>
   </data>
-  <data name="&gt;&gt;panel3.Parent" xml:space="preserve">
-    <value>panelMOVIMIENTOS</value>
+  <data name="DatalistadoMovimientos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>690, 495</value>
   </data>
-  <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="panelMOVIMIENTOS.Location" type="System.Drawing.Point, System.Drawing">
-    <value>774, 200</value>
-  </data>
-  <data name="panelMOVIMIENTOS.Size" type="System.Drawing.Size, System.Drawing">
-    <value>650, 272</value>
-  </data>
-  <data name="panelMOVIMIENTOS.TabIndex" type="System.Int32, mscorlib">
-    <value>602</value>
-  </data>
-  <data name="&gt;&gt;panelMOVIMIENTOS.Name" xml:space="preserve">
-    <value>panelMOVIMIENTOS</value>
-  </data>
-  <data name="&gt;&gt;panelMOVIMIENTOS.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panelMOVIMIENTOS.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panelMOVIMIENTOS.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="DatalistadoMovimientos.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
   </data>
   <data name="&gt;&gt;DatalistadoMovimientos.Name" xml:space="preserve">
     <value>DatalistadoMovimientos</value>
@@ -2367,6 +2349,57 @@
   <data name="&gt;&gt;DatalistadoMovimientos.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <metadata name="menuStrip4.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>951, 134</value>
+  </metadata>
+  <data name="&gt;&gt;menuStrip4.Name" xml:space="preserve">
+    <value>menuStrip4</value>
+  </data>
+  <data name="&gt;&gt;menuStrip4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuStrip4.Parent" xml:space="preserve">
+    <value>panel5</value>
+  </data>
+  <data name="&gt;&gt;menuStrip4.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;datalistadoMovimientosACUMULADO_PRODUCTOS.Name" xml:space="preserve">
+    <value>datalistadoMovimientosACUMULADO_PRODUCTOS</value>
+  </data>
+  <data name="&gt;&gt;datalistadoMovimientosACUMULADO_PRODUCTOS.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;datalistadoMovimientosACUMULADO_PRODUCTOS.Parent" xml:space="preserve">
+    <value>panel5</value>
+  </data>
+  <data name="&gt;&gt;datalistadoMovimientosACUMULADO_PRODUCTOS.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;panel7.Name" xml:space="preserve">
+    <value>panel7</value>
+  </data>
+  <data name="&gt;&gt;panel7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel7.Parent" xml:space="preserve">
+    <value>panel5</value>
+  </data>
+  <data name="&gt;&gt;panel7.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="panel5.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="panel5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>690, 92</value>
+  </data>
+  <data name="panel5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>366, 495</value>
+  </data>
+  <data name="panel5.TabIndex" type="System.Int32, mscorlib">
+    <value>604</value>
+  </data>
   <data name="&gt;&gt;panel5.Name" xml:space="preserve">
     <value>panel5</value>
   </data>
@@ -2378,6 +2411,552 @@
   </data>
   <data name="&gt;&gt;panel5.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="panel15.Location" type="System.Drawing.Point, System.Drawing">
+    <value>373, 19</value>
+  </data>
+  <data name="panel15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>10, 12</value>
+  </data>
+  <data name="panel15.TabIndex" type="System.Int32, mscorlib">
+    <value>620</value>
+  </data>
+  <data name="&gt;&gt;panel15.Name" xml:space="preserve">
+    <value>panel15</value>
+  </data>
+  <data name="&gt;&gt;panel15.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel15.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;panel15.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;txtIdusuario.Name" xml:space="preserve">
+    <value>txtIdusuario</value>
+  </data>
+  <data name="&gt;&gt;txtIdusuario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtIdusuario.Parent" xml:space="preserve">
+    <value>panel20</value>
+  </data>
+  <data name="&gt;&gt;txtIdusuario.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panel20.Location" type="System.Drawing.Point, System.Drawing">
+    <value>362, 19</value>
+  </data>
+  <data name="panel20.Size" type="System.Drawing.Size, System.Drawing">
+    <value>10, 10</value>
+  </data>
+  <data name="panel20.TabIndex" type="System.Int32, mscorlib">
+    <value>625</value>
+  </data>
+  <data name="&gt;&gt;panel20.Name" xml:space="preserve">
+    <value>panel20</value>
+  </data>
+  <data name="&gt;&gt;panel20.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel20.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;panel20.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="MenuStrip10.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>247, 134</value>
+  </metadata>
+  <data name="MenuStrip10.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="MenuStrip10.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="MenuStrip10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>729, 47</value>
+  </data>
+  <data name="MenuStrip10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 35</value>
+  </data>
+  <data name="MenuStrip10.TabIndex" type="System.Int32, mscorlib">
+    <value>624</value>
+  </data>
+  <data name="MenuStrip10.Text" xml:space="preserve">
+    <value>MenuStrip10</value>
+  </data>
+  <data name="&gt;&gt;MenuStrip10.Name" xml:space="preserve">
+    <value>MenuStrip10</value>
+  </data>
+  <data name="&gt;&gt;MenuStrip10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MenuStrip10.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;MenuStrip10.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <metadata name="MenuStrip15.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>369, 134</value>
+  </metadata>
+  <data name="MenuStrip15.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="MenuStrip15.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="MenuStrip15.Location" type="System.Drawing.Point, System.Drawing">
+    <value>601, 49</value>
+  </data>
+  <data name="MenuStrip15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 28</value>
+  </data>
+  <data name="MenuStrip15.TabIndex" type="System.Int32, mscorlib">
+    <value>623</value>
+  </data>
+  <data name="MenuStrip15.Text" xml:space="preserve">
+    <value>MenuStrip15</value>
+  </data>
+  <data name="&gt;&gt;MenuStrip15.Name" xml:space="preserve">
+    <value>MenuStrip15</value>
+  </data>
+  <data name="&gt;&gt;MenuStrip15.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MenuStrip15.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;MenuStrip15.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="Label8.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label8.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="Label8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>417, 22</value>
+  </data>
+  <data name="Label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 20</value>
+  </data>
+  <data name="Label8.TabIndex" type="System.Int32, mscorlib">
+    <value>621</value>
+  </data>
+  <data name="Label8.Text" xml:space="preserve">
+    <value>Vendedor:</value>
+  </data>
+  <data name="Label8.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
+  <data name="&gt;&gt;Label8.Name" xml:space="preserve">
+    <value>Label8</value>
+  </data>
+  <data name="&gt;&gt;Label8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label8.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;Label8.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="Label5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="Label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>228, 22</value>
+  </data>
+  <data name="Label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 20</value>
+  </data>
+  <data name="Label5.TabIndex" type="System.Int32, mscorlib">
+    <value>622</value>
+  </data>
+  <data name="Label5.Text" xml:space="preserve">
+    <value>Movimientos:</value>
+  </data>
+  <data name="Label5.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
+  <data name="&gt;&gt;Label5.Name" xml:space="preserve">
+    <value>Label5</value>
+  </data>
+  <data name="&gt;&gt;Label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label5.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;Label5.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="txtUSUARIOS.Location" type="System.Drawing.Point, System.Drawing">
+    <value>415, 49</value>
+  </data>
+  <data name="txtUSUARIOS.Size" type="System.Drawing.Size, System.Drawing">
+    <value>183, 28</value>
+  </data>
+  <data name="txtUSUARIOS.TabIndex" type="System.Int32, mscorlib">
+    <value>619</value>
+  </data>
+  <data name="&gt;&gt;txtUSUARIOS.Name" xml:space="preserve">
+    <value>txtUSUARIOS</value>
+  </data>
+  <data name="&gt;&gt;txtUSUARIOS.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtUSUARIOS.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;txtUSUARIOS.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="txtTipoMovi.Items" xml:space="preserve">
+    <value>-Todos-</value>
+  </data>
+  <data name="txtTipoMovi.Items1" xml:space="preserve">
+    <value>ENTRADA</value>
+  </data>
+  <data name="txtTipoMovi.Items2" xml:space="preserve">
+    <value>SALIDA</value>
+  </data>
+  <data name="txtTipoMovi.Location" type="System.Drawing.Point, System.Drawing">
+    <value>227, 49</value>
+  </data>
+  <data name="txtTipoMovi.Size" type="System.Drawing.Size, System.Drawing">
+    <value>183, 28</value>
+  </data>
+  <data name="txtTipoMovi.TabIndex" type="System.Int32, mscorlib">
+    <value>620</value>
+  </data>
+  <data name="txtTipoMovi.Text" xml:space="preserve">
+    <value>-Todos-</value>
+  </data>
+  <data name="&gt;&gt;txtTipoMovi.Name" xml:space="preserve">
+    <value>txtTipoMovi</value>
+  </data>
+  <data name="&gt;&gt;txtTipoMovi.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtTipoMovi.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;txtTipoMovi.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="txtfechaM.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="txtfechaM.Location" type="System.Drawing.Point, System.Drawing">
+    <value>80, 49</value>
+  </data>
+  <data name="txtfechaM.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 26</value>
+  </data>
+  <data name="txtfechaM.TabIndex" type="System.Int32, mscorlib">
+    <value>618</value>
+  </data>
+  <data name="&gt;&gt;txtfechaM.Name" xml:space="preserve">
+    <value>txtfechaM</value>
+  </data>
+  <data name="&gt;&gt;txtfechaM.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtfechaM.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;txtfechaM.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="Label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="Label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 53</value>
+  </data>
+  <data name="Label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 20</value>
+  </data>
+  <data name="Label4.TabIndex" type="System.Int32, mscorlib">
+    <value>617</value>
+  </data>
+  <data name="Label4.Text" xml:space="preserve">
+    <value>Del dia:</value>
+  </data>
+  <data name="Label4.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
+  <data name="&gt;&gt;Label4.Name" xml:space="preserve">
+    <value>Label4</value>
+  </data>
+  <data name="&gt;&gt;Label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label4.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;Label4.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="groupBox1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="groupBox1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+  </data>
+  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1056, 35</value>
+  </data>
+  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>Filtro Activado</value>
+  </data>
+  <data name="groupBox1.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="MenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>721, 134</value>
+  </metadata>
+  <data name="MenuStrip1.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="MenuStrip1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="MenuStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 12</value>
+  </data>
+  <data name="MenuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 31</value>
+  </data>
+  <data name="MenuStrip1.TabIndex" type="System.Int32, mscorlib">
+    <value>615</value>
+  </data>
+  <data name="MenuStrip1.Text" xml:space="preserve">
+    <value>MenuStrip7</value>
+  </data>
+  <data name="&gt;&gt;MenuStrip1.Name" xml:space="preserve">
+    <value>MenuStrip1</value>
+  </data>
+  <data name="&gt;&gt;MenuStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MenuStrip1.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;MenuStrip1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="MenuStrip6.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>836, 134</value>
+  </metadata>
+  <data name="MenuStrip6.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="MenuStrip6.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="MenuStrip6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 48</value>
+  </data>
+  <data name="MenuStrip6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>177, 32</value>
+  </data>
+  <data name="MenuStrip6.TabIndex" type="System.Int32, mscorlib">
+    <value>618</value>
+  </data>
+  <data name="MenuStrip6.Text" xml:space="preserve">
+    <value>MenuStrip6</value>
+  </data>
+  <data name="&gt;&gt;MenuStrip6.Name" xml:space="preserve">
+    <value>MenuStrip6</value>
+  </data>
+  <data name="&gt;&gt;MenuStrip6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MenuStrip6.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;MenuStrip6.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="txtbuscarMovimiento.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="txtbuscarMovimiento.Location" type="System.Drawing.Point, System.Drawing">
+    <value>51, 19</value>
+  </data>
+  <data name="txtbuscarMovimiento.Size" type="System.Drawing.Size, System.Drawing">
+    <value>345, 19</value>
+  </data>
+  <data name="txtbuscarMovimiento.TabIndex" type="System.Int32, mscorlib">
+    <value>616</value>
+  </data>
+  <data name="txtbuscarMovimiento.Text" xml:space="preserve">
+    <value>Buscar producto</value>
+  </data>
+  <data name="&gt;&gt;txtbuscarMovimiento.Name" xml:space="preserve">
+    <value>txtbuscarMovimiento</value>
+  </data>
+  <data name="&gt;&gt;txtbuscarMovimiento.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtbuscarMovimiento.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;txtbuscarMovimiento.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="panel4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 41</value>
+  </data>
+  <data name="panel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>388, 2</value>
+  </data>
+  <data name="panel4.TabIndex" type="System.Int32, mscorlib">
+    <value>617</value>
+  </data>
+  <data name="&gt;&gt;panel4.Name" xml:space="preserve">
+    <value>panel4</value>
+  </data>
+  <data name="&gt;&gt;panel4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel4.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;panel4.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <metadata name="MenuStrip2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>606, 134</value>
+  </metadata>
+  <data name="MenuStrip2.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="MenuStrip2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="MenuStrip2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>199, 48</value>
+  </data>
+  <data name="MenuStrip2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 32</value>
+  </data>
+  <data name="MenuStrip2.TabIndex" type="System.Int32, mscorlib">
+    <value>614</value>
+  </data>
+  <data name="MenuStrip2.Text" xml:space="preserve">
+    <value>MenuStrip2</value>
+  </data>
+  <data name="&gt;&gt;MenuStrip2.Name" xml:space="preserve">
+    <value>MenuStrip2</value>
+  </data>
+  <data name="&gt;&gt;MenuStrip2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MenuStrip2.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;MenuStrip2.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <metadata name="dataGridViewImageColumn2.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="DATALISTADO_PRODUCTOS_Movimientos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>404, 3</value>
+  </data>
+  <data name="DATALISTADO_PRODUCTOS_Movimientos.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="DATALISTADO_PRODUCTOS_Movimientos.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="DATALISTADO_PRODUCTOS_Movimientos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>102, 90</value>
+  </data>
+  <data name="DATALISTADO_PRODUCTOS_Movimientos.TabIndex" type="System.Int32, mscorlib">
+    <value>615</value>
+  </data>
+  <data name="DATALISTADO_PRODUCTOS_Movimientos.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;DATALISTADO_PRODUCTOS_Movimientos.Name" xml:space="preserve">
+    <value>DATALISTADO_PRODUCTOS_Movimientos</value>
+  </data>
+  <data name="&gt;&gt;DATALISTADO_PRODUCTOS_Movimientos.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DATALISTADO_PRODUCTOS_Movimientos.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;DATALISTADO_PRODUCTOS_Movimientos.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="panel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1056, 92</value>
+  </data>
+  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
+    <value>panel14</value>
+  </data>
+  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panel14.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="panel14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="panel14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1056, 92</value>
+  </data>
+  <data name="panel14.TabIndex" type="System.Int32, mscorlib">
+    <value>605</value>
   </data>
   <data name="&gt;&gt;panel14.Name" xml:space="preserve">
     <value>panel14</value>
@@ -2391,11 +2970,14 @@
   <data name="&gt;&gt;panel14.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="panel3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
   <data name="panel3.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
   <data name="panel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1098, 548</value>
+    <value>1056, 587</value>
   </data>
   <data name="panel3.TabIndex" type="System.Int32, mscorlib">
     <value>603</value>
@@ -2412,32 +2994,26 @@
   <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <metadata name="dataGridViewImageColumn4.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="DatalistadoMovimientos.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
+  <data name="panelMOVIMIENTOS.Location" type="System.Drawing.Point, System.Drawing">
+    <value>774, 200</value>
   </data>
-  <data name="DatalistadoMovimientos.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 92</value>
+  <data name="panelMOVIMIENTOS.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1056, 587</value>
   </data>
-  <data name="DatalistadoMovimientos.Size" type="System.Drawing.Size, System.Drawing">
-    <value>732, 456</value>
+  <data name="panelMOVIMIENTOS.TabIndex" type="System.Int32, mscorlib">
+    <value>602</value>
   </data>
-  <data name="DatalistadoMovimientos.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
+  <data name="&gt;&gt;panelMOVIMIENTOS.Name" xml:space="preserve">
+    <value>panelMOVIMIENTOS</value>
   </data>
-  <data name="&gt;&gt;DatalistadoMovimientos.Name" xml:space="preserve">
-    <value>DatalistadoMovimientos</value>
+  <data name="&gt;&gt;panelMOVIMIENTOS.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;DatalistadoMovimientos.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;panelMOVIMIENTOS.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="&gt;&gt;DatalistadoMovimientos.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;DatalistadoMovimientos.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;panelMOVIMIENTOS.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <metadata name="dataGridViewImageColumn4.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -2708,69 +3284,6 @@
         LJFVsl62yhPylDwn9nbHwyX231azf7Ovsa+177Hvtduw27LbtNu2+7D7svu0+7bHYI/FHpM9NnuMXAkP
         SL3ia/4/67+HWLMkukYAAAAASUVORK5CYII=
 </value>
-  </data>
-  <metadata name="menuStrip4.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>951, 134</value>
-  </metadata>
-  <data name="&gt;&gt;menuStrip4.Name" xml:space="preserve">
-    <value>menuStrip4</value>
-  </data>
-  <data name="&gt;&gt;menuStrip4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;menuStrip4.Parent" xml:space="preserve">
-    <value>panel5</value>
-  </data>
-  <data name="&gt;&gt;menuStrip4.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;datalistadoMovimientosACUMULADO_PRODUCTOS.Name" xml:space="preserve">
-    <value>datalistadoMovimientosACUMULADO_PRODUCTOS</value>
-  </data>
-  <data name="&gt;&gt;datalistadoMovimientosACUMULADO_PRODUCTOS.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;datalistadoMovimientosACUMULADO_PRODUCTOS.Parent" xml:space="preserve">
-    <value>panel5</value>
-  </data>
-  <data name="&gt;&gt;datalistadoMovimientosACUMULADO_PRODUCTOS.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;panel7.Name" xml:space="preserve">
-    <value>panel7</value>
-  </data>
-  <data name="&gt;&gt;panel7.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel7.Parent" xml:space="preserve">
-    <value>panel5</value>
-  </data>
-  <data name="&gt;&gt;panel7.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="panel5.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="panel5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>732, 92</value>
-  </data>
-  <data name="panel5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>366, 456</value>
-  </data>
-  <data name="panel5.TabIndex" type="System.Int32, mscorlib">
-    <value>604</value>
-  </data>
-  <data name="&gt;&gt;panel5.Name" xml:space="preserve">
-    <value>panel5</value>
-  </data>
-  <data name="&gt;&gt;panel5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel5.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;panel5.ZOrder" xml:space="preserve">
-    <value>1</value>
   </data>
   <metadata name="menuStrip4.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>951, 134</value>
@@ -3314,7 +3827,7 @@
     <value>0, 74</value>
   </data>
   <data name="datalistadoMovimientosACUMULADO_PRODUCTOS.Size" type="System.Drawing.Size, System.Drawing">
-    <value>366, 382</value>
+    <value>366, 421</value>
   </data>
   <data name="datalistadoMovimientosACUMULADO_PRODUCTOS.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -3403,209 +3916,11 @@
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
-    <value>panel14</value>
-  </data>
-  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="panel14.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="panel14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="panel14.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1098, 92</value>
-  </data>
-  <data name="panel14.TabIndex" type="System.Int32, mscorlib">
-    <value>605</value>
-  </data>
-  <data name="&gt;&gt;panel14.Name" xml:space="preserve">
-    <value>panel14</value>
-  </data>
-  <data name="&gt;&gt;panel14.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel14.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;panel14.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <metadata name="MenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>721, 134</value>
-  </metadata>
-  <metadata name="MenuStrip6.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>836, 134</value>
-  </metadata>
-  <metadata name="MenuStrip2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>606, 134</value>
-  </metadata>
-  <data name="&gt;&gt;panel15.Name" xml:space="preserve">
-    <value>panel15</value>
-  </data>
-  <data name="&gt;&gt;panel15.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel15.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;panel15.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;MenuStrip1.Name" xml:space="preserve">
-    <value>MenuStrip1</value>
-  </data>
-  <data name="&gt;&gt;MenuStrip1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;MenuStrip1.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;MenuStrip1.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;MenuStrip6.Name" xml:space="preserve">
-    <value>MenuStrip6</value>
-  </data>
-  <data name="&gt;&gt;MenuStrip6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;MenuStrip6.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;MenuStrip6.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;txtbuscarMovimiento.Name" xml:space="preserve">
-    <value>txtbuscarMovimiento</value>
-  </data>
-  <data name="&gt;&gt;txtbuscarMovimiento.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txtbuscarMovimiento.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;txtbuscarMovimiento.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;panel4.Name" xml:space="preserve">
-    <value>panel4</value>
-  </data>
-  <data name="&gt;&gt;panel4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel4.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;panel4.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;MenuStrip2.Name" xml:space="preserve">
-    <value>MenuStrip2</value>
-  </data>
-  <data name="&gt;&gt;MenuStrip2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;MenuStrip2.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;MenuStrip2.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;DATALISTADO_PRODUCTOS_Movimientos.Name" xml:space="preserve">
-    <value>DATALISTADO_PRODUCTOS_Movimientos</value>
-  </data>
-  <data name="&gt;&gt;DATALISTADO_PRODUCTOS_Movimientos.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;DATALISTADO_PRODUCTOS_Movimientos.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;DATALISTADO_PRODUCTOS_Movimientos.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="panel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1098, 92</value>
-  </data>
-  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
-    <value>panel14</value>
-  </data>
-  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;txtIdusuario.Name" xml:space="preserve">
-    <value>txtIdusuario</value>
-  </data>
-  <data name="&gt;&gt;txtIdusuario.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txtIdusuario.Parent" xml:space="preserve">
-    <value>panel15</value>
-  </data>
-  <data name="&gt;&gt;txtIdusuario.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="panel15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>336, 62</value>
-  </data>
-  <data name="panel15.Size" type="System.Drawing.Size, System.Drawing">
-    <value>10, 12</value>
-  </data>
-  <data name="panel15.TabIndex" type="System.Int32, mscorlib">
-    <value>620</value>
-  </data>
-  <data name="&gt;&gt;panel15.Name" xml:space="preserve">
-    <value>panel15</value>
-  </data>
-  <data name="&gt;&gt;panel15.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel15.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;panel15.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="txtIdusuario.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, -3</value>
+    <value>27, 3</value>
   </data>
   <data name="txtIdusuario.Size" type="System.Drawing.Size, System.Drawing">
-    <value>21, 21</value>
+    <value>21, 28</value>
   </data>
   <data name="txtIdusuario.TabIndex" type="System.Int32, mscorlib">
     <value>619</value>
@@ -3617,177 +3932,9 @@
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;txtIdusuario.Parent" xml:space="preserve">
-    <value>panel15</value>
+    <value>panel20</value>
   </data>
   <data name="&gt;&gt;txtIdusuario.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <metadata name="MenuStrip10.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>247, 134</value>
-  </metadata>
-  <metadata name="MenuStrip15.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>369, 134</value>
-  </metadata>
-  <data name="&gt;&gt;MenuStrip10.Name" xml:space="preserve">
-    <value>MenuStrip10</value>
-  </data>
-  <data name="&gt;&gt;MenuStrip10.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;MenuStrip10.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;MenuStrip10.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;MenuStrip15.Name" xml:space="preserve">
-    <value>MenuStrip15</value>
-  </data>
-  <data name="&gt;&gt;MenuStrip15.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;MenuStrip15.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;MenuStrip15.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;Label8.Name" xml:space="preserve">
-    <value>Label8</value>
-  </data>
-  <data name="&gt;&gt;Label8.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Label8.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;Label8.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;Label5.Name" xml:space="preserve">
-    <value>Label5</value>
-  </data>
-  <data name="&gt;&gt;Label5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Label5.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;Label5.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;txtUSUARIOS.Name" xml:space="preserve">
-    <value>txtUSUARIOS</value>
-  </data>
-  <data name="&gt;&gt;txtUSUARIOS.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txtUSUARIOS.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;txtUSUARIOS.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;txtTipoMovi.Name" xml:space="preserve">
-    <value>txtTipoMovi</value>
-  </data>
-  <data name="&gt;&gt;txtTipoMovi.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txtTipoMovi.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;txtTipoMovi.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;txtfechaM.Name" xml:space="preserve">
-    <value>txtfechaM</value>
-  </data>
-  <data name="&gt;&gt;txtfechaM.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txtfechaM.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;txtfechaM.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;Label4.Name" xml:space="preserve">
-    <value>Label4</value>
-  </data>
-  <data name="&gt;&gt;Label4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Label4.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;Label4.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="groupBox1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="groupBox1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
-  </data>
-  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1098, 93</value>
-  </data>
-  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="groupBox1.Text" xml:space="preserve">
-    <value>Filtro Activado</value>
-  </data>
-  <data name="groupBox1.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <metadata name="MenuStrip10.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>247, 134</value>
-  </metadata>
-  <data name="MenuStrip10.AutoSize" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="MenuStrip10.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="MenuStrip10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>729, 47</value>
-  </data>
-  <data name="MenuStrip10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>122, 35</value>
-  </data>
-  <data name="MenuStrip10.TabIndex" type="System.Int32, mscorlib">
-    <value>624</value>
-  </data>
-  <data name="MenuStrip10.Text" xml:space="preserve">
-    <value>MenuStrip10</value>
-  </data>
-  <data name="&gt;&gt;MenuStrip10.Name" xml:space="preserve">
-    <value>MenuStrip10</value>
-  </data>
-  <data name="&gt;&gt;MenuStrip10.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;MenuStrip10.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;MenuStrip10.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="ToolStripMenuItem7.Font" type="System.Drawing.Font, System.Drawing">
@@ -4021,39 +4168,6 @@
   </data>
   <data name="ToolStripMenuItem7.Text" xml:space="preserve">
     <value>Imprimir</value>
-  </data>
-  <metadata name="MenuStrip15.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>369, 134</value>
-  </metadata>
-  <data name="MenuStrip15.AutoSize" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="MenuStrip15.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="MenuStrip15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>601, 49</value>
-  </data>
-  <data name="MenuStrip15.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 28</value>
-  </data>
-  <data name="MenuStrip15.TabIndex" type="System.Int32, mscorlib">
-    <value>623</value>
-  </data>
-  <data name="MenuStrip15.Text" xml:space="preserve">
-    <value>MenuStrip15</value>
-  </data>
-  <data name="&gt;&gt;MenuStrip15.Name" xml:space="preserve">
-    <value>MenuStrip15</value>
-  </data>
-  <data name="&gt;&gt;MenuStrip15.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;MenuStrip15.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;MenuStrip15.ZOrder" xml:space="preserve">
-    <value>1</value>
   </data>
   <data name="tver.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 10pt, style=Bold</value>
@@ -4294,216 +4408,6 @@
   <data name="tver.ToolTipText" xml:space="preserve">
     <value>Ver contraseña</value>
   </data>
-  <data name="Label8.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="Label8.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
-  </data>
-  <data name="Label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 22</value>
-  </data>
-  <data name="Label8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 20</value>
-  </data>
-  <data name="Label8.TabIndex" type="System.Int32, mscorlib">
-    <value>621</value>
-  </data>
-  <data name="Label8.Text" xml:space="preserve">
-    <value>Vendedor:</value>
-  </data>
-  <data name="Label8.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopCenter</value>
-  </data>
-  <data name="&gt;&gt;Label8.Name" xml:space="preserve">
-    <value>Label8</value>
-  </data>
-  <data name="&gt;&gt;Label8.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Label8.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;Label8.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="Label5.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="Label5.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
-  </data>
-  <data name="Label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>228, 22</value>
-  </data>
-  <data name="Label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>101, 20</value>
-  </data>
-  <data name="Label5.TabIndex" type="System.Int32, mscorlib">
-    <value>622</value>
-  </data>
-  <data name="Label5.Text" xml:space="preserve">
-    <value>Movimientos:</value>
-  </data>
-  <data name="Label5.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopCenter</value>
-  </data>
-  <data name="&gt;&gt;Label5.Name" xml:space="preserve">
-    <value>Label5</value>
-  </data>
-  <data name="&gt;&gt;Label5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Label5.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;Label5.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="txtUSUARIOS.Location" type="System.Drawing.Point, System.Drawing">
-    <value>415, 49</value>
-  </data>
-  <data name="txtUSUARIOS.Size" type="System.Drawing.Size, System.Drawing">
-    <value>183, 28</value>
-  </data>
-  <data name="txtUSUARIOS.TabIndex" type="System.Int32, mscorlib">
-    <value>619</value>
-  </data>
-  <data name="&gt;&gt;txtUSUARIOS.Name" xml:space="preserve">
-    <value>txtUSUARIOS</value>
-  </data>
-  <data name="&gt;&gt;txtUSUARIOS.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txtUSUARIOS.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;txtUSUARIOS.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="txtTipoMovi.Items" xml:space="preserve">
-    <value>-Todos-</value>
-  </data>
-  <data name="txtTipoMovi.Items1" xml:space="preserve">
-    <value>ENTRADA</value>
-  </data>
-  <data name="txtTipoMovi.Items2" xml:space="preserve">
-    <value>SALIDA</value>
-  </data>
-  <data name="txtTipoMovi.Location" type="System.Drawing.Point, System.Drawing">
-    <value>226, 49</value>
-  </data>
-  <data name="txtTipoMovi.Size" type="System.Drawing.Size, System.Drawing">
-    <value>183, 28</value>
-  </data>
-  <data name="txtTipoMovi.TabIndex" type="System.Int32, mscorlib">
-    <value>620</value>
-  </data>
-  <data name="txtTipoMovi.Text" xml:space="preserve">
-    <value>-Todos-</value>
-  </data>
-  <data name="&gt;&gt;txtTipoMovi.Name" xml:space="preserve">
-    <value>txtTipoMovi</value>
-  </data>
-  <data name="&gt;&gt;txtTipoMovi.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txtTipoMovi.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;txtTipoMovi.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="txtfechaM.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
-  </data>
-  <data name="txtfechaM.Location" type="System.Drawing.Point, System.Drawing">
-    <value>76, 51</value>
-  </data>
-  <data name="txtfechaM.Size" type="System.Drawing.Size, System.Drawing">
-    <value>131, 26</value>
-  </data>
-  <data name="txtfechaM.TabIndex" type="System.Int32, mscorlib">
-    <value>618</value>
-  </data>
-  <data name="&gt;&gt;txtfechaM.Name" xml:space="preserve">
-    <value>txtfechaM</value>
-  </data>
-  <data name="&gt;&gt;txtfechaM.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txtfechaM.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;txtfechaM.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="Label4.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="Label4.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
-  </data>
-  <data name="Label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 55</value>
-  </data>
-  <data name="Label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 20</value>
-  </data>
-  <data name="Label4.TabIndex" type="System.Int32, mscorlib">
-    <value>617</value>
-  </data>
-  <data name="Label4.Text" xml:space="preserve">
-    <value>Del dia:</value>
-  </data>
-  <data name="Label4.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopCenter</value>
-  </data>
-  <data name="&gt;&gt;Label4.Name" xml:space="preserve">
-    <value>Label4</value>
-  </data>
-  <data name="&gt;&gt;Label4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Label4.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;Label4.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <metadata name="MenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>721, 134</value>
-  </metadata>
-  <data name="MenuStrip1.AutoSize" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="MenuStrip1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="MenuStrip1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 12</value>
-  </data>
-  <data name="MenuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>38, 31</value>
-  </data>
-  <data name="MenuStrip1.TabIndex" type="System.Int32, mscorlib">
-    <value>615</value>
-  </data>
-  <data name="MenuStrip1.Text" xml:space="preserve">
-    <value>MenuStrip7</value>
-  </data>
-  <data name="&gt;&gt;MenuStrip1.Name" xml:space="preserve">
-    <value>MenuStrip1</value>
-  </data>
-  <data name="&gt;&gt;MenuStrip1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;MenuStrip1.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;MenuStrip1.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <data name="ToolStripMenuItem2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 12pt, style=Bold</value>
   </data>
@@ -4723,39 +4627,6 @@
   <data name="ToolStripMenuItem2.ToolTipText" xml:space="preserve">
     <value>Quitar logo</value>
   </data>
-  <metadata name="MenuStrip6.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>836, 134</value>
-  </metadata>
-  <data name="MenuStrip6.AutoSize" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="MenuStrip6.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="MenuStrip6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 48</value>
-  </data>
-  <data name="MenuStrip6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>177, 32</value>
-  </data>
-  <data name="MenuStrip6.TabIndex" type="System.Int32, mscorlib">
-    <value>618</value>
-  </data>
-  <data name="MenuStrip6.Text" xml:space="preserve">
-    <value>MenuStrip6</value>
-  </data>
-  <data name="&gt;&gt;MenuStrip6.Name" xml:space="preserve">
-    <value>MenuStrip6</value>
-  </data>
-  <data name="&gt;&gt;MenuStrip6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;MenuStrip6.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;MenuStrip6.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
   <data name="ToolStripMenuItem4.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 10pt, style=Bold</value>
   </data>
@@ -4851,87 +4722,6 @@
   </data>
   <data name="ToolStripMenuItem4.Text" xml:space="preserve">
     <value>Filtros Avanzados</value>
-  </data>
-  <data name="txtbuscarMovimiento.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
-  </data>
-  <data name="txtbuscarMovimiento.Location" type="System.Drawing.Point, System.Drawing">
-    <value>51, 19</value>
-  </data>
-  <data name="txtbuscarMovimiento.Size" type="System.Drawing.Size, System.Drawing">
-    <value>345, 19</value>
-  </data>
-  <data name="txtbuscarMovimiento.TabIndex" type="System.Int32, mscorlib">
-    <value>616</value>
-  </data>
-  <data name="txtbuscarMovimiento.Text" xml:space="preserve">
-    <value>Buscar producto</value>
-  </data>
-  <data name="&gt;&gt;txtbuscarMovimiento.Name" xml:space="preserve">
-    <value>txtbuscarMovimiento</value>
-  </data>
-  <data name="&gt;&gt;txtbuscarMovimiento.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txtbuscarMovimiento.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;txtbuscarMovimiento.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="panel4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 41</value>
-  </data>
-  <data name="panel4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 2</value>
-  </data>
-  <data name="panel4.TabIndex" type="System.Int32, mscorlib">
-    <value>617</value>
-  </data>
-  <data name="&gt;&gt;panel4.Name" xml:space="preserve">
-    <value>panel4</value>
-  </data>
-  <data name="&gt;&gt;panel4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel4.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;panel4.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <metadata name="MenuStrip2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>606, 134</value>
-  </metadata>
-  <data name="MenuStrip2.AutoSize" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="MenuStrip2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="MenuStrip2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>199, 48</value>
-  </data>
-  <data name="MenuStrip2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>107, 32</value>
-  </data>
-  <data name="MenuStrip2.TabIndex" type="System.Int32, mscorlib">
-    <value>614</value>
-  </data>
-  <data name="MenuStrip2.Text" xml:space="preserve">
-    <value>MenuStrip2</value>
-  </data>
-  <data name="&gt;&gt;MenuStrip2.Name" xml:space="preserve">
-    <value>MenuStrip2</value>
-  </data>
-  <data name="&gt;&gt;MenuStrip2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;MenuStrip2.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;MenuStrip2.ZOrder" xml:space="preserve">
-    <value>6</value>
   </data>
   <data name="ToolStripMenuItem3.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 10pt, style=Bold</value>
@@ -5164,39 +4954,6 @@
   </data>
   <data name="ToolStripMenuItem3.Text" xml:space="preserve">
     <value>Imprimir</value>
-  </data>
-  <metadata name="dataGridViewImageColumn2.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="DATALISTADO_PRODUCTOS_Movimientos.Location" type="System.Drawing.Point, System.Drawing">
-    <value>404, 3</value>
-  </data>
-  <data name="DATALISTADO_PRODUCTOS_Movimientos.RowHeadersWidth" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="DATALISTADO_PRODUCTOS_Movimientos.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="DATALISTADO_PRODUCTOS_Movimientos.Size" type="System.Drawing.Size, System.Drawing">
-    <value>102, 90</value>
-  </data>
-  <data name="DATALISTADO_PRODUCTOS_Movimientos.TabIndex" type="System.Int32, mscorlib">
-    <value>615</value>
-  </data>
-  <data name="DATALISTADO_PRODUCTOS_Movimientos.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;DATALISTADO_PRODUCTOS_Movimientos.Name" xml:space="preserve">
-    <value>DATALISTADO_PRODUCTOS_Movimientos</value>
-  </data>
-  <data name="&gt;&gt;DATALISTADO_PRODUCTOS_Movimientos.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;DATALISTADO_PRODUCTOS_Movimientos.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;DATALISTADO_PRODUCTOS_Movimientos.ZOrder" xml:space="preserve">
-    <value>7</value>
   </data>
   <metadata name="dataGridViewImageColumn2.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -7492,6 +7249,18 @@
   <metadata name="menuStrip17.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>967, 173</value>
   </metadata>
+  <data name="&gt;&gt;panel19.Name" xml:space="preserve">
+    <value>panel19</value>
+  </data>
+  <data name="&gt;&gt;panel19.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel19.Parent" xml:space="preserve">
+    <value>panel17</value>
+  </data>
+  <data name="&gt;&gt;panel19.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
     <value>groupBox2</value>
   </data>
@@ -7502,18 +7271,6 @@
     <value>panel17</value>
   </data>
   <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;comboBox3.Name" xml:space="preserve">
-    <value>comboBox3</value>
-  </data>
-  <data name="&gt;&gt;comboBox3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBox3.Parent" xml:space="preserve">
-    <value>panel17</value>
-  </data>
-  <data name="&gt;&gt;comboBox3.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="&gt;&gt;menuStrip14.Name" xml:space="preserve">
@@ -7649,7 +7406,7 @@
     <value>panel17</value>
   </data>
   <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="CheckProductosVencidos.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -7709,7 +7466,7 @@
     <value>1</value>
   </data>
   <data name="comboBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>360, 58</value>
+    <value>25, 3</value>
   </data>
   <data name="comboBox3.Size" type="System.Drawing.Size, System.Drawing">
     <value>21, 21</value>
@@ -7724,10 +7481,10 @@
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;comboBox3.Parent" xml:space="preserve">
-    <value>panel17</value>
+    <value>panel19</value>
   </data>
   <data name="&gt;&gt;comboBox3.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>0</value>
   </data>
   <metadata name="menuStrip14.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>725, 173</value>
@@ -8469,7 +8226,7 @@
     <value>0, 0</value>
   </data>
   <data name="panel13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>729, 58</value>
+    <value>204, 58</value>
   </data>
   <data name="panel13.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -8486,32 +8243,26 @@
   <data name="&gt;&gt;panel13.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="txtbuscarKardex_movimientos.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
+  <data name="panel16.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 39</value>
   </data>
-  <data name="txtbuscarKardex_movimientos.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 19</value>
+  <data name="panel16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>345, 2</value>
   </data>
-  <data name="txtbuscarKardex_movimientos.Size" type="System.Drawing.Size, System.Drawing">
-    <value>345, 19</value>
+  <data name="panel16.TabIndex" type="System.Int32, mscorlib">
+    <value>610</value>
   </data>
-  <data name="txtbuscarKardex_movimientos.TabIndex" type="System.Int32, mscorlib">
-    <value>609</value>
+  <data name="&gt;&gt;panel16.Name" xml:space="preserve">
+    <value>panel16</value>
   </data>
-  <data name="txtbuscarKardex_movimientos.Text" xml:space="preserve">
-    <value>Buscar producto</value>
+  <data name="&gt;&gt;panel16.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;txtbuscarKardex_movimientos.Name" xml:space="preserve">
-    <value>txtbuscarKardex_movimientos</value>
-  </data>
-  <data name="&gt;&gt;txtbuscarKardex_movimientos.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txtbuscarKardex_movimientos.Parent" xml:space="preserve">
+  <data name="&gt;&gt;panel16.Parent" xml:space="preserve">
     <value>panel13</value>
   </data>
-  <data name="&gt;&gt;txtbuscarKardex_movimientos.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;panel16.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <metadata name="menuStrip12.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 173</value>
@@ -8765,38 +8516,41 @@
   <data name="toolStripMenuItem11.ToolTipText" xml:space="preserve">
     <value>Buscar</value>
   </data>
-  <data name="panel16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 39</value>
+  <data name="txtbuscarKardex_movimientos.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
   </data>
-  <data name="panel16.Size" type="System.Drawing.Size, System.Drawing">
-    <value>345, 2</value>
+  <data name="txtbuscarKardex_movimientos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 19</value>
   </data>
-  <data name="panel16.TabIndex" type="System.Int32, mscorlib">
-    <value>610</value>
+  <data name="txtbuscarKardex_movimientos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>345, 19</value>
   </data>
-  <data name="&gt;&gt;panel16.Name" xml:space="preserve">
-    <value>panel16</value>
+  <data name="txtbuscarKardex_movimientos.TabIndex" type="System.Int32, mscorlib">
+    <value>609</value>
   </data>
-  <data name="&gt;&gt;panel16.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="txtbuscarKardex_movimientos.Text" xml:space="preserve">
+    <value>Buscar producto</value>
   </data>
-  <data name="&gt;&gt;panel16.Parent" xml:space="preserve">
+  <data name="&gt;&gt;txtbuscarKardex_movimientos.Name" xml:space="preserve">
+    <value>txtbuscarKardex_movimientos</value>
+  </data>
+  <data name="&gt;&gt;txtbuscarKardex_movimientos.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtbuscarKardex_movimientos.Parent" xml:space="preserve">
     <value>panel13</value>
   </data>
-  <data name="&gt;&gt;panel16.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;txtbuscarKardex_movimientos.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <metadata name="DataGridViewCheckBoxColumn4.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="DataGridViewCheckBoxColumn4.HeaderText" xml:space="preserve">
-    <value>Marcar</value>
-  </data>
-  <data name="DataGridViewCheckBoxColumn4.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="DATALISTADO_PRODUCTOS_Kardex.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
   </data>
   <data name="DATALISTADO_PRODUCTOS_Kardex.Location" type="System.Drawing.Point, System.Drawing">
-    <value>450, 58</value>
+    <value>0, 58</value>
   </data>
   <data name="DATALISTADO_PRODUCTOS_Kardex.RowHeadersWidth" type="System.Int32, mscorlib">
     <value>9</value>
@@ -8805,7 +8559,7 @@
     <value>None</value>
   </data>
   <data name="DATALISTADO_PRODUCTOS_Kardex.Size" type="System.Drawing.Size, System.Drawing">
-    <value>279, 238</value>
+    <value>204, 63</value>
   </data>
   <data name="DATALISTADO_PRODUCTOS_Kardex.TabIndex" type="System.Int32, mscorlib">
     <value>611</value>
@@ -8823,16 +8577,16 @@
     <value>PanelKardex</value>
   </data>
   <data name="&gt;&gt;DATALISTADO_PRODUCTOS_Kardex.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>0</value>
   </data>
-  <data name="reportViewer1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 62</value>
+  <metadata name="DataGridViewCheckBoxColumn4.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="DataGridViewCheckBoxColumn4.HeaderText" xml:space="preserve">
+    <value>Marcar</value>
   </data>
-  <data name="reportViewer1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>441, 349</value>
-  </data>
-  <data name="reportViewer1.TabIndex" type="System.Int32, mscorlib">
-    <value>612</value>
+  <data name="DataGridViewCheckBoxColumn4.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;reportViewer1.Name" xml:space="preserve">
     <value>reportViewer1</value>
@@ -8844,13 +8598,13 @@
     <value>PanelKardex</value>
   </data>
   <data name="&gt;&gt;reportViewer1.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="PanelKardex.Location" type="System.Drawing.Point, System.Drawing">
     <value>7, 161</value>
   </data>
   <data name="PanelKardex.Size" type="System.Drawing.Size, System.Drawing">
-    <value>729, 411</value>
+    <value>204, 121</value>
   </data>
   <data name="PanelKardex.TabIndex" type="System.Int32, mscorlib">
     <value>604</value>
@@ -8865,6 +8619,63 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;PanelKardex.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="reportViewer1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="reportViewer1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 58</value>
+  </data>
+  <data name="reportViewer1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>204, 63</value>
+  </data>
+  <data name="reportViewer1.TabIndex" type="System.Int32, mscorlib">
+    <value>612</value>
+  </data>
+  <data name="&gt;&gt;reportViewer1.Name" xml:space="preserve">
+    <value>reportViewer1</value>
+  </data>
+  <data name="&gt;&gt;reportViewer1.Type" xml:space="preserve">
+    <value>Telerik.ReportViewer.WinForms.ReportViewer, Telerik.ReportViewer.WinForms, Version=10.0.16.204, Culture=neutral, PublicKeyToken=a9d7983dfcc261be</value>
+  </data>
+  <data name="&gt;&gt;reportViewer1.Parent" xml:space="preserve">
+    <value>PanelKardex</value>
+  </data>
+  <data name="&gt;&gt;reportViewer1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;comboBox3.Name" xml:space="preserve">
+    <value>comboBox3</value>
+  </data>
+  <data name="&gt;&gt;comboBox3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox3.Parent" xml:space="preserve">
+    <value>panel19</value>
+  </data>
+  <data name="&gt;&gt;comboBox3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panel19.Location" type="System.Drawing.Point, System.Drawing">
+    <value>312, 58</value>
+  </data>
+  <data name="panel19.Size" type="System.Drawing.Size, System.Drawing">
+    <value>10, 10</value>
+  </data>
+  <data name="panel19.TabIndex" type="System.Int32, mscorlib">
+    <value>620</value>
+  </data>
+  <data name="&gt;&gt;panel19.Name" xml:space="preserve">
+    <value>panel19</value>
+  </data>
+  <data name="&gt;&gt;panel19.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel19.Parent" xml:space="preserve">
+    <value>panel17</value>
+  </data>
+  <data name="&gt;&gt;panel19.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

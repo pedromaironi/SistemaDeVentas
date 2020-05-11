@@ -734,7 +734,7 @@ namespace PuntoDeVenta.Modulos.INVENTARIO_KARDEX
 
         private void TMOVIMIENTOS_Click(object sender, EventArgs e)
         {
-            //panel7.Visible = false;
+            panel5.Visible = false;
             PanelR.Visible = false;
             PanelK.Visible = false;
             PanelI.Visible = false;
@@ -789,7 +789,7 @@ namespace PuntoDeVenta.Modulos.INVENTARIO_KARDEX
 
 
         }
-        REPORTES.REPORTES_DE_KARDEX_listo.REPORTE_DE_KARDEX_DISEÑO.ReportKARDEX_Movimientos_ok rptFREPORT2 = new REPORTES.REPORTES_DE_KARDEX_listo.Reporte_de_Kardex_diseño.ReportKARDEX_Movimientos_ok();
+        REPORTES.REPORTES_DE_KARDEX.REPORTE_DE_KARDEX_DISEÑO.ReportKardex_Movimientos_ok rptFREPORT2 = new REPORTES.REPORTES_DE_KARDEX.REPORTE_DE_KARDEX_DISEÑO.ReportKardex_Movimientos_ok();
         private void mostrar_kardex_movimientos()
         {
             try
@@ -805,7 +805,7 @@ namespace PuntoDeVenta.Modulos.INVENTARIO_KARDEX
                 da.SelectCommand.Parameters.AddWithValue("@idProducto", DATALISTADO_PRODUCTOS_Kardex.SelectedCells[1].Value.ToString());
                 da.Fill(dt);
                 con.Close();
-                rptFREPORT2 = new REPORTES.REPORTES_DE_KARDEX_listo.Reporte_de_Kardex_diseño.ReportKARDEX_Movimientos_ok();
+                rptFREPORT2 = new REPORTES.REPORTES_DE_KARDEX.REPORTE_DE_KARDEX_DISEÑO.ReportKardex_Movimientos_ok();
                 rptFREPORT2.DataSource = dt;
                 rptFREPORT2.table1.DataSource = dt;
                 reportViewer1.Report = rptFREPORT2;
@@ -819,6 +819,34 @@ namespace PuntoDeVenta.Modulos.INVENTARIO_KARDEX
             }
 
 
+        }
+
+        private void MenuStrip2_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+        public static int idProducto;
+
+        private void ToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            MODULOS.REPORTES.REPORTES_DE_KARDEX_listo.REPORTES_DE_INVENTARIOS_todos.FormMovimientosBuscar frm = new MODULOS.REPORTES.REPORTES_DE_KARDEX_listo.REPORTES_DE_INVENTARIOS_todos.FormMovimientosBuscar();
+            frm.ShowDialog();
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void MenuStrip6_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void MenuStrip10_Click(object sender, EventArgs e)
+        {
+            Modulos.REPORTES.REPORTES_DE_KARDEX.REPORTES_DE_INVENTARIOS_todos.FormInventarioBuscar frm = new Modulos.REPORTES.REPORTES_DE_KARDEX.REPORTES_DE_INVENTARIOS_todos.FormInventarioBuscar();
+            frm.ShowDialog();
         }
     }
 }

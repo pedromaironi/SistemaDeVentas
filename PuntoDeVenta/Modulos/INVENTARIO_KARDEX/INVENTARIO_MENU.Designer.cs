@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(INVENTARIO_MENU));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.Panel1 = new System.Windows.Forms.Panel();
             this.Panelv = new System.Windows.Forms.Panel();
@@ -129,14 +129,16 @@
             this.menuStrip17 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem15 = new System.Windows.Forms.ToolStripMenuItem();
             this.panel13 = new System.Windows.Forms.Panel();
-            this.txtbuscarKardex_movimientos = new System.Windows.Forms.TextBox();
+            this.panel16 = new System.Windows.Forms.Panel();
             this.menuStrip12 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem11 = new System.Windows.Forms.ToolStripMenuItem();
-            this.panel16 = new System.Windows.Forms.Panel();
+            this.txtbuscarKardex_movimientos = new System.Windows.Forms.TextBox();
             this.DATALISTADO_PRODUCTOS_Kardex = new System.Windows.Forms.DataGridView();
             this.DataGridViewCheckBoxColumn4 = new System.Windows.Forms.DataGridViewImageColumn();
             this.PanelKardex = new System.Windows.Forms.Panel();
             this.reportViewer1 = new Telerik.ReportViewer.WinForms.ReportViewer();
+            this.panel19 = new System.Windows.Forms.Panel();
+            this.panel20 = new System.Windows.Forms.Panel();
             this.Panel1.SuspendLayout();
             this.Panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox3)).BeginInit();
@@ -154,7 +156,6 @@
             this.panel7.SuspendLayout();
             this.panel14.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel15.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.MenuStrip10.SuspendLayout();
             this.MenuStrip15.SuspendLayout();
@@ -184,6 +185,8 @@
             this.menuStrip12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DATALISTADO_PRODUCTOS_Kardex)).BeginInit();
             this.PanelKardex.SuspendLayout();
+            this.panel19.SuspendLayout();
+            this.panel20.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -425,6 +428,7 @@
             resources.ApplyResources(this.toolStripMenuItem1, "toolStripMenuItem1");
             this.toolStripMenuItem1.ForeColor = System.Drawing.Color.White;
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
             // datalistadoMovimientosACUMULADO_PRODUCTOS
             // 
@@ -437,26 +441,26 @@
             this.datalistadoMovimientosACUMULADO_PRODUCTOS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.datalistadoMovimientosACUMULADO_PRODUCTOS.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewImageColumn1});
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(63)))), ((int)(((byte)(67)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.datalistadoMovimientosACUMULADO_PRODUCTOS.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(63)))), ((int)(((byte)(67)))));
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.datalistadoMovimientosACUMULADO_PRODUCTOS.DefaultCellStyle = dataGridViewCellStyle11;
             resources.ApplyResources(this.datalistadoMovimientosACUMULADO_PRODUCTOS, "datalistadoMovimientosACUMULADO_PRODUCTOS");
             this.datalistadoMovimientosACUMULADO_PRODUCTOS.EnableHeadersVisualStyles = false;
             this.datalistadoMovimientosACUMULADO_PRODUCTOS.Name = "datalistadoMovimientosACUMULADO_PRODUCTOS";
             this.datalistadoMovimientosACUMULADO_PRODUCTOS.ReadOnly = true;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(63)))), ((int)(((byte)(67)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.datalistadoMovimientosACUMULADO_PRODUCTOS.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(63)))), ((int)(((byte)(67)))));
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.datalistadoMovimientosACUMULADO_PRODUCTOS.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
             this.datalistadoMovimientosACUMULADO_PRODUCTOS.RowHeadersVisible = false;
             this.datalistadoMovimientosACUMULADO_PRODUCTOS.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(63)))), ((int)(((byte)(67)))));
             this.datalistadoMovimientosACUMULADO_PRODUCTOS.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -495,7 +499,6 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.panel15);
             this.panel2.Controls.Add(this.groupBox1);
             this.panel2.Controls.Add(this.MenuStrip1);
             this.panel2.Controls.Add(this.MenuStrip6);
@@ -508,7 +511,6 @@
             // 
             // panel15
             // 
-            this.panel15.Controls.Add(this.txtIdusuario);
             resources.ApplyResources(this.panel15, "panel15");
             this.panel15.Name = "panel15";
             // 
@@ -522,6 +524,8 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.White;
+            this.groupBox1.Controls.Add(this.panel15);
+            this.groupBox1.Controls.Add(this.panel20);
             this.groupBox1.Controls.Add(this.MenuStrip10);
             this.groupBox1.Controls.Add(this.MenuStrip15);
             this.groupBox1.Controls.Add(this.Label8);
@@ -543,6 +547,7 @@
             this.MenuStrip10.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
             this.MenuStrip10.Name = "MenuStrip10";
             this.MenuStrip10.ShowItemToolTips = true;
+            this.MenuStrip10.Click += new System.EventHandler(this.MenuStrip10_Click);
             // 
             // ToolStripMenuItem7
             // 
@@ -635,6 +640,7 @@
             this.MenuStrip6.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
             this.MenuStrip6.Name = "MenuStrip6";
             this.MenuStrip6.ShowItemToolTips = true;
+            this.MenuStrip6.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.MenuStrip6_ItemClicked);
             // 
             // ToolStripMenuItem4
             // 
@@ -668,6 +674,7 @@
             this.MenuStrip2.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
             this.MenuStrip2.Name = "MenuStrip2";
             this.MenuStrip2.ShowItemToolTips = true;
+            this.MenuStrip2.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.MenuStrip2_ItemClicked);
             // 
             // ToolStripMenuItem3
             // 
@@ -675,6 +682,7 @@
             resources.ApplyResources(this.ToolStripMenuItem3, "ToolStripMenuItem3");
             this.ToolStripMenuItem3.ForeColor = System.Drawing.Color.Black;
             this.ToolStripMenuItem3.Name = "ToolStripMenuItem3";
+            this.ToolStripMenuItem3.Click += new System.EventHandler(this.ToolStripMenuItem3_Click);
             // 
             // DATALISTADO_PRODUCTOS_Movimientos
             // 
@@ -972,8 +980,8 @@
             // panel17
             // 
             this.panel17.BackColor = System.Drawing.Color.White;
+            this.panel17.Controls.Add(this.panel19);
             this.panel17.Controls.Add(this.groupBox2);
-            this.panel17.Controls.Add(this.comboBox3);
             this.panel17.Controls.Add(this.menuStrip14);
             this.panel17.Controls.Add(this.menuStrip16);
             this.panel17.Controls.Add(this.txtBuscarVencimientos);
@@ -1088,13 +1096,11 @@
             resources.ApplyResources(this.panel13, "panel13");
             this.panel13.Name = "panel13";
             // 
-            // txtbuscarKardex_movimientos
+            // panel16
             // 
-            this.txtbuscarKardex_movimientos.BackColor = System.Drawing.Color.White;
-            this.txtbuscarKardex_movimientos.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            resources.ApplyResources(this.txtbuscarKardex_movimientos, "txtbuscarKardex_movimientos");
-            this.txtbuscarKardex_movimientos.Name = "txtbuscarKardex_movimientos";
-            this.txtbuscarKardex_movimientos.TextChanged += new System.EventHandler(this.txtbuscarKardex_movimientos_TextChanged);
+            this.panel16.BackColor = System.Drawing.Color.Gainsboro;
+            resources.ApplyResources(this.panel16, "panel16");
+            this.panel16.Name = "panel16";
             // 
             // menuStrip12
             // 
@@ -1113,11 +1119,13 @@
             this.toolStripMenuItem11.ForeColor = System.Drawing.Color.Black;
             this.toolStripMenuItem11.Name = "toolStripMenuItem11";
             // 
-            // panel16
+            // txtbuscarKardex_movimientos
             // 
-            this.panel16.BackColor = System.Drawing.Color.Gainsboro;
-            resources.ApplyResources(this.panel16, "panel16");
-            this.panel16.Name = "panel16";
+            this.txtbuscarKardex_movimientos.BackColor = System.Drawing.Color.White;
+            this.txtbuscarKardex_movimientos.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            resources.ApplyResources(this.txtbuscarKardex_movimientos, "txtbuscarKardex_movimientos");
+            this.txtbuscarKardex_movimientos.Name = "txtbuscarKardex_movimientos";
+            this.txtbuscarKardex_movimientos.TextChanged += new System.EventHandler(this.txtbuscarKardex_movimientos_TextChanged);
             // 
             // DATALISTADO_PRODUCTOS_Kardex
             // 
@@ -1133,8 +1141,8 @@
             this.DATALISTADO_PRODUCTOS_Kardex.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.DataGridViewCheckBoxColumn4});
             this.DATALISTADO_PRODUCTOS_Kardex.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.DATALISTADO_PRODUCTOS_Kardex.EnableHeadersVisualStyles = false;
             resources.ApplyResources(this.DATALISTADO_PRODUCTOS_Kardex, "DATALISTADO_PRODUCTOS_Kardex");
+            this.DATALISTADO_PRODUCTOS_Kardex.EnableHeadersVisualStyles = false;
             this.DATALISTADO_PRODUCTOS_Kardex.MultiSelect = false;
             this.DATALISTADO_PRODUCTOS_Kardex.Name = "DATALISTADO_PRODUCTOS_Kardex";
             this.DATALISTADO_PRODUCTOS_Kardex.ReadOnly = true;
@@ -1157,8 +1165,8 @@
             // PanelKardex
             // 
             this.PanelKardex.BackColor = System.Drawing.Color.White;
-            this.PanelKardex.Controls.Add(this.reportViewer1);
             this.PanelKardex.Controls.Add(this.DATALISTADO_PRODUCTOS_Kardex);
+            this.PanelKardex.Controls.Add(this.reportViewer1);
             this.PanelKardex.Controls.Add(this.panel13);
             resources.ApplyResources(this.PanelKardex, "PanelKardex");
             this.PanelKardex.Name = "PanelKardex";
@@ -1167,6 +1175,18 @@
             // 
             resources.ApplyResources(this.reportViewer1, "reportViewer1");
             this.reportViewer1.Name = "reportViewer1";
+            // 
+            // panel19
+            // 
+            this.panel19.Controls.Add(this.comboBox3);
+            resources.ApplyResources(this.panel19, "panel19");
+            this.panel19.Name = "panel19";
+            // 
+            // panel20
+            // 
+            this.panel20.Controls.Add(this.txtIdusuario);
+            resources.ApplyResources(this.panel20, "panel20");
+            this.panel20.Name = "panel20";
             // 
             // INVENTARIO_MENU
             // 
@@ -1202,7 +1222,6 @@
             this.panel14.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.panel15.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.MenuStrip10.ResumeLayout(false);
@@ -1251,6 +1270,8 @@
             this.menuStrip12.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DATALISTADO_PRODUCTOS_Kardex)).EndInit();
             this.PanelKardex.ResumeLayout(false);
+            this.panel19.ResumeLayout(false);
+            this.panel20.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1363,5 +1384,7 @@
         internal System.Windows.Forms.DataGridViewImageColumn DataGridViewCheckBoxColumn4;
         private System.Windows.Forms.Panel PanelKardex;
         private Telerik.ReportViewer.WinForms.ReportViewer reportViewer1;
+        private System.Windows.Forms.Panel panel20;
+        private System.Windows.Forms.Panel panel19;
     }
 }
