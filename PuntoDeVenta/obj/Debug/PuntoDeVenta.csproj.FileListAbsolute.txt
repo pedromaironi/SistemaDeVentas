@@ -28,4 +28,6 @@ C:\Users\pedro\source\repos\PuntoDeVenta\PuntoDeVenta\bin\Debug\Telerik.ReportVi
 C:\Users\pedro\source\repos\PuntoDeVenta\PuntoDeVenta\bin\Debug\Telerik.ReportViewer.WinForms.xml
 C:\Users\pedro\source\repos\PuntoDeVenta\PuntoDeVenta\obj\Debug\PuntoDeVenta.Modulos.REPORTES.REPORTES_DE_KARDEX.REPORTES_DE_INVENTARIOS_todos.FormInventariosTodos.resources
 C:\Users\pedro\source\repos\PuntoDeVenta\PuntoDeVenta\obj\Debug\PuntoDeVenta.Modulos.REPORTES.REPORTES_DE_KARDEX.REPORTE_DE_KARDEX_DISEÑO.ReportKardex_Movimientos_ok.resources
-C:\Users\pedro\source\repos\PuntoDeVenta\PuntoDeVenta\obj\Debug\PuntoDeVenta.Modulos.REPORTES.REPORTES_DE_KARDEX.REPORTES_DE_INVENTARIOS_todos.FormInventarioBuscar.resources
+C:\Users\pedro\source\repos\PuntoDeVenta\PuntoDeVenta\obj\Debug\PuntoDeVenta.Modulos.REPORTES.REPORTES_DE_KARDEX.REPORTES_DE_INVENTARIOS_todos.FormMovimientosBuscar.resources
+C:\Users\pedro\source\repos\PuntoDeVenta\PuntoDeVenta\obj\Debug\PuntoDeVenta.Modulos.REPORTES.REPORTES_DE_KARDEX.REPORTES_DE_INVENTARIOS_todos.FormReporteMovimientosFILTROS.resources
+C:\Users\pedro\source\repos\PuntoDeVenta\PuntoDeVenta\obj\Debug\PuntoDeVenta.Modulos.REPORTES.REPORTES_DE_KARDEX.REPORTES_DE_INVENTARIOS_todos.Reporte_Movimientos_con_Filtros.resources

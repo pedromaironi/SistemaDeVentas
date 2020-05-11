@@ -13,26 +13,26 @@ namespace PuntoDeVenta.Modulos.REPORTES.REPORTES_DE_KARDEX.REPORTES_DE_INVENTARI
             Telerik.Reporting.Drawing.StyleRule styleRule1 = new Telerik.Reporting.Drawing.StyleRule();
             this.detail = new Telerik.Reporting.DetailSection();
             this.pageFooterSection1 = new Telerik.Reporting.PageFooterSection();
-            this.pageHeaderSection1 = new Telerik.Reporting.PageHeaderSection();
-            this.reportHeaderSection1 = new Telerik.Reporting.ReportHeaderSection();
             this.TextBox18 = new Telerik.Reporting.TextBox();
             this.barcode1 = new Telerik.Reporting.Barcode();
+            this.pageHeaderSection1 = new Telerik.Reporting.PageHeaderSection();
             this.textBox3 = new Telerik.Reporting.TextBox();
             this.pictureBox1 = new Telerik.Reporting.PictureBox();
             this.textBox1 = new Telerik.Reporting.TextBox();
             this.textBox2 = new Telerik.Reporting.TextBox();
-            this.TextBox7 = new Telerik.Reporting.TextBox();
-            this.TextBox6 = new Telerik.Reporting.TextBox();
-            this.TextBox4 = new Telerik.Reporting.TextBox();
-            this.TextBox8 = new Telerik.Reporting.TextBox();
-            this.TextBox9 = new Telerik.Reporting.TextBox();
-            this.TextBox15 = new Telerik.Reporting.TextBox();
+            this.reportHeaderSection1 = new Telerik.Reporting.ReportHeaderSection();
             this.TextBox14 = new Telerik.Reporting.TextBox();
             this.TextBox12 = new Telerik.Reporting.TextBox();
             this.TextBox13 = new Telerik.Reporting.TextBox();
             this.TextBox10 = new Telerik.Reporting.TextBox();
             this.TextBox5 = new Telerik.Reporting.TextBox();
             this.TextBox11 = new Telerik.Reporting.TextBox();
+            this.TextBox15 = new Telerik.Reporting.TextBox();
+            this.TextBox9 = new Telerik.Reporting.TextBox();
+            this.TextBox8 = new Telerik.Reporting.TextBox();
+            this.TextBox4 = new Telerik.Reporting.TextBox();
+            this.TextBox6 = new Telerik.Reporting.TextBox();
+            this.TextBox7 = new Telerik.Reporting.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
             // detail
@@ -47,34 +47,6 @@ namespace PuntoDeVenta.Modulos.REPORTES.REPORTES_DE_KARDEX.REPORTES_DE_INVENTARI
             this.TextBox18,
             this.barcode1});
             this.pageFooterSection1.Name = "pageFooterSection1";
-            // 
-            // pageHeaderSection1
-            // 
-            this.pageHeaderSection1.Height = Telerik.Reporting.Drawing.Unit.Cm(2.4998998641967773D);
-            this.pageHeaderSection1.Items.AddRange(new Telerik.Reporting.ReportItemBase[] {
-            this.textBox3,
-            this.pictureBox1,
-            this.textBox1,
-            this.textBox2});
-            this.pageHeaderSection1.Name = "pageHeaderSection1";
-            // 
-            // reportHeaderSection1
-            // 
-            this.reportHeaderSection1.Height = Telerik.Reporting.Drawing.Unit.Cm(1.2005003690719605D);
-            this.reportHeaderSection1.Items.AddRange(new Telerik.Reporting.ReportItemBase[] {
-            this.TextBox7,
-            this.TextBox6,
-            this.TextBox4,
-            this.TextBox8,
-            this.TextBox9,
-            this.TextBox15,
-            this.TextBox14,
-            this.TextBox12,
-            this.TextBox13,
-            this.TextBox10,
-            this.TextBox5,
-            this.TextBox11});
-            this.reportHeaderSection1.Name = "reportHeaderSection1";
             // 
             // TextBox18
             // 
@@ -97,6 +69,16 @@ namespace PuntoDeVenta.Modulos.REPORTES.REPORTES_DE_KARDEX.REPORTES_DE_INVENTARI
             this.barcode1.Style.TextAlign = Telerik.Reporting.Drawing.HorizontalAlign.Center;
             this.barcode1.Style.VerticalAlign = Telerik.Reporting.Drawing.VerticalAlign.Middle;
             this.barcode1.Value = "=Fields.Nombre_Empresa";
+            // 
+            // pageHeaderSection1
+            // 
+            this.pageHeaderSection1.Height = Telerik.Reporting.Drawing.Unit.Cm(2.5D);
+            this.pageHeaderSection1.Items.AddRange(new Telerik.Reporting.ReportItemBase[] {
+            this.textBox3,
+            this.pictureBox1,
+            this.textBox1,
+            this.textBox2});
+            this.pageHeaderSection1.Name = "pageHeaderSection1";
             // 
             // textBox3
             // 
@@ -134,69 +116,27 @@ namespace PuntoDeVenta.Modulos.REPORTES.REPORTES_DE_KARDEX.REPORTES_DE_INVENTARI
             this.textBox2.Style.VerticalAlign = Telerik.Reporting.Drawing.VerticalAlign.Middle;
             this.textBox2.Value = "=Now()";
             // 
-            // TextBox7
+            // reportHeaderSection1
             // 
-            this.TextBox7.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Cm(6.2999997138977051D), Telerik.Reporting.Drawing.Unit.Cm(0.00010012308484874666D));
-            this.TextBox7.Name = "TextBox7";
-            this.TextBox7.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Cm(2.7710504531860352D), Telerik.Reporting.Drawing.Unit.Cm(0.70000004768371582D));
-            this.TextBox7.Style.Font.Size = Telerik.Reporting.Drawing.Unit.Point(8D);
-            this.TextBox7.Style.TextAlign = Telerik.Reporting.Drawing.HorizontalAlign.Center;
-            this.TextBox7.Style.VerticalAlign = Telerik.Reporting.Drawing.VerticalAlign.Middle;
-            this.TextBox7.Value = "=Fields.Movimiento";
-            // 
-            // TextBox6
-            // 
-            this.TextBox6.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Cm(2.0931248664855957D), Telerik.Reporting.Drawing.Unit.Cm(0.00010012308484874666D));
-            this.TextBox6.Name = "TextBox6";
-            this.TextBox6.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Cm(4.1998004913330078D), Telerik.Reporting.Drawing.Unit.Cm(0.70000004768371582D));
-            this.TextBox6.Style.Font.Size = Telerik.Reporting.Drawing.Unit.Point(8D);
-            this.TextBox6.Style.TextAlign = Telerik.Reporting.Drawing.HorizontalAlign.Center;
-            this.TextBox6.Style.VerticalAlign = Telerik.Reporting.Drawing.VerticalAlign.Middle;
-            this.TextBox6.Value = "=Fields.Descripcion";
-            // 
-            // TextBox4
-            // 
-            this.TextBox4.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Cm(0.0029164885636419058D), Telerik.Reporting.Drawing.Unit.Cm(0.00010012308484874666D));
-            this.TextBox4.Name = "TextBox4";
-            this.TextBox4.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Cm(2.090008020401001D), Telerik.Reporting.Drawing.Unit.Cm(0.70000004768371582D));
-            this.TextBox4.Style.Font.Size = Telerik.Reporting.Drawing.Unit.Point(8D);
-            this.TextBox4.Style.TextAlign = Telerik.Reporting.Drawing.HorizontalAlign.Center;
-            this.TextBox4.Style.VerticalAlign = Telerik.Reporting.Drawing.VerticalAlign.Middle;
-            this.TextBox4.Value = "=Fields.Fecha";
-            // 
-            // TextBox8
-            // 
-            this.TextBox8.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Cm(9.0712499618530273D), Telerik.Reporting.Drawing.Unit.Cm(0.00010012308484874666D));
-            this.TextBox8.Name = "TextBox8";
-            this.TextBox8.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Cm(1.7989667654037476D), Telerik.Reporting.Drawing.Unit.Cm(0.70000004768371582D));
-            this.TextBox8.Style.Font.Size = Telerik.Reporting.Drawing.Unit.Point(8D);
-            this.TextBox8.Style.TextAlign = Telerik.Reporting.Drawing.HorizontalAlign.Center;
-            this.TextBox8.Style.VerticalAlign = Telerik.Reporting.Drawing.VerticalAlign.Middle;
-            this.TextBox8.Value = "=Fields.Tipo";
-            // 
-            // TextBox9
-            // 
-            this.TextBox9.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Cm(10.903749465942383D), Telerik.Reporting.Drawing.Unit.Cm(0.00010012308484874666D));
-            this.TextBox9.Name = "TextBox9";
-            this.TextBox9.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Cm(3.6960504055023193D), Telerik.Reporting.Drawing.Unit.Cm(0.70000004768371582D));
-            this.TextBox9.Style.Font.Size = Telerik.Reporting.Drawing.Unit.Point(8D);
-            this.TextBox9.Style.TextAlign = Telerik.Reporting.Drawing.HorizontalAlign.Center;
-            this.TextBox9.Style.VerticalAlign = Telerik.Reporting.Drawing.VerticalAlign.Middle;
-            this.TextBox9.Value = "=Fields.Cantidad";
-            // 
-            // TextBox15
-            // 
-            this.TextBox15.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Cm(14.600000381469727D), Telerik.Reporting.Drawing.Unit.Cm(0.00010012308484874666D));
-            this.TextBox15.Name = "TextBox15";
-            this.TextBox15.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Cm(3.0000011920928955D), Telerik.Reporting.Drawing.Unit.Cm(0.70000004768371582D));
-            this.TextBox15.Style.Font.Size = Telerik.Reporting.Drawing.Unit.Point(8D);
-            this.TextBox15.Style.TextAlign = Telerik.Reporting.Drawing.HorizontalAlign.Center;
-            this.TextBox15.Style.VerticalAlign = Telerik.Reporting.Drawing.VerticalAlign.Middle;
-            this.TextBox15.Value = "=Fields.Cajero";
+            this.reportHeaderSection1.Height = Telerik.Reporting.Drawing.Unit.Cm(1.2005003690719605D);
+            this.reportHeaderSection1.Items.AddRange(new Telerik.Reporting.ReportItemBase[] {
+            this.TextBox14,
+            this.TextBox12,
+            this.TextBox13,
+            this.TextBox10,
+            this.TextBox5,
+            this.TextBox11,
+            this.TextBox15,
+            this.TextBox9,
+            this.TextBox8,
+            this.TextBox4,
+            this.TextBox6,
+            this.TextBox7});
+            this.reportHeaderSection1.Name = "reportHeaderSection1";
             // 
             // TextBox14
             // 
-            this.TextBox14.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Cm(0D), Telerik.Reporting.Drawing.Unit.Cm(0.700300395488739D));
+            this.TextBox14.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Cm(0.0029164885636419058D), Telerik.Reporting.Drawing.Unit.Cm(0.00010012308484874666D));
             this.TextBox14.Name = "TextBox14";
             this.TextBox14.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Cm(2.0860497951507568D), Telerik.Reporting.Drawing.Unit.Cm(0.50019997358322144D));
             this.TextBox14.Style.Font.Bold = true;
@@ -207,7 +147,7 @@ namespace PuntoDeVenta.Modulos.REPORTES.REPORTES_DE_KARDEX.REPORTES_DE_INVENTARI
             // 
             // TextBox12
             // 
-            this.TextBox12.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Cm(6.2931251525878906D), Telerik.Reporting.Drawing.Unit.Cm(0.700300395488739D));
+            this.TextBox12.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Cm(6.2960414886474609D), Telerik.Reporting.Drawing.Unit.Cm(0.00010012308484874666D));
             this.TextBox12.Name = "TextBox12";
             this.TextBox12.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Cm(2.7779250144958496D), Telerik.Reporting.Drawing.Unit.Cm(0.50019997358322144D));
             this.TextBox12.Style.Font.Bold = true;
@@ -218,7 +158,7 @@ namespace PuntoDeVenta.Modulos.REPORTES.REPORTES_DE_KARDEX.REPORTES_DE_INVENTARI
             // 
             // TextBox13
             // 
-            this.TextBox13.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Cm(2.0862500667572021D), Telerik.Reporting.Drawing.Unit.Cm(0.700300395488739D));
+            this.TextBox13.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Cm(2.0891666412353516D), Telerik.Reporting.Drawing.Unit.Cm(0.00010012308484874666D));
             this.TextBox13.Name = "TextBox13";
             this.TextBox13.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Cm(4.2066750526428223D), Telerik.Reporting.Drawing.Unit.Cm(0.50019997358322144D));
             this.TextBox13.Style.Font.Bold = true;
@@ -230,7 +170,7 @@ namespace PuntoDeVenta.Modulos.REPORTES.REPORTES_DE_KARDEX.REPORTES_DE_INVENTARI
             // TextBox10
             // 
             this.TextBox10.Angle = 0D;
-            this.TextBox10.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Cm(9.0712499618530273D), Telerik.Reporting.Drawing.Unit.Cm(0.700300395488739D));
+            this.TextBox10.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Cm(9.0741662979125977D), Telerik.Reporting.Drawing.Unit.Cm(0.00010012308484874666D));
             this.TextBox10.Name = "TextBox10";
             this.TextBox10.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Cm(1.7989667654037476D), Telerik.Reporting.Drawing.Unit.Cm(0.50019997358322144D));
             this.TextBox10.Style.Font.Bold = true;
@@ -242,7 +182,7 @@ namespace PuntoDeVenta.Modulos.REPORTES.REPORTES_DE_KARDEX.REPORTES_DE_INVENTARI
             // TextBox5
             // 
             this.TextBox5.Angle = 0D;
-            this.TextBox5.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Cm(10.870416641235352D), Telerik.Reporting.Drawing.Unit.Cm(0.700300395488739D));
+            this.TextBox5.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Cm(10.873332977294922D), Telerik.Reporting.Drawing.Unit.Cm(0.00010012308484874666D));
             this.TextBox5.Name = "TextBox5";
             this.TextBox5.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Cm(3.7293834686279297D), Telerik.Reporting.Drawing.Unit.Cm(0.50019997358322144D));
             this.TextBox5.Style.Font.Bold = true;
@@ -254,7 +194,7 @@ namespace PuntoDeVenta.Modulos.REPORTES.REPORTES_DE_KARDEX.REPORTES_DE_INVENTARI
             // TextBox11
             // 
             this.TextBox11.Angle = 0D;
-            this.TextBox11.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Cm(14.600000381469727D), Telerik.Reporting.Drawing.Unit.Cm(0.700300395488739D));
+            this.TextBox11.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Cm(14.602916717529297D), Telerik.Reporting.Drawing.Unit.Cm(0.00010012308484874666D));
             this.TextBox11.Name = "TextBox11";
             this.TextBox11.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Cm(2.9666683673858643D), Telerik.Reporting.Drawing.Unit.Cm(0.50019997358322144D));
             this.TextBox11.Style.Font.Bold = true;
@@ -262,6 +202,66 @@ namespace PuntoDeVenta.Modulos.REPORTES.REPORTES_DE_KARDEX.REPORTES_DE_INVENTARI
             this.TextBox11.Style.TextAlign = Telerik.Reporting.Drawing.HorizontalAlign.Center;
             this.TextBox11.Style.VerticalAlign = Telerik.Reporting.Drawing.VerticalAlign.Middle;
             this.TextBox11.Value = "Usuario";
+            // 
+            // TextBox15
+            // 
+            this.TextBox15.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Cm(14.602916717529297D), Telerik.Reporting.Drawing.Unit.Cm(0.50040024518966675D));
+            this.TextBox15.Name = "TextBox15";
+            this.TextBox15.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Cm(3.0000011920928955D), Telerik.Reporting.Drawing.Unit.Cm(0.70000004768371582D));
+            this.TextBox15.Style.Font.Size = Telerik.Reporting.Drawing.Unit.Point(8D);
+            this.TextBox15.Style.TextAlign = Telerik.Reporting.Drawing.HorizontalAlign.Center;
+            this.TextBox15.Style.VerticalAlign = Telerik.Reporting.Drawing.VerticalAlign.Middle;
+            this.TextBox15.Value = "=Fields.Cajero";
+            // 
+            // TextBox9
+            // 
+            this.TextBox9.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Cm(10.866458892822266D), Telerik.Reporting.Drawing.Unit.Cm(0.50040024518966675D));
+            this.TextBox9.Name = "TextBox9";
+            this.TextBox9.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Cm(3.736257791519165D), Telerik.Reporting.Drawing.Unit.Cm(0.70000004768371582D));
+            this.TextBox9.Style.Font.Size = Telerik.Reporting.Drawing.Unit.Point(8D);
+            this.TextBox9.Style.TextAlign = Telerik.Reporting.Drawing.HorizontalAlign.Center;
+            this.TextBox9.Style.VerticalAlign = Telerik.Reporting.Drawing.VerticalAlign.Middle;
+            this.TextBox9.Value = "=Fields.Cantidad";
+            // 
+            // TextBox8
+            // 
+            this.TextBox8.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Cm(9.0672922134399414D), Telerik.Reporting.Drawing.Unit.Cm(0.50040024518966675D));
+            this.TextBox8.Name = "TextBox8";
+            this.TextBox8.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Cm(1.7989667654037476D), Telerik.Reporting.Drawing.Unit.Cm(0.70000004768371582D));
+            this.TextBox8.Style.Font.Size = Telerik.Reporting.Drawing.Unit.Point(8D);
+            this.TextBox8.Style.TextAlign = Telerik.Reporting.Drawing.HorizontalAlign.Center;
+            this.TextBox8.Style.VerticalAlign = Telerik.Reporting.Drawing.VerticalAlign.Middle;
+            this.TextBox8.Value = "=Fields.Tipo";
+            // 
+            // TextBox4
+            // 
+            this.TextBox4.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Cm(0D), Telerik.Reporting.Drawing.Unit.Cm(0.50040024518966675D));
+            this.TextBox4.Name = "TextBox4";
+            this.TextBox4.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Cm(2.090008020401001D), Telerik.Reporting.Drawing.Unit.Cm(0.70000004768371582D));
+            this.TextBox4.Style.Font.Size = Telerik.Reporting.Drawing.Unit.Point(8D);
+            this.TextBox4.Style.TextAlign = Telerik.Reporting.Drawing.HorizontalAlign.Center;
+            this.TextBox4.Style.VerticalAlign = Telerik.Reporting.Drawing.VerticalAlign.Middle;
+            this.TextBox4.Value = "=Fields.Fecha";
+            // 
+            // TextBox6
+            // 
+            this.TextBox6.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Cm(2.096041202545166D), Telerik.Reporting.Drawing.Unit.Cm(0.50040024518966675D));
+            this.TextBox6.Name = "TextBox6";
+            this.TextBox6.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Cm(4.1998004913330078D), Telerik.Reporting.Drawing.Unit.Cm(0.70000004768371582D));
+            this.TextBox6.Style.Font.Size = Telerik.Reporting.Drawing.Unit.Point(8D);
+            this.TextBox6.Style.TextAlign = Telerik.Reporting.Drawing.HorizontalAlign.Center;
+            this.TextBox6.Style.VerticalAlign = Telerik.Reporting.Drawing.VerticalAlign.Middle;
+            this.TextBox6.Value = "=Fields.Descripcion";
+            // 
+            // TextBox7
+            // 
+            this.TextBox7.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Cm(6.2960414886474609D), Telerik.Reporting.Drawing.Unit.Cm(0.50040024518966675D));
+            this.TextBox7.Name = "TextBox7";
+            this.TextBox7.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Cm(2.7710504531860352D), Telerik.Reporting.Drawing.Unit.Cm(0.70000004768371582D));
+            this.TextBox7.Style.Font.Size = Telerik.Reporting.Drawing.Unit.Point(8D);
+            this.TextBox7.Style.TextAlign = Telerik.Reporting.Drawing.HorizontalAlign.Center;
+            this.TextBox7.Style.VerticalAlign = Telerik.Reporting.Drawing.VerticalAlign.Middle;
+            this.TextBox7.Value = "=Fields.Movimiento";
             // 
             // ReportMovimientosBuscar
             // 
@@ -280,7 +280,7 @@ namespace PuntoDeVenta.Modulos.REPORTES.REPORTES_DE_KARDEX.REPORTES_DE_INVENTARI
             styleRule1.Style.Padding.Right = Telerik.Reporting.Drawing.Unit.Point(2D);
             this.StyleSheet.AddRange(new Telerik.Reporting.Drawing.StyleRule[] {
             styleRule1});
-            this.Width = Telerik.Reporting.Drawing.Unit.Cm(17.600000381469727D);
+            this.Width = Telerik.Reporting.Drawing.Unit.Cm(17.788333892822266D);
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
 
         }
@@ -295,17 +295,17 @@ namespace PuntoDeVenta.Modulos.REPORTES.REPORTES_DE_KARDEX.REPORTES_DE_INVENTARI
         private Telerik.Reporting.PictureBox pictureBox1;
         private Telerik.Reporting.TextBox textBox1;
         private Telerik.Reporting.TextBox textBox2;
-        internal Telerik.Reporting.TextBox TextBox7;
-        internal Telerik.Reporting.TextBox TextBox6;
-        internal Telerik.Reporting.TextBox TextBox4;
-        internal Telerik.Reporting.TextBox TextBox8;
-        internal Telerik.Reporting.TextBox TextBox9;
-        internal Telerik.Reporting.TextBox TextBox15;
         internal Telerik.Reporting.TextBox TextBox14;
         internal Telerik.Reporting.TextBox TextBox12;
         internal Telerik.Reporting.TextBox TextBox13;
         internal Telerik.Reporting.TextBox TextBox10;
         internal Telerik.Reporting.TextBox TextBox5;
         internal Telerik.Reporting.TextBox TextBox11;
+        internal Telerik.Reporting.TextBox TextBox15;
+        internal Telerik.Reporting.TextBox TextBox9;
+        internal Telerik.Reporting.TextBox TextBox8;
+        internal Telerik.Reporting.TextBox TextBox4;
+        internal Telerik.Reporting.TextBox TextBox6;
+        internal Telerik.Reporting.TextBox TextBox7;
     }
 }

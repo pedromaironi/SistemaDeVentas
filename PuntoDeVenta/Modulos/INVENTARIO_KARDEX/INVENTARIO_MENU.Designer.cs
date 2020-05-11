@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(INVENTARIO_MENU));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.Panel1 = new System.Windows.Forms.Panel();
             this.Panelv = new System.Windows.Forms.Panel();
@@ -65,9 +65,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.panel14 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel15 = new System.Windows.Forms.Panel();
-            this.txtIdusuario = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.panel15 = new System.Windows.Forms.Panel();
+            this.panel20 = new System.Windows.Forms.Panel();
+            this.txtIdusuario = new System.Windows.Forms.ComboBox();
             this.MenuStrip10 = new System.Windows.Forms.MenuStrip();
             this.ToolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuStrip15 = new System.Windows.Forms.MenuStrip();
@@ -116,10 +117,11 @@
             this.datalistadoVencimientos = new System.Windows.Forms.DataGridView();
             this.dataGridViewImageColumn6 = new System.Windows.Forms.DataGridViewImageColumn();
             this.panel17 = new System.Windows.Forms.Panel();
+            this.panel19 = new System.Windows.Forms.Panel();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.CheckProductosVencidos = new System.Windows.Forms.RadioButton();
             this.CheckPorVencer30enDias = new System.Windows.Forms.RadioButton();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.menuStrip14 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem13 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip16 = new System.Windows.Forms.MenuStrip();
@@ -137,8 +139,6 @@
             this.DataGridViewCheckBoxColumn4 = new System.Windows.Forms.DataGridViewImageColumn();
             this.PanelKardex = new System.Windows.Forms.Panel();
             this.reportViewer1 = new Telerik.ReportViewer.WinForms.ReportViewer();
-            this.panel19 = new System.Windows.Forms.Panel();
-            this.panel20 = new System.Windows.Forms.Panel();
             this.Panel1.SuspendLayout();
             this.Panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox3)).BeginInit();
@@ -157,6 +157,7 @@
             this.panel14.SuspendLayout();
             this.panel2.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.panel20.SuspendLayout();
             this.MenuStrip10.SuspendLayout();
             this.MenuStrip15.SuspendLayout();
             this.MenuStrip1.SuspendLayout();
@@ -177,6 +178,7 @@
             this.panelVencimiento.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.datalistadoVencimientos)).BeginInit();
             this.panel17.SuspendLayout();
+            this.panel19.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.menuStrip14.SuspendLayout();
             this.menuStrip16.SuspendLayout();
@@ -185,8 +187,6 @@
             this.menuStrip12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DATALISTADO_PRODUCTOS_Kardex)).BeginInit();
             this.PanelKardex.SuspendLayout();
-            this.panel19.SuspendLayout();
-            this.panel20.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -441,26 +441,26 @@
             this.datalistadoMovimientosACUMULADO_PRODUCTOS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.datalistadoMovimientosACUMULADO_PRODUCTOS.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewImageColumn1});
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(63)))), ((int)(((byte)(67)))));
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.datalistadoMovimientosACUMULADO_PRODUCTOS.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(63)))), ((int)(((byte)(67)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.datalistadoMovimientosACUMULADO_PRODUCTOS.DefaultCellStyle = dataGridViewCellStyle3;
             resources.ApplyResources(this.datalistadoMovimientosACUMULADO_PRODUCTOS, "datalistadoMovimientosACUMULADO_PRODUCTOS");
             this.datalistadoMovimientosACUMULADO_PRODUCTOS.EnableHeadersVisualStyles = false;
             this.datalistadoMovimientosACUMULADO_PRODUCTOS.Name = "datalistadoMovimientosACUMULADO_PRODUCTOS";
             this.datalistadoMovimientosACUMULADO_PRODUCTOS.ReadOnly = true;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(63)))), ((int)(((byte)(67)))));
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.datalistadoMovimientosACUMULADO_PRODUCTOS.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(63)))), ((int)(((byte)(67)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.datalistadoMovimientosACUMULADO_PRODUCTOS.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.datalistadoMovimientosACUMULADO_PRODUCTOS.RowHeadersVisible = false;
             this.datalistadoMovimientosACUMULADO_PRODUCTOS.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(63)))), ((int)(((byte)(67)))));
             this.datalistadoMovimientosACUMULADO_PRODUCTOS.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -509,18 +509,6 @@
             resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Name = "panel2";
             // 
-            // panel15
-            // 
-            resources.ApplyResources(this.panel15, "panel15");
-            this.panel15.Name = "panel15";
-            // 
-            // txtIdusuario
-            // 
-            this.txtIdusuario.FormattingEnabled = true;
-            resources.ApplyResources(this.txtIdusuario, "txtIdusuario");
-            this.txtIdusuario.Name = "txtIdusuario";
-            this.txtIdusuario.SelectedIndexChanged += new System.EventHandler(this.txtIdusuario_SelectedIndexChanged);
-            // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.White;
@@ -537,6 +525,24 @@
             resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
+            // 
+            // panel15
+            // 
+            resources.ApplyResources(this.panel15, "panel15");
+            this.panel15.Name = "panel15";
+            // 
+            // panel20
+            // 
+            this.panel20.Controls.Add(this.txtIdusuario);
+            resources.ApplyResources(this.panel20, "panel20");
+            this.panel20.Name = "panel20";
+            // 
+            // txtIdusuario
+            // 
+            this.txtIdusuario.FormattingEnabled = true;
+            resources.ApplyResources(this.txtIdusuario, "txtIdusuario");
+            this.txtIdusuario.Name = "txtIdusuario";
+            this.txtIdusuario.SelectedIndexChanged += new System.EventHandler(this.txtIdusuario_SelectedIndexChanged);
             // 
             // MenuStrip10
             // 
@@ -555,6 +561,7 @@
             resources.ApplyResources(this.ToolStripMenuItem7, "ToolStripMenuItem7");
             this.ToolStripMenuItem7.ForeColor = System.Drawing.Color.Black;
             this.ToolStripMenuItem7.Name = "ToolStripMenuItem7";
+            this.ToolStripMenuItem7.Click += new System.EventHandler(this.ToolStripMenuItem7_Click);
             // 
             // MenuStrip15
             // 
@@ -990,6 +997,18 @@
             resources.ApplyResources(this.panel17, "panel17");
             this.panel17.Name = "panel17";
             // 
+            // panel19
+            // 
+            this.panel19.Controls.Add(this.comboBox3);
+            resources.ApplyResources(this.panel19, "panel19");
+            this.panel19.Name = "panel19";
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.FormattingEnabled = true;
+            resources.ApplyResources(this.comboBox3, "comboBox3");
+            this.comboBox3.Name = "comboBox3";
+            // 
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.White;
@@ -1014,12 +1033,6 @@
             this.CheckPorVencer30enDias.TabStop = true;
             this.CheckPorVencer30enDias.UseVisualStyleBackColor = true;
             this.CheckPorVencer30enDias.CheckedChanged += new System.EventHandler(this.CheckPorVencer30enDias_CheckedChanged);
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.FormattingEnabled = true;
-            resources.ApplyResources(this.comboBox3, "comboBox3");
-            this.comboBox3.Name = "comboBox3";
             // 
             // menuStrip14
             // 
@@ -1176,18 +1189,6 @@
             resources.ApplyResources(this.reportViewer1, "reportViewer1");
             this.reportViewer1.Name = "reportViewer1";
             // 
-            // panel19
-            // 
-            this.panel19.Controls.Add(this.comboBox3);
-            resources.ApplyResources(this.panel19, "panel19");
-            this.panel19.Name = "panel19";
-            // 
-            // panel20
-            // 
-            this.panel20.Controls.Add(this.txtIdusuario);
-            resources.ApplyResources(this.panel20, "panel20");
-            this.panel20.Name = "panel20";
-            // 
             // INVENTARIO_MENU
             // 
             resources.ApplyResources(this, "$this");
@@ -1224,6 +1225,7 @@
             this.panel2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.panel20.ResumeLayout(false);
             this.MenuStrip10.ResumeLayout(false);
             this.MenuStrip10.PerformLayout();
             this.MenuStrip15.ResumeLayout(false);
@@ -1256,6 +1258,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.datalistadoVencimientos)).EndInit();
             this.panel17.ResumeLayout(false);
             this.panel17.PerformLayout();
+            this.panel19.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.menuStrip14.ResumeLayout(false);
@@ -1270,8 +1273,6 @@
             this.menuStrip12.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DATALISTADO_PRODUCTOS_Kardex)).EndInit();
             this.PanelKardex.ResumeLayout(false);
-            this.panel19.ResumeLayout(false);
-            this.panel20.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

@@ -107,12 +107,21 @@ namespace PuntoDeVenta.Modulos.INVENTARIO_KARDEX
 
         }
 
+        public static int idProducto;
 
         private void DATALISTADO_PRODUCTOS_Movimientos_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             txtbuscarMovimiento.Text = DATALISTADO_PRODUCTOS_Movimientos.SelectedCells[2].Value.ToString();
             DATALISTADO_PRODUCTOS_Movimientos.Visible = false;
             buscar_MOVIMIENTOS_DE_KARDEX();
+            try
+            {
+                idProducto = Convert.ToInt32(DATALISTADO_PRODUCTOS_Movimientos.SelectedCells[1].Value.ToString());
+
+            }
+            catch (Exception ex)
+            {
+            }
         }
 
         private void ToolStripMenuItem4_Click(object sender, EventArgs e)
@@ -566,10 +575,7 @@ namespace PuntoDeVenta.Modulos.INVENTARIO_KARDEX
                 mostrar_inventarios_todos();
             }
         }
-        public static string Tipo_de_movimiento;
-        public static DateTime fecha;
-        public static int id_usuario;
-
+        
         private void toolStripMenuItem6_Click(object sender, EventArgs e)
         {
             txtbuscar_inventarios.Clear();
@@ -825,11 +831,10 @@ namespace PuntoDeVenta.Modulos.INVENTARIO_KARDEX
         {
 
         }
-        public static int idProducto;
 
         private void ToolStripMenuItem3_Click(object sender, EventArgs e)
         {
-            MODULOS.REPORTES.REPORTES_DE_KARDEX_listo.REPORTES_DE_INVENTARIOS_todos.FormMovimientosBuscar frm = new MODULOS.REPORTES.REPORTES_DE_KARDEX_listo.REPORTES_DE_INVENTARIOS_todos.FormMovimientosBuscar();
+            Modulos.REPORTES.REPORTES_DE_KARDEX.REPORTES_DE_INVENTARIOS_todos.FormMovimientosBuscar frm = new Modulos.REPORTES.REPORTES_DE_KARDEX.REPORTES_DE_INVENTARIOS_todos.FormMovimientosBuscar();
             frm.ShowDialog();
         }
 
@@ -845,7 +850,22 @@ namespace PuntoDeVenta.Modulos.INVENTARIO_KARDEX
 
         private void MenuStrip10_Click(object sender, EventArgs e)
         {
-            Modulos.REPORTES.REPORTES_DE_KARDEX.REPORTES_DE_INVENTARIOS_todos.FormInventarioBuscar frm = new Modulos.REPORTES.REPORTES_DE_KARDEX.REPORTES_DE_INVENTARIOS_todos.FormInventarioBuscar();
+            Modulos.REPORTES.REPORTES_DE_KARDEX.REPORTES_DE_INVENTARIOS_todos.FormInventariosTodos frm = new Modulos.REPORTES.REPORTES_DE_KARDEX.REPORTES_DE_INVENTARIOS_todos.FormInventariosTodos();
+            frm.ShowDialog();
+        }
+
+        public static string Tipo_de_movimiento;
+        public static DateTime fecha;
+        public static int id_usuario;
+
+
+        private void ToolStripMenuItem7_Click(object sender, EventArgs e)
+        {
+            Tipo_de_movimiento = txtTipoMovi.Text;
+            fecha = txtfechaM.Value;
+            id_usuario = Convert.ToInt32(txtIdusuario.Text);
+
+            Modulos.REPORTES.REPORTES_DE_KARDEX.REPORTES_DE_INVENTARIOS_todos.FormReporteMovimientosFILTROS frm = new Modulos.REPORTES.REPORTES_DE_KARDEX.REPORTES_DE_INVENTARIOS_todos.FormReporteMovimientosFILTROS();
             frm.ShowDialog();
         }
     }

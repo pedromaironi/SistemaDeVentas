@@ -23,7 +23,7 @@ namespace PuntoDeVenta.Modulos.REPORTES.REPORTES_DE_KARDEX.REPORTES_DE_INVENTARI
             mostrar();
 
         }
-        Reporte_Movimientos_con_filtros rptFREPORT2 = new Reporte_Movimientos_con_filtros();
+        Reporte_Movimientos_con_Filtros rptFREPORT2 = new Reporte_Movimientos_con_Filtros();
         private void mostrar()
         {
             try
@@ -42,7 +42,7 @@ namespace PuntoDeVenta.Modulos.REPORTES.REPORTES_DE_KARDEX.REPORTES_DE_INVENTARI
 
                 da.Fill(dt);
                 con.Close();
-                rptFREPORT2 = new Reporte_Movimientos_con_filtros();
+                rptFREPORT2 = new Reporte_Movimientos_con_Filtros();
                 rptFREPORT2.DataSource = dt;
                 rptFREPORT2.Table1.DataSource = dt;
                 reportViewer1.Report = rptFREPORT2;
