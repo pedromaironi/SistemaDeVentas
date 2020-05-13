@@ -43,9 +43,6 @@ namespace PuntoDeVenta.Modulos
                 Panel p1 = new Panel();
                 PictureBox I1 = new PictureBox();
 
-                //b.text Coge la fila logim
-                //b.name para coger de la fila el nombre del usuario
-
                 b.Text = rdr["Login"].ToString();
                 b.Name = rdr["idUsuario"].ToString();
                 b.Size = new System.Drawing.Size(175,25);
@@ -57,16 +54,15 @@ namespace PuntoDeVenta.Modulos
                 b.TextAlign = ContentAlignment.MiddleCenter;
                 b.Cursor = Cursors.Hand;
 
-                //Panel
-
                 p1.Size = new System.Drawing.Size(155, 167);
                 p1.BorderStyle = BorderStyle.None;
-                //p1.BackColor = Color.FromArgb(28, 54, 67);
                 p1.BackColor = Color.FromArgb(20,20,20);
+
                 I1.Size = new System.Drawing.Size(175, 132);
                 I1.Dock = DockStyle.Top;
                 I1.BackgroundImage = null;
                 byte[] bi = (byte[])rdr["Icono"];
+
                 MemoryStream ms = new MemoryStream(bi);
                 I1.Image = Image.FromStream(ms);
                 I1.SizeMode = PictureBoxSizeMode.Zoom;
@@ -105,13 +101,19 @@ namespace PuntoDeVenta.Modulos
 
         private void LOGIN_Load(object sender, EventArgs e)
         {
-            DIBUJARUsuarios();
-            panel2.Visible = false;
-            timer1.Start();
-            PictureBox2.Location = new Point((Width - PictureBox2.Width) / 2, (Height - PictureBox2.Height) / 2);
-            panel1.Location = new Point((Width - panel1.Width) / 2, (Height - panel1.Height) / 2);
-            PanelRestaurarCuenta.Location = new Point((Width - PanelRestaurarCuenta.Width) / 2, (Height - PanelRestaurarCuenta.Height) / 2);
-            panel2.Location = new Point((Width - panel2.Width) / 2, (Height - panel2.Height) / 2);
+            bool band = true;
+            if (band)
+            {
+                timer1.Start();
+                band = false;
+            }else {
+                DIBUJARUsuarios();
+                panel2.Visible = false;
+                PictureBox2.Location = new Point((Width - PictureBox2.Width) / 2, (Height - PictureBox2.Height) / 2);
+                panel1.Location = new Point((Width - panel1.Width) / 2, (Height - panel1.Height) / 2);
+                PanelRestaurarCuenta.Location = new Point((Width - PanelRestaurarCuenta.Width) / 2, (Height - PanelRestaurarCuenta.Height) / 2);
+                panel2.Location = new Point((Width - panel2.Width) / 2, (Height - panel2.Height) / 2);
+            }
 
 
         }
@@ -500,10 +502,64 @@ namespace PuntoDeVenta.Modulos
 
 
         }
+        string INDICADOR;
 
+        private void mostrar_usuarios_registrados()
+        {
+            try
+            {
+                DataTable dt = new DataTable();
+                SqlDataAdapter da;
+                SqlConnection con = new SqlConnection();
+                con.ConnectionString = CONEXION.CONEXIONMAESTRA.CONEXION;
+                con.Open();
+                da = new SqlDataAdapter("select * from USUARIO2", con);
+                da.Fill(dt);
+                datalistado_USUARIOS_REGISTRADOS.DataSource = dt;
+                con.Close();
+                INDICADOR = "CORRECTO";
+            }
+            catch (Exception ex)
+            {
+                INDICADOR = "INCORRECTO";
+            }
+        }
+        int txtcontador_USUARIOS;
+        private void contar_USUARIOS()
+        {
+            int x;
+
+            x = datalistado_USUARIOS_REGISTRADOS.Rows.Count;
+            txtcontador_USUARIOS = (x);
+
+        }
         private void timer1_Tick_1(object sender, EventArgs e)
         {
             timer1.Stop();
+            mostrar_usuarios_registrados();
+            if (INDICADOR == "CORRECTO")
+            {
+                contar_USUARIOS();
+                if (txtcontador_USUARIOS == 0)
+                {
+                    Hide();
+                    Modulos.ASISTENTE_DE_INSTALACION_servidor.REGISTRO_DE_EMPRESA frm = new Modulos.ASISTENTE_DE_INSTALACION_servidor.REGISTRO_DE_EMPRESA();
+                    frm.ShowDialog();
+                    this.Dispose();
+                }
+
+            }
+
+
+
+            if (INDICADOR == "INCORRECTO")
+            {
+                Hide();
+                Modulos.ASISTENTE_DE_INSTALACION_servidor.Eleccion_Servidor_o_remoto frm = new Modulos.ASISTENTE_DE_INSTALACION_servidor.Eleccion_Servidor_o_remoto();
+                frm.ShowDialog();
+                Dispose();
+            }
+
             try
             {
 

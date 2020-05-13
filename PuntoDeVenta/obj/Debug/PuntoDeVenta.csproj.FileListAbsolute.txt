@@ -31,3 +31,6 @@ C:\Users\pedro\source\repos\PuntoDeVenta\PuntoDeVenta\obj\Debug\PuntoDeVenta.Mod
 C:\Users\pedro\source\repos\PuntoDeVenta\PuntoDeVenta\obj\Debug\PuntoDeVenta.Modulos.REPORTES.REPORTES_DE_KARDEX.REPORTES_DE_INVENTARIOS_todos.FormMovimientosBuscar.resources
 C:\Users\pedro\source\repos\PuntoDeVenta\PuntoDeVenta\obj\Debug\PuntoDeVenta.Modulos.REPORTES.REPORTES_DE_KARDEX.REPORTES_DE_INVENTARIOS_todos.FormReporteMovimientosFILTROS.resources
 C:\Users\pedro\source\repos\PuntoDeVenta\PuntoDeVenta\obj\Debug\PuntoDeVenta.Modulos.REPORTES.REPORTES_DE_KARDEX.REPORTES_DE_INVENTARIOS_todos.Reporte_Movimientos_con_Filtros.resources
+C:\Users\pedro\source\repos\PuntoDeVenta\PuntoDeVenta\obj\Debug\PuntoDeVenta.Modulos.ASISTENTE_DE_INSTALACION_servidor.Eleccion_Servidor_o_remoto.resources
+C:\Users\pedro\source\repos\PuntoDeVenta\PuntoDeVenta\obj\Debug\PuntoDeVenta.Modulos.ASISTENTE_DE_INSTALACION_servidor.Instalacion_del_servidorSQL.resources
+C:\Users\pedro\source\repos\PuntoDeVenta\PuntoDeVenta\obj\Debug\PuntoDeVenta.Modulos.ASISTENTE_DE_INSTALACION_servidor.REGISTRO_DE_EMPRESA.resources

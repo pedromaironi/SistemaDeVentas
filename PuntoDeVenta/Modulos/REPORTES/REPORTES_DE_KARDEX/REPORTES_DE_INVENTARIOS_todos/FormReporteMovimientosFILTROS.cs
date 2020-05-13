@@ -18,11 +18,7 @@ namespace PuntoDeVenta.Modulos.REPORTES.REPORTES_DE_KARDEX.REPORTES_DE_INVENTARI
             InitializeComponent();
         }
 
-        private void FormReporteMovimientosFILTROS_Load(object sender, EventArgs e)
-        {
-            mostrar();
-
-        }
+        
         Reporte_Movimientos_con_Filtros rptFREPORT2 = new Reporte_Movimientos_con_Filtros();
         private void mostrar()
         {
@@ -56,6 +52,11 @@ namespace PuntoDeVenta.Modulos.REPORTES.REPORTES_DE_KARDEX.REPORTES_DE_INVENTARI
 
             }
 
+
+        }
+        private void FormReporteMovimientosFILTROS_Load(object sender, EventArgs e)
+        {
+            mostrar();
 
         }
     }

@@ -16,7 +16,7 @@ namespace PuntoDeVenta
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Modulos.INVENTARIO_KARDEX.INVENTARIO_MENU());
+            Application.Run(new Modulos.LOGIN());//ASISTENTE_DE_INSTALACION_servidor.Instalacion_del_servidorSQL()
         }
     }
 }

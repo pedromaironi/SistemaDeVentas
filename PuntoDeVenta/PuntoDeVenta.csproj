@@ -73,6 +73,24 @@
     <Compile Include="CONEXION\Numero_separadores.cs" />
     <Compile Include="CONEXION\Tamaño_automatico_de_datatables.cs" />
     <Compile Include="CONEXION\WinAutoComplete.cs" />
+    <Compile Include="Modulos\ASISTENTE_DE_INSTALACION_servidor\Eleccion_Servidor_o_remoto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\ASISTENTE_DE_INSTALACION_servidor\Eleccion_Servidor_o_remoto.Designer.cs">
+      <DependentUpon>Eleccion_Servidor_o_remoto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\ASISTENTE_DE_INSTALACION_servidor\Instalacion_del_servidorSQL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\ASISTENTE_DE_INSTALACION_servidor\Instalacion_del_servidorSQL.Designer.cs">
+      <DependentUpon>Instalacion_del_servidorSQL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\ASISTENTE_DE_INSTALACION_servidor\REGISTRO_DE_EMPRESA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\ASISTENTE_DE_INSTALACION_servidor\REGISTRO_DE_EMPRESA.Designer.cs">
+      <DependentUpon>REGISTRO_DE_EMPRESA.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modulos\CAJA\Apertura_de_caja.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -165,6 +183,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Modulos\ASISTENTE_DE_INSTALACION_servidor\Eleccion_Servidor_o_remoto.resx">
+      <DependentUpon>Eleccion_Servidor_o_remoto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\ASISTENTE_DE_INSTALACION_servidor\Instalacion_del_servidorSQL.resx">
+      <DependentUpon>Instalacion_del_servidorSQL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\ASISTENTE_DE_INSTALACION_servidor\REGISTRO_DE_EMPRESA.resx">
+      <DependentUpon>REGISTRO_DE_EMPRESA.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Modulos\CAJA\Apertura_de_caja.resx">
       <DependentUpon>Apertura_de_caja.cs</DependentUpon>
     </EmbeddedResource>

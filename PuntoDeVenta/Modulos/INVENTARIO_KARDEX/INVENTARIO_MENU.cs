@@ -850,8 +850,7 @@ namespace PuntoDeVenta.Modulos.INVENTARIO_KARDEX
 
         private void MenuStrip10_Click(object sender, EventArgs e)
         {
-            Modulos.REPORTES.REPORTES_DE_KARDEX.REPORTES_DE_INVENTARIOS_todos.FormInventariosTodos frm = new Modulos.REPORTES.REPORTES_DE_KARDEX.REPORTES_DE_INVENTARIOS_todos.FormInventariosTodos();
-            frm.ShowDialog();
+            
         }
 
         public static string Tipo_de_movimiento;
