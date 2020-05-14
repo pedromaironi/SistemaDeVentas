@@ -256,9 +256,7 @@ namespace PuntoDeVenta.Modulos.ASISTENTE_DE_INSTALACION_servidor
         {
             try
             {
-
-           
-            txtArgumentosini.Text = txtArgumentosini.Text.Replace("PRUEBAFINAL22", lblnombredeservicio.Text);
+            txtArgumentosini.Text = txtArgumentosini.Text.Replace("SQLEXPRESS", lblnombredeservicio.Text);
             TimerCRARINI.Start();
                 executa();
             timer2.Start();

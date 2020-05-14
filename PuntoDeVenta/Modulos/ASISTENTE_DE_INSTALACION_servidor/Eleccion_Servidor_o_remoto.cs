@@ -55,5 +55,10 @@ namespace PuntoDeVenta.Modulos.ASISTENTE_DE_INSTALACION_servidor
                 frm.ShowDialog();
             }
         }
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

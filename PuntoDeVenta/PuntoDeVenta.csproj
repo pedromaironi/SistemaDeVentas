@@ -70,6 +70,7 @@
     <Compile Include="CONEXION\CONEXIONMAESTRA.cs" />
     <Compile Include="CONEXION\Desencryptacion.cs" />
     <Compile Include="CONEXION\Encryptacion.cs" />
+    <Compile Include="CONEXION\Encryptar_en_texto.cs" />
     <Compile Include="CONEXION\Numero_separadores.cs" />
     <Compile Include="CONEXION\Tamaño_automatico_de_datatables.cs" />
     <Compile Include="CONEXION\WinAutoComplete.cs" />
@@ -90,6 +91,12 @@
     </Compile>
     <Compile Include="Modulos\ASISTENTE_DE_INSTALACION_servidor\REGISTRO_DE_EMPRESA.Designer.cs">
       <DependentUpon>REGISTRO_DE_EMPRESA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\ASISTENTE_DE_INSTALACION_servidor\USUARIOS_AUTORIZADOS_AL_SISTEMA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\ASISTENTE_DE_INSTALACION_servidor\USUARIOS_AUTORIZADOS_AL_SISTEMA.Designer.cs">
+      <DependentUpon>USUARIOS_AUTORIZADOS_AL_SISTEMA.cs</DependentUpon>
     </Compile>
     <Compile Include="Modulos\CAJA\Apertura_de_caja.cs">
       <SubType>Form</SubType>
@@ -191,6 +198,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Modulos\ASISTENTE_DE_INSTALACION_servidor\REGISTRO_DE_EMPRESA.resx">
       <DependentUpon>REGISTRO_DE_EMPRESA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\ASISTENTE_DE_INSTALACION_servidor\USUARIOS_AUTORIZADOS_AL_SISTEMA.resx">
+      <DependentUpon>USUARIOS_AUTORIZADOS_AL_SISTEMA.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modulos\CAJA\Apertura_de_caja.resx">
       <DependentUpon>Apertura_de_caja.cs</DependentUpon>

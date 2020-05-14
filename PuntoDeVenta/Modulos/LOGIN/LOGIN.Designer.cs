@@ -209,7 +209,7 @@
             this.PanelRestaurarCuenta.Controls.Add(this.Label5);
             this.PanelRestaurarCuenta.Controls.Add(this.Label6);
             this.PanelRestaurarCuenta.Controls.Add(this.richTextBox1);
-            this.PanelRestaurarCuenta.Location = new System.Drawing.Point(26, 183);
+            this.PanelRestaurarCuenta.Location = new System.Drawing.Point(85, 243);
             this.PanelRestaurarCuenta.Name = "PanelRestaurarCuenta";
             this.PanelRestaurarCuenta.Size = new System.Drawing.Size(614, 319);
             this.PanelRestaurarCuenta.TabIndex = 621;
@@ -381,7 +381,7 @@
             this.panel2.Controls.Add(this.btnborrartodo);
             this.panel2.Controls.Add(this.flowLayoutPanel2);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(937, 15);
+            this.panel2.Location = new System.Drawing.Point(342, 15);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(453, 683);
             this.panel2.TabIndex = 614;
@@ -799,6 +799,7 @@
             // 
             // panel5
             // 
+            this.panel5.Controls.Add(this.datalistado_USUARIOS_REGISTRADOS);
             this.panel5.Controls.Add(this.datalistado_movimientos_validar);
             this.panel5.Controls.Add(this.progressBar1);
             this.panel5.Controls.Add(this.lblResultadoContrasena);
@@ -1055,7 +1056,7 @@
             // 
             this.PictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.PictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox2.Image")));
-            this.PictureBox2.Location = new System.Drawing.Point(959, 103);
+            this.PictureBox2.Location = new System.Drawing.Point(364, 103);
             this.PictureBox2.Name = "PictureBox2";
             this.PictureBox2.Size = new System.Drawing.Size(477, 709);
             this.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1075,7 +1076,7 @@
             this.datalistado_USUARIOS_REGISTRADOS.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewImageColumn4});
             this.datalistado_USUARIOS_REGISTRADOS.EnableHeadersVisualStyles = false;
-            this.datalistado_USUARIOS_REGISTRADOS.Location = new System.Drawing.Point(320, 15);
+            this.datalistado_USUARIOS_REGISTRADOS.Location = new System.Drawing.Point(-66, 78);
             this.datalistado_USUARIOS_REGISTRADOS.Name = "datalistado_USUARIOS_REGISTRADOS";
             this.datalistado_USUARIOS_REGISTRADOS.ReadOnly = true;
             this.datalistado_USUARIOS_REGISTRADOS.RowHeadersVisible = false;
@@ -1101,7 +1102,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.ClientSize = new System.Drawing.Size(1189, 733);
-            this.Controls.Add(this.datalistado_USUARIOS_REGISTRADOS);
             this.Controls.Add(this.PictureBox2);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.PanelRestaurarCuenta);

@@ -31,26 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Instalacion_del_servidorSQL));
             this.Panel8 = new System.Windows.Forms.Panel();
-            this.Label10 = new System.Windows.Forms.Label();
-            this.PictureBox7 = new System.Windows.Forms.PictureBox();
-            this.lblwindows = new System.Windows.Forms.Label();
-            this.Panel2 = new System.Windows.Forms.Panel();
-            this.Panel4 = new System.Windows.Forms.Panel();
-            this.PictureBox2 = new System.Windows.Forms.PictureBox();
-            this.Panel6 = new System.Windows.Forms.Panel();
-            this.Panel7 = new System.Windows.Forms.Panel();
-            this.Label5 = new System.Windows.Forms.Label();
-            this.min = new System.Windows.Forms.Label();
-            this.Label4 = new System.Windows.Forms.Label();
-            this.seg = new System.Windows.Forms.Label();
-            this.Label2 = new System.Windows.Forms.Label();
-            this.Label1 = new System.Windows.Forms.Label();
-            this.PictureBox1 = new System.Windows.Forms.PictureBox();
-            this.Panel5 = new System.Windows.Forms.Panel();
-            this.Panel9 = new System.Windows.Forms.Panel();
-            this.lblbuscador_de_servidores = new System.Windows.Forms.Label();
-            this.Panel1 = new System.Windows.Forms.Panel();
-            this.Button2 = new System.Windows.Forms.Button();
+            this.panel11 = new System.Windows.Forms.Panel();
             this.Panel3 = new System.Windows.Forms.Panel();
             this.txtArgumentosini = new System.Windows.Forms.RichTextBox();
             this.Panel10 = new System.Windows.Forms.Panel();
@@ -76,11 +57,35 @@
             this.lblBasededatos = new System.Windows.Forms.Label();
             this.Label6 = new System.Windows.Forms.Label();
             this.Label8 = new System.Windows.Forms.Label();
+            this.lblwindows = new System.Windows.Forms.Label();
+            this.Label10 = new System.Windows.Forms.Label();
+            this.PictureBox7 = new System.Windows.Forms.PictureBox();
+            this.Panel2 = new System.Windows.Forms.Panel();
+            this.Panel4 = new System.Windows.Forms.Panel();
+            this.PictureBox2 = new System.Windows.Forms.PictureBox();
+            this.Panel6 = new System.Windows.Forms.Panel();
+            this.Panel7 = new System.Windows.Forms.Panel();
+            this.Label5 = new System.Windows.Forms.Label();
+            this.min = new System.Windows.Forms.Label();
+            this.Label4 = new System.Windows.Forms.Label();
+            this.seg = new System.Windows.Forms.Label();
+            this.Label2 = new System.Windows.Forms.Label();
+            this.Label1 = new System.Windows.Forms.Label();
+            this.PictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Panel5 = new System.Windows.Forms.Panel();
+            this.Panel9 = new System.Windows.Forms.Panel();
+            this.lblbuscador_de_servidores = new System.Windows.Forms.Label();
+            this.Panel1 = new System.Windows.Forms.Panel();
+            this.Button2 = new System.Windows.Forms.Button();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.timer3 = new System.Windows.Forms.Timer(this.components);
             this.timer4 = new System.Windows.Forms.Timer(this.components);
             this.TimerCRARINI = new System.Windows.Forms.Timer(this.components);
             this.Panel8.SuspendLayout();
+            this.Panel3.SuspendLayout();
+            this.Panel10.SuspendLayout();
+            this.GroupBox1.SuspendLayout();
+            this.GroupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox7)).BeginInit();
             this.Panel2.SuspendLayout();
             this.Panel4.SuspendLayout();
@@ -89,256 +94,30 @@
             this.Panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).BeginInit();
             this.Panel9.SuspendLayout();
-            this.Panel3.SuspendLayout();
-            this.Panel10.SuspendLayout();
-            this.GroupBox1.SuspendLayout();
-            this.GroupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // Panel8
             // 
-            this.Panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
+            this.Panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.Panel8.Controls.Add(this.Panel3);
+            this.Panel8.Controls.Add(this.lblwindows);
             this.Panel8.Controls.Add(this.Label10);
             this.Panel8.Controls.Add(this.PictureBox7);
-            this.Panel8.Controls.Add(this.lblwindows);
             this.Panel8.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Panel8.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Panel8.Location = new System.Drawing.Point(0, 0);
             this.Panel8.Name = "Panel8";
-            this.Panel8.Size = new System.Drawing.Size(1680, 86);
+            this.Panel8.Size = new System.Drawing.Size(1680, 88);
             this.Panel8.TabIndex = 590;
             // 
-            // Label10
+            // panel11
             // 
-            this.Label10.AutoSize = true;
-            this.Label10.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold);
-            this.Label10.ForeColor = System.Drawing.Color.White;
-            this.Label10.Location = new System.Drawing.Point(12, 20);
-            this.Label10.Name = "Label10";
-            this.Label10.Size = new System.Drawing.Size(205, 46);
-            this.Label10.TabIndex = 1;
-            this.Label10.Text = "PedroDev";
-            // 
-            // PictureBox7
-            // 
-            this.PictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox7.Image")));
-            this.PictureBox7.Location = new System.Drawing.Point(191, 12);
-            this.PictureBox7.Name = "PictureBox7";
-            this.PictureBox7.Size = new System.Drawing.Size(110, 63);
-            this.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PictureBox7.TabIndex = 604;
-            this.PictureBox7.TabStop = false;
-            // 
-            // lblwindows
-            // 
-            this.lblwindows.BackColor = System.Drawing.Color.Transparent;
-            this.lblwindows.Dock = System.Windows.Forms.DockStyle.Right;
-            this.lblwindows.ForeColor = System.Drawing.Color.White;
-            this.lblwindows.Location = new System.Drawing.Point(1161, 0);
-            this.lblwindows.Name = "lblwindows";
-            this.lblwindows.Size = new System.Drawing.Size(519, 86);
-            this.lblwindows.TabIndex = 607;
-            this.lblwindows.Text = "...";
-            this.lblwindows.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // Panel2
-            // 
-            this.Panel2.Controls.Add(this.Panel4);
-            this.Panel2.Controls.Add(this.Panel9);
-            this.Panel2.Controls.Add(this.Button2);
-            this.Panel2.Location = new System.Drawing.Point(30, 127);
-            this.Panel2.Name = "Panel2";
-            this.Panel2.Size = new System.Drawing.Size(485, 539);
-            this.Panel2.TabIndex = 617;
-            // 
-            // Panel4
-            // 
-            this.Panel4.BackColor = System.Drawing.Color.White;
-            this.Panel4.Controls.Add(this.PictureBox2);
-            this.Panel4.Controls.Add(this.Panel6);
-            this.Panel4.Controls.Add(this.Label1);
-            this.Panel4.Controls.Add(this.PictureBox1);
-            this.Panel4.Controls.Add(this.Panel5);
-            this.Panel4.Location = new System.Drawing.Point(3, 3);
-            this.Panel4.Name = "Panel4";
-            this.Panel4.Size = new System.Drawing.Size(482, 556);
-            this.Panel4.TabIndex = 618;
-            this.Panel4.Visible = false;
-            // 
-            // PictureBox2
-            // 
-            this.PictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
-            this.PictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox2.Image")));
-            this.PictureBox2.Location = new System.Drawing.Point(0, 307);
-            this.PictureBox2.Name = "PictureBox2";
-            this.PictureBox2.Size = new System.Drawing.Size(482, 249);
-            this.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PictureBox2.TabIndex = 617;
-            this.PictureBox2.TabStop = false;
-            // 
-            // Panel6
-            // 
-            this.Panel6.Controls.Add(this.Panel7);
-            this.Panel6.Controls.Add(this.Label2);
-            this.Panel6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Panel6.Location = new System.Drawing.Point(0, 243);
-            this.Panel6.Name = "Panel6";
-            this.Panel6.Size = new System.Drawing.Size(482, 64);
-            this.Panel6.TabIndex = 620;
-            // 
-            // Panel7
-            // 
-            this.Panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
-            this.Panel7.Controls.Add(this.Label5);
-            this.Panel7.Controls.Add(this.min);
-            this.Panel7.Controls.Add(this.Label4);
-            this.Panel7.Controls.Add(this.seg);
-            this.Panel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Panel7.Location = new System.Drawing.Point(280, 0);
-            this.Panel7.Name = "Panel7";
-            this.Panel7.Size = new System.Drawing.Size(202, 64);
-            this.Panel7.TabIndex = 619;
-            // 
-            // Label5
-            // 
-            this.Label5.AutoSize = true;
-            this.Label5.ForeColor = System.Drawing.Color.White;
-            this.Label5.Location = new System.Drawing.Point(63, 10);
-            this.Label5.Name = "Label5";
-            this.Label5.Size = new System.Drawing.Size(23, 13);
-            this.Label5.TabIndex = 618;
-            this.Label5.Text = "min";
-            // 
-            // min
-            // 
-            this.min.AutoSize = true;
-            this.min.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.min.ForeColor = System.Drawing.Color.White;
-            this.min.Location = new System.Drawing.Point(59, 33);
-            this.min.Name = "min";
-            this.min.Size = new System.Drawing.Size(27, 20);
-            this.min.TabIndex = 618;
-            this.min.Text = "00";
-            // 
-            // Label4
-            // 
-            this.Label4.AutoSize = true;
-            this.Label4.ForeColor = System.Drawing.Color.White;
-            this.Label4.Location = new System.Drawing.Point(125, 10);
-            this.Label4.Name = "Label4";
-            this.Label4.Size = new System.Drawing.Size(24, 13);
-            this.Label4.TabIndex = 618;
-            this.Label4.Text = "seg";
-            // 
-            // seg
-            // 
-            this.seg.AutoSize = true;
-            this.seg.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.seg.ForeColor = System.Drawing.Color.White;
-            this.seg.Location = new System.Drawing.Point(125, 33);
-            this.seg.Name = "seg";
-            this.seg.Size = new System.Drawing.Size(27, 20);
-            this.seg.TabIndex = 618;
-            this.seg.Text = "00";
-            // 
-            // Label2
-            // 
-            this.Label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
-            this.Label2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Label2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.Label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
-            this.Label2.ForeColor = System.Drawing.Color.DarkGray;
-            this.Label2.Location = new System.Drawing.Point(0, 0);
-            this.Label2.Name = "Label2";
-            this.Label2.Size = new System.Drawing.Size(280, 64);
-            this.Label2.TabIndex = 619;
-            this.Label2.Text = "Tiempo estimado: 6 minutos";
-            this.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Label1
-            // 
-            this.Label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
-            this.Label1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Label1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
-            this.Label1.ForeColor = System.Drawing.Color.White;
-            this.Label1.Location = new System.Drawing.Point(0, 70);
-            this.Label1.Name = "Label1";
-            this.Label1.Size = new System.Drawing.Size(482, 173);
-            this.Label1.TabIndex = 616;
-            this.Label1.Text = "Instalando Servidor...\r\n\r\nNo Cierre esta Ventana, se cerrara Automaticamente cuan" +
-    "do este todo Listo";
-            this.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // PictureBox1
-            // 
-            this.PictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
-            this.PictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox1.Image")));
-            this.PictureBox1.Location = new System.Drawing.Point(0, 13);
-            this.PictureBox1.Name = "PictureBox1";
-            this.PictureBox1.Size = new System.Drawing.Size(482, 57);
-            this.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PictureBox1.TabIndex = 604;
-            this.PictureBox1.TabStop = false;
-            // 
-            // Panel5
-            // 
-            this.Panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
-            this.Panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Panel5.Location = new System.Drawing.Point(0, 0);
-            this.Panel5.Name = "Panel5";
-            this.Panel5.Size = new System.Drawing.Size(482, 13);
-            this.Panel5.TabIndex = 618;
-            // 
-            // Panel9
-            // 
-            this.Panel9.Controls.Add(this.lblbuscador_de_servidores);
-            this.Panel9.Controls.Add(this.Panel1);
-            this.Panel9.Location = new System.Drawing.Point(16, 107);
-            this.Panel9.Name = "Panel9";
-            this.Panel9.Size = new System.Drawing.Size(452, 153);
-            this.Panel9.TabIndex = 619;
-            // 
-            // lblbuscador_de_servidores
-            // 
-            this.lblbuscador_de_servidores.BackColor = System.Drawing.Color.Transparent;
-            this.lblbuscador_de_servidores.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblbuscador_de_servidores.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.lblbuscador_de_servidores.ForeColor = System.Drawing.Color.White;
-            this.lblbuscador_de_servidores.Location = new System.Drawing.Point(3, 0);
-            this.lblbuscador_de_servidores.Name = "lblbuscador_de_servidores";
-            this.lblbuscador_de_servidores.Size = new System.Drawing.Size(449, 153);
-            this.lblbuscador_de_servidores.TabIndex = 614;
-            this.lblbuscador_de_servidores.Text = "Buscando servidores instalados...";
-            this.lblbuscador_de_servidores.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // Panel1
-            // 
-            this.Panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Panel1.BackgroundImage")));
-            this.Panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.Panel1.Location = new System.Drawing.Point(0, 0);
-            this.Panel1.Name = "Panel1";
-            this.Panel1.Size = new System.Drawing.Size(3, 153);
-            this.Panel1.TabIndex = 615;
-            // 
-            // Button2
-            // 
-            this.Button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
-            this.Button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Button2.FlatAppearance.BorderSize = 0;
-            this.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold);
-            this.Button2.ForeColor = System.Drawing.Color.White;
-            this.Button2.Location = new System.Drawing.Point(29, 19);
-            this.Button2.Name = "Button2";
-            this.Button2.Size = new System.Drawing.Size(413, 84);
-            this.Button2.TabIndex = 610;
-            this.Button2.Text = "Instalar Servidor";
-            this.Button2.UseVisualStyleBackColor = false;
-            this.Button2.Visible = false;
-            this.Button2.Click += new System.EventHandler(this.Button2_Click);
+            this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(63)))), ((int)(((byte)(67)))));
+            this.panel11.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel11.Location = new System.Drawing.Point(0, 88);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(1680, 1);
+            this.panel11.TabIndex = 620;
             // 
             // Panel3
             // 
@@ -354,9 +133,9 @@
             this.Panel3.Controls.Add(this.lblBasededatos);
             this.Panel3.Controls.Add(this.Label6);
             this.Panel3.Controls.Add(this.Label8);
-            this.Panel3.Location = new System.Drawing.Point(943, 119);
+            this.Panel3.Location = new System.Drawing.Point(325, 20);
             this.Panel3.Name = "Panel3";
-            this.Panel3.Size = new System.Drawing.Size(303, 567);
+            this.Panel3.Size = new System.Drawing.Size(10, 10);
             this.Panel3.TabIndex = 619;
             // 
             // txtArgumentosini
@@ -600,6 +379,238 @@
             this.Label8.TabIndex = 618;
             this.Label8.Text = "Nombre de Instancia:";
             // 
+            // lblwindows
+            // 
+            this.lblwindows.BackColor = System.Drawing.Color.Transparent;
+            this.lblwindows.ForeColor = System.Drawing.Color.White;
+            this.lblwindows.Location = new System.Drawing.Point(341, 20);
+            this.lblwindows.Name = "lblwindows";
+            this.lblwindows.Size = new System.Drawing.Size(10, 10);
+            this.lblwindows.TabIndex = 607;
+            this.lblwindows.Text = "...";
+            this.lblwindows.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // Label10
+            // 
+            this.Label10.AutoSize = true;
+            this.Label10.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold);
+            this.Label10.ForeColor = System.Drawing.Color.White;
+            this.Label10.Location = new System.Drawing.Point(12, 20);
+            this.Label10.Name = "Label10";
+            this.Label10.Size = new System.Drawing.Size(205, 46);
+            this.Label10.TabIndex = 1;
+            this.Label10.Text = "PedroDev";
+            // 
+            // PictureBox7
+            // 
+            this.PictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox7.Image")));
+            this.PictureBox7.Location = new System.Drawing.Point(191, 12);
+            this.PictureBox7.Name = "PictureBox7";
+            this.PictureBox7.Size = new System.Drawing.Size(110, 63);
+            this.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PictureBox7.TabIndex = 604;
+            this.PictureBox7.TabStop = false;
+            // 
+            // Panel2
+            // 
+            this.Panel2.Controls.Add(this.Panel4);
+            this.Panel2.Controls.Add(this.Panel9);
+            this.Panel2.Controls.Add(this.Button2);
+            this.Panel2.Location = new System.Drawing.Point(428, 127);
+            this.Panel2.Name = "Panel2";
+            this.Panel2.Size = new System.Drawing.Size(485, 539);
+            this.Panel2.TabIndex = 617;
+            // 
+            // Panel4
+            // 
+            this.Panel4.BackColor = System.Drawing.Color.White;
+            this.Panel4.Controls.Add(this.PictureBox2);
+            this.Panel4.Controls.Add(this.Panel6);
+            this.Panel4.Controls.Add(this.Label1);
+            this.Panel4.Controls.Add(this.PictureBox1);
+            this.Panel4.Controls.Add(this.Panel5);
+            this.Panel4.Location = new System.Drawing.Point(3, 3);
+            this.Panel4.Name = "Panel4";
+            this.Panel4.Size = new System.Drawing.Size(482, 556);
+            this.Panel4.TabIndex = 618;
+            this.Panel4.Visible = false;
+            // 
+            // PictureBox2
+            // 
+            this.PictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.PictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox2.Image")));
+            this.PictureBox2.Location = new System.Drawing.Point(0, 307);
+            this.PictureBox2.Name = "PictureBox2";
+            this.PictureBox2.Size = new System.Drawing.Size(482, 249);
+            this.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PictureBox2.TabIndex = 617;
+            this.PictureBox2.TabStop = false;
+            // 
+            // Panel6
+            // 
+            this.Panel6.Controls.Add(this.Panel7);
+            this.Panel6.Controls.Add(this.Label2);
+            this.Panel6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Panel6.Location = new System.Drawing.Point(0, 243);
+            this.Panel6.Name = "Panel6";
+            this.Panel6.Size = new System.Drawing.Size(482, 64);
+            this.Panel6.TabIndex = 620;
+            // 
+            // Panel7
+            // 
+            this.Panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.Panel7.Controls.Add(this.Label5);
+            this.Panel7.Controls.Add(this.min);
+            this.Panel7.Controls.Add(this.Label4);
+            this.Panel7.Controls.Add(this.seg);
+            this.Panel7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Panel7.Location = new System.Drawing.Point(280, 0);
+            this.Panel7.Name = "Panel7";
+            this.Panel7.Size = new System.Drawing.Size(202, 64);
+            this.Panel7.TabIndex = 619;
+            // 
+            // Label5
+            // 
+            this.Label5.AutoSize = true;
+            this.Label5.ForeColor = System.Drawing.Color.White;
+            this.Label5.Location = new System.Drawing.Point(63, 10);
+            this.Label5.Name = "Label5";
+            this.Label5.Size = new System.Drawing.Size(23, 13);
+            this.Label5.TabIndex = 618;
+            this.Label5.Text = "min";
+            // 
+            // min
+            // 
+            this.min.AutoSize = true;
+            this.min.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.min.ForeColor = System.Drawing.Color.White;
+            this.min.Location = new System.Drawing.Point(59, 33);
+            this.min.Name = "min";
+            this.min.Size = new System.Drawing.Size(27, 20);
+            this.min.TabIndex = 618;
+            this.min.Text = "00";
+            // 
+            // Label4
+            // 
+            this.Label4.AutoSize = true;
+            this.Label4.ForeColor = System.Drawing.Color.White;
+            this.Label4.Location = new System.Drawing.Point(125, 10);
+            this.Label4.Name = "Label4";
+            this.Label4.Size = new System.Drawing.Size(24, 13);
+            this.Label4.TabIndex = 618;
+            this.Label4.Text = "seg";
+            // 
+            // seg
+            // 
+            this.seg.AutoSize = true;
+            this.seg.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.seg.ForeColor = System.Drawing.Color.White;
+            this.seg.Location = new System.Drawing.Point(125, 33);
+            this.seg.Name = "seg";
+            this.seg.Size = new System.Drawing.Size(27, 20);
+            this.seg.TabIndex = 618;
+            this.seg.Text = "00";
+            // 
+            // Label2
+            // 
+            this.Label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.Label2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Label2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.Label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
+            this.Label2.ForeColor = System.Drawing.Color.DarkGray;
+            this.Label2.Location = new System.Drawing.Point(0, 0);
+            this.Label2.Name = "Label2";
+            this.Label2.Size = new System.Drawing.Size(280, 64);
+            this.Label2.TabIndex = 619;
+            this.Label2.Text = "Tiempo estimado: 6 minutos";
+            this.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Label1
+            // 
+            this.Label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.Label1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Label1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
+            this.Label1.ForeColor = System.Drawing.Color.White;
+            this.Label1.Location = new System.Drawing.Point(0, 70);
+            this.Label1.Name = "Label1";
+            this.Label1.Size = new System.Drawing.Size(482, 173);
+            this.Label1.TabIndex = 616;
+            this.Label1.Text = "Instalando Servidor...\r\n\r\nNo Cierre esta Ventana, se cerrara Automaticamente cuan" +
+    "do este todo Listo";
+            this.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // PictureBox1
+            // 
+            this.PictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.PictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox1.Image")));
+            this.PictureBox1.Location = new System.Drawing.Point(0, 13);
+            this.PictureBox1.Name = "PictureBox1";
+            this.PictureBox1.Size = new System.Drawing.Size(482, 57);
+            this.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PictureBox1.TabIndex = 604;
+            this.PictureBox1.TabStop = false;
+            // 
+            // Panel5
+            // 
+            this.Panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.Panel5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Panel5.Location = new System.Drawing.Point(0, 0);
+            this.Panel5.Name = "Panel5";
+            this.Panel5.Size = new System.Drawing.Size(482, 13);
+            this.Panel5.TabIndex = 618;
+            // 
+            // Panel9
+            // 
+            this.Panel9.Controls.Add(this.lblbuscador_de_servidores);
+            this.Panel9.Controls.Add(this.Panel1);
+            this.Panel9.Location = new System.Drawing.Point(16, 107);
+            this.Panel9.Name = "Panel9";
+            this.Panel9.Size = new System.Drawing.Size(452, 153);
+            this.Panel9.TabIndex = 619;
+            // 
+            // lblbuscador_de_servidores
+            // 
+            this.lblbuscador_de_servidores.BackColor = System.Drawing.Color.Transparent;
+            this.lblbuscador_de_servidores.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblbuscador_de_servidores.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.lblbuscador_de_servidores.ForeColor = System.Drawing.Color.White;
+            this.lblbuscador_de_servidores.Location = new System.Drawing.Point(3, 0);
+            this.lblbuscador_de_servidores.Name = "lblbuscador_de_servidores";
+            this.lblbuscador_de_servidores.Size = new System.Drawing.Size(449, 153);
+            this.lblbuscador_de_servidores.TabIndex = 614;
+            this.lblbuscador_de_servidores.Text = "Buscando servidores instalados...";
+            this.lblbuscador_de_servidores.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // Panel1
+            // 
+            this.Panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Panel1.BackgroundImage")));
+            this.Panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.Panel1.Location = new System.Drawing.Point(0, 0);
+            this.Panel1.Name = "Panel1";
+            this.Panel1.Size = new System.Drawing.Size(3, 153);
+            this.Panel1.TabIndex = 615;
+            // 
+            // Button2
+            // 
+            this.Button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
+            this.Button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Button2.FlatAppearance.BorderSize = 0;
+            this.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold);
+            this.Button2.ForeColor = System.Drawing.Color.White;
+            this.Button2.Location = new System.Drawing.Point(29, 19);
+            this.Button2.Name = "Button2";
+            this.Button2.Size = new System.Drawing.Size(413, 84);
+            this.Button2.TabIndex = 610;
+            this.Button2.Text = "Instalar Servidor";
+            this.Button2.UseVisualStyleBackColor = false;
+            this.Button2.Visible = false;
+            this.Button2.Click += new System.EventHandler(this.Button2_Click);
+            // 
             // timer2
             // 
             this.timer2.Interval = 10;
@@ -624,9 +635,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Black;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.ClientSize = new System.Drawing.Size(1680, 750);
-            this.Controls.Add(this.Panel3);
+            this.Controls.Add(this.panel11);
             this.Controls.Add(this.Panel2);
             this.Controls.Add(this.Panel8);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -636,6 +647,12 @@
             this.Load += new System.EventHandler(this.Instalacion_del_servidorSQL_Load);
             this.Panel8.ResumeLayout(false);
             this.Panel8.PerformLayout();
+            this.Panel3.ResumeLayout(false);
+            this.Panel3.PerformLayout();
+            this.Panel10.ResumeLayout(false);
+            this.Panel10.PerformLayout();
+            this.GroupBox1.ResumeLayout(false);
+            this.GroupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox7)).EndInit();
             this.Panel2.ResumeLayout(false);
             this.Panel4.ResumeLayout(false);
@@ -645,12 +662,6 @@
             this.Panel7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).EndInit();
             this.Panel9.ResumeLayout(false);
-            this.Panel3.ResumeLayout(false);
-            this.Panel3.PerformLayout();
-            this.Panel10.ResumeLayout(false);
-            this.Panel10.PerformLayout();
-            this.GroupBox1.ResumeLayout(false);
-            this.GroupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -707,5 +718,6 @@
         private System.Windows.Forms.Timer timer3;
         private System.Windows.Forms.Timer timer4;
         private System.Windows.Forms.Timer TimerCRARINI;
+        private System.Windows.Forms.Panel panel11;
     }
 }

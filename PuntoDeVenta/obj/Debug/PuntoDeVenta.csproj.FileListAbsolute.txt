@@ -34,3 +34,4 @@ C:\Users\pedro\source\repos\PuntoDeVenta\PuntoDeVenta\obj\Debug\PuntoDeVenta.Mod
 C:\Users\pedro\source\repos\PuntoDeVenta\PuntoDeVenta\obj\Debug\PuntoDeVenta.Modulos.ASISTENTE_DE_INSTALACION_servidor.Eleccion_Servidor_o_remoto.resources
 C:\Users\pedro\source\repos\PuntoDeVenta\PuntoDeVenta\obj\Debug\PuntoDeVenta.Modulos.ASISTENTE_DE_INSTALACION_servidor.Instalacion_del_servidorSQL.resources
 C:\Users\pedro\source\repos\PuntoDeVenta\PuntoDeVenta\obj\Debug\PuntoDeVenta.Modulos.ASISTENTE_DE_INSTALACION_servidor.REGISTRO_DE_EMPRESA.resources
+C:\Users\pedro\source\repos\PuntoDeVenta\PuntoDeVenta\obj\Debug\PuntoDeVenta.Modulos.ASISTENTE_DE_INSTALACION_servidor.USUARIOS_AUTORIZADOS_AL_SISTEMA.resources

@@ -16,7 +16,7 @@ namespace PuntoDeVenta
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Modulos.LOGIN());//ASISTENTE_DE_INSTALACION_servidor.Instalacion_del_servidorSQL()
+            Application.Run(new Modulos.ASISTENTE_DE_INSTALACION_servidor.REGISTRO_DE_EMPRESA());//ASISTENTE_DE_INSTALACION_servidor.Instalacion_del_servidorSQL()
         }
     }
 }
