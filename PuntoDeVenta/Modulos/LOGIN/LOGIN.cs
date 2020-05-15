@@ -12,6 +12,8 @@ using System.IO;
 using System.Net.Mail;
 using System.Net;
 using System.Management;
+//git reset PuntoDeVenta/bin/Debug/SQLEXPR_x86_ESN/
+//git reset PuntoDeVenta/bin/Debug/SQLEXPR_x86_ESN.exe
 
 namespace PuntoDeVenta.Modulos
 {
@@ -30,58 +32,64 @@ namespace PuntoDeVenta.Modulos
         public static String idcajavariable;
         public void DIBUJARUsuarios()
         {
-            SqlConnection con = new SqlConnection();
-            con.ConnectionString = CONEXION.CONEXIONMAESTRA.CONEXION;
-            con.Open();
-            SqlCommand cmd = new SqlCommand();
-            cmd = new SqlCommand("SELECT * FROM USUARIO2 WHERE Estado = 'ACTIVO'", con);
-            SqlDataReader rdr = cmd.ExecuteReader();
-
-            while (rdr.Read())
+            try
             {
-                Label b = new Label();
-                Panel p1 = new Panel();
-                PictureBox I1 = new PictureBox();
+                SqlConnection con = new SqlConnection();
+                con.ConnectionString = CONEXION.CONEXIONMAESTRA.CONEXION;
+                con.Open();
+                SqlCommand cmd = new SqlCommand();
+                cmd = new SqlCommand("SELECT * FROM USUARIO2 WHERE Estado = 'ACTIVO'", con);
+                SqlDataReader rdr = cmd.ExecuteReader();
 
-                b.Text = rdr["Login"].ToString();
-                b.Name = rdr["idUsuario"].ToString();
-                b.Size = new System.Drawing.Size(175,25);
-                b.Font = new System.Drawing.Font("Microsoft Sans Serif", 13);
-                b.FlatStyle = FlatStyle.Flat;
-                b.BackColor = Color.FromArgb(20,20,20);
-                b.ForeColor = Color.White;
-                b.Dock = DockStyle.Bottom;
-                b.TextAlign = ContentAlignment.MiddleCenter;
-                b.Cursor = Cursors.Hand;
+                while (rdr.Read())
+                {
+                    Label b = new Label();
+                    Panel p1 = new Panel();
+                    PictureBox I1 = new PictureBox();
 
-                p1.Size = new System.Drawing.Size(155, 167);
-                p1.BorderStyle = BorderStyle.None;
-                p1.BackColor = Color.FromArgb(20,20,20);
+                    b.Text = rdr["Login"].ToString();
+                    b.Name = rdr["idUsuario"].ToString();
+                    b.Size = new System.Drawing.Size(175, 25);
+                    b.Font = new System.Drawing.Font("Microsoft Sans Serif", 13);
+                    b.FlatStyle = FlatStyle.Flat;
+                    b.BackColor = Color.FromArgb(20, 20, 20);
+                    b.ForeColor = Color.White;
+                    b.Dock = DockStyle.Bottom;
+                    b.TextAlign = ContentAlignment.MiddleCenter;
+                    b.Cursor = Cursors.Hand;
 
-                I1.Size = new System.Drawing.Size(175, 132);
-                I1.Dock = DockStyle.Top;
-                I1.BackgroundImage = null;
-                byte[] bi = (byte[])rdr["Icono"];
+                    p1.Size = new System.Drawing.Size(155, 167);
+                    p1.BorderStyle = BorderStyle.None;
+                    p1.BackColor = Color.FromArgb(20, 20, 20);
 
-                MemoryStream ms = new MemoryStream(bi);
-                I1.Image = Image.FromStream(ms);
-                I1.SizeMode = PictureBoxSizeMode.Zoom;
-                I1.Tag = rdr["Login"].ToString();
-                I1.Cursor = Cursors.Hand;
+                    I1.Size = new System.Drawing.Size(175, 132);
+                    I1.Dock = DockStyle.Top;
+                    I1.BackgroundImage = null;
+                    byte[] bi = (byte[])rdr["Icono"];
 
-                p1.Controls.Add(b);
-                p1.Controls.Add(I1);
-                b.BringToFront();
-                flowLayoutPanel1.Controls.Add(p1);
+                    MemoryStream ms = new MemoryStream(bi);
+                    I1.Image = Image.FromStream(ms);
+                    I1.SizeMode = PictureBoxSizeMode.Zoom;
+                    I1.Tag = rdr["Login"].ToString();
+                    I1.Cursor = Cursors.Hand;
 
-                // Event Handles
-                b.Click += new EventHandler(mieventoLabel);
-                I1.Click += new EventHandler(mieventoimagen);
+                    p1.Controls.Add(b);
+                    p1.Controls.Add(I1);
+                    b.BringToFront();
+                    flowLayoutPanel1.Controls.Add(p1);
+
+                    // Event Handles
+                    b.Click += new EventHandler(mieventoLabel);
+                    I1.Click += new EventHandler(mieventoimagen);
 
 
+                }
+                //Cerrar conexion
+                con.Close();
+            }catch(Exception ex)
+            {
+                MessageBox.Show("asd111");
             }
-            //Cerrar conexion
-            con.Close();
         }
         private void mieventoLabel (System.Object sender, EventArgs e)
         {
@@ -101,21 +109,13 @@ namespace PuntoDeVenta.Modulos
 
         private void LOGIN_Load(object sender, EventArgs e)
         {
-            bool band = true;
-            if (band)
-            {
-                timer1.Start();
-                band = false;
-            }else {
                 DIBUJARUsuarios();
                 panel2.Visible = false;
+                timer1.Start();
                 PictureBox2.Location = new Point((Width - PictureBox2.Width) / 2, (Height - PictureBox2.Height) / 2);
                 panel1.Location = new Point((Width - panel1.Width) / 2, (Height - panel1.Height) / 2);
                 PanelRestaurarCuenta.Location = new Point((Width - PanelRestaurarCuenta.Width) / 2, (Height - PanelRestaurarCuenta.Height) / 2);
                 panel2.Location = new Point((Width - panel2.Width) / 2, (Height - panel2.Height) / 2);
-            }
-
-
         }
 
         private void btn_insertar_Click(object sender, EventArgs e)
@@ -531,60 +531,63 @@ namespace PuntoDeVenta.Modulos
 
             x = datalistado_USUARIOS_REGISTRADOS.Rows.Count;
             txtcontador_USUARIOS = (x);
+            MessageBox.Show(x.ToString());
 
         }
         private void timer1_Tick_1(object sender, EventArgs e)
         {
-            timer1.Stop();
-            mostrar_usuarios_registrados();
-            if (INDICADOR == "CORRECTO")
-            {
-                contar_USUARIOS();
-                if (txtcontador_USUARIOS == 0)
+                timer1.Stop();
+                mostrar_usuarios_registrados();
+                if (INDICADOR == "CORRECTO")
+                {
+                    contar_USUARIOS();
+                    if (txtcontador_USUARIOS == 0)
+                    {
+                        Hide();
+                        Modulos.ASISTENTE_DE_INSTALACION_servidor.REGISTRO_DE_EMPRESA frm = new Modulos.ASISTENTE_DE_INSTALACION_servidor.REGISTRO_DE_EMPRESA();
+                        frm.ShowDialog();
+                        this.Dispose();
+                    }
+
+                }
+
+
+
+                if (INDICADOR == "INCORRECTO")
                 {
                     Hide();
-                    Modulos.ASISTENTE_DE_INSTALACION_servidor.REGISTRO_DE_EMPRESA frm = new Modulos.ASISTENTE_DE_INSTALACION_servidor.REGISTRO_DE_EMPRESA();
+                    Modulos.ASISTENTE_DE_INSTALACION_servidor.Eleccion_Servidor_o_remoto frm = new Modulos.ASISTENTE_DE_INSTALACION_servidor.Eleccion_Servidor_o_remoto();
                     frm.ShowDialog();
-                    this.Dispose();
+                    Dispose();
                 }
 
-            }
-
-
-
-            if (INDICADOR == "INCORRECTO")
-            {
-                Hide();
-                Modulos.ASISTENTE_DE_INSTALACION_servidor.Eleccion_Servidor_o_remoto frm = new Modulos.ASISTENTE_DE_INSTALACION_servidor.Eleccion_Servidor_o_remoto();
-                frm.ShowDialog();
-                Dispose();
-            }
-
-            try
-            {
-
-                ManagementObjectSearcher MOS = new ManagementObjectSearcher("Select * From Win32_BaseBoard");
-                foreach (ManagementObject getserial in MOS.Get())
+                try
                 {
-                    lblSerialPc.Text = getserial.Properties["SerialNumber"].Value.ToString();
+
+                    ManagementObjectSearcher MOS = new ManagementObjectSearcher("Select * From Win32_BaseBoard");
+                    foreach (ManagementObject getserial in MOS.Get())
+                    {
+                        lblSerialPc.Text = getserial.Properties["SerialNumber"].Value.ToString();
+                    MessageBox.Show(lblSerialPc.Text);
 
                     MOSTRAR_CAJA_POR_SERIAL();
-                    try
-                    {
-                        txtidcaja.Text = datalistado_caja.SelectedCells[1].Value.ToString();
-                        lblcaja.Text = datalistado_caja.SelectedCells[2].Value.ToString();
-                        idcajavariable = txtidcaja.Text;
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show(ex.Message);
+                        try
+                        {
+                            txtidcaja.Text = datalistado_caja.SelectedCells[1].Value.ToString();
+                            lblcaja.Text = datalistado_caja.SelectedCells[2].Value.ToString();
+                            idcajavariable = txtidcaja.Text;
+                        MessageBox.Show("asdASDASD" + txtidcaja.Text + lblcaja.Text + idcajavariable);
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show(ex.Message);
+                        }
                     }
                 }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("ASD");
+                }
         }
 
         private void btn0_Click(object sender, EventArgs e)

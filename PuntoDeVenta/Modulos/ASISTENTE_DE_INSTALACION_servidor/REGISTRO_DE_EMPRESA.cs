@@ -227,7 +227,6 @@ namespace PuntoDeVenta.Modulos.ASISTENTE_DE_INSTALACION_servidor
             cmd.Parameters.AddWithValue("@Porcentaje_impuesto", txtporcentaje.Text);
             cmd.Parameters.AddWithValue("@Moneda", txtmoneda.Text);
             cmd.Parameters.AddWithValue("@Trabajas_con_impuestos", TXTTRABAJASCONIMPUESTOS.Text);
-
             cmd.Parameters.AddWithValue("@Carpeta_para_copias_de_seguridad", txtRuta.Text);
             cmd.Parameters.AddWithValue("@Correo_para_envio_de_reportes", txtcorreo.Text);
             cmd.Parameters.AddWithValue("@Ultima_fecha_de_copia_de_seguridad", "Ninguna");

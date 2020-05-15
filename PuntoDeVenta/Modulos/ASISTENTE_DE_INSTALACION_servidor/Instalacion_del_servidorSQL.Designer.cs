@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Instalacion_del_servidorSQL));
             this.Panel8 = new System.Windows.Forms.Panel();
-            this.panel11 = new System.Windows.Forms.Panel();
             this.Panel3 = new System.Windows.Forms.Panel();
             this.txtArgumentosini = new System.Windows.Forms.RichTextBox();
             this.Panel10 = new System.Windows.Forms.Panel();
@@ -60,6 +59,7 @@
             this.lblwindows = new System.Windows.Forms.Label();
             this.Label10 = new System.Windows.Forms.Label();
             this.PictureBox7 = new System.Windows.Forms.PictureBox();
+            this.panel11 = new System.Windows.Forms.Panel();
             this.Panel2 = new System.Windows.Forms.Panel();
             this.Panel4 = new System.Windows.Forms.Panel();
             this.PictureBox2 = new System.Windows.Forms.PictureBox();
@@ -99,7 +99,6 @@
             // Panel8
             // 
             this.Panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.Panel8.Controls.Add(this.Panel3);
             this.Panel8.Controls.Add(this.lblwindows);
             this.Panel8.Controls.Add(this.Label10);
             this.Panel8.Controls.Add(this.PictureBox7);
@@ -109,15 +108,6 @@
             this.Panel8.Name = "Panel8";
             this.Panel8.Size = new System.Drawing.Size(1680, 88);
             this.Panel8.TabIndex = 590;
-            // 
-            // panel11
-            // 
-            this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(63)))), ((int)(((byte)(67)))));
-            this.panel11.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel11.Location = new System.Drawing.Point(0, 88);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(1680, 1);
-            this.panel11.TabIndex = 620;
             // 
             // Panel3
             // 
@@ -133,9 +123,9 @@
             this.Panel3.Controls.Add(this.lblBasededatos);
             this.Panel3.Controls.Add(this.Label6);
             this.Panel3.Controls.Add(this.Label8);
-            this.Panel3.Location = new System.Drawing.Point(325, 20);
+            this.Panel3.Location = new System.Drawing.Point(82, 542);
             this.Panel3.Name = "Panel3";
-            this.Panel3.Size = new System.Drawing.Size(10, 10);
+            this.Panel3.Size = new System.Drawing.Size(17, 10);
             this.Panel3.TabIndex = 619;
             // 
             // txtArgumentosini
@@ -412,6 +402,15 @@
             this.PictureBox7.TabIndex = 604;
             this.PictureBox7.TabStop = false;
             // 
+            // panel11
+            // 
+            this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(63)))), ((int)(((byte)(67)))));
+            this.panel11.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel11.Location = new System.Drawing.Point(0, 88);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(1680, 1);
+            this.panel11.TabIndex = 620;
+            // 
             // Panel2
             // 
             this.Panel2.Controls.Add(this.Panel4);
@@ -637,6 +636,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.ClientSize = new System.Drawing.Size(1680, 750);
+            this.Controls.Add(this.Panel3);
             this.Controls.Add(this.panel11);
             this.Controls.Add(this.Panel2);
             this.Controls.Add(this.Panel8);

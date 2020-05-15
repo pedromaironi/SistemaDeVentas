@@ -116,6 +116,12 @@
     <Compile Include="Modulos\INVENTARIO_KARDEX\INVENTARIO_MENU.Designer.cs">
       <DependentUpon>INVENTARIO_MENU.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modulos\LICENCIAS_MENBRESIAS\Membresias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\LICENCIAS_MENBRESIAS\MEMBRESIAS.Designer.cs">
+      <DependentUpon>Membresias.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modulos\LOGIN\LOGIN.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -278,6 +284,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <Content Include=".gitignore" />
     <Content Include="Modulos\LOGIN\OlvidasteTuClave.html" />
   </ItemGroup>
   <ItemGroup>
