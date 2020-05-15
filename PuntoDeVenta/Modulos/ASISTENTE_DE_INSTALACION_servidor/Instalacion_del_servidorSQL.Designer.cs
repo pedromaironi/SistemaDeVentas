@@ -158,7 +158,7 @@
             this.Panel3.Controls.Add(this.Label8);
             this.Panel3.Location = new System.Drawing.Point(82, 106);
             this.Panel3.Name = "Panel3";
-            this.Panel3.Size = new System.Drawing.Size(359, 446);
+            this.Panel3.Size = new System.Drawing.Size(278, 476);
             this.Panel3.TabIndex = 619;
             // 
             // txtArgumentosini

@@ -74,6 +74,12 @@
     <Compile Include="CONEXION\Numero_separadores.cs" />
     <Compile Include="CONEXION\Tamaño_automatico_de_datatables.cs" />
     <Compile Include="CONEXION\WinAutoComplete.cs" />
+    <Compile Include="Modulos\Admin_nivel_dios\DASHBOARD_PRINCIPAL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\Admin_nivel_dios\DASHBOARD_PRINCIPAL.Designer.cs">
+      <DependentUpon>DASHBOARD_PRINCIPAL.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modulos\ASISTENTE_DE_INSTALACION_servidor\Eleccion_Servidor_o_remoto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +115,12 @@
     </Compile>
     <Compile Include="Modulos\CAJA\Cierre_de_caja.Designer.cs">
       <DependentUpon>Cierre_de_caja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\CONFIGURACION\PANEL_CONFIGURACIONES.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\CONFIGURACION\PANEL_CONFIGURACIONES.Designer.cs">
+      <DependentUpon>PANEL_CONFIGURACIONES.cs</DependentUpon>
     </Compile>
     <Compile Include="Modulos\INVENTARIO_KARDEX\INVENTARIO_MENU.cs">
       <SubType>Form</SubType>
@@ -196,6 +208,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Modulos\Admin_nivel_dios\DASHBOARD_PRINCIPAL.resx">
+      <DependentUpon>DASHBOARD_PRINCIPAL.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Modulos\ASISTENTE_DE_INSTALACION_servidor\Eleccion_Servidor_o_remoto.resx">
       <DependentUpon>Eleccion_Servidor_o_remoto.cs</DependentUpon>
     </EmbeddedResource>

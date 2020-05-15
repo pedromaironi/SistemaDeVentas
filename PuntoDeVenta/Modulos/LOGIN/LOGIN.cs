@@ -551,8 +551,6 @@ namespace PuntoDeVenta.Modulos
 
             x = datalistado_USUARIOS_REGISTRADOS.Rows.Count;
             txtcontador_USUARIOS = (x);
-            MessageBox.Show(x.ToString());
-
         }
         private void timer1_Tick_1(object sender, EventArgs e)
         {
@@ -784,6 +782,30 @@ namespace PuntoDeVenta.Modulos
             PanelRestaurarCuenta.Visible = true;
             MostrarCorreos();
         }
+        private void editar_inicio_De_sesion()
+        {
+            try
+            {
+
+
+                SqlConnection con = new SqlConnection();
+                con.ConnectionString = CONEXION.CONEXIONMAESTRA.CONEXION;
+                con.Open();
+                SqlCommand cmd = new SqlCommand();
+                cmd = new SqlCommand("editar_inicio_De_sesion", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                cmd.Parameters.AddWithValue("@id_usuario", IDUSUARIO.Text);
+                cmd.Parameters.AddWithValue("@Id_serial_Pc", CONEXION.Encryptar_en_texto.Encriptar(lblSerialPc.Text));
+                cmd.ExecuteNonQuery();
+                con.Close();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
 
         private void timer2_Tick(object sender, EventArgs e)
         {
@@ -798,19 +820,42 @@ namespace PuntoDeVenta.Modulos
             {
                 progressBar1.Value = 0;
                 timer2.Stop();
-                if (lblAperturaCierreCaja.Text == "Nuevo*****" & lblRol.Text != "Solo Ventas (no esta autorizado para manejar dinero)")
+
+                if (txtLogin.Text == "admin")
                 {
+                    editar_inicio_De_sesion();
                     this.Hide();
-                    CAJA.APERTURA_DE_CAJA frm = new CAJA.APERTURA_DE_CAJA();
+                    Admin_nivel_dios.DASHBOARD_PRINCIPAL frm = new Admin_nivel_dios.DASHBOARD_PRINCIPAL();
                     frm.ShowDialog();
-                    this.Hide();
+                    Dispose();
                 }
                 else
                 {
-                    this.Hide();
-                    VENTAS_MENU_PRINCIPAL.MENUPRINCIPAL_VENTAS frm = new VENTAS_MENU_PRINCIPAL.MENUPRINCIPAL_VENTAS();
-                    frm.ShowDialog();
-                    this.Hide();
+                    if (lblAperturaCierreCaja.Text == "Nuevo*****" & lblRol.Text == "Cajero (Si esta autorizado para manejar dinero)")
+                    {
+                        editar_inicio_De_sesion();
+                        this.Hide();
+                        CAJA.APERTURA_DE_CAJA frm = new CAJA.APERTURA_DE_CAJA();
+                        frm.ShowDialog();
+                        Dispose();
+                    }
+                    else if (lblAperturaCierreCaja.Text != "Nuevo*****" & lblRol.Text == "Cajero (Si esta autorizado para manejar dinero)")
+                    {
+                        editar_inicio_De_sesion();
+                        this.Hide();
+                        VENTAS_MENU_PRINCIPAL.MENUPRINCIPAL_VENTAS frm = new VENTAS_MENU_PRINCIPAL.MENUPRINCIPAL_VENTAS();
+                        frm.ShowDialog();
+                        Dispose();
+                    }
+                    else if (lblRol.Text == "Solo Ventas (no esta autorizado para manejar dinero)")
+                    {
+                        editar_inicio_De_sesion();
+                        this.Hide();
+                        VENTAS_MENU_PRINCIPAL.MENUPRINCIPAL_VENTAS frm = new VENTAS_MENU_PRINCIPAL.MENUPRINCIPAL_VENTAS();
+                        frm.ShowDialog();
+                        Dispose();
+
+                    }
                 }
 
             }
