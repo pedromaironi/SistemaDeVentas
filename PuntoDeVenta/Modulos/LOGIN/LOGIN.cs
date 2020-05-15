@@ -88,7 +88,7 @@ namespace PuntoDeVenta.Modulos
                 con.Close();
             }catch(Exception ex)
             {
-                MessageBox.Show("asd111");
+                //MessageBox.Show("asd111");
             }
         }
         private void mieventoLabel (System.Object sender, EventArgs e)
@@ -140,7 +140,7 @@ namespace PuntoDeVenta.Modulos
                 da.Fill(dt);
                 datalistado_detalle_cierre_de_caja.DataSource = dt;
                 con.Close();
-            }
+            } 
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
@@ -274,6 +274,26 @@ namespace PuntoDeVenta.Modulos
                 }
             }
         }
+        private void MOSTRAR_licencia_temporal()
+        {
+            try
+            {
+                DataTable dt = new DataTable();
+                SqlDataAdapter da;
+                SqlConnection con = new SqlConnection();
+                con.ConnectionString = CONEXION.CONEXIONMAESTRA.CONEXION;
+                con.Open();
+                da = new SqlDataAdapter("select * from Marcan", con);
+                da.Fill(dt);
+                datalistado_licencia_temporal.DataSource = dt;
+                con.Close();
+
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
         private void MOSTRAR_MOVIMIENTOS_DE_CAJA_POR_SERIAL_y_usuario()
         {
             try
@@ -362,7 +382,7 @@ namespace PuntoDeVenta.Modulos
 
                 da = new SqlDataAdapter("validar_usuario", con);
                 da.SelectCommand.CommandType = CommandType.StoredProcedure;
-                da.SelectCommand.Parameters.AddWithValue("@password", txtpaswword.Text);
+                da.SelectCommand.Parameters.AddWithValue("@password", CONEXION.Encryptar_en_texto.Encriptar(txtpaswword.Text));
                 da.SelectCommand.Parameters.AddWithValue("@login", txtLogin.Text);
                 da.Fill(dt);
                 datalistado.DataSource = dt;
@@ -536,58 +556,130 @@ namespace PuntoDeVenta.Modulos
         }
         private void timer1_Tick_1(object sender, EventArgs e)
         {
-                timer1.Stop();
-                mostrar_usuarios_registrados();
-                if (INDICADOR == "CORRECTO")
-                {
-                    contar_USUARIOS();
-                    if (txtcontador_USUARIOS == 0)
-                    {
-                        Hide();
-                        Modulos.ASISTENTE_DE_INSTALACION_servidor.REGISTRO_DE_EMPRESA frm = new Modulos.ASISTENTE_DE_INSTALACION_servidor.REGISTRO_DE_EMPRESA();
-                        frm.ShowDialog();
-                        this.Dispose();
-                    }
-
-                }
-
-
-
-                if (INDICADOR == "INCORRECTO")
+            timer1.Stop();
+            mostrar_usuarios_registrados();
+            if (INDICADOR == "CORRECTO")
+            {
+                contar_USUARIOS();
+                if (txtcontador_USUARIOS == 0)
                 {
                     Hide();
-                    Modulos.ASISTENTE_DE_INSTALACION_servidor.Eleccion_Servidor_o_remoto frm = new Modulos.ASISTENTE_DE_INSTALACION_servidor.Eleccion_Servidor_o_remoto();
+                    Modulos.ASISTENTE_DE_INSTALACION_servidor.REGISTRO_DE_EMPRESA frm = new Modulos.ASISTENTE_DE_INSTALACION_servidor.REGISTRO_DE_EMPRESA();
                     frm.ShowDialog();
-                    Dispose();
+                    this.Dispose();
+                }
+                else
+                {
+                    MOSTRAR_licencia_temporal();
                 }
 
+            }
+
+
+
+            if (INDICADOR == "INCORRECTO")
+            {
+                Hide();
+                Modulos.ASISTENTE_DE_INSTALACION_servidor.Eleccion_Servidor_o_remoto frm = new Modulos.ASISTENTE_DE_INSTALACION_servidor.Eleccion_Servidor_o_remoto();
+                frm.ShowDialog();
+                Dispose();
+            }
+
+            try
+            {
+
+                ManagementObject MOS = new ManagementObject(@"Win32_PhysicalMedia='\\.\PHYSICALDRIVE0'");
+                lblSerialPc.Text = MOS.Properties["SerialNumber"].Value.ToString().Trim();
+                //MessageBox.Show(lblSerialPc.Text);
+
+                MOSTRAR_CAJA_POR_SERIAL();
                 try
                 {
-
-                    ManagementObjectSearcher MOS = new ManagementObjectSearcher("Select * From Win32_BaseBoard");
-                    foreach (ManagementObject getserial in MOS.Get())
-                    {
-                        lblSerialPc.Text = getserial.Properties["SerialNumber"].Value.ToString();
-                    MessageBox.Show(lblSerialPc.Text);
-
-                    MOSTRAR_CAJA_POR_SERIAL();
-                        try
-                        {
-                            txtidcaja.Text = datalistado_caja.SelectedCells[1].Value.ToString();
-                            lblcaja.Text = datalistado_caja.SelectedCells[2].Value.ToString();
-                            idcajavariable = txtidcaja.Text;
-                        MessageBox.Show("asdASDASD" + txtidcaja.Text + lblcaja.Text + idcajavariable);
-                        }
-                        catch (Exception ex)
-                        {
-                            MessageBox.Show(ex.Message);
-                        }
-                    }
+                    txtidcaja.Text = datalistado_caja.SelectedCells[1].Value.ToString();
+                    lblcaja.Text = datalistado_caja.SelectedCells[2].Value.ToString();
+                    idcajavariable = txtidcaja.Text;
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("ASD");
+                    MessageBox.Show(ex.Message);
                 }
+
+                MOSTRAR_licencia_temporal();
+
+
+                try
+                {
+                    txtfecha_final_licencia_temporal.Value = Convert.ToDateTime(CONEXION.Encryptar_en_texto.Desencriptar(datalistado_licencia_temporal.SelectedCells[3].Value.ToString()));
+                    lblSerialPcLocal.Text = (CONEXION.Encryptar_en_texto.Desencriptar(datalistado_licencia_temporal.SelectedCells[2].Value.ToString()));
+                    LBLESTADOLICENCIALLocal.Text = CONEXION.Encryptar_en_texto.Desencriptar(datalistado_licencia_temporal.SelectedCells[4].Value.ToString());
+                    txtfecha_inicio_licencia.Value = Convert.ToDateTime(CONEXION.Encryptar_en_texto.Desencriptar(datalistado_licencia_temporal.SelectedCells[5].Value.ToString()));
+
+                }
+                catch (Exception ex)
+                {
+
+                }
+
+
+                if (LBLESTADOLICENCIALLocal.Text != "VENCIDO")
+
+                {
+                    string fechaHoy = Convert.ToString(DateTime.Now);
+                    DateTime fecha_ddmmyyyy = Convert.ToDateTime(fechaHoy.Split(' ')[0]);
+
+                    if (txtfecha_final_licencia_temporal.Value >= fecha_ddmmyyyy)
+                    {
+                        if (txtfecha_inicio_licencia.Value <= fecha_ddmmyyyy)
+                        {
+                            if (LBLESTADOLICENCIALLocal.Text == "?ACTIVO?")
+                            {
+                                Ingresar_por_licencia_Temporal();
+                            }
+                            else if (LBLESTADOLICENCIALLocal.Text == "?ACTIVADO PRO?")
+                            {
+                                Ingresar_por_licencia_de_paga();
+                            }
+
+                        }
+                        else
+                        {
+                            Hide();
+                            Modulos.LICENCIAS_MENBRESIAS.Membresias frm = new Modulos.LICENCIAS_MENBRESIAS.Membresias();
+                            frm.ShowDialog();
+                            Dispose();
+                        }
+
+                    }
+                    else
+                    {
+                        Hide();
+
+                        Modulos.LICENCIAS_MENBRESIAS.Membresias frm = new Modulos.LICENCIAS_MENBRESIAS.Membresias();
+                        frm.ShowDialog();
+                        Dispose();
+                    }
+                }
+                else
+                {
+                    Hide();
+
+                    Modulos.LICENCIAS_MENBRESIAS.Membresias frm = new Modulos.LICENCIAS_MENBRESIAS.Membresias();
+                    frm.ShowDialog();
+                    Dispose();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("ASD");
+            }
+        }
+        private void Ingresar_por_licencia_Temporal()
+        {
+            lblestadoLicencia.Text = "Licencia de Prueba Activada hasta el: " + txtfecha_final_licencia_temporal.Text;
+        }
+        private void Ingresar_por_licencia_de_paga()
+        {
+            lblestadoLicencia.Text = "Licencia PROFESIONAL Activada hasta el: " + txtfecha_final_licencia_temporal.Text;
         }
 
         private void btn0_Click(object sender, EventArgs e)
@@ -711,7 +803,7 @@ namespace PuntoDeVenta.Modulos
                 if (lblAperturaCierreCaja.Text == "Nuevo*****" & lblRol.Text != "Solo Ventas (no esta autorizado para manejar dinero)")
                 {
                     this.Hide();
-                    CAJA.Apertura_de_caja frm = new CAJA.Apertura_de_caja();
+                    CAJA.APERTURA_DE_CAJA frm = new CAJA.APERTURA_DE_CAJA();
                     frm.ShowDialog();
                     this.Hide();
                 }

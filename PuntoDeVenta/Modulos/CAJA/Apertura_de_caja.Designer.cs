@@ -1,6 +1,6 @@
 ﻿namespace PuntoDeVenta.Modulos.CAJA
 {
-    partial class Apertura_de_caja
+    partial class APERTURA_DE_CAJA
     {
         /// <summary>
         /// Required designer variable.
@@ -28,51 +28,196 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Apertura_de_caja));
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.datalistado_caja = new System.Windows.Forms.DataGridView();
-            this.dataGridViewImageColumn3 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.lblSerialPc = new System.Windows.Forms.Label();
-            this.txtidcaja = new System.Windows.Forms.Label();
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(APERTURA_DE_CAJA));
+            this.Panel1 = new System.Windows.Forms.Panel();
+            this.Panel2 = new System.Windows.Forms.Panel();
+            this.Label2 = new System.Windows.Forms.Label();
+            this.Button1 = new System.Windows.Forms.Button();
+            this.txtfecha = new System.Windows.Forms.DateTimePicker();
+            this.txtip = new System.Windows.Forms.Label();
             this.txtmonto = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.btnOmitir = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btnIniciar = new System.Windows.Forms.Button();
-            this.panel1.SuspendLayout();
-            this.panel3.SuspendLayout();
+            this.MenuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.ToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.Label9 = new System.Windows.Forms.Label();
+            this.Label1 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.txtidcaja = new System.Windows.Forms.Label();
+            this.datalistado_caja = new System.Windows.Forms.DataGridView();
+            this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.lblSerialPc = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.Panel1.SuspendLayout();
+            this.Panel2.SuspendLayout();
+            this.MenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.datalistado_caja)).BeginInit();
-            this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // Panel1
             // 
-            this.panel1.AutoSize = true;
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.txtmonto);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.btnOmitir);
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.btnIniciar);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(626, 364);
-            this.panel1.TabIndex = 0;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            this.Panel1.BackColor = System.Drawing.Color.White;
+            this.Panel1.Controls.Add(this.panel4);
+            this.Panel1.Controls.Add(this.Panel2);
+            this.Panel1.Controls.Add(this.Label9);
+            this.Panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Panel1.Location = new System.Drawing.Point(0, 0);
+            this.Panel1.Name = "Panel1";
+            this.Panel1.Size = new System.Drawing.Size(938, 659);
+            this.Panel1.TabIndex = 566;
             // 
-            // panel3
+            // Panel2
             // 
-            this.panel3.Controls.Add(this.datalistado_caja);
-            this.panel3.Controls.Add(this.lblSerialPc);
-            this.panel3.Controls.Add(this.txtidcaja);
-            this.panel3.Location = new System.Drawing.Point(3, 100);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(13, 18);
-            this.panel3.TabIndex = 627;
+            this.Panel2.BackColor = System.Drawing.Color.White;
+            this.Panel2.Controls.Add(this.Label2);
+            this.Panel2.Controls.Add(this.Button1);
+            this.Panel2.Controls.Add(this.txtfecha);
+            this.Panel2.Controls.Add(this.txtip);
+            this.Panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Panel2.Location = new System.Drawing.Point(0, 0);
+            this.Panel2.Name = "Panel2";
+            this.Panel2.Size = new System.Drawing.Size(938, 99);
+            this.Panel2.TabIndex = 565;
+            // 
+            // Label2
+            // 
+            this.Label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(63)))), ((int)(((byte)(67)))));
+            this.Label2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
+            this.Label2.ForeColor = System.Drawing.Color.White;
+            this.Label2.Location = new System.Drawing.Point(0, 0);
+            this.Label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.Label2.Name = "Label2";
+            this.Label2.Size = new System.Drawing.Size(938, 99);
+            this.Label2.TabIndex = 532;
+            this.Label2.Text = "Dinero en Caja";
+            this.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Button1
+            // 
+            this.Button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(197)))), ((int)(((byte)(76)))));
+            this.Button1.FlatAppearance.BorderSize = 0;
+            this.Button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.WhiteSmoke;
+            this.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button1.ForeColor = System.Drawing.Color.White;
+            this.Button1.Location = new System.Drawing.Point(908, 3);
+            this.Button1.Name = "Button1";
+            this.Button1.Size = new System.Drawing.Size(27, 32);
+            this.Button1.TabIndex = 540;
+            this.Button1.Text = "X";
+            this.Button1.UseVisualStyleBackColor = false;
+            // 
+            // txtfecha
+            // 
+            this.txtfecha.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.txtfecha.Location = new System.Drawing.Point(137, 6);
+            this.txtfecha.Name = "txtfecha";
+            this.txtfecha.Size = new System.Drawing.Size(74, 20);
+            this.txtfecha.TabIndex = 566;
+            // 
+            // txtip
+            // 
+            this.txtip.AutoSize = true;
+            this.txtip.BackColor = System.Drawing.Color.Transparent;
+            this.txtip.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtip.ForeColor = System.Drawing.Color.White;
+            this.txtip.Location = new System.Drawing.Point(90, 38);
+            this.txtip.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.txtip.Name = "txtip";
+            this.txtip.Size = new System.Drawing.Size(90, 13);
+            this.txtip.TabIndex = 527;
+            this.txtip.Text = "tu nomvbre de pc";
+            // 
+            // txtmonto
+            // 
+            this.txtmonto.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.txtmonto.Location = new System.Drawing.Point(6, 48);
+            this.txtmonto.Name = "txtmonto";
+            this.txtmonto.Size = new System.Drawing.Size(284, 30);
+            this.txtmonto.TabIndex = 564;
+            this.txtmonto.TextChanged += new System.EventHandler(this.txtmonto_TextChanged);
+            this.txtmonto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtmonto_KeyPress);
+            // 
+            // MenuStrip1
+            // 
+            this.MenuStrip1.AutoSize = false;
+            this.MenuStrip1.BackColor = System.Drawing.Color.Transparent;
+            this.MenuStrip1.Dock = System.Windows.Forms.DockStyle.None;
+            this.MenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ToolStripMenuItem2,
+            this.ToolStripMenuItem3});
+            this.MenuStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
+            this.MenuStrip1.Location = new System.Drawing.Point(6, 81);
+            this.MenuStrip1.Name = "MenuStrip1";
+            this.MenuStrip1.ShowItemToolTips = true;
+            this.MenuStrip1.Size = new System.Drawing.Size(216, 43);
+            this.MenuStrip1.TabIndex = 562;
+            this.MenuStrip1.Text = "MenuStrip7";
+            // 
+            // ToolStripMenuItem2
+            // 
+            this.ToolStripMenuItem2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(63)))), ((int)(((byte)(67)))));
+            this.ToolStripMenuItem2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.ToolStripMenuItem2.ForeColor = System.Drawing.Color.White;
+            this.ToolStripMenuItem2.Name = "ToolStripMenuItem2";
+            this.ToolStripMenuItem2.Size = new System.Drawing.Size(70, 39);
+            this.ToolStripMenuItem2.Text = "Iniciar";
+            this.ToolStripMenuItem2.ToolTipText = "Iniciar";
+            this.ToolStripMenuItem2.Click += new System.EventHandler(this.ToolStripMenuItem2_Click);
+            // 
+            // ToolStripMenuItem3
+            // 
+            this.ToolStripMenuItem3.BackColor = System.Drawing.Color.White;
+            this.ToolStripMenuItem3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.ToolStripMenuItem3.ForeColor = System.Drawing.Color.Black;
+            this.ToolStripMenuItem3.Name = "ToolStripMenuItem3";
+            this.ToolStripMenuItem3.Size = new System.Drawing.Size(71, 39);
+            this.ToolStripMenuItem3.Text = "Omitir";
+            this.ToolStripMenuItem3.ToolTipText = "Omitir";
+            this.ToolStripMenuItem3.Click += new System.EventHandler(this.ToolStripMenuItem3_Click);
+            // 
+            // Label9
+            // 
+            this.Label9.AutoSize = true;
+            this.Label9.BackColor = System.Drawing.Color.Transparent;
+            this.Label9.ForeColor = System.Drawing.Color.Black;
+            this.Label9.Location = new System.Drawing.Point(12, 75);
+            this.Label9.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.Label9.Name = "Label9";
+            this.Label9.Size = new System.Drawing.Size(0, 13);
+            this.Label9.TabIndex = 533;
+            // 
+            // Label1
+            // 
+            this.Label1.AutoSize = true;
+            this.Label1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.Label1.ForeColor = System.Drawing.Color.Black;
+            this.Label1.Location = new System.Drawing.Point(0, 0);
+            this.Label1.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
+            this.Label1.Name = "Label1";
+            this.Label1.Size = new System.Drawing.Size(317, 31);
+            this.Label1.TabIndex = 511;
+            this.Label1.Text = "¿Efectivo inicial en Caja?";
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // txtidcaja
+            // 
+            this.txtidcaja.AutoSize = true;
+            this.txtidcaja.Location = new System.Drawing.Point(85, 33);
+            this.txtidcaja.Name = "txtidcaja";
+            this.txtidcaja.Size = new System.Drawing.Size(35, 13);
+            this.txtidcaja.TabIndex = 607;
+            this.txtidcaja.Text = "label3";
             // 
             // datalistado_caja
             // 
@@ -84,9 +229,9 @@
             this.datalistado_caja.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.datalistado_caja.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.datalistado_caja.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewImageColumn3});
+            this.dataGridViewImageColumn2});
             this.datalistado_caja.EnableHeadersVisualStyles = false;
-            this.datalistado_caja.Location = new System.Drawing.Point(19, 24);
+            this.datalistado_caja.Location = new System.Drawing.Point(3, 91);
             this.datalistado_caja.Name = "datalistado_caja";
             this.datalistado_caja.ReadOnly = true;
             this.datalistado_caja.RowHeadersVisible = false;
@@ -95,149 +240,93 @@
             this.datalistado_caja.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.datalistado_caja.RowTemplate.Height = 30;
             this.datalistado_caja.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.datalistado_caja.Size = new System.Drawing.Size(54, 33);
-            this.datalistado_caja.TabIndex = 632;
+            this.datalistado_caja.Size = new System.Drawing.Size(246, 38);
+            this.datalistado_caja.TabIndex = 620;
             // 
-            // dataGridViewImageColumn3
+            // dataGridViewImageColumn2
             // 
-            this.dataGridViewImageColumn3.HeaderText = "";
-            this.dataGridViewImageColumn3.Image = ((System.Drawing.Image)(resources.GetObject("dataGridViewImageColumn3.Image")));
-            this.dataGridViewImageColumn3.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.dataGridViewImageColumn3.Name = "dataGridViewImageColumn3";
-            this.dataGridViewImageColumn3.ReadOnly = true;
+            this.dataGridViewImageColumn2.HeaderText = "";
+            this.dataGridViewImageColumn2.Image = ((System.Drawing.Image)(resources.GetObject("dataGridViewImageColumn2.Image")));
+            this.dataGridViewImageColumn2.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
+            this.dataGridViewImageColumn2.ReadOnly = true;
             // 
             // lblSerialPc
             // 
             this.lblSerialPc.AutoSize = true;
-            this.lblSerialPc.Location = new System.Drawing.Point(3, 16);
+            this.lblSerialPc.Location = new System.Drawing.Point(85, 75);
             this.lblSerialPc.Name = "lblSerialPc";
             this.lblSerialPc.Size = new System.Drawing.Size(35, 13);
-            this.lblSerialPc.TabIndex = 626;
+            this.lblSerialPc.TabIndex = 607;
             this.lblSerialPc.Text = "label3";
             // 
-            // txtidcaja
+            // panel3
             // 
-            this.txtidcaja.AutoSize = true;
-            this.txtidcaja.Location = new System.Drawing.Point(3, -19);
-            this.txtidcaja.Name = "txtidcaja";
-            this.txtidcaja.Size = new System.Drawing.Size(35, 13);
-            this.txtidcaja.TabIndex = 625;
-            this.txtidcaja.Text = "label3";
+            this.panel3.Controls.Add(this.datalistado_caja);
+            this.panel3.Controls.Add(this.txtidcaja);
+            this.panel3.Controls.Add(this.lblSerialPc);
+            this.panel3.Location = new System.Drawing.Point(170, 15);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(10, 10);
+            this.panel3.TabIndex = 566;
             // 
-            // txtmonto
+            // panel4
             // 
-            this.txtmonto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.txtmonto.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtmonto.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.txtmonto.ForeColor = System.Drawing.Color.White;
-            this.txtmonto.Location = new System.Drawing.Point(105, 196);
-            this.txtmonto.Multiline = true;
-            this.txtmonto.Name = "txtmonto";
-            this.txtmonto.Size = new System.Drawing.Size(418, 44);
-            this.txtmonto.TabIndex = 624;
+            this.panel4.Controls.Add(this.Label1);
+            this.panel4.Controls.Add(this.panel3);
+            this.panel4.Controls.Add(this.MenuStrip1);
+            this.panel4.Controls.Add(this.txtmonto);
+            this.panel4.Location = new System.Drawing.Point(325, 172);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(337, 236);
+            this.panel4.TabIndex = 567;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(98, 141);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(425, 39);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "¿Efectivo inicial en Caja?";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnOmitir
-            // 
-            this.btnOmitir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.btnOmitir.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnOmitir.FlatAppearance.BorderSize = 0;
-            this.btnOmitir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOmitir.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Bold);
-            this.btnOmitir.ForeColor = System.Drawing.Color.White;
-            this.btnOmitir.Location = new System.Drawing.Point(394, 259);
-            this.btnOmitir.Name = "btnOmitir";
-            this.btnOmitir.Size = new System.Drawing.Size(129, 52);
-            this.btnOmitir.TabIndex = 623;
-            this.btnOmitir.Text = "Omitir";
-            this.btnOmitir.UseVisualStyleBackColor = false;
-            this.btnOmitir.Click += new System.EventHandler(this.btnOmitir_Click);
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(63)))), ((int)(((byte)(67)))));
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(626, 94);
-            this.panel2.TabIndex = 622;
-            // 
-            // label1
-            // 
-            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(626, 94);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Dinero en Caja";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnIniciar
-            // 
-            this.btnIniciar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(63)))), ((int)(((byte)(67)))));
-            this.btnIniciar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnIniciar.FlatAppearance.BorderSize = 0;
-            this.btnIniciar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnIniciar.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Bold);
-            this.btnIniciar.ForeColor = System.Drawing.Color.White;
-            this.btnIniciar.Location = new System.Drawing.Point(105, 259);
-            this.btnIniciar.Name = "btnIniciar";
-            this.btnIniciar.Size = new System.Drawing.Size(129, 52);
-            this.btnIniciar.TabIndex = 621;
-            this.btnIniciar.Text = "Iniciar";
-            this.btnIniciar.UseVisualStyleBackColor = false;
-            this.btnIniciar.Click += new System.EventHandler(this.btnIniciar_Click);
-            // 
-            // Apertura_de_caja
+            // APERTURA_DE_CAJA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(626, 364);
-            this.Controls.Add(this.panel1);
+            this.ClientSize = new System.Drawing.Size(938, 659);
+            this.Controls.Add(this.Panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Apertura_de_caja";
-            this.Text = "Apertura_de_caja";
-            this.Load += new System.EventHandler(this.Apertura_de_caja_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.Name = "APERTURA_DE_CAJA";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.APERTURA_DE_CAJA_Load);
+            this.Panel1.ResumeLayout(false);
+            this.Panel1.PerformLayout();
+            this.Panel2.ResumeLayout(false);
+            this.Panel2.PerformLayout();
+            this.MenuStrip1.ResumeLayout(false);
+            this.MenuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.datalistado_caja)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.datalistado_caja)).EndInit();
-            this.panel2.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        internal System.Windows.Forms.Button btnIniciar;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label2;
-        internal System.Windows.Forms.Button btnOmitir;
-        private System.Windows.Forms.Label label1;
+        internal System.Windows.Forms.Panel Panel1;
+        internal System.Windows.Forms.Panel Panel2;
+        internal System.Windows.Forms.Label Label2;
+        internal System.Windows.Forms.Button Button1;
+        internal System.Windows.Forms.DateTimePicker txtfecha;
+        internal System.Windows.Forms.Label txtip;
         internal System.Windows.Forms.TextBox txtmonto;
+        internal System.Windows.Forms.MenuStrip MenuStrip1;
+        internal System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem2;
+        internal System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem3;
+        internal System.Windows.Forms.Label Label9;
+        internal System.Windows.Forms.Label Label1;
+        private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label txtidcaja;
         private System.Windows.Forms.DataGridView datalistado_caja;
-        private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn3;
+        private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn2;
         private System.Windows.Forms.Label lblSerialPc;
+        private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel3;
     }
 }

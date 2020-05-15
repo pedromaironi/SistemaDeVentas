@@ -19,7 +19,7 @@ namespace PuntoDeVenta.Modulos.VENTAS_MENU_PRINCIPAL
 
         private void btnTerminarTurno_Click(object sender, EventArgs e)
         {
-            CAJA.Cierre_de_caja frm = new CAJA.Cierre_de_caja();
+            CAJA.CIERRE_DE_CAJA frm = new CAJA.CIERRE_DE_CAJA();
             frm.ShowDialog();
         }
 

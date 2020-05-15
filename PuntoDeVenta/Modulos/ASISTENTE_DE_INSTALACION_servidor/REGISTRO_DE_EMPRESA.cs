@@ -360,6 +360,8 @@ namespace PuntoDeVenta.Modulos.ASISTENTE_DE_INSTALACION_servidor
 
     private void REGISTRO_DE_EMPRESA_Load(object sender, EventArgs e)
     {
+            txtempresa.Focus();
+            txtempresa.SelectAll();
         Panel16.Location = new Point((Width - Panel16.Width) / 2, (Height - Panel16.Height) / 2);
 
         ManagementObject MOS = new ManagementObject(@"Win32_PhysicalMedia='\\.\PHYSICALDRIVE0'");
@@ -389,5 +391,10 @@ namespace PuntoDeVenta.Modulos.ASISTENTE_DE_INSTALACION_servidor
         Panel11.Visible = false;
 
     }
-}
+
+        private void txtempresa_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+    }
 }

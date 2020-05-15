@@ -2,24 +2,27 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
-using System.Management;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Management;
+using System.Data.SqlClient;
+
+using System.Globalization;
+using System.Threading;
 
 namespace PuntoDeVenta.Modulos.CAJA
 {
-    public partial class Cierre_de_caja : Form
+    public partial class CIERRE_DE_CAJA : Form
     {
-        public Cierre_de_caja()
+        public CIERRE_DE_CAJA()
         {
             InitializeComponent();
         }
 
-        private void btnIniciar_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             try
             {
@@ -31,7 +34,7 @@ namespace PuntoDeVenta.Modulos.CAJA
                 SqlCommand cmd = new SqlCommand();
                 cmd = new SqlCommand("CERRAR_CAJA", con);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@idcaja", txtidcaja.Text);
+                cmd.Parameters.AddWithValue("@idcaja", txtidcaja.Text );
                 cmd.Parameters.AddWithValue("@fechafin", txtfechacierre.Value);
                 cmd.Parameters.AddWithValue("@fechacierre", txtfechacierre.Value);
                 cmd.ExecuteNonQuery();
@@ -43,14 +46,17 @@ namespace PuntoDeVenta.Modulos.CAJA
             {
                 MessageBox.Show(ex.Message);
             }
+
         }
 
-        private void Cierre_de_caja_Load(object sender, EventArgs e)
+        private void CIERRE_DE_CAJA_Load(object sender, EventArgs e)
         {
-            ManagementObjectSearcher MOS = new ManagementObjectSearcher("Select * From Win32_BaseBoard");
-            foreach (ManagementObject getserial in MOS.Get())
-            {
-                lblSerialPc.Text = getserial.Properties["SerialNumber"].Value.ToString();
+            txtfechacierre.Enabled = false;
+            ManagementObject MOS = new ManagementObject(@"Win32_PhysicalMedia='\\.\PHYSICALDRIVE0'");
+           
+            
+                lblSerialPc.Text = MOS.Properties["SerialNumber"].Value.ToString();
+            lblSerialPc.Text = lblSerialPc.Text.Trim();
                 MOSTRAR_CAJA_POR_SERIAL();
                 try
                 {
@@ -60,7 +66,8 @@ namespace PuntoDeVenta.Modulos.CAJA
                 {
                     MessageBox.Show(ex.Message);
                 }
-            }
+            
+
         }
         private void MOSTRAR_CAJA_POR_SERIAL()
         {
@@ -85,6 +92,8 @@ namespace PuntoDeVenta.Modulos.CAJA
                 MessageBox.Show(ex.Message);
 
             }
+
+
         }
     }
 }
