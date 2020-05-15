@@ -34,8 +34,7 @@ namespace PuntoDeVenta.Modulos.LICENCIAS_MENBRESIAS
         {
             try
             {
-                System.Diagnostics.Process.Start("http://ada369.com/");
-
+                System.Diagnostics.Process.Start("http://twitter.com/_pedrodeveloper");
             }
             catch
             {
@@ -94,7 +93,7 @@ namespace PuntoDeVenta.Modulos.LICENCIAS_MENBRESIAS
                    
 
                 {
- MessageBox.Show("0");
+                    MessageBox.Show("0hola");
                     ACTIVACION_DE_LICENCIA_manual();
                     MOSTRAR_licencia_temporal();
 

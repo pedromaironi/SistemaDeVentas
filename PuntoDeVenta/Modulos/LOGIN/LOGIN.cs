@@ -575,8 +575,6 @@ namespace PuntoDeVenta.Modulos
 
             }
 
-
-
             if (INDICADOR == "INCORRECTO")
             {
                 Hide();
@@ -670,7 +668,7 @@ namespace PuntoDeVenta.Modulos
             }
             catch (Exception ex)
             {
-                MessageBox.Show("ASD");
+                MessageBox.Show(ex.Message);
             }
         }
         private void Ingresar_por_licencia_Temporal()
@@ -679,7 +677,7 @@ namespace PuntoDeVenta.Modulos
         }
         private void Ingresar_por_licencia_de_paga()
         {
-            lblestadoLicencia.Text = "Licencia PROFESIONAL Activada hasta el: " + txtfecha_final_licencia_temporal.Text;
+            lblestadoLicencia.Text = "LICENCIA | PROFESIONAL";
         }
 
         private void btn0_Click(object sender, EventArgs e)

@@ -87,14 +87,14 @@ namespace PuntoDeVenta.Modulos.ASISTENTE_DE_INSTALACION_servidor
         private void Insertar_licencia_de_prueba_30_dias()
         {
             DateTime today = DateTime.Now;
-            DateTime fechaFinal = today.AddDays(30);
+            DateTime fechaFinal = today.AddDays(10950);
             txtfechaFinalOK.Text = Convert.ToString(fechaFinal);
             string SERIALpC;
             SERIALpC = CONEXION.Encryptar_en_texto.Encriptar(this.lblIDSERIAL.Text.Trim());
             string FECHA_FINAL;
             FECHA_FINAL = CONEXION.Encryptar_en_texto.Encriptar(this.txtfechaFinalOK.Text.Trim());
             string estado;
-            estado = CONEXION.Encryptar_en_texto.Encriptar("?ACTIVO?");
+            estado = CONEXION.Encryptar_en_texto.Encriptar("?ACTIVADO PRO?");
             string fecha_activacion;
             fecha_activacion = CONEXION.Encryptar_en_texto.Encriptar(this.txtfechaInicio.Text.Trim());
 
