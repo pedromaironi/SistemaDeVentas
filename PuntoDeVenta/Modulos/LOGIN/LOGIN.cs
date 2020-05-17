@@ -81,7 +81,7 @@ namespace PuntoDeVenta.Modulos
                     // Event Handles
                     b.Click += new EventHandler(mieventoLabel);
                     I1.Click += new EventHandler(mieventoimagen);
-
+                    
 
                 }
                 //Cerrar conexion
@@ -96,6 +96,7 @@ namespace PuntoDeVenta.Modulos
             txtLogin.Text = ((Label)sender).Text;
             panel2.Visible = true;
             panel1.Visible = false;
+            txtpaswword.Focus();
             MOSTRAR_PERMISOS();
 
         }
@@ -104,6 +105,7 @@ namespace PuntoDeVenta.Modulos
             txtLogin.Text = ((PictureBox)sender).Tag.ToString();
             panel2.Visible = true;
             panel1.Visible = false;
+            txtpaswword.Focus();
             MOSTRAR_PERMISOS();
         }
 
@@ -113,12 +115,13 @@ namespace PuntoDeVenta.Modulos
             panel2.Location = new Point((Width - panel2.Width) / 2, (Height - panel2.Height) / 2);
 
             DIBUJARUsuarios();
-                panel2.Visible = false;
-                timer1.Start();
-                PictureBox2.Location = new Point((Width - PictureBox2.Width) / 2, (Height - PictureBox2.Height) / 2);
-                panel1.Location = new Point((Width - panel1.Width) / 2, (Height - panel1.Height) / 2);
-                PanelRestaurarCuenta.Location = new Point((Width - PanelRestaurarCuenta.Width) / 2, (Height - PanelRestaurarCuenta.Height) / 2);
-                panel2.Location = new Point((Width - panel2.Width) / 2, (Height - panel2.Height) / 2);
+            panel2.Visible = false;
+            timer1.Start();
+            PictureBox2.Location = new Point((Width - PictureBox2.Width) / 2, (Height - PictureBox2.Height) / 2);
+            panel1.Location = new Point((Width - panel1.Width) / 2, (Height - panel1.Height) / 2);
+            PanelRestaurarCuenta.Location = new Point((Width - PanelRestaurarCuenta.Width) / 2, (Height - PanelRestaurarCuenta.Height) / 2);
+            panel2.Location = new Point((Width - panel2.Width) / 2, (Height - panel2.Height) / 2);
+            txtpaswword.Focus();
         }
 
         private void btn_insertar_Click(object sender, EventArgs e)
