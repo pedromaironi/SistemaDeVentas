@@ -64,7 +64,7 @@ namespace PuntoDeVenta.Modulos.CAJA
                     {
 
                     }
-                    LABELusuario.Text = "Por " + rdr["Nombres_y_Apellidos"].ToString();
+                    LABELusuario.Text = "Por " + rdr["Nombre_y_Apellido"].ToString();
                     LABELusuario.Dock = DockStyle.Bottom;
                     LABELusuario.AutoSize = false;
                     LABELusuario.TextAlign = ContentAlignment.MiddleCenter;
@@ -112,16 +112,16 @@ namespace PuntoDeVenta.Modulos.CAJA
 
                     if (L2.Text =="RECIEN CREADA")
                     {
-                      I1.BackgroundImage = Properties.Resources.Caja_recien_creada;
+                        I1.BackgroundImage = Properties.Resources.Caja_recien_creada;
                     }
                     else if (L2.Text == "Caja Restaurada")
                     {
-                    I1.BackgroundImage = Properties.Resources.Caja_recien_creada;
+                        I1.BackgroundImage = Properties.Resources.Caja_recien_creada;
 
                     }
                     else if (L2.Text =="Caja Aperturada")
                     {
-                      I1.BackgroundImage = Properties.Resources.Caja_activa;
+                        I1.BackgroundImage = Properties.Resources.Caja_activa;
 
                     }
                     else if (L2.Text =="Caja cerrada")
@@ -220,7 +220,7 @@ namespace PuntoDeVenta.Modulos.CAJA
                     {
 
                     }
-                    LABELusuario.Text = "Por " + rdr["Nombres_y_Apellidos"].ToString();
+                    LABELusuario.Text = "Por " + rdr["Nombre_y_Apellido"].ToString();
                     LABELusuario.Dock = DockStyle.Bottom;
                     LABELusuario.AutoSize = false;
                     LABELusuario.TextAlign = ContentAlignment.MiddleCenter;
@@ -259,7 +259,7 @@ namespace PuntoDeVenta.Modulos.CAJA
                     ToolStripMenuItem ToolStripRESTAURAR = new ToolStripMenuItem();
 
 
-                ToolStripPRINCIPAL.Image = Properties.Resources.menuCajas_claro;
+                    ToolStripPRINCIPAL.Image = Properties.Resources.menuCajas_claro;
                     ToolStripPRINCIPAL.BackColor = Color.Transparent;
                     ToolStripEDITAR.Text = "Editar";
                     ToolStripEDITAR.Name = rdr["Descripcion"].ToString();
@@ -280,17 +280,17 @@ namespace PuntoDeVenta.Modulos.CAJA
                     }
                     else if (L2.Text == "Caja Restaurada")
                     {
-                     I1.BackgroundImage = Properties.Resources.Caja_recien_creada;
+                        I1.BackgroundImage = Properties.Resources.Caja_recien_creada;
 
                     }
                     else if (L2.Text == "Caja Aperturada")
                     {
-                     I1.BackgroundImage = Properties.Resources.Caja_activa;
+                        I1.BackgroundImage = Properties.Resources.Caja_activa;
 
                     }
                     else if (L2.Text == "Caja cerrada")
                     {
-                      I1.BackgroundImage = Properties.Resources.caja_eliminada;
+                        I1.BackgroundImage = Properties.Resources.caja_eliminada;
                     }
                     else if (L2.Text == "Caja Eliminada")
                     {

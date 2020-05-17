@@ -67,6 +67,7 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel18.SuspendLayout();
             this.panelEdicion_de_caja.SuspendLayout();
@@ -80,6 +81,8 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.panel18);
             this.panel1.Controls.Add(this.panel9);
             this.panel1.Controls.Add(this.panel2);
@@ -100,7 +103,7 @@
             // panel18
             // 
             this.panel18.Controls.Add(this.panelEdicion_de_caja);
-            this.panel18.Location = new System.Drawing.Point(12, 16);
+            this.panel18.Location = new System.Drawing.Point(3, 150);
             this.panel18.Name = "panel18";
             this.panel18.Size = new System.Drawing.Size(356, 401);
             this.panel18.TabIndex = 8;
@@ -418,7 +421,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 32F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(3, 321);
+            this.label3.Location = new System.Drawing.Point(-6, 455);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(357, 51);
             this.label3.TabIndex = 1;
@@ -459,11 +462,24 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Caja Principal {";
             // 
+            // button3
+            // 
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.DimGray;
+            this.button3.Location = new System.Drawing.Point(3, 3);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(238, 49);
+            this.button3.TabIndex = 9;
+            this.button3.Text = "Volver";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
             // Cajas_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1483, 742);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -529,5 +545,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ToolStripMenuItem eliminarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem restaurarToolStripMenuItem;
+        private System.Windows.Forms.Button button3;
     }
 }
