@@ -323,7 +323,7 @@ namespace PuntoDeVenta.Modulos.ASISTENTE_DE_INSTALACION_servidor
         if (FolderBrowserDialog1.ShowDialog() == DialogResult.OK)
         {
             string ruta = txtRuta.Text;
-            if (ruta.Contains(@"C:\"))
+            if (ruta.Contains(@"F:\"))
             {
                 MessageBox.Show("Selecciona un Disco Diferente al Disco C:", "Ruta Invalida", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 txtRuta.Text = "";
@@ -344,9 +344,9 @@ namespace PuntoDeVenta.Modulos.ASISTENTE_DE_INSTALACION_servidor
         {
             txtRuta.Text = FolderBrowserDialog1.SelectedPath;
             string ruta = txtRuta.Text;
-            if (ruta.Contains(@"C:\"))
+            if (ruta.Contains(@"F:\"))
             {
-                MessageBox.Show("Selecciona un Disco Diferente al Disco C:", "Ruta Invalida", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Selecciona un Disco Diferente al Disco F:", "Ruta Invalida", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 txtRuta.Text = "";
             }
             else

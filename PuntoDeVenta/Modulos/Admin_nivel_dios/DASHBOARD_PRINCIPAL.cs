@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Management;
+using System.Globalization;
+
 namespace PuntoDeVenta.Modulos.Admin_nivel_dios
 {
     public partial class DASHBOARD_PRINCIPAL : Form
@@ -274,10 +276,21 @@ namespace PuntoDeVenta.Modulos.Admin_nivel_dios
 
         private void DASHBOARD_PRINCIPAL_Load(object sender, EventArgs e)
         {
+
             ManagementObject MOS = new ManagementObject(@"Win32_PhysicalMedia='\\.\PHYSICALDRIVE0'");
 
             lblIDSERIAL.Text = MOS.Properties["SerialNumber"].Value.ToString();
             lblIDSERIAL.Text = lblIDSERIAL.Text.Trim();
+
+            //Fecha
+            String sDate = DateTime.Now.ToString();
+            DateTime datevalue = (Convert.ToDateTime(sDate.ToString()));
+
+            int Month = datevalue.Month;
+            DateTimeFormatInfo formatoFecha = CultureInfo.CurrentCulture.DateTimeFormat;
+            string nombreMes = formatoFecha.GetMonthName(Month);
+            lblfechaHoy.Text = nombreMes.ToUpper();
+
         }
         int contadorCajas;
 
@@ -324,7 +337,7 @@ namespace PuntoDeVenta.Modulos.Admin_nivel_dios
         private void ToolStripMenuItem23_Click(object sender, EventArgs e)
         {
             Dispose();
-            CONFIGURACION.PANEL_CONFIGURACIONES frm = new CONFIGURACION.PANEL_CONFIGURACIONES();
+            Modulos.CONFIGURACION.PANEL_CONFIGURACIONES frm = new Modulos.CONFIGURACION.PANEL_CONFIGURACIONES();
             frm.ShowDialog();
         }
 

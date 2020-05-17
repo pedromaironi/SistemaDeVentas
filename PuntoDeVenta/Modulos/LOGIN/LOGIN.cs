@@ -109,7 +109,10 @@ namespace PuntoDeVenta.Modulos
 
         private void LOGIN_Load(object sender, EventArgs e)
         {
-                DIBUJARUsuarios();
+            panel1.Location = new Point((Width - panel1.Width) / 2, (Height - panel1.Height) / 2);
+            panel2.Location = new Point((Width - panel2.Width) / 2, (Height - panel2.Height) / 2);
+
+            DIBUJARUsuarios();
                 panel2.Visible = false;
                 timer1.Start();
                 PictureBox2.Location = new Point((Width - PictureBox2.Width) / 2, (Height - PictureBox2.Height) / 2);

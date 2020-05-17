@@ -6,6 +6,7 @@ using System.Data.SqlClient;
 using System.Drawing;
 using System.Globalization;
 using System.Linq;
+using System.Management;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -21,6 +22,8 @@ namespace PuntoDeVenta.Modulos.PRODUCTOS
         {
             InitializeComponent();
             agranel.Visible = false;
+            txtPorcentajeGanancia.Enabled = false;
+            txtcodigodebarras.Enabled = false;
         }
 
         private void TXTPRECIODEVENTA2_TextChanged(object sender, EventArgs e)
@@ -30,48 +33,94 @@ namespace PuntoDeVenta.Modulos.PRODUCTOS
         
         private void TGUARDARCAMBIOS_Click(object sender, EventArgs e)
         {
-            if(txtdescripcion.Equals(""))
-            {
-                MessageBox.Show("hola");
-            }
-            double txtpreciomayoreoV = Convert.ToDouble(txtpreciomayoreo.Text);
 
-            double txtapartirdeV = Convert.ToDouble(txtapartirde.Text);
-            double txtcostoV = Convert.ToDouble(txtcosto.Text);
-            double TXTPRECIODEVENTA2V = Convert.ToDouble(TXTPRECIODEVENTA2.Text);
-            if (txtpreciomayoreo.Text == "") txtpreciomayoreo.Text = "0";
-            if (txtapartirde.Text == "") txtapartirde.Text = "0";
-            //TXTPRECIODEVENTA2.Text = TXTPRECIODEVENTA2.Text.Replace(lblmoneda.Text + " ", "");
-            //TXTPRECIODEVENTA2.Text = System.String.Format(((decimal)TXTPRECIODEVENTA2.Text), "##0.00");
-            if ((txtpreciomayoreoV > 0 & Convert.ToDouble(txtapartirde.Text) > 0) | (txtpreciomayoreoV == 0 & txtapartirdeV == 0))
+            if (txtdescripcion.Text != "")
             {
-                if (txtcostoV >= TXTPRECIODEVENTA2V)
+                if(txtcosto.Text != "")
                 {
-
-                    DialogResult result;
-                    result = MessageBox.Show("El precio de Venta es menor que el COSTO, Esto Te puede Generar Perdidas", "Producto con Perdidas", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
-
-                    if (result == DialogResult.OK)
+                    if(TXTPRECIODEVENTA2.Text != "")
                     {
-                        editar_productos();
+                        if(txtgrupo.Text != "")
+                        {
+                            if (txtcodigodebarras.Text != "")
+                            {
+                                if(txtpreciomayoreo.Text != "")
+                                {
+                                    if(txtapartirde.Text != "")
+                                    {
+                                        double txtpreciomayoreoV = Convert.ToDouble(txtpreciomayoreo.Text);
+
+                                        double txtapartirdeV = Convert.ToDouble(txtapartirde.Text);
+                                        double txtcostoV = Convert.ToDouble(txtcosto.Text);
+                                        double TXTPRECIODEVENTA2V = Convert.ToDouble(TXTPRECIODEVENTA2.Text);
+                                        //if (txtpreciomayoreo.Text == "") txtpreciomayoreo.Text = "0";
+                                        //if (txtapartirde.Text == "") txtapartirde.Text = "0";
+                                        if ((txtpreciomayoreoV > 0 & Convert.ToDouble(txtapartirde.Text) > 0) | (txtpreciomayoreoV == 0 & txtapartirdeV == 0))
+                                        {
+                                            if (txtcostoV >= TXTPRECIODEVENTA2V)
+                                            {
+
+                                                DialogResult result;
+                                                result = MessageBox.Show("El precio de Venta es menor que el COSTO, Esto te pueden generar Perdidas", "Producto con Perdidas", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+
+                                                if (result == DialogResult.OK)
+                                                {
+                                                    TXTPRECIODEVENTA2.Focus();
+                                                }
+                                                /* else
+                                                 {
+                                                     TXTPRECIODEVENTA2.Focus();
+                                                 }*/
+
+
+                                            }
+                                            else if (txtcostoV < TXTPRECIODEVENTA2V)
+                                            {
+                                                editar_productos();
+                                            }
+                                        }
+                                        else if (txtpreciomayoreoV != 0 | txtapartirdeV != 0)
+                                        {
+                                            MessageBox.Show("Estas configurando Precio mayoreo, debes completar los campos de Precio mayoreo y A partir de, si no deseas configurarlo dejalos en blanco", "Datos incompletos", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+                                        }
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Favor rellenar todos los campos correctamente", "Datos incompletos", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                    }
+                                }
+                                else
+                                {
+                                    MessageBox.Show("Favor rellenar todos los campos correctamente", "Datos incompletos", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                }
+                            }
+                            else
+                            {
+                                MessageBox.Show("Favor rellenar todos los campos correctamente", "Datos incompletos", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            }
+                        }
+                        else
+                        {
+                            MessageBox.Show("Favor rellenar todos los campos correctamente", "Datos incompletos", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        }
                     }
                     else
                     {
-                        TXTPRECIODEVENTA2.Focus();
+                        MessageBox.Show("Favor rellenar todos los campos correctamente", "Datos incompletos", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
-
-
                 }
-                else if (txtcostoV < TXTPRECIODEVENTA2V)
+                else
                 {
-                    editar_productos();
+                    MessageBox.Show("Favor rellenar todos los campos correctamente", "Datos incompletos", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
-            }
-            else if (txtpreciomayoreoV != 0 | txtapartirdeV != 0)
+            } else
             {
-                MessageBox.Show("Estas configurando Precio mayoreo, debes completar los campos de Precio mayoreo y A partir de, si no deseas configurarlo dejalos en blanco", "Datos incompletos", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
-
+                MessageBox.Show("Favor rellenar todos los campos correctamente", "Datos incompletos", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+            txtbusca.Enabled = true;
+            PictureBox2.Enabled = true;
+            txtbusca.SelectAll();
+            txtbusca.Focus();
         }
     
 
@@ -103,6 +152,7 @@ namespace PuntoDeVenta.Modulos.PRODUCTOS
             Panel22.Visible = false;
             Panel18.Visible = false;
             TXTIDPRODUCTOOk.Text = "0";
+            txtPorcentajeGanancia.Clear();
 
             PANELINVENTARIO.Visible = true;
 
@@ -127,9 +177,36 @@ namespace PuntoDeVenta.Modulos.PRODUCTOS
             TGUARDAR.Visible = true;
             TGUARDARCAMBIOS.Visible = false;
 
-
+            txtbusca.Enabled = false;
+            PictureBox2.Enabled = false;
+            txtbusca.SelectAll();
+            txtbusca.Focus();
 
         }
+        int idusuario;
+        int idcaja;
+
+        private void mostrar_inicio_de_sesion()
+        {
+            SqlConnection con = new SqlConnection();
+            con.ConnectionString = CONEXION.CONEXIONMAESTRA.CONEXION;
+
+            SqlCommand com = new SqlCommand("mostrar_inicio_De_sesion", con);
+            com.CommandType = CommandType.StoredProcedure;
+            com.Parameters.AddWithValue("@id_serial_pc", CONEXION.Encryptar_en_texto.Encriptar(lblSerialPc.Text));
+
+            try
+            {
+                con.Open();
+                idusuario = Convert.ToInt32(com.ExecuteScalar());
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
+
         internal void LIMPIAR()
         {
             txtidproducto.Text = "";
@@ -147,6 +224,7 @@ namespace PuntoDeVenta.Modulos.PRODUCTOS
 
         private void PRODUCTOSOK_Load(object sender, EventArgs e)
         {
+            maskedTextBox1.Visible = false;
 
             System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("es-CO");
             System.Threading.Thread.CurrentThread.CurrentCulture.NumberFormat.CurrencyDecimalSeparator = ".";
@@ -155,11 +233,39 @@ namespace PuntoDeVenta.Modulos.PRODUCTOS
             System.Threading.Thread.CurrentThread.CurrentCulture.NumberFormat.NumberGroupSeparator = ",";
 
             PANELDEPARTAMENTO.Visible = false;
-            //txtbusca.Text = "Buscar...";
+            txtbusca.Text = "Buscar...";
             sumar_costo_de_inventario_CONTAR_PRODUCTOS();
             buscar();
-        }
+            mostrar_grupos();
 
+            ManagementObject MOS = new ManagementObject(@"Win32_PhysicalMedia='\\.\PHYSICALDRIVE0'");
+            lblSerialPc.Text = MOS.Properties["SerialNumber"].Value.ToString();
+            lblSerialPc.Text = lblSerialPc.Text.Trim();
+
+            mostrar_inicio_de_sesion();
+            MOSTRAR_CAJA_POR_SERIAL();
+            
+
+        }
+        private void MOSTRAR_CAJA_POR_SERIAL()
+        {
+            SqlConnection con = new SqlConnection();
+            con.ConnectionString = CONEXION.CONEXIONMAESTRA.CONEXION;
+
+            SqlCommand com = new SqlCommand("mostrar_cajas_por_Serial_de_DisoDuro", con);
+            com.CommandType = CommandType.StoredProcedure;
+            com.Parameters.AddWithValue("@Serial", lblSerialPc.Text);
+            try
+            {
+                con.Open();
+                idcaja = Convert.ToInt32(com.ExecuteScalar());
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
         private void mostrar_grupos()
         {
             PanelGRUPOSSELECT.Visible = true;
@@ -193,33 +299,41 @@ namespace PuntoDeVenta.Modulos.PRODUCTOS
 
         private void btnGuardar_grupo_Click(object sender, EventArgs e)
         {
-            try
+            if (txtgrupo.Text != "" || txtgrupo.Text != "Escribe el Nuevo GRUPO")
             {
-                SqlConnection con = new SqlConnection();
-                con.ConnectionString = CONEXION.CONEXIONMAESTRA.CONEXION;
-                con.Open();
-                SqlCommand cmd = new SqlCommand();
-                cmd = new SqlCommand("insertar_Grupo", con);
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@Grupo", txtgrupo.Text);
-                cmd.Parameters.AddWithValue("@Por_defecto", "NO");
-                cmd.ExecuteNonQuery();
-                con.Close();
-                mostrar_grupos();
+                try
+                {
+                    SqlConnection con = new SqlConnection();
+                    con.ConnectionString = CONEXION.CONEXIONMAESTRA.CONEXION;
+                    con.Open();
+                    SqlCommand cmd = new SqlCommand();
+                    cmd = new SqlCommand("insertar_Grupo", con);
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("@Grupo", txtgrupo.Text);
+                    cmd.Parameters.AddWithValue("@Por_defecto", "NO");
+                    cmd.ExecuteNonQuery();
+                    con.Close();
+                    mostrar_grupos();
 
-                lblIdGrupo.Text = datalistadoGrupos.SelectedCells[2].Value.ToString();
-                txtgrupo.Text = datalistadoGrupos.SelectedCells[3].Value.ToString();
+                    lblIdGrupo.Text = datalistadoGrupos.SelectedCells[2].Value.ToString();
+                    txtgrupo.Text = datalistadoGrupos.SelectedCells[3].Value.ToString();
 
-                PanelGRUPOSSELECT.Visible = false;
-                btnGuardar_grupo.Visible = false;
-                BtnGuardarCambios.Visible = false;
-                BtnCancelar.Visible = false;
-                btnNuevoGrupo.Visible = true;
+                    PanelGRUPOSSELECT.Visible = false;
+                    btnGuardar_grupo.Visible = false;
+                    BtnGuardarCambios.Visible = false;
+                    BtnCancelar.Visible = false;
+                    btnNuevoGrupo.Visible = true;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
             }
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("Favor digitar el campo del grupo correctamente", "Grupos", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+            
         }
         private void btnNuevoGrupo_Click(object sender, EventArgs e)
         {
@@ -252,44 +366,94 @@ namespace PuntoDeVenta.Modulos.PRODUCTOS
         }
         private void TGUARDAR_Click(object sender, EventArgs e)
         {
-            double txtpreciomayoreoV = Convert.ToDouble(txtpreciomayoreo.Text);
 
-            double txtapartirdeV = Convert.ToDouble(txtapartirde.Text);
-            double txtcostoV = Convert.ToDouble(txtcosto.Text);
-            double TXTPRECIODEVENTA2V = Convert.ToDouble(TXTPRECIODEVENTA2.Text);
-            if (txtpreciomayoreo.Text == "") txtpreciomayoreo.Text = "0";
-            if (txtapartirde.Text == "") txtapartirde.Text = "0";
-            //TXTPRECIODEVENTA2.Text = TXTPRECIODEVENTA2.Text.Replace(lblmoneda.Text + " ", "");
-            //TXTPRECIODEVENTA2.Text = System.String.Format(((decimal)TXTPRECIODEVENTA2.Text), "##0.00");
-            if ((txtpreciomayoreoV > 0 & Convert.ToDouble(txtapartirde.Text) > 0) | (txtpreciomayoreoV == 0 & txtapartirdeV == 0))
+            if (txtdescripcion.Text != "")
             {
-                if (txtcostoV >= TXTPRECIODEVENTA2V)
+                if (txtcosto.Text != "")
                 {
-
-                    DialogResult result;
-                    result = MessageBox.Show("El precio de Venta es menor que el COSTO, Esto Te puede Generar Perdidas", "Producto con Perdidas", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
-
-                    if (result == DialogResult.OK)
+                    if (TXTPRECIODEVENTA2.Text != "")
                     {
-                        insertar_productos();
+                        if (txtgrupo.Text != "")
+                        {
+                            if (txtcodigodebarras.Text != "")
+                            {
+                                if (txtpreciomayoreo.Text != "")
+                                {
+                                    if (txtapartirde.Text != "")
+                                    {
+                                        double txtpreciomayoreoV = Convert.ToDouble(txtpreciomayoreo.Text);
+
+                                        double txtapartirdeV = Convert.ToDouble(txtapartirde.Text);
+                                        double txtcostoV = Convert.ToDouble(txtcosto.Text);
+                                        double TXTPRECIODEVENTA2V = Convert.ToDouble(TXTPRECIODEVENTA2.Text);
+                                        if ((txtpreciomayoreoV > 0 & Convert.ToDouble(txtapartirde.Text) > 0) | (txtpreciomayoreoV == 0 & txtapartirdeV == 0))
+                                        {
+                                            if (txtcostoV > TXTPRECIODEVENTA2V)
+                                            {
+
+                                                DialogResult result;
+                                                result = MessageBox.Show("El precio de Venta es menor que el COSTO, Esto Te puede Generar Perdidas", "Producto con Perdidas", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+
+                                                if (result == DialogResult.OK)
+                                                {
+                                                    insertar_productos();
+                                                }
+                                                else
+                                                {
+                                                    TXTPRECIODEVENTA2.Focus();
+                                                }
+
+
+                                            }
+                                            else if (txtcostoV < TXTPRECIODEVENTA2V)
+                                            {
+                                                insertar_productos();
+                                            }
+                                        }
+                                        else if (txtpreciomayoreoV != 0 | txtapartirdeV != 0)
+                                        {
+                                            MessageBox.Show("Estas configurando Precio mayoreo, debes completar los campos de Precio mayoreo y A partir de, si no deseas configurarlo dejalos en blanco", "Datos incompletos", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+
+                                        }
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Favor rellenar todos los campos correctamente", "Datos incompletos", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                    }
+                                }
+                                else
+                                {
+                                    MessageBox.Show("Favor rellenar todos los campos correctamente", "Datos incompletos", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                }
+                            }
+                            else
+                            {
+                                MessageBox.Show("Favor rellenar todos los campos correctamente", "Datos incompletos", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            }
+                        }
+                        else
+                        {
+                            MessageBox.Show("Favor rellenar todos los campos correctamente", "Datos incompletos", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        }
                     }
                     else
                     {
-                        TXTPRECIODEVENTA2.Focus();
+                        MessageBox.Show("Favor rellenar todos los campos correctamente", "Datos incompletos", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
-
-
                 }
-                else if (txtcostoV < TXTPRECIODEVENTA2V)
+                else
                 {
-                    insertar_productos();
+                    MessageBox.Show("Favor rellenar todos los campos correctamente", "Datos incompletos", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
-            else if (txtpreciomayoreoV != 0 | txtapartirdeV != 0)
+            else
             {
-                MessageBox.Show("Estas configurando Precio mayoreo, debes completar los campos de Precio mayoreo y A partir de, si no deseas configurarlo dejalos en blanco", "Datos incompletos", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
-
+                MessageBox.Show("Favor rellenar todos los campos correctamente", "Datos incompletos", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+            txtbusca.Enabled = true;
+            PictureBox2.Enabled = true;
+            txtbusca.SelectAll();
+            txtbusca.Focus();
         }
         private void insertar_productos()
         {
@@ -340,15 +504,14 @@ namespace PuntoDeVenta.Modulos.PRODUCTOS
                     cmd.Parameters.AddWithValue("@Stock_minimo", 0);
                     cmd.Parameters.AddWithValue("@Fecha_de_vencimiento", "NO APLICA");
                     cmd.Parameters.AddWithValue("@Stock", "Ilimitado");
-
                 }
                 cmd.Parameters.AddWithValue("@Fecha", DateTime.Today);
                 cmd.Parameters.AddWithValue("@Motivo", "Registro inicial de Producto");
                 cmd.Parameters.AddWithValue("@Cantidad ", txtstock2.Text);
-                cmd.Parameters.AddWithValue("@Id_usuario", Modulos.LOGIN.idusuariovariable);
+                cmd.Parameters.AddWithValue("@Id_usuario", idusuario);
                 cmd.Parameters.AddWithValue("@Tipo", "ENTRADA");
                 cmd.Parameters.AddWithValue("@Estado", "CONFIRMADO");
-                cmd.Parameters.AddWithValue("@Id_caja", Modulos.LOGIN.idcajavariable);
+                cmd.Parameters.AddWithValue("@Id_caja", idcaja);
 
                 cmd.ExecuteNonQuery();
 
@@ -458,7 +621,7 @@ namespace PuntoDeVenta.Modulos.PRODUCTOS
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.Message + "hhh");
 
             }
 
@@ -547,7 +710,7 @@ namespace PuntoDeVenta.Modulos.PRODUCTOS
             {
                 if (CheckInventarios.Checked == false)
                 {
-                    MessageBox.Show("Hay Aun En Stock, Dirijete al Modulo Inventarios para Ajustar el Inventario a cero", "Stock Existente", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+                    MessageBox.Show("Existen articulos en inventario, Dirigete al Modulo Inventarios para Ajustar el Inventario a cero", "Stock Existente", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
                     PANELINVENTARIO.Visible = true;
                     CheckInventarios.Checked = true;
                 }
@@ -618,6 +781,7 @@ namespace PuntoDeVenta.Modulos.PRODUCTOS
                                     cmd.CommandType = CommandType.StoredProcedure;
 
                                     cmd.Parameters.AddWithValue("@id", onekey);
+                                    //cmd.Parameters.AddWithValue("@Por_defecto", )
                                     cmd.ExecuteNonQuery();
 
                                     con.Close();
@@ -848,48 +1012,7 @@ namespace PuntoDeVenta.Modulos.PRODUCTOS
         {
             buscar();
         }
-
-        private void TGUARDARCAMBIOS_Click_1(object sender, EventArgs e)
-        {
-            double txtpreciomayoreoV = Convert.ToDouble(txtpreciomayoreo.Text);
-
-            double txtapartirdeV = Convert.ToDouble(txtapartirde.Text);
-            double txtcostoV = Convert.ToDouble(txtcosto.Text);
-            double TXTPRECIODEVENTA2V = Convert.ToDouble(TXTPRECIODEVENTA2.Text);
-            if (txtpreciomayoreo.Text == "") txtpreciomayoreo.Text = "0";
-            if (txtapartirde.Text == "") txtapartirde.Text = "0";
-            //TXTPRECIODEVENTA2.Text = TXTPRECIODEVENTA2.Text.Replace(lblmoneda.Text + " ", "");
-            //TXTPRECIODEVENTA2.Text = System.String.Format(((decimal)TXTPRECIODEVENTA2.Text), "##0.00");
-            if ((txtpreciomayoreoV > 0 & Convert.ToDouble(txtapartirde.Text) > 0) | (txtpreciomayoreoV == 0 & txtapartirdeV == 0))
-            {
-                if (txtcostoV >= TXTPRECIODEVENTA2V)
-                {
-
-                    DialogResult result;
-                    result = MessageBox.Show("El precio de Venta es menor que el COSTO, Esto Te puede Generar Perdidas", "Producto con Perdidas", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
-
-                    if (result == DialogResult.OK)
-                    {
-                        editar_productos();
-                    }
-                    else
-                    {
-                        TXTPRECIODEVENTA2.Focus();
-                    }
-
-
-                }
-                else if (txtcostoV < TXTPRECIODEVENTA2V)
-                {
-                    editar_productos();
-                }
-            }
-            else if (txtpreciomayoreoV != 0 | txtapartirdeV != 0)
-            {
-                MessageBox.Show("Estas configurando Precio mayoreo, debes completar los campos de Precio mayoreo y A partir de, si no deseas configurarlo dejalos en blanco", "Datos incompletos", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
-
-            }
-        }
+        
 
         private void datalistado_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -1113,12 +1236,23 @@ namespace PuntoDeVenta.Modulos.PRODUCTOS
 
         private void btnGenerarCodigo_Click(object sender, EventArgs e)
         {
-            GENERAR_CODIGO_DE_BARRAS_AUTOMATICO();
+            if(txtcodigodebarras.Text != "" || txtcodigodebarras.Text == "0")
+            {
+                GENERAR_CODIGO_DE_BARRAS_AUTOMATICO();
+            }
+            else
+            {
+                MessageBox.Show("No existe un grupo para generar dicho Codigo de Barras", "Codigo de Barras", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            
         }
 
         private void Button2_Click(object sender, EventArgs e)
         {
             PANELDEPARTAMENTO.Visible = false;
+            txtbusca.Enabled = true;
+            PictureBox2.Enabled = true;
+
         }
 
         private void Panel25_Paint(object sender, PaintEventArgs e)
@@ -1219,6 +1353,11 @@ namespace PuntoDeVenta.Modulos.PRODUCTOS
             {
 
             }
+        }
+
+        private void DATALISTADO_PRODUCTOS_OKA_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

@@ -110,6 +110,12 @@
     <Compile Include="Modulos\CAJA\Apertura_de_caja.Designer.cs">
       <DependentUpon>Apertura_de_caja.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modulos\CAJA\Cajas_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\CAJA\Cajas_form.Designer.cs">
+      <DependentUpon>Cajas_form.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modulos\CAJA\Cierre_de_caja.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,6 +127,12 @@
     </Compile>
     <Compile Include="Modulos\CONFIGURACION\PANEL_CONFIGURACIONES.Designer.cs">
       <DependentUpon>PANEL_CONFIGURACIONES.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\EMPRESA_CONFIGURACION\EMPRESA_CONFIG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\EMPRESA_CONFIGURACION\EMPRESA_CONFIG.Designer.cs">
+      <DependentUpon>EMPRESA_CONFIG.cs</DependentUpon>
     </Compile>
     <Compile Include="Modulos\INVENTARIO_KARDEX\INVENTARIO_MENU.cs">
       <SubType>Form</SubType>
@@ -139,6 +151,12 @@
     </Compile>
     <Compile Include="Modulos\LOGIN\LOGIN.Designer.cs">
       <DependentUpon>LOGIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\MASCARAS\MASCARA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\MASCARAS\MASCARA.Designer.cs">
+      <DependentUpon>MASCARA.cs</DependentUpon>
     </Compile>
     <Compile Include="Modulos\PANEL_DE_ADMINISTRACION_DEL_SOFTWARE\CONEXION_MANUAL.cs">
       <SubType>Form</SubType>
@@ -226,8 +244,17 @@
     <EmbeddedResource Include="Modulos\CAJA\Apertura_de_caja.resx">
       <DependentUpon>Apertura_de_caja.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\CAJA\Cajas_form.resx">
+      <DependentUpon>Cajas_form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Modulos\CAJA\Cierre_de_caja.resx">
       <DependentUpon>Cierre_de_caja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\CONFIGURACION\PANEL_CONFIGURACIONES.resx">
+      <DependentUpon>PANEL_CONFIGURACIONES.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\EMPRESA_CONFIGURACION\EMPRESA_CONFIG.resx">
+      <DependentUpon>EMPRESA_CONFIG.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modulos\INVENTARIO_KARDEX\INVENTARIO_MENU.resx">
       <DependentUpon>INVENTARIO_MENU.cs</DependentUpon>
@@ -237,6 +264,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Modulos\LOGIN\LOGIN.resx">
       <DependentUpon>LOGIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\MASCARAS\MASCARA.resx">
+      <DependentUpon>MASCARA.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modulos\PANEL_DE_ADMINISTRACION_DEL_SOFTWARE\CONEXION_MANUAL.resx">
       <DependentUpon>CONEXION_MANUAL.cs</DependentUpon>
@@ -280,6 +310,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -304,6 +335,16 @@
   <ItemGroup>
     <Content Include=".gitignore" />
     <Content Include="Modulos\LOGIN\OlvidasteTuClave.html" />
+    <Content Include="Modulos\Resources\Caja_activa.png" />
+    <Content Include="Modulos\Resources\caja_eliminada.png" />
+    <Content Include="Modulos\Resources\Caja_eliminada_oficial.png" />
+    <Content Include="Modulos\Resources\Caja_recien_creada.png" />
+    <Content Include="Modulos\Resources\menuCajas_claro.png" />
+    <Content Include="Properties\Caja_activa.png" />
+    <Content Include="Properties\caja_eliminada.png" />
+    <Content Include="Properties\Caja_eliminada_oficial.png" />
+    <Content Include="Properties\Caja_recien_creada.png" />
+    <Content Include="Properties\menuCajas_claro.png" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />

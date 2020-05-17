@@ -30,8 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LOGIN));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -109,7 +107,7 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.PictureBox2 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel6.SuspendLayout();
             this.PanelRestaurarCuenta.SuspendLayout();
@@ -128,28 +126,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.datalistado_detalle_cierre_de_caja)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox2)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(118, 99);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(7, 114);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(137, 28);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "PedroDev";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3
             // 
@@ -806,6 +782,7 @@
             // 
             // panel5
             // 
+            this.panel5.Controls.Add(this.datalistado_licencia_temporal);
             this.panel5.Controls.Add(this.LBLESTADOLICENCIALLocal);
             this.panel5.Controls.Add(this.datalistado_USUARIOS_REGISTRADOS);
             this.panel5.Controls.Add(this.lblSerialPcLocal);
@@ -831,7 +808,7 @@
             this.panel5.Controls.Add(this.datalistado_detalle_cierre_de_caja);
             this.panel5.Location = new System.Drawing.Point(136, 15);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(99, 75);
+            this.panel5.Size = new System.Drawing.Size(10, 10);
             this.panel5.TabIndex = 616;
             // 
             // datalistado_licencia_temporal
@@ -846,7 +823,7 @@
             this.datalistado_licencia_temporal.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewImageColumn5});
             this.datalistado_licencia_temporal.EnableHeadersVisualStyles = false;
-            this.datalistado_licencia_temporal.Location = new System.Drawing.Point(20, 168);
+            this.datalistado_licencia_temporal.Location = new System.Drawing.Point(62, 50);
             this.datalistado_licencia_temporal.Name = "datalistado_licencia_temporal";
             this.datalistado_licencia_temporal.ReadOnly = true;
             this.datalistado_licencia_temporal.RowHeadersVisible = false;
@@ -855,7 +832,7 @@
             this.datalistado_licencia_temporal.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.datalistado_licencia_temporal.RowTemplate.Height = 30;
             this.datalistado_licencia_temporal.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.datalistado_licencia_temporal.Size = new System.Drawing.Size(316, 175);
+            this.datalistado_licencia_temporal.Size = new System.Drawing.Size(10, 15);
             this.datalistado_licencia_temporal.TabIndex = 632;
             // 
             // dataGridViewImageColumn5
@@ -1175,26 +1152,36 @@
             this.PictureBox2.TabStop = false;
             this.PictureBox2.Visible = false;
             // 
+            // label1
+            // 
+            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(-7, -1);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(137, 28);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "PedroDev";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // LOGIN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.ClientSize = new System.Drawing.Size(1189, 733);
-            this.Controls.Add(this.datalistado_licencia_temporal);
             this.Controls.Add(this.PictureBox2);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.PanelRestaurarCuenta);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "LOGIN";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SISTEMA VENTAS BY PEDRO DEV";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.LOGIN_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.PanelRestaurarCuenta.ResumeLayout(false);
@@ -1223,9 +1210,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
@@ -1303,5 +1287,6 @@
         private System.Windows.Forms.Label lblSerialPcLocal;
         private System.Windows.Forms.Label LBLESTADOLICENCIALLocal;
         private System.Windows.Forms.DateTimePicker txtfecha_inicio_licencia;
+        private System.Windows.Forms.Label label1;
     }
 }

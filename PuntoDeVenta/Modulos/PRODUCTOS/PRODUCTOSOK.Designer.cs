@@ -221,6 +221,7 @@
             this.Label50 = new System.Windows.Forms.Label();
             this.Label7 = new System.Windows.Forms.Label();
             this.TimerCalucular_porcentaje_ganancia = new System.Windows.Forms.Timer(this.components);
+            this.lblSerialPc = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.PanelGrupo.SuspendLayout();
             this.Panel3.SuspendLayout();
@@ -274,7 +275,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1156, 96);
+            this.panel1.Size = new System.Drawing.Size(1265, 96);
             this.panel1.TabIndex = 0;
             // 
             // label1
@@ -286,7 +287,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1156, 96);
+            this.label1.Size = new System.Drawing.Size(1265, 96);
             this.label1.TabIndex = 3;
             this.label1.Text = "Productos";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -300,9 +301,9 @@
             this.PanelGrupo.Controls.Add(this.BtnGuardar_Categoria);
             this.PanelGrupo.Controls.Add(this.txtbancoseleccionado);
             this.PanelGrupo.Controls.Add(this.Button5);
-            this.PanelGrupo.Location = new System.Drawing.Point(729, 7);
+            this.PanelGrupo.Location = new System.Drawing.Point(1141, 7);
             this.PanelGrupo.Name = "PanelGrupo";
-            this.PanelGrupo.Size = new System.Drawing.Size(422, 170);
+            this.PanelGrupo.Size = new System.Drawing.Size(10, 10);
             this.PanelGrupo.TabIndex = 609;
             this.PanelGrupo.Visible = false;
             // 
@@ -382,15 +383,15 @@
             this.Panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.Panel3.Location = new System.Drawing.Point(0, 96);
             this.Panel3.Name = "Panel3";
-            this.Panel3.Size = new System.Drawing.Size(1156, 48);
+            this.Panel3.Size = new System.Drawing.Size(1265, 48);
             this.Panel3.TabIndex = 358;
             // 
             // PictureBox2
             // 
-            this.PictureBox2.BackColor = System.Drawing.Color.White;
+            this.PictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.PictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox2.Image")));
-            this.PictureBox2.Location = new System.Drawing.Point(610, 0);
+            this.PictureBox2.Location = new System.Drawing.Point(550, 0);
             this.PictureBox2.Name = "PictureBox2";
             this.PictureBox2.Size = new System.Drawing.Size(111, 48);
             this.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -400,7 +401,7 @@
             // 
             // Panel29
             // 
-            this.Panel29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(63)))), ((int)(((byte)(67)))));
+            this.Panel29.BackColor = System.Drawing.Color.Black;
             this.Panel29.Location = new System.Drawing.Point(8, 43);
             this.Panel29.Name = "Panel29";
             this.Panel29.Size = new System.Drawing.Size(273, 2);
@@ -1488,7 +1489,7 @@
             this.DATALISTADO_PRODUCTOS_OKA.AllowUserToAddRows = false;
             this.DATALISTADO_PRODUCTOS_OKA.AllowUserToDeleteRows = false;
             this.DATALISTADO_PRODUCTOS_OKA.AllowUserToResizeRows = false;
-            this.DATALISTADO_PRODUCTOS_OKA.BackgroundColor = System.Drawing.Color.Gray;
+            this.DATALISTADO_PRODUCTOS_OKA.BackgroundColor = System.Drawing.Color.White;
             this.DATALISTADO_PRODUCTOS_OKA.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DATALISTADO_PRODUCTOS_OKA.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.DATALISTADO_PRODUCTOS_OKA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -1496,19 +1497,24 @@
             this.DATALISTADO_PRODUCTOS_OKA.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.DataGridViewCheckBoxColumn8});
             this.DATALISTADO_PRODUCTOS_OKA.EnableHeadersVisualStyles = false;
-            this.DATALISTADO_PRODUCTOS_OKA.Location = new System.Drawing.Point(780, 323);
+            this.DATALISTADO_PRODUCTOS_OKA.GridColor = System.Drawing.Color.White;
+            this.DATALISTADO_PRODUCTOS_OKA.Location = new System.Drawing.Point(694, 7);
             this.DATALISTADO_PRODUCTOS_OKA.Name = "DATALISTADO_PRODUCTOS_OKA";
             this.DATALISTADO_PRODUCTOS_OKA.ReadOnly = true;
             this.DATALISTADO_PRODUCTOS_OKA.RowHeadersVisible = false;
             this.DATALISTADO_PRODUCTOS_OKA.RowHeadersWidth = 9;
-            this.DATALISTADO_PRODUCTOS_OKA.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.DATALISTADO_PRODUCTOS_OKA.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.White;
+            this.DATALISTADO_PRODUCTOS_OKA.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DATALISTADO_PRODUCTOS_OKA.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black;
+            this.DATALISTADO_PRODUCTOS_OKA.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.SystemColors.Control;
             this.DATALISTADO_PRODUCTOS_OKA.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.DATALISTADO_PRODUCTOS_OKA.RowTemplate.Height = 40;
             this.DATALISTADO_PRODUCTOS_OKA.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DATALISTADO_PRODUCTOS_OKA.Size = new System.Drawing.Size(364, 186);
+            this.DATALISTADO_PRODUCTOS_OKA.Size = new System.Drawing.Size(128, 179);
             this.DATALISTADO_PRODUCTOS_OKA.TabIndex = 494;
             this.DATALISTADO_PRODUCTOS_OKA.Visible = false;
             this.DATALISTADO_PRODUCTOS_OKA.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DATALISTADO_PRODUCTOS_OKA_CellClick);
+            this.DATALISTADO_PRODUCTOS_OKA.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DATALISTADO_PRODUCTOS_OKA_CellContentClick);
             // 
             // DataGridViewCheckBoxColumn8
             // 
@@ -1575,7 +1581,7 @@
             this.datalistado.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.datalistado.RowTemplate.Height = 40;
             this.datalistado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.datalistado.Size = new System.Drawing.Size(1156, 631);
+            this.datalistado.Size = new System.Drawing.Size(1265, 631);
             this.datalistado.TabIndex = 359;
             this.datalistado.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datalistado_CellClick);
             this.datalistado.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datalistado_CellContentClick);
@@ -1604,11 +1610,10 @@
             // PANELDEPARTAMENTO
             // 
             this.PANELDEPARTAMENTO.BackColor = System.Drawing.Color.White;
+            this.PANELDEPARTAMENTO.Controls.Add(this.lblSerialPc);
             this.PANELDEPARTAMENTO.Controls.Add(this.DATALISTADO_PRODUCTOS_OKA);
-            this.PANELDEPARTAMENTO.Controls.Add(this.datalistadoGrupos);
             this.PANELDEPARTAMENTO.Controls.Add(this.PanelGrupo);
             this.PANELDEPARTAMENTO.Controls.Add(this.maskedTextBox1);
-            this.PANELDEPARTAMENTO.Controls.Add(this.Button2);
             this.PANELDEPARTAMENTO.Controls.Add(this.PanelGRUPOSSELECT);
             this.PANELDEPARTAMENTO.Controls.Add(this.txtPorcentajeGanancia);
             this.PANELDEPARTAMENTO.Controls.Add(this.txtgrupo);
@@ -1643,7 +1648,7 @@
             this.PANELDEPARTAMENTO.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.PANELDEPARTAMENTO.Location = new System.Drawing.Point(0, 144);
             this.PANELDEPARTAMENTO.Name = "PANELDEPARTAMENTO";
-            this.PANELDEPARTAMENTO.Size = new System.Drawing.Size(1156, 631);
+            this.PANELDEPARTAMENTO.Size = new System.Drawing.Size(1265, 631);
             this.PANELDEPARTAMENTO.TabIndex = 360;
             // 
             // datalistadoGrupos
@@ -1665,8 +1670,9 @@
             this.datalistadoGrupos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.EliminarG,
             this.EditarG});
+            this.datalistadoGrupos.Dock = System.Windows.Forms.DockStyle.Fill;
             this.datalistadoGrupos.EnableHeadersVisualStyles = false;
-            this.datalistadoGrupos.Location = new System.Drawing.Point(670, 230);
+            this.datalistadoGrupos.Location = new System.Drawing.Point(0, 0);
             this.datalistadoGrupos.Name = "datalistadoGrupos";
             this.datalistadoGrupos.ReadOnly = true;
             this.datalistadoGrupos.RowHeadersVisible = false;
@@ -1679,7 +1685,7 @@
             this.datalistadoGrupos.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.datalistadoGrupos.RowTemplate.Height = 40;
             this.datalistadoGrupos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.datalistadoGrupos.Size = new System.Drawing.Size(474, 278);
+            this.datalistadoGrupos.Size = new System.Drawing.Size(590, 274);
             this.datalistadoGrupos.TabIndex = 535;
             this.datalistadoGrupos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datalistadoGrupos_CellClick);
             // 
@@ -1720,7 +1726,7 @@
             this.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button2.ForeColor = System.Drawing.Color.Black;
-            this.Button2.Location = new System.Drawing.Point(1026, 520);
+            this.Button2.Location = new System.Drawing.Point(1147, 4);
             this.Button2.Name = "Button2";
             this.Button2.Size = new System.Drawing.Size(118, 49);
             this.Button2.TabIndex = 541;
@@ -1729,19 +1735,20 @@
             // 
             // PanelGRUPOSSELECT
             // 
-            this.PanelGRUPOSSELECT.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.PanelGRUPOSSELECT.BackColor = System.Drawing.SystemColors.Window;
             this.PanelGRUPOSSELECT.Controls.Add(this.Panel33);
-            this.PanelGRUPOSSELECT.Location = new System.Drawing.Point(679, 243);
+            this.PanelGRUPOSSELECT.Controls.Add(this.datalistadoGrupos);
+            this.PanelGRUPOSSELECT.Location = new System.Drawing.Point(675, 256);
             this.PanelGRUPOSSELECT.Name = "PanelGRUPOSSELECT";
-            this.PanelGRUPOSSELECT.Size = new System.Drawing.Size(431, 127);
+            this.PanelGRUPOSSELECT.Size = new System.Drawing.Size(590, 274);
             this.PanelGRUPOSSELECT.TabIndex = 611;
             // 
             // Panel33
             // 
-            this.Panel33.Dock = System.Windows.Forms.DockStyle.Left;
-            this.Panel33.Location = new System.Drawing.Point(0, 0);
+            this.Panel33.Dock = System.Windows.Forms.DockStyle.Right;
+            this.Panel33.Location = new System.Drawing.Point(502, 0);
             this.Panel33.Name = "Panel33";
-            this.Panel33.Size = new System.Drawing.Size(160, 127);
+            this.Panel33.Size = new System.Drawing.Size(88, 274);
             this.Panel33.TabIndex = 536;
             // 
             // txtPorcentajeGanancia
@@ -1839,8 +1846,8 @@
             // 
             // Panel28
             // 
-            this.Panel28.Controls.Add(this.TGUARDARCAMBIOS);
             this.Panel28.Controls.Add(this.TGUARDAR);
+            this.Panel28.Controls.Add(this.TGUARDARCAMBIOS);
             this.Panel28.Location = new System.Drawing.Point(26, 423);
             this.Panel28.Name = "Panel28";
             this.Panel28.Size = new System.Drawing.Size(628, 85);
@@ -1848,10 +1855,11 @@
             // 
             // TGUARDARCAMBIOS
             // 
+            this.TGUARDARCAMBIOS.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TGUARDARCAMBIOS.Image = ((System.Drawing.Image)(resources.GetObject("TGUARDARCAMBIOS.Image")));
             this.TGUARDARCAMBIOS.Location = new System.Drawing.Point(0, 0);
             this.TGUARDARCAMBIOS.Name = "TGUARDARCAMBIOS";
-            this.TGUARDARCAMBIOS.Size = new System.Drawing.Size(628, 86);
+            this.TGUARDARCAMBIOS.Size = new System.Drawing.Size(628, 85);
             this.TGUARDARCAMBIOS.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.TGUARDARCAMBIOS.TabIndex = 540;
             this.TGUARDARCAMBIOS.TabStop = false;
@@ -2158,36 +2166,40 @@
             // Label37
             // 
             this.Label37.AutoSize = true;
-            this.Label37.Location = new System.Drawing.Point(47, 166);
+            this.Label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.Label37.Location = new System.Drawing.Point(25, 169);
             this.Label37.Name = "Label37";
-            this.Label37.Size = new System.Drawing.Size(122, 20);
+            this.Label37.Size = new System.Drawing.Size(137, 20);
             this.Label37.TabIndex = 1;
             this.Label37.Text = "Precio Mayoreo:";
             // 
             // Label49
             // 
             this.Label49.AutoSize = true;
-            this.Label49.Location = new System.Drawing.Point(67, 103);
+            this.Label49.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.Label49.Location = new System.Drawing.Point(56, 110);
             this.Label49.Name = "Label49";
-            this.Label49.Size = new System.Drawing.Size(96, 20);
+            this.Label49.Size = new System.Drawing.Size(106, 20);
             this.Label49.TabIndex = 1;
             this.Label49.Text = "% Ganancia";
             // 
             // Label23
             // 
             this.Label23.AutoSize = true;
-            this.Label23.Location = new System.Drawing.Point(67, 135);
+            this.Label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.Label23.Location = new System.Drawing.Point(44, 137);
             this.Label23.Name = "Label23";
-            this.Label23.Size = new System.Drawing.Size(104, 20);
+            this.Label23.Size = new System.Drawing.Size(118, 20);
             this.Label23.TabIndex = 1;
             this.Label23.Text = "Precio venta :";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(64, 72);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.label3.Location = new System.Drawing.Point(41, 76);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(107, 20);
+            this.label3.Size = new System.Drawing.Size(121, 20);
             this.label3.TabIndex = 1;
             this.label3.Text = "Precio Costo :";
             // 
@@ -2231,7 +2243,7 @@
             this.Label27.AutoSize = true;
             this.Label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.Label27.ForeColor = System.Drawing.Color.Black;
-            this.Label27.Location = new System.Drawing.Point(18, 232);
+            this.Label27.Location = new System.Drawing.Point(16, 236);
             this.Label27.Name = "Label27";
             this.Label27.Size = new System.Drawing.Size(151, 20);
             this.Label27.TabIndex = 338;
@@ -2280,7 +2292,7 @@
             this.Label38.AutoSize = true;
             this.Label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.Label38.ForeColor = System.Drawing.Color.Black;
-            this.Label38.Location = new System.Drawing.Point(103, 200);
+            this.Label38.Location = new System.Drawing.Point(101, 204);
             this.Label38.Name = "Label38";
             this.Label38.Size = new System.Drawing.Size(64, 20);
             this.Label38.TabIndex = 340;
@@ -2324,15 +2336,16 @@
             // 
             this.MenuStrip14.AutoSize = false;
             this.MenuStrip14.BackColor = System.Drawing.Color.Transparent;
+            this.MenuStrip14.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("MenuStrip14.BackgroundImage")));
             this.MenuStrip14.Dock = System.Windows.Forms.DockStyle.None;
             this.MenuStrip14.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ToolStripMenuItem11,
             this.ToolStripMenuItem12});
             this.MenuStrip14.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
-            this.MenuStrip14.Location = new System.Drawing.Point(659, 2);
+            this.MenuStrip14.Location = new System.Drawing.Point(659, 8);
             this.MenuStrip14.Name = "MenuStrip14";
             this.MenuStrip14.ShowItemToolTips = true;
-            this.MenuStrip14.Size = new System.Drawing.Size(67, 45);
+            this.MenuStrip14.Size = new System.Drawing.Size(31, 33);
             this.MenuStrip14.TabIndex = 539;
             this.MenuStrip14.Text = "MenuStrip14";
             // 
@@ -2352,7 +2365,7 @@
             // ToolStripMenuItem12
             // 
             this.ToolStripMenuItem12.Name = "ToolStripMenuItem12";
-            this.ToolStripMenuItem12.Size = new System.Drawing.Size(127, 41);
+            this.ToolStripMenuItem12.Size = new System.Drawing.Size(127, 29);
             this.ToolStripMenuItem12.Text = "ToolStripMenuItem3";
             // 
             // Panel30
@@ -2375,6 +2388,7 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.White;
+            this.panel5.Controls.Add(this.Button2);
             this.panel5.Controls.Add(this.lblcosto_inventario);
             this.panel5.Controls.Add(this.lblcantidad_productos);
             this.panel5.Controls.Add(this.Label50);
@@ -2382,14 +2396,14 @@
             this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel5.Location = new System.Drawing.Point(0, 719);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1156, 56);
+            this.panel5.Size = new System.Drawing.Size(1265, 56);
             this.panel5.TabIndex = 372;
             // 
             // lblcosto_inventario
             // 
             this.lblcosto_inventario.AutoSize = true;
             this.lblcosto_inventario.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblcosto_inventario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(198)))), ((int)(((byte)(91)))));
+            this.lblcosto_inventario.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.lblcosto_inventario.Location = new System.Drawing.Point(470, 16);
             this.lblcosto_inventario.Name = "lblcosto_inventario";
             this.lblcosto_inventario.Size = new System.Drawing.Size(54, 24);
@@ -2400,7 +2414,7 @@
             // 
             this.lblcantidad_productos.AutoSize = true;
             this.lblcantidad_productos.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblcantidad_productos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(198)))), ((int)(((byte)(91)))));
+            this.lblcantidad_productos.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.lblcantidad_productos.Location = new System.Drawing.Point(181, 16);
             this.lblcantidad_productos.Name = "lblcantidad_productos";
             this.lblcantidad_productos.Size = new System.Drawing.Size(54, 24);
@@ -2431,11 +2445,20 @@
             // 
             this.TimerCalucular_porcentaje_ganancia.Tick += new System.EventHandler(this.TimerCalucular_porcentaje_ganancia_Tick_1);
             // 
+            // lblSerialPc
+            // 
+            this.lblSerialPc.AutoSize = true;
+            this.lblSerialPc.Location = new System.Drawing.Point(874, 28);
+            this.lblSerialPc.Name = "lblSerialPc";
+            this.lblSerialPc.Size = new System.Drawing.Size(61, 20);
+            this.lblSerialPc.TabIndex = 614;
+            this.lblSerialPc.Text = "idSerial";
+            // 
             // PRODUCTOSOK
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1156, 775);
+            this.ClientSize = new System.Drawing.Size(1265, 775);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.PANELDEPARTAMENTO);
             this.Controls.Add(this.datalistado);
@@ -2702,5 +2725,6 @@
         internal System.Windows.Forms.Label Label7;
         private System.Windows.Forms.ToolStrip Tmensajes;
         private System.Windows.Forms.Timer TimerCalucular_porcentaje_ganancia;
+        private System.Windows.Forms.Label lblSerialPc;
     }
 }
