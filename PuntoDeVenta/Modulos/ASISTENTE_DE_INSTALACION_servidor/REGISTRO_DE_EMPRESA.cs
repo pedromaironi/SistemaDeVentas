@@ -360,6 +360,7 @@ namespace PuntoDeVenta.Modulos.ASISTENTE_DE_INSTALACION_servidor
 
     private void REGISTRO_DE_EMPRESA_Load(object sender, EventArgs e)
     {
+            TXTCON_LECTORA.Enabled = false;
             txtempresa.Focus();
             txtempresa.SelectAll();
         Panel16.Location = new Point((Width - Panel16.Width) / 2, (Height - Panel16.Height) / 2);

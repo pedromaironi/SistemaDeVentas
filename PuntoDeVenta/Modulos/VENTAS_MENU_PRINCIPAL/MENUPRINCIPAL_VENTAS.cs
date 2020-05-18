@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Management;
 using System.Data.SqlClient;
+using System.Threading;
+using System.Globalization;
 
 namespace PuntoDeVenta.Modulos.VENTAS_MENU_PRINCIPAL
 {
@@ -17,6 +19,7 @@ namespace PuntoDeVenta.Modulos.VENTAS_MENU_PRINCIPAL
         public MENUPRINCIPAL_VENTAS()
         {
             InitializeComponent();
+            BTNLECTORA.Enabled = false;
         }
 
         int contador_stock_detalle_de_venta;
@@ -26,6 +29,7 @@ namespace PuntoDeVenta.Modulos.VENTAS_MENU_PRINCIPAL
         int idVenta;
         int iddetalleventa;
         int Contador;
+
         private void button1_Click(object sender, EventArgs e)
         {
            
@@ -189,7 +193,7 @@ namespace PuntoDeVenta.Modulos.VENTAS_MENU_PRINCIPAL
             if (Tipo_de_busqueda =="LECTORA")
             {
                 lbltipodebusqueda2.Visible = false;
-
+                TimerBUSCADORcodigodebarras.Start();
             }
             else if (Tipo_de_busqueda=="TECLADO")
             {
@@ -219,7 +223,8 @@ namespace PuntoDeVenta.Modulos.VENTAS_MENU_PRINCIPAL
         {
             txtbuscar.Text = DATALISTADO_PRODUCTOS_OKA.SelectedCells[2].Value.ToString();
             idproducto = Convert.ToInt32 ( DATALISTADO_PRODUCTOS_OKA.SelectedCells[1].Value.ToString());
-            vender_por_teclado();
+            //lblstock
+            vender_por_teclado();//6
 
         }
 
@@ -247,11 +252,7 @@ namespace PuntoDeVenta.Modulos.VENTAS_MENU_PRINCIPAL
             TXTSEVENDEPOR.Text = DATALISTADO_PRODUCTOS_OKA.SelectedCells[8].Value.ToString();
             txtprecio_unitario.Text = DATALISTADO_PRODUCTOS_OKA.SelectedCells[6].Value.ToString();
             //Preguntamos que tipo de producto sera el que se agrege al detalle de venta
-            if (TXTSEVENDEPOR.Text =="Granel")
-            {
-                vender_a_granel();
-            }
-            else if (TXTSEVENDEPOR.Text =="Unidad")
+           if (TXTSEVENDEPOR.Text =="Unidad")
             {
                 txtpantalla.Text ="1";
                 vender_por_unidad();
@@ -376,6 +377,7 @@ namespace PuntoDeVenta.Modulos.VENTAS_MENU_PRINCIPAL
                 MessageBox.Show(ex.StackTrace);
             }
         }
+        int cantidadStock ;
         private void Listarproductosagregados()
         {
             try
@@ -385,9 +387,9 @@ namespace PuntoDeVenta.Modulos.VENTAS_MENU_PRINCIPAL
                 SqlConnection con = new SqlConnection();
                 con.ConnectionString = CONEXION.CONEXIONMAESTRA.CONEXION;
                 con.Open();
-                    da = new SqlDataAdapter("mostrar_productos_agregados_a_venta", con);
+                da = new SqlDataAdapter("mostrar_productos_agregados_a_venta", con);
                 da.SelectCommand.CommandType = CommandType.StoredProcedure;
-                da.SelectCommand.Parameters.AddWithValue("@idventa",idVenta );
+                da.SelectCommand.Parameters.AddWithValue("@idventa", idVenta);
                 da.Fill(dt);
                 datalistadoDetalleVenta.DataSource = dt;
                 con.Close();
@@ -402,8 +404,8 @@ namespace PuntoDeVenta.Modulos.VENTAS_MENU_PRINCIPAL
                 datalistadoDetalleVenta.Columns[8].Visible = false;
                 datalistadoDetalleVenta.Columns[9].Visible = false;
                 datalistadoDetalleVenta.Columns[10].Visible = false;
-                datalistadoDetalleVenta.Columns[11].Width = datalistadoDetalleVenta.Width - (datalistadoDetalleVenta.Columns[0].Width- datalistadoDetalleVenta.Columns[1].Width- datalistadoDetalleVenta.Columns[2].Width-
-                  datalistadoDetalleVenta.Columns[4].Width- datalistadoDetalleVenta.Columns[5].Width- datalistadoDetalleVenta.Columns[6].Width- datalistadoDetalleVenta.Columns[7].Width);
+                datalistadoDetalleVenta.Columns[11].Width = datalistadoDetalleVenta.Width - (datalistadoDetalleVenta.Columns[0].Width - datalistadoDetalleVenta.Columns[1].Width - datalistadoDetalleVenta.Columns[2].Width -
+                  datalistadoDetalleVenta.Columns[4].Width - datalistadoDetalleVenta.Columns[5].Width - datalistadoDetalleVenta.Columns[6].Width - datalistadoDetalleVenta.Columns[7].Width);
                 datalistadoDetalleVenta.Columns[12].Visible = false;
                 datalistadoDetalleVenta.Columns[13].Visible = false;
                 datalistadoDetalleVenta.Columns[14].Visible = false;
@@ -412,13 +414,14 @@ namespace PuntoDeVenta.Modulos.VENTAS_MENU_PRINCIPAL
                 datalistadoDetalleVenta.Columns[17].Visible = false;
                 datalistadoDetalleVenta.Columns[18].Visible = false;
                 sumar();
-
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.StackTrace);
             }
         }
+       
+
         private void insertar_detalle_venta()
         {
             try
@@ -428,6 +431,7 @@ namespace PuntoDeVenta.Modulos.VENTAS_MENU_PRINCIPAL
                     if (Convert.ToDouble ( lblStock_de_Productos.Text) >= Convert.ToDouble(txtpantalla.Text)  )
                     {
                         insertar_detalle_venta_SIN_VALIDAR();
+                        //MessageBox.Show("ERROR");
                     }
                 }
 
@@ -527,18 +531,19 @@ namespace PuntoDeVenta.Modulos.VENTAS_MENU_PRINCIPAL
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("El cantidad que desea agregar del producto es igual/mayor a la del stock en inventario","ADVERTENCIA",MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
 
            
         }
+
         private void Obtener_datos_del_detalle_de_venta()
         {
             try
             {
                 iddetalleventa = Convert.ToInt32 ( datalistadoDetalleVenta.SelectedCells[9].Value.ToString());
                 idproducto = Convert.ToInt32(datalistadoDetalleVenta.SelectedCells[8].Value.ToString());
-
+                
             }
             catch (Exception ex)
             {
@@ -580,11 +585,11 @@ namespace PuntoDeVenta.Modulos.VENTAS_MENU_PRINCIPAL
             {
                 editar_detalle_venta_sumar();
             }
-            if (e.ColumnIndex== this .datalistadoDetalleVenta.Columns ["R"].Index )
+            if (e.ColumnIndex == this.datalistadoDetalleVenta.Columns["R"].Index)
             {
                 editar_detalle_venta_restar();
                 contar_tablas_ventas();
-                if (Contador ==0)
+                if (Contador == 0)
                 {
                     eliminar_venta_al_agregar_productos();
                     txtventagenerada.Text = "VENTA NUEVA";
@@ -606,7 +611,7 @@ namespace PuntoDeVenta.Modulos.VENTAS_MENU_PRINCIPAL
                         cmd = new SqlCommand("eliminar_detalle_venta", con);
                         cmd.CommandType = CommandType.StoredProcedure;
                         cmd.Parameters.AddWithValue("@iddetalleventa", iddetalle_venta);
-                            cmd.ExecuteNonQuery();
+                        cmd.ExecuteNonQuery();
                         con.Close();
                     }
                     catch (Exception ex)
@@ -649,14 +654,21 @@ namespace PuntoDeVenta.Modulos.VENTAS_MENU_PRINCIPAL
         {
 
         }
-
+        string a, b;
+        
         private void datalistadoDetalleVenta_KeyPress(object sender, KeyPressEventArgs e)
         {
             Obtener_datos_del_detalle_de_venta();
-            if (e.KeyChar ==Convert.ToChar ("+"))
-            {    
-                editar_detalle_venta_sumar();
-            }
+
+           
+                if (e.KeyChar == Convert.ToChar("+"))
+                {
+
+                    editar_detalle_venta_sumar();
+                }
+            
+
+           
             if (e.KeyChar == Convert.ToChar ("-"))
                 {
                 editar_detalle_venta_restar();
@@ -705,6 +717,250 @@ namespace PuntoDeVenta.Modulos.VENTAS_MENU_PRINCIPAL
         private void lbltipodebusqueda2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btn1_Click(object sender, EventArgs e)
+        {
+            txtmonto.Text = txtmonto.Text + "1";
+        }
+
+        private void btn2_Click(object sender, EventArgs e)
+        {
+            txtmonto.Text = txtmonto.Text + "2";
+        }
+
+        private void btn3_Click(object sender, EventArgs e)
+        {
+            txtmonto.Text = txtmonto.Text + "3";
+        }
+
+        private void btn4_Click(object sender, EventArgs e)
+        {
+            txtmonto.Text = txtmonto.Text + "4";
+        }
+
+        private void btn5_Click(object sender, EventArgs e)
+        {
+            txtmonto.Text = txtmonto.Text + "5";
+
+        }
+
+        private void btn6_Click(object sender, EventArgs e)
+        {
+            txtmonto.Text = txtmonto.Text + "6";
+
+        }
+
+        private void btn7_Click(object sender, EventArgs e)
+        {
+            txtmonto.Text = txtmonto.Text + "7";
+
+        }
+
+        private void btn8_Click(object sender, EventArgs e)
+        {
+            txtmonto.Text = txtmonto.Text + "8";
+
+        }
+
+        private void btn9_Click(object sender, EventArgs e)
+        {
+            txtmonto.Text = txtmonto.Text + "9";
+
+        }
+
+        private void btn0_Click(object sender, EventArgs e)
+        {
+            txtmonto.Text = txtmonto.Text + "0";
+
+        }
+
+        private void btnborrartodo_Click(object sender, EventArgs e)
+        {
+            txtmonto.Clear();
+            SECUENCIA = true;
+        }
+
+        private void txtmonto_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+        bool SECUENCIA = true;
+        private void btnseparador_Click(object sender, EventArgs e)
+        {
+
+            if (SECUENCIA == true)
+            {
+                txtmonto.Text = txtmonto.Text + ".";
+                SECUENCIA = false;
+            }
+            else
+            {
+                return;
+            }
+        }
+
+        private void txtmonto_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar != '.') || (e.KeyChar != ','))
+            {
+
+                string CultureName = Thread.CurrentThread.CurrentCulture.Name;
+                CultureInfo ci = new CultureInfo(CultureName);
+
+                ci.NumberFormat.NumberDecimalSeparator = ".";
+                Thread.CurrentThread.CurrentCulture = ci;
+
+            }
+            Separador_de_Numeros(txtmonto, e);
+        }
+        public static void Separador_de_Numeros(System.Windows.Forms.TextBox CajaTexto, System.Windows.Forms.KeyPressEventArgs e)
+        {
+            if (Char.IsDigit(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else if (Char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+
+            else if (!(e.KeyChar == CajaTexto.Text.IndexOf('.')))
+            {
+                e.Handled = true;
+            }
+
+
+            else if (e.KeyChar == '.')
+            {
+                e.Handled = false;
+            }
+            else if (e.KeyChar == ',')
+            {
+                e.Handled = false;
+
+            }
+            else
+            {
+                e.Handled = true;
+
+            }
+
+        }
+
+        private void TimerBUSCADORcodigodebarras_Tick(object sender, EventArgs e)
+        {
+            TimerBUSCADORcodigodebarras.Stop();
+            vender_por_lectora_de_barras();
+        }
+
+         private void vender_por_lectora_de_barras()
+        {
+          if (txtbuscar.Text =="")
+            {
+                DATALISTADO_PRODUCTOS_OKA.Visible = false;
+                lbltipodebusqueda2.Visible = true;
+            }
+            if(txtbuscar.Text !="")
+            {
+                DATALISTADO_PRODUCTOS_OKA.Visible = true;
+                lbltipodebusqueda2.Visible = false;
+                LISTAR_PRODUCTOS_Abuscador();
+           
+                idproducto =Convert.ToInt32 ( DATALISTADO_PRODUCTOS_OKA.SelectedCells[1].Value.ToString());
+                mostrar_stock_de_detalle_de_ventas();
+                contar_stock_detalle_ventas();
+
+                if (contador_stock_detalle_de_venta  ==0)
+                {//Convert.ToDouble(
+                    lblStock_de_Productos.Text = DATALISTADO_PRODUCTOS_OKA.SelectedCells[4].Value.ToString();
+                }
+                else
+                {
+                    lblStock_de_Productos.Text = datalistado_stock_detalle_venta.SelectedCells[1].Value.ToString();
+                }
+                lblUsaInventarios.Text = DATALISTADO_PRODUCTOS_OKA.SelectedCells[3].Value.ToString();
+                lbldescripcion.Text = DATALISTADO_PRODUCTOS_OKA.SelectedCells[9].Value.ToString();
+                lblcodigo.Text = DATALISTADO_PRODUCTOS_OKA.SelectedCells[10].Value.ToString();
+                lblcosto.Text = DATALISTADO_PRODUCTOS_OKA.SelectedCells[5].Value.ToString();
+                txtprecio_unitario.Text = DATALISTADO_PRODUCTOS_OKA.SelectedCells[6].Value.ToString();
+            TXTSEVENDEPOR.Text = DATALISTADO_PRODUCTOS_OKA.SelectedCells[8].Value.ToString();
+                if (TXTSEVENDEPOR.Text =="Unidad")
+                {
+                    txtpantalla.Text = "1"; 
+                    vender_por_unidad();
+                }
+
+            }
+        }
+        private void editar_detalle_venta_CANTIDAD()
+        {
+            try
+            {
+                SqlCommand cmd;
+                SqlConnection con = new SqlConnection();
+                con.ConnectionString = CONEXION.CONEXIONMAESTRA.CONEXION;
+                con.Open();
+                cmd = new SqlCommand("editar_detalle_venta_CANTIDAD", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@Id_producto", idproducto);
+                cmd.Parameters.AddWithValue("@cantidad", txtmonto.Text);
+                cmd.Parameters.AddWithValue("@Cantidad_mostrada", txtmonto.Text);
+                cmd.Parameters.AddWithValue("@Id_venta", idVenta);
+                cmd.ExecuteNonQuery();
+                con.Close();
+                Listarproductosagregados();
+                txtmonto.Clear();
+                txtmonto.Focus();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        private void Button21_Click(object sender, EventArgs e)
+        {
+            if (datalistadoDetalleVenta.RowCount > 0)
+            {
+                if (TXTSEVENDEPOR.Text == "Unidad")
+                {
+                    string ruta = txtmonto.Text;
+                    if (ruta.Contains("."))
+                    {
+                        MessageBox.Show("Este Producto no acepta decimales ya que esta configurado para ser vendido por UNIDAD", "Formato Incorrecto", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        txtmonto.Clear();
+                        txtmonto.Focus();
+                    }
+                    else
+                    {
+                        if (txtmonto.Text == "")
+                        {
+                            txtmonto.Text = Convert.ToString(0);
+                        }
+                        if (Convert.ToInt32(txtmonto.Text) > 0)
+                        {
+                            editar_detalle_venta_CANTIDAD();
+                        }
+                        else
+                        {
+                            txtmonto.Clear();
+                            txtmonto.Focus();
+                        }
+                    }
+                }
+            }
+            else
+            {
+                txtmonto.Clear();
+                txtmonto.Focus();
+            }
+        }
+
+        private void befectivo_Click(object sender, EventArgs e)
+        {
+            //total = Convert.ToDouble(txt_total_suma.Text);
+            //VENTAS_MENU_PRINCIPAL.MEDIOS_DE_PAGO frm = new VENTAS_MENU_PRINCIPAL.MEDIOS_DE_PAGO();
+            //frm.ShowDialog();
         }
     }
 }

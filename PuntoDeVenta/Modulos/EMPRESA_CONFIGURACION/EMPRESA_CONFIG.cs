@@ -19,11 +19,14 @@ namespace PuntoDeVenta.Modulos.EMPRESA_CONFIGURACION
     {
         public EMPRESA_CONFIG()
         {
+
             InitializeComponent();
         }
 
         private void EMPRESA_CONFIG_Load(object sender, EventArgs e)
         {
+            TXTCON_LECTORA.Enabled = false;
+
             Panel16.Location = new Point((Width - Panel16.Width) / 2, (Height - Panel16.Height) / 2);
             mostrar();
             Obtener_datos();

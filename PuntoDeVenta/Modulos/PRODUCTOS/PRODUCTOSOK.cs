@@ -21,7 +21,7 @@ namespace PuntoDeVenta.Modulos.PRODUCTOS
         public PRODUCTOSOK()
         {
             InitializeComponent();
-            agranel.Visible = false;
+            agranel.Visible = true;
             txtPorcentajeGanancia.Enabled = false;
             txtcodigodebarras.Enabled = false;
         }
